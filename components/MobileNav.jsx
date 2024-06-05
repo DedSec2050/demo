@@ -35,8 +35,9 @@ const MobileNav = () => {
             <div className="mb-20 text-left text-2xl text-accent-hover">logo</div>
             <nav className="flex flex-col justify-center items-center gap-6">
                 {links.map((link, index)=>{
+                    console.log(index);
                     return (
-                        <SheetClose asChild>
+                        <SheetClose asChild key={index}>
                         <Link
                             href={link.path}
                             key={index}
