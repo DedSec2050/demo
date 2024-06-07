@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from './ui/button';
 import Slider from './Slider';
 
 const Hero = () => {
@@ -21,7 +20,7 @@ const Hero = () => {
             <h1 className='text-[22px] md:text-[28px] xl:text-[40px] mb-2 font-extralight'>10X enabler for your <span className='text-accent font-semibold'>CISSP</span> Success! </h1>
             <hr className="w-[15rem] xl:w-[40rem] h-1 mx-auto bg-accent border-0 rounded mb-5"></hr>
 
-            <Button className='rounded-full bg-gradient-to-r from-gray-400 to-accent hover:bg-gradient-to-r hover:from-accent hover:to-gray-400 '>Talk to your Experts</Button>
+            
             <p className='text-grey text-xs mt-2'>Your information will remain 100% private!</p>
        </div>
        
