@@ -2,59 +2,55 @@
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import {CiMenuFries} from 'react-icons/ci';
-
+import { CiMenuFries } from "react-icons/ci";
 
 const links = [
-    {
-        name: 'home',
-        path: '/'
-    },    
-    {
-        name: 'courses',
-        path: '/courses'
-    },    
-    {
-        name: 'blog',
-        path: '/blog'
-    },    
-    {
-        name: 'resources',
-        path: '/resources'
-    },    
-]
+  {
+    name: "home",
+    path: "/",
+  },
+  {
+    name: "courses",
+    path: "/courses",
+  },
+  {
+    name: "blog",
+    path: "/blog",
+  },
+  {
+    name: "resources",
+    path: "/resources",
+  },
+];
 const MobileNav = () => {
-    const pathname = usePathname();
+  const pathname = usePathname();
 
   return (
     <Sheet>
-        <SheetTrigger className="flex justify-center items-center">
-            <CiMenuFries className="text-[32px] text-accent"/>
-        </SheetTrigger>
-        <SheetContent className="flex flex-col">
-            <div className="mb-20 text-left text-2xl text-accent-hover">logo</div>
-            <nav className="flex flex-col justify-center items-center gap-6">
-                {links.map((link, index)=>{
-                    console.log(index);
-                    return (
-                        <SheetClose asChild key={index}>
-                        <Link
-                            href={link.path}
-                            key={index}
-                            className={`${link.path === pathname && "text-accent border-b-2 border-accent"} text-md capitalize hover:text-accent transition-all`}
-                            >
-
-                                {link.name}
-
-                            </Link>
-                        </SheetClose>
-
-                    )
-                })}
-            </nav>
-        </SheetContent>
+      <SheetTrigger className="flex items-center justify-center">
+        <CiMenuFries className="text-[32px] text-accent" />
+      </SheetTrigger>
+      <SheetContent className="flex flex-col">
+        <div className="mb-20 text-left text-2xl text-accent-hover">logo</div>
+        <nav className="flex flex-col items-center justify-center gap-6">
+          {links.map((link, index) => {
+            console.log(index);
+            return (
+              <SheetClose asChild key={index}>
+                <Link
+                  href={link.path}
+                  key={index}
+                  className={`${link.path === pathname && "border-b-2 border-accent text-accent"} text-md capitalize transition-all hover:text-accent`}
+                >
+                  {link.name}
+                </Link>
+              </SheetClose>
+            );
+          })}
+        </nav>
+      </SheetContent>
     </Sheet>
   );
-}
+};
 
 export default MobileNav;

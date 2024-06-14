@@ -1,42 +1,37 @@
 import Link from "next/link";
-import { Button } from "./ui/button"
+import { Button } from "./ui/button";
 
-// components 
+// components
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white bg-pink">
-      <div className="px-[25px] mx-auto flex justify-between items-center">
+    <header className="top-0 w-[100%] py-8 text-white xl:py-12">
+      <div className="mx-auto flex items-center justify-between px-[1.5em]">
         <Link href="/">
-          <h1 className="text-4xl font-semibold text-accent">
-            Logo
-          </h1>
+          <h1 className="text-4xl font-semibold text-accent">Logo</h1>
         </Link>
 
-
         {/* Desktop Nav  */}
-        <div className="hidden xl:flex items-center gap-8">
-          <Nav/>
-          
+        <div className="hidden items-center gap-8 xl:flex">
+          <Nav />
         </div>
         <Link href="/signin">
-            <Button 
-              className="hidden xl:flex rounded-[2rem]"
-              size="lg"
-              variant="outline"
-            >
-              Sign-In
-            </Button>
-          </Link>
+          <Button
+            className="hidden rounded-[2rem] xl:flex"
+            size="lg"
+            variant="outline"
+          >
+            Sign-In
+          </Button>
+        </Link>
         {/* mobile navigation  */}
         <div className="xl:hidden">
           <MobileNav />
         </div>
-        
       </div>
     </header>
   );
-}
+};
 
 export default Header;

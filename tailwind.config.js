@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -15,22 +15,38 @@ module.exports = {
     },
     screens: {
       sm: "640px",
-      md: "768px",
+      md: "800px",
       lg: "960px",
-      xl: "1200px",
+      xl: "1100px",
     },
     fontFamily: {
-      primary: "var(--font-jetbrainsMono)"
+      primary: "var(--font-jetbrainsMono)",
     },
     extend: {
+      backgroundImage: {
+        herosection: "url(/assets/bgimage-nobg.png)",
+        faq: "url(/assets/faq-bg.webp)",
+      },
+      fontSize: {
+        clampheader: "clamp(24px, 8vw, 44px)",
+        clamptitle: "clamp(20px, 6vw, 40px)",
+        clamptextsm: "clamp(13px, 4vw, 16px)",
+        clamptextmd: "clamp(22px, 4vw, 30px)",
+      },
       colors: {
         primary: "#060F38",
         accent: {
           DEFAULT: "#FFD600",
-          hover: '#11D1C8'
-        }
-      }
+          hover: "#11D1C8",
+        },
+        grn: {
+          DEFAULT: "#11D1C8",
+        },
+        lgblue: {
+          DEFAULT: "#11D1C8",
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
