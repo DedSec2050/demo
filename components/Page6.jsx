@@ -4,7 +4,7 @@ import React from "react";
 const Page6 = () => {
   return (
     <section className="py-8">
-      <div className="flex flex-col items-center px-[13px]">
+      <div className="flex flex-col items-center">
         <h1 className="text-center text-clamptitle">
           <strong>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">

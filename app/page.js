@@ -14,14 +14,6 @@ import Page8 from "@/components/Page8";
 import Page9 from "@/components/Page9";
 
 export default function Home() {
-  const [timedPopup, setTimedPopup] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setTimedPopup(true);
-    }, 3000);
-  }, []);
-
   return (
     <main>
       {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}>

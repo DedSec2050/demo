@@ -4,7 +4,7 @@ import Image from "next/image";
 const Page8 = () => {
   return (
     // Slideshow Testimonials section
-    <section className="flex flex-col p-[13px]">
+    <section className="flex flex-col">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center text-clamptitle leading-normal">
           <strong>
