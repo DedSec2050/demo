@@ -27,6 +27,7 @@ const Page8 = () => {
                   width={170}
                   height={73}
                   className={`${index} ` + ""}
+                  alt=""
                 />
               </div>
             );

@@ -22,6 +22,7 @@ const Slider = () => {
             height={400}
             style={imageStyle}
             className={`${index}` + ""}
+            alt=""
           />
         }
       </div>,

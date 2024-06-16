@@ -3,7 +3,6 @@ import "./globals.css";
 
 // Components
 import Header from "@/components/Header";
-
 const poppin_global = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
