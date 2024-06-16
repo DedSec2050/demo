@@ -3,7 +3,7 @@ import React from "react";
 
 const Page6 = () => {
   return (
-    <section>
+    <section className="py-8">
       <div className="flex flex-col items-center px-[13px]">
         <h1 className="text-center text-clamptitle">
           <strong>
