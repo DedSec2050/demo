@@ -16,30 +16,6 @@ import Page9 from "@/components/Page9";
 export default function Home() {
   return (
     <main>
-      {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
-        <div className="wrapper flex flex-col xl:flex-row">
-          <div className="video-container rounded-md border-2 border-red-400">
-            <CldVideoPlayer
-              width="1920"
-              height="1080"
-              src="samples/sea-turtle"
-            />
-          </div>
-
-          <div className="text-container w-[100%] rounded-md border-2 border-yellow-400 p-3 xl:w-[50%]">
-            <div className="weekly-newsletter justify-center text-center">
-              <h1>Weekly Newsletter</h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-                voluptates dolore, accusantium nesciunt voluptatem, alias atque
-                aspernatur voluptas maxime eveniet incidunt explicabo quasi,
-                repellat deleniti facilis nihil. Quo, amet iste?
-              </p>
-            </div>
-          </div>
-        </div>
-      </Popup> */}
-
       <Hero />
       <Page2 />
       <Page3 />
