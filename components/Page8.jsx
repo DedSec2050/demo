@@ -7,7 +7,14 @@ const Page8 = () => {
     <section className="flex flex-col p-[13px]">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center text-clamptitle leading-normal">
-          <strong>Our students are serving on top positions here</strong>
+          <strong>
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+              Our students are serving on top
+            </span>{" "}
+            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+              positions here
+            </span>
+          </strong>
         </h1>
       </div>
       <div className="flex w-[100%] flex-row">
@@ -30,7 +37,12 @@ const Page8 = () => {
       <div>
         <h1 className="text-center text-clamptitle leading-9">
           <strong>
-            See what Participants say about us:
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+              See what Participants say
+            </span>{" "}
+            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+              about us:
+            </span>
             <br />
             Slider goes here
           </strong>
@@ -38,19 +50,26 @@ const Page8 = () => {
       </div>
       <div className="flex w-screen flex-col items-center justify-center">
         <h1 className="mt-7 text-center text-clamptitle">
-          <strong>Connect with you coach</strong>
+          <strong>
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+              Connect with your
+            </span>{" "}
+            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+              coach
+            </span>
+          </strong>
         </h1>
-        <div className="relative h-[12rem] min-h-[12em] w-[15em] overflow-hidden rounded-lg md:h-[22rem] md:w-[30rem]">
+        <div className="relative h-[12rem] min-h-[12em] w-[15em] overflow-hidden rounded-lg border-4 border-accent md:h-[22rem] md:w-[30rem]">
           <Image
             src="/assets/trainerConnect.webp"
             priority
             quality={50}
             layout="fill"
             alt=""
-            objectFit="contain"
+            objectFit="cover"
           />
         </div>
-        <div className="flex max-w-[700px] px-4">
+        <div className="mt-4 flex max-w-[700px] px-4">
           <p className="text-center text-clamptextsm">{desc}</p>
         </div>
       </div>

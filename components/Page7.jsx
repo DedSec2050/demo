@@ -6,7 +6,14 @@ const Page7 = () => {
     <section className="mt-7 flex flex-col">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center text-clamptitle">
-          <strong>Bootcamp Training- Why are we special?</strong>
+          <strong>
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+              Bootcamp Training- Why
+            </span>{" "}
+            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+              are we special?
+            </span>
+          </strong>
         </h1>
         <div className="relative mt-6 flex h-[50vh] w-[90%] bg-transparent md:h-[90vh]">
           <Image

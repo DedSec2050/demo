@@ -22,11 +22,16 @@ const Page4 = () => {
       <div className="flex flex-col items-center justify-between px-4 md:flex-row">
         <div className="w-full md:w-[70vw]">
           <h1 className="text-clampheader md:text-clamptitle">
-            Why CISSP Success toolkit{" "}
+            <strong>
+              <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+                Why CISSP Success{" "}
+              </span>{" "}
+              <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+                toolkit
+              </span>
+            </strong>{" "}
           </h1>
-          <h1 className="leading-2 text-clamptitle md:text-clamptextmd">
-            {toolkitTitle}
-          </h1>
+          <h1 className="leading-2 mb-4 text-clamptextmd">{toolkitTitle}</h1>
           {toolkitData.map((data, index) => {
             return (
               <li className="px-6 text-clamptextsm" key={index}>
@@ -35,9 +40,12 @@ const Page4 = () => {
             );
           })}
         </div>
-        <div className="mx-auto flex h-[20rem] w-[20rem] bg-faq bg-contain bg-no-repeat"></div>
+        <div className="md:[20rem] md:[20rem] mx-auto flex h-[13rem] w-[13rem] bg-faq bg-contain bg-no-repeat"></div>
       </div>
-      <Button variant="outline" className="rounded-full border-2 text-white">
+      <Button
+        variant="outline"
+        className="mt-4 rounded-full border-2 text-white"
+      >
         Explore more
       </Button>
     </section>
