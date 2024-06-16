@@ -56,6 +56,9 @@ module.exports = {
         lgblue: {
           DEFAULT: "#11D1C8",
         },
+        footer: {
+          DEFAULT: "#4B4B4B",
+        },
       },
     },
   },

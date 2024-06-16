@@ -194,11 +194,11 @@ const Page3 = () => {
               className="mySwiper"
             >
               <SwiperSlide className="p-[13px]">
-                <div className="bg-elevated flex h-[25rem] w-[22rem] flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
+                <div className="bg-elevated flex h-[28rem] w-[20rem] flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
                   <div className="title flex justify-around p-4 text-center">
                     <svg
-                      width="50"
-                      height="46"
+                      width="45"
+                      height="38"
                       viewBox="0 0 54 60"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -215,24 +215,24 @@ const Page3 = () => {
                     </span>
                   </div>
                   {/* text points  */}
-                  <div className="flex flex-col py-2 text-center">
+                  <div className="flex flex-col items-center py-2">
                     <strong>
-                      <ul className="relative mt-4 text-clamptextsm">
-                        <li className="mb-6">
+                      <ul className="mt-4 flex flex-col items-center text-center text-clamptextsm">
+                        <li className="mb-3 px-4">
                           Adaptive plan to meet your learning pace.
                         </li>
-                        <li className="mb-6">
+                        <li className="mb-3 px-4">
                           2 Hours per day at your own ease.
                         </li>
-                        <li className="mb-6">
+                        <li className="mb-3 px-4">
                           Learn without getting overwhelmed.
                         </li>
-                        <li className="mb-6">Includes Revision Days.</li>
+                        <li className="mb-3 px-4">Includes Revision Days.</li>
                       </ul>
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
+                      className="mx-auto mb-4 mt-4 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
                       <FaArrowRightLong />
@@ -240,61 +240,12 @@ const Page3 = () => {
                   </div>
                 </div>
               </SwiperSlide>
-
               <SwiperSlide className="p-[13px]">
-                <div className="bg-elevated flex h-[25rem] w-[22rem] flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
+                <div className="bg-elevated flex h-[28rem] w-[20rem] flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
                   <div className="title flex justify-around p-4 text-center">
                     <svg
-                      width="50"
-                      height="46"
-                      viewBox="0 0 63 54"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M31.5 20.6658L21.5815 10.3612L31.5 0.0566406L41.4184 10.3612L31.5 20.6658ZM0.327637 53.0516V41.275C0.327637 39.6066 0.882598 38.2081 1.99252 37.0795C3.10245 35.9509 4.43671 35.3866 5.99533 35.3866H15.2762C16.2208 35.3866 17.1182 35.632 17.9683 36.1227C18.8185 36.6134 19.5033 37.2758 20.0229 38.11C21.3926 40.0237 23.0811 41.5203 25.0884 42.5999C27.0957 43.6794 29.2329 44.2191 31.5 44.2191C33.8143 44.2191 35.9751 43.6794 37.9824 42.5999C39.9897 41.5203 41.6546 40.0237 42.977 38.11C43.591 37.2758 44.3113 36.6134 45.1378 36.1227C45.9644 35.632 46.8263 35.3866 47.7237 35.3866H57.0046C58.6104 35.3866 59.9565 35.9509 61.0428 37.0795C62.1291 38.2081 62.6723 39.6066 62.6723 41.275V53.0516H42.8353V46.3537C41.1823 47.5804 39.3993 48.5127 37.4865 49.1506C35.5736 49.7885 33.5781 50.1075 31.5 50.1075C29.469 50.1075 27.4853 49.7763 25.5489 49.1138C23.6124 48.4514 21.8176 47.5068 20.1646 46.2801V53.0516H0.327637ZM8.82918 32.4425C6.46764 32.4425 4.46033 31.5838 2.80725 29.8663C1.15418 28.1489 0.327637 26.0634 0.327637 23.61C0.327637 21.1074 1.15418 19.0097 2.80725 17.3168C4.46033 15.6239 6.46764 14.7775 8.82918 14.7775C11.2379 14.7775 13.2571 15.6239 14.8865 17.3168C16.516 19.0097 17.3307 21.1074 17.3307 23.61C17.3307 26.0634 16.516 28.1489 14.8865 29.8663C13.2571 31.5838 11.2379 32.4425 8.82918 32.4425ZM54.1707 32.4425C51.8092 32.4425 49.8019 31.5838 48.1488 29.8663C46.4957 28.1489 45.6692 26.0634 45.6692 23.61C45.6692 21.1074 46.4957 19.0097 48.1488 17.3168C49.8019 15.6239 51.8092 14.7775 54.1707 14.7775C56.5795 14.7775 58.5986 15.6239 60.2281 17.3168C61.8575 19.0097 62.6723 21.1074 62.6723 23.61C62.6723 26.0634 61.8575 28.1489 60.2281 29.8663C58.5986 31.5838 56.5795 32.4425 54.1707 32.4425Z"
-                        fill="#FFD600"
-                        fillOpacity="0.933333"
-                      />
-                    </svg>
-
-                    <span>
-                      <strong>100 Days of Success Plan ($250)</strong>{" "}
-                    </span>
-                  </div>
-                  {/* text points  */}
-                  <div className="flex flex-col py-2 text-center">
-                    <strong>
-                      <ul className="relative mt-4 text-clamptextsm">
-                        <li className="mb-6">
-                          Adaptive plan to meet your learning pace.
-                        </li>
-                        <li className="mb-6">
-                          2 Hours per day at your own ease.
-                        </li>
-                        <li className="mb-6">
-                          Learn without getting overwhelmed.
-                        </li>
-                        <li className="mb-6">Includes Revision Days.</li>
-                      </ul>
-                    </strong>
-                    <Button
-                      variant="outline"
-                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
-                    >
-                      Know More
-                      <FaArrowRightLong />
-                    </Button>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide className="p-[13px]">
-                <div className="bg-elevated flex h-[25rem] w-[22rem] flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
-                  <div className="title flex justify-around p-4 text-center">
-                    <svg
-                      width="50"
-                      height="46"
+                      width="45"
+                      height="38"
                       viewBox="0 0 54 60"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -311,24 +262,71 @@ const Page3 = () => {
                     </span>
                   </div>
                   {/* text points  */}
-                  <div className="flex flex-col py-2 text-center">
+                  <div className="flex flex-col items-center py-2">
                     <strong>
-                      <ul className="relative mt-4 text-clamptextsm">
-                        <li className="mb-6">
+                      <ul className="mt-4 flex flex-col items-center text-center text-clamptextsm">
+                        <li className="mb-3 px-4">
                           Adaptive plan to meet your learning pace.
                         </li>
-                        <li className="mb-6">
+                        <li className="mb-3 px-4">
                           2 Hours per day at your own ease.
                         </li>
-                        <li className="mb-6">
+                        <li className="mb-3 px-4">
                           Learn without getting overwhelmed.
                         </li>
-                        <li className="mb-6">Includes Revision Days.</li>
+                        <li className="mb-3 px-4">Includes Revision Days.</li>
                       </ul>
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
+                      className="mx-auto mb-4 mt-4 w-[12rem] justify-around rounded-full p-4"
+                    >
+                      Know More
+                      <FaArrowRightLong />
+                    </Button>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="p-[13px]">
+                <div className="bg-elevated flex h-[28rem] w-[20rem] flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
+                  <div className="title flex justify-around p-4 text-center">
+                    <svg
+                      width="45"
+                      height="38"
+                      viewBox="0 0 54 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.39041 59.7733C4.77109 59.7733 3.38485 59.1967 2.23169 58.0435C1.07853 56.8904 0.501953 55.5041 0.501953 53.8848V12.6656C0.501953 11.0463 1.07853 9.66002 2.23169 8.50687C3.38485 7.35371 4.77109 6.77713 6.39041 6.77713H9.33464V0.888672H15.2231V6.77713H38.7769V0.888672H44.6654V6.77713H47.6096C49.229 6.77713 50.6152 7.35371 51.7684 8.50687C52.9215 9.66002 53.4981 11.0463 53.4981 12.6656V53.8848C53.4981 55.5041 52.9215 56.8904 51.7684 58.0435C50.6152 59.1967 49.229 59.7733 47.6096 59.7733H6.39041ZM6.39041 53.8848H47.6096V24.4425H6.39041V53.8848ZM6.39041 18.5541H47.6096V12.6656H6.39041V18.5541ZM27 36.2194C26.1658 36.2194 25.4666 35.9373 24.9023 35.373C24.3379 34.8087 24.0558 34.1094 24.0558 33.2752C24.0558 32.441 24.3379 31.7417 24.9023 31.1774C25.4666 30.6131 26.1658 30.331 27 30.331C27.8342 30.331 28.5335 30.6131 29.0978 31.1774C29.6621 31.7417 29.9443 32.441 29.9443 33.2752C29.9443 34.1094 29.6621 34.8087 29.0978 35.373C28.5335 35.9373 27.8342 36.2194 27 36.2194ZM15.2231 36.2194C14.3889 36.2194 13.6896 35.9373 13.1253 35.373C12.561 34.8087 12.2789 34.1094 12.2789 33.2752C12.2789 32.441 12.561 31.7417 13.1253 31.1774C13.6896 30.6131 14.3889 30.331 15.2231 30.331C16.0573 30.331 16.7566 30.6131 17.3209 31.1774C17.8852 31.7417 18.1673 32.441 18.1673 33.2752C18.1673 34.1094 17.8852 34.8087 17.3209 35.373C16.7566 35.9373 16.0573 36.2194 15.2231 36.2194ZM38.7769 36.2194C37.9427 36.2194 37.2435 35.9373 36.6792 35.373C36.1149 34.8087 35.8327 34.1094 35.8327 33.2752C35.8327 32.441 36.1149 31.7417 36.6792 31.1774C37.2435 30.6131 37.9427 30.331 38.7769 30.331C39.6111 30.331 40.3104 30.6131 40.8747 31.1774C41.439 31.7417 41.7212 32.441 41.7212 33.2752C41.7212 34.1094 41.439 34.8087 40.8747 35.373C40.3104 35.9373 39.6111 36.2194 38.7769 36.2194ZM27 47.9963C26.1658 47.9963 25.4666 47.7142 24.9023 47.1499C24.3379 46.5856 24.0558 45.8863 24.0558 45.0521C24.0558 44.2179 24.3379 43.5187 24.9023 42.9544C25.4666 42.39 26.1658 42.1079 27 42.1079C27.8342 42.1079 28.5335 42.39 29.0978 42.9544C29.6621 43.5187 29.9443 44.2179 29.9443 45.0521C29.9443 45.8863 29.6621 46.5856 29.0978 47.1499C28.5335 47.7142 27.8342 47.9963 27 47.9963ZM15.2231 47.9963C14.3889 47.9963 13.6896 47.7142 13.1253 47.1499C12.561 46.5856 12.2789 45.8863 12.2789 45.0521C12.2789 44.2179 12.561 43.5187 13.1253 42.9544C13.6896 42.39 14.3889 42.1079 15.2231 42.1079C16.0573 42.1079 16.7566 42.39 17.3209 42.9544C17.8852 43.5187 18.1673 44.2179 18.1673 45.0521C18.1673 45.8863 17.8852 46.5856 17.3209 47.1499C16.7566 47.7142 16.0573 47.9963 15.2231 47.9963ZM38.7769 47.9963C37.9427 47.9963 37.2435 47.7142 36.6792 47.1499C36.1149 46.5856 35.8327 45.8863 35.8327 45.0521C35.8327 44.2179 36.1149 43.5187 36.6792 42.9544C37.2435 42.39 37.9427 42.1079 38.7769 42.1079C39.6111 42.1079 40.3104 42.39 40.8747 42.9544C41.439 43.5187 41.7212 44.2179 41.7212 45.0521C41.7212 45.8863 41.439 46.5856 40.8747 47.1499C40.3104 47.7142 39.6111 47.9963 38.7769 47.9963Z"
+                        fill="#FFD600"
+                        fillOpacity="0.933333"
+                      />
+                    </svg>
+
+                    <span>
+                      <strong>100 Days of Success Plan ($250)</strong>{" "}
+                    </span>
+                  </div>
+                  {/* text points  */}
+                  <div className="flex flex-col items-center py-2">
+                    <strong>
+                      <ul className="mt-4 flex flex-col items-center text-center text-clamptextsm">
+                        <li className="mb-3 px-4">
+                          Adaptive plan to meet your learning pace.
+                        </li>
+                        <li className="mb-3 px-4">
+                          2 Hours per day at your own ease.
+                        </li>
+                        <li className="mb-3 px-4">
+                          Learn without getting overwhelmed.
+                        </li>
+                        <li className="mb-3 px-4">Includes Revision Days.</li>
+                      </ul>
+                    </strong>
+                    <Button
+                      variant="outline"
+                      className="mx-auto mb-4 mt-4 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
                       <FaArrowRightLong />

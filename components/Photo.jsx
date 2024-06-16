@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="relative min-h-[800px] min-w-[250px] md:min-w-[403px]">
+    <div className="relative min-h-[800px] min-w-[250px] lg:min-w-[390px]">
       <Image
         src="/assets/trainer.webp"
         priority
