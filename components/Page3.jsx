@@ -1,6 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Navigation } from "swiper/modules";
 
@@ -80,9 +81,10 @@ const Page3 = () => {
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] rounded-full p-4"
+                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
+                      <FaArrowRightLong />
                     </Button>
                   </div>
                 </div>
@@ -104,8 +106,8 @@ const Page3 = () => {
                       />
                     </svg>
 
-                    <span>
-                      <strong>100 Days of Success Plan ($250)</strong>{" "}
+                    <span className="flex w-[13rem]">
+                      <strong>60+ Hours of Live Exam Preparation</strong>{" "}
                     </span>
                   </div>
                   {/* text points  */}
@@ -126,9 +128,10 @@ const Page3 = () => {
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] rounded-full p-4"
+                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
+                      <FaArrowRightLong />
                     </Button>
                   </div>
                 </div>
@@ -172,9 +175,10 @@ const Page3 = () => {
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] rounded-full p-4"
+                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
+                      <FaArrowRightLong />
                     </Button>
                   </div>
                 </div>
@@ -228,9 +232,10 @@ const Page3 = () => {
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] rounded-full p-4"
+                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
+                      <FaArrowRightLong />
                     </Button>
                   </div>
                 </div>
@@ -275,9 +280,10 @@ const Page3 = () => {
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] rounded-full p-4"
+                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
+                      <FaArrowRightLong />
                     </Button>
                   </div>
                 </div>
@@ -322,9 +328,10 @@ const Page3 = () => {
                     </strong>
                     <Button
                       variant="outline"
-                      className="mx-auto mb-8 w-[12rem] rounded-full p-4"
+                      className="mx-auto mb-8 w-[12rem] justify-around rounded-full p-4"
                     >
                       Know More
+                      <FaArrowRightLong />
                     </Button>
                   </div>
                 </div>
@@ -334,9 +341,10 @@ const Page3 = () => {
         </div>
         <Button
           variant="outline"
-          className="mx-auto mb-8 mt-8 w-[12rem] rounded-full p-4"
+          className="mx-auto mb-8 mt-8 w-[12rem] justify-around rounded-full p-4"
         >
           Get Much More...
+          <FaArrowRightLong />
         </Button>
       </div>
     </section>

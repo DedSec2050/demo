@@ -1,5 +1,5 @@
 import { toolkitData, toolkitTitle } from "./data/Page4";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 import { Button } from "./ui/button";
 const Page4 = () => {
   return (
@@ -15,8 +15,11 @@ const Page4 = () => {
         <h1 className="text-clamptextsm text-black">
           <strong>Your Queries, Our Quick Solutions.</strong>
         </h1>
-        <Button className="rounded-full border-2 text-black" variant="outline">
-          Explore More
+        <Button
+          className="w-[14rem] justify-around rounded-full border-2 text-black"
+          variant="outline"
+        >
+          Explore More <FaArrowRightLong />
         </Button>
       </div>
       <div className="flex flex-col items-center justify-between px-4 md:flex-row">
@@ -44,9 +47,10 @@ const Page4 = () => {
       </div>
       <Button
         variant="outline"
-        className="mt-4 rounded-full border-2 text-white"
+        className="mt-4 w-[13rem] justify-around rounded-full border-2 text-white"
       >
         Explore more
+        <FaArrowRightLong />
       </Button>
     </section>
   );

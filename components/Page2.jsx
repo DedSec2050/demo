@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Photo from "./Photo";
 
 const text = [
@@ -46,8 +47,9 @@ const Page2 = () => {
                 </h2>
               );
             })}
-            <Button className="mt-[29px] w-[200px] rounded-full bg-gradient-to-r from-gray-400 to-accent hover:bg-gradient-to-r hover:from-accent hover:to-gray-400 xl:w-[362px]">
+            <Button className="mt-[29px] w-[200px] justify-around rounded-full bg-gradient-to-r from-gray-400 to-accent hover:bg-gradient-to-r hover:from-accent hover:to-gray-400 xl:w-[362px]">
               Talk to your Experts
+              <FaArrowRightLong />
             </Button>
           </div>
 
@@ -82,9 +84,10 @@ const Page2 = () => {
             </p>
             <Button
               variant="outline"
-              className="mb-6 mt-[29px] w-[180px] rounded-full xl:w-[362px]"
+              className="mb-6 mt-[29px] w-[180px] justify-around rounded-full xl:w-[302px]"
             >
               Know more
+              <FaArrowRightLong />
             </Button>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 // components
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
@@ -18,11 +18,12 @@ const Header = () => {
         </div>
         <Link href="/signin">
           <Button
-            className="hidden rounded-[2rem] xl:flex"
+            className="hidden w-[12rem] justify-around rounded-[2rem] xl:flex"
             size="lg"
             variant="outline"
           >
             Sign-In
+            <FaArrowRightLong />
           </Button>
         </Link>
         {/* mobile navigation  */}
