@@ -23,6 +23,13 @@ module.exports = {
       primary: "var(--font-jetbrainsMono)",
     },
     extend: {
+      dropShadow: {
+        xl: "0px 1px 5px rgba(250, 204, 0, 1)",
+        "4xl": [
+          "0 35px 35px rgba(0, 0, 0, 0.25)",
+          "0 45px 65px rgba(0, 0, 0, 0.15)",
+        ],
+      },
       backgroundImage: {
         herosection: "url(/assets/bgimageDark.webp)",
         faq: "url(/assets/faq-bg.webp)",
@@ -39,6 +46,9 @@ module.exports = {
         accent: {
           DEFAULT: "#FFD600",
           hover: "#11D1C8",
+        },
+        elevated: {
+          DEFAULT: "#021833",
         },
         grn: {
           DEFAULT: "#11D1C8",

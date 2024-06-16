@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+
 import Marquee from "react-fast-marquee";
-import "swiper/swiper-bundle.css";
+
 import Image from "next/image";
-import "swiper/css/autoplay";
 
 const imageStyle = {
   borderRadius: "10%",
