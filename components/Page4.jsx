@@ -1,9 +1,25 @@
-import React from "react";
 import { toolkitData, toolkitTitle } from "./data/Page4";
+
+import { Button } from "./ui/button";
 const Page4 = () => {
   return (
-    <section className="px-4">
-      <div className="items-centerjustify-between flex flex-col md:flex-row">
+    <section className="flex flex-col items-center justify-center">
+      <div className="flex h-[10rem] w-[100%] flex-col items-center justify-evenly bg-title bg-cover bg-center bg-no-repeat text-center leading-8">
+        <h1 className="text-clamptextmd">
+          <strong>
+            <span className="text-accent">
+              "FAQs: Uncover Answers Instantly!"
+            </span>
+          </strong>
+        </h1>
+        <h1 className="text-clamptextsm text-black">
+          <strong>Your Queries, Our Quick Solutions.</strong>
+        </h1>
+        <Button className="rounded-full border-2 text-black" variant="outline">
+          Explore More
+        </Button>
+      </div>
+      <div className="flex flex-col items-center justify-between px-4 md:flex-row">
         <div className="w-full md:w-[70vw]">
           <h1 className="text-clampheader md:text-clamptitle">
             Why CISSP Success toolkit{" "}
@@ -19,8 +35,11 @@ const Page4 = () => {
             );
           })}
         </div>
-        <div className="bg-faq mx-auto flex h-[20rem] w-[20rem] bg-contain bg-no-repeat"></div>
+        <div className="mx-auto flex h-[20rem] w-[20rem] bg-faq bg-contain bg-no-repeat"></div>
       </div>
+      <Button variant="outline" className="rounded-full border-2 text-white">
+        Explore more
+      </Button>
     </section>
   );
 };

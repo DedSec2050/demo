@@ -24,8 +24,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        herosection: "url(/assets/bgimage-nobg.png)",
+        herosection: "url(/assets/bgimageDark.webp)",
         faq: "url(/assets/faq-bg.webp)",
+        title: "url(/assets/title.webp)",
       },
       fontSize: {
         clampheader: "clamp(24px, 8vw, 44px)",
@@ -48,5 +49,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-debug-screens"),
+  ],
 };

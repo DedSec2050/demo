@@ -10,7 +10,7 @@ const Page7 = () => {
         </h1>
         <div className="relative mt-6 flex h-[50vh] w-[90%] bg-transparent md:h-[90vh]">
           <Image
-            src="/assets/comparision.webp"
+            src="/assets/comparisionScale.webp"
             priority
             quality={50}
             fill

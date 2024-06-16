@@ -11,6 +11,7 @@ const Page3 = () => {
             <span className="text-clamptextsm">(Updated 2024)</span>
           </h1>
         </div>
+        <div className="flex flex-row"></div>
       </div>
     </section>
   );

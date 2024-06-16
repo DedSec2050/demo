@@ -25,7 +25,7 @@ const Page2 = () => {
         <div className="order-2 flex flex-col gap-[30px] px-[13px] text-center md:order-none md:text-left xl:px-[40px]">
           {/* Text wrap  */}
           <div className="text-wrap1 flex flex-col items-center md:items-start">
-            <span className="text-[20px] font-bold md:text-[22px] xl:text-[24px]">
+            <span className="text-clamptitle font-bold">
               <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
                 Free{" "}
               </span>

@@ -18,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppin_global.variable}>
+      <body
+        className={`${process.env.NODE_ENV === "developement" ? "debug-screens" : ""} ${poppin_global.variable}`}
+      >
         <Header />
         {children}
       </body>
