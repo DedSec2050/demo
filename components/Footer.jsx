@@ -10,10 +10,10 @@ import { FaFacebook } from "react-icons/fa6";
 const Footer = () => {
   return (
     <section className="mt-[8rem]">
-      <div className="bg-footer flex flex-col items-center justify-between p-10 text-center">
+      <div className="flex flex-col items-center justify-between bg-footer p-10 text-center">
         <div className="flex w-[100%] flex-col items-start justify-center p-4 md:flex-row">
           <div className="flex w-[100%] flex-col items-center justify-center md:w-[50%] md:items-start">
-            <Image src="/Assets/cyberlg.webp" width={150} height={100} />
+            <Image src="/Assets/cyberlg.webp" alt="" width={150} height={100} />
             <div className="text-clamptextsm text-accent">Copyright @ 2024</div>
             <div className="text-clamptextsm">CISSP Success toolkit</div>
           </div>
