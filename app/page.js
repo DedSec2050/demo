@@ -1,9 +1,6 @@
-"use client";
 import Hero from "@/components/Hero";
 // import Popup from "@/components/Popup";
-import { useState, useEffect } from "react";
-import { CldVideoPlayer } from "next-cloudinary";
-import "next-cloudinary/dist/cld-video-player.css";
+
 import Page2 from "@/components/Page2";
 import Page3 from "@/components/Page3";
 import Page4 from "@/components/Page4";

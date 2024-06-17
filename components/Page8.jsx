@@ -64,10 +64,9 @@ const Page8 = () => {
           <Image
             src="/assets/trainerConnect.webp"
             priority
+            fill
             quality={50}
-            layout="fill"
             alt=""
-            objectFit="cover"
           />
         </div>
         <div className="mt-4 flex max-w-[700px] px-4">

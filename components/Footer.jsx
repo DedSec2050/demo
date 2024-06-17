@@ -57,13 +57,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="socials relative bottom-0 mt-10 flex w-screen flex-row items-center justify-center gap-3 text-accent">
-          <hr class="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
+          <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
           <BsLinkedin />
           <FaFacebook />
           <FiInstagram />
           <TiSocialTwitter />
           <AiFillYoutube />
-          <hr class="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
+          <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
         </div>
       </div>
     </section>

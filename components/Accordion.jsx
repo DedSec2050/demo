@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { FiMinusCircle } from "react-icons/fi";
 import { FiPlusCircle } from "react-icons/fi";

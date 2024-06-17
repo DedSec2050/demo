@@ -32,7 +32,7 @@ const Page3 = () => {
             </strong>
           </h1>
         </div>
-        <div className="container flex h-[30rem] w-[25rem] flex-row items-center justify-center overflow-hidden text-accent md:px-8 lg:w-full">
+        <div className="container flex h-[30rem] flex-row items-center justify-center overflow-hidden text-accent md:w-[25rem] md:px-8 lg:w-full">
           {width > 950 ? (
             <Swiper
               slidesPerView={2}
@@ -191,13 +191,13 @@ const Page3 = () => {
               // centeredSlides={true}
               loop={true}
               modules={[Navigation]}
-              className="mySwiper"
+              className="mySwiper max-w-[20rem] sm:max-w-[25rem]"
             >
               <SwiperSlide className="p-[13px]">
-                <div className="flex h-[28rem] w-[19rem] flex-col justify-center overflow-hidden rounded-xl bg-elevated drop-shadow-xl">
-                  <div className="title flex justify-around p-4 text-center">
+                <div className="mt-[1rem] flex h-[28rem] w-[16rem] flex-col justify-center overflow-hidden rounded-xl bg-elevated drop-shadow-xl sm:w-[19rem]">
+                  <div className="title flex justify-around px-2 pt-8 text-center sm:pt-4">
                     <svg
-                      width="45"
+                      width="40"
                       height="38"
                       viewBox="0 0 54 60"
                       fill="none"
@@ -241,10 +241,10 @@ const Page3 = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="p-[13px]">
-                <div className="flex h-[28rem] w-[19rem] flex-col justify-center overflow-hidden rounded-xl bg-elevated drop-shadow-xl">
-                  <div className="title flex justify-around p-4 text-center">
+                <div className="mt-[1rem] flex h-[28rem] w-[16rem] flex-col justify-center overflow-hidden rounded-xl bg-elevated drop-shadow-xl sm:w-[19rem]">
+                  <div className="title flex justify-around px-2 pt-8 text-center sm:pt-4">
                     <svg
-                      width="45"
+                      width="40"
                       height="38"
                       viewBox="0 0 54 60"
                       fill="none"
@@ -288,10 +288,10 @@ const Page3 = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="p-[13px]">
-                <div className="flex h-[28rem] w-[19rem] flex-col justify-center overflow-hidden rounded-xl bg-elevated drop-shadow-xl">
-                  <div className="title flex justify-around p-4 text-center">
+                <div className="mt-[1rem] flex h-[28rem] w-[16rem] flex-col justify-center overflow-hidden rounded-xl bg-elevated drop-shadow-xl sm:w-[19rem]">
+                  <div className="title flex justify-around px-2 pt-8 text-center sm:pt-4">
                     <svg
-                      width="45"
+                      width="40"
                       height="38"
                       viewBox="0 0 54 60"
                       fill="none"
