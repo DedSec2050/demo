@@ -15,17 +15,6 @@ const Page6 = () => {
             </span>
           </strong>
         </h1>
-        {/* Insert Timeline here */}
-        <div className="relative hidden h-[90vh] w-[90%] bg-transparent md:flex">
-          <Image
-            src="/assets/timeline-bg3.png"
-            alt=""
-            priority
-            quality={50}
-            fill
-            className="object-contain"
-          />
-        </div>
       </div>
     </section>
   );

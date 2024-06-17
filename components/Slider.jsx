@@ -30,7 +30,7 @@ const Slider = () => {
   });
 
   return (
-    <div className="container mt-7 text-center">
+    <div className="mt-7 px-6 text-center">
       <Marquee>{demolist}</Marquee>
     </div>
   );

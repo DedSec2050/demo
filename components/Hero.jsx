@@ -3,7 +3,7 @@ import Slider from "./Slider";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col justify-center bg-herosection bg-cover bg-center bg-no-repeat xl:bg-contain">
+    <div className="relative flex h-[100vh] flex-col justify-center bg-herosection bg-cover bg-center bg-no-repeat xl:bg-cover">
       {/* Text  */}
       <div className="text-center">
         <div className="inline-block">
