@@ -1,6 +1,7 @@
 import React from "react";
-import Slider from "../Slider";
 
+import Slider from "../Slider";
+import HeroSlider from "../HeroSlider";
 const Hero = () => {
   return (
     <div className="relative flex h-[100vh] w-[100%] flex-col justify-center bg-herosection bg-cover bg-center bg-no-repeat xl:bg-cover">
@@ -34,6 +35,7 @@ const Hero = () => {
       </div>
 
       <Slider />
+      <HeroSlider />
     </div>
   );
 };
