@@ -17,11 +17,11 @@ export default function Home() {
       <Hero />
       <Resources />
       <BootCampSlider />
+      <Comparision />
       <Toolkit />
       <Schedule />
       <Roadmap />
       <Timeline />
-      <Comparision />
       <Testimonials />
       <AccordionWrap />
     </main>
