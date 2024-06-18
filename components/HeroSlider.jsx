@@ -13,12 +13,15 @@ const HeroSlider = () => {
   let demolist = [];
   demos.forEach((demo, index) => {
     demolist.push(
-      <div key={index} className="mr-[5rem] mt-4 w-[100%] text-sky-500">
+      <div
+        key={index}
+        className="mt-4 flex w-[100%] items-start justify-center"
+      >
         {
           <Image
             src={`${demo}`}
-            width={300}
-            height={400}
+            width={265}
+            height={49}
             className={`${index}` + ""}
             alt=""
           />
@@ -28,8 +31,8 @@ const HeroSlider = () => {
   });
 
   return (
-    <div className="mt-7 px-6 text-center">
-      <Marquee>{demolist}</Marquee>
+    <div className="mt-7 flex w-[100%] items-center justify-center px-6 text-center">
+      {demolist}
     </div>
   );
 };

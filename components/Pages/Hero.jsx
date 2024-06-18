@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "../Slider";
 import HeroSlider from "../HeroSlider";
-import Header from "../Header";
+
 const Hero = () => {
   return (
     <>

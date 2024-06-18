@@ -15,15 +15,9 @@ const Page4 = () => {
         <h1 className="text-clamptextsm text-black">
           <strong>Your Queries, Our Quick Solutions.</strong>
         </h1>
-        <Button
-          className="w-[14rem] justify-around rounded-full border-2 text-black"
-          variant="outline"
-        >
-          Explore More <FaArrowRightLong />
-        </Button>
       </div>
       <div className="flex flex-col items-center justify-between px-4 md:flex-row">
-        <div className="w-full md:w-[70vw]">
+        <div className="mt-8 w-full md:w-[70vw]">
           <h1 className="text-clampheader md:text-clamptitle">
             <strong>
               <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
