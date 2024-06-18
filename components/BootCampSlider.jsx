@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 const Card = () => {
   return (
     <div
-      className={`testimonial-card flex-grow-2 [&:hover>] m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-accent hover:text-blue-600 sm:w-[20rem] [&:hover>Button]:bg-blue-700 [&:hover>Button]:text-black [&:hover>div>div>span]:text-black [&:hover>div>ul>li>span]:text-blue-600 [&:hover>div>ul]:text-black`}
+      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-accent hover:text-blue-600 sm:w-[20rem] [&:hover>Button]:bg-blue-700 [&:hover>Button]:text-black [&:hover>div>div>span]:text-black [&:hover>div>ul>li>span]:text-blue-600 [&:hover>div>ul]:text-black`}
     >
       <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
         <div className="flex items-center">
