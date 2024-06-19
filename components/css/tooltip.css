@@ -1,0 +1,45 @@
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .icon {
+  margin: 0 20px;
+}
+.wrapper .icon {
+  box-shadow: 0 10px 10px rgba(0, 0, 125, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .icon .tooltip {
+  background: #021833;
+  font-size: 1rem;
+  border-radius: 25px;
+  position: absolute;
+  border-width: 2px;
+  border-color: yellowgreen;
+
+  padding: 8px 18px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(15px);
+}
+.wrapper .icon:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translateY(-60px);
+}
+
+.wrapper .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #021833;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-color: yellowgreen;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}

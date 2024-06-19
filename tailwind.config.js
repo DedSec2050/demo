@@ -29,6 +29,11 @@ module.exports = {
           "0 35px 35px rgba(0, 0, 0, 0.25)",
           "0 45px 65px rgba(0, 0, 0, 0.15)",
         ],
+        blue: "0px 1px 5px rgba(41, 158, 245, 0.8)",
+        "4xl": [
+          "0 35px 35px rgba(0, 0, 0, 0.25)",
+          "0 45px 65px rgba(0, 0, 0, 0.15)",
+        ],
       },
       backgroundImage: {
         herosection: "url(/assets/bgimageDark.webp)",

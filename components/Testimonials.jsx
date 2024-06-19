@@ -81,23 +81,23 @@ const Page8 = () => {
           {list.map((data, index) => {
             return (
               <div className="mt-[150px] w-[100%] px-10" key={index}>
-                <div className="flex h-full w-[20rem] flex-col rounded-[10%] border-4 border-accent">
+                <div className="flex w-[20rem] flex-col rounded-[10%] border-4 border-accent">
                   <div className="image flex translate-y-[-75px] flex-col items-center justify-center overflow-hidden py-2">
-                    <div className="bg-blue overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-xl">
+                    <div className="bg-blue overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue">
                       <Image
                         src="/assets/Testimonials/demo.webp"
                         alt=""
-                        width={150}
-                        height={100}
+                        width={130}
+                        height={80}
                       />
                     </div>
-                    <div className="name text-[1.5rem]">{data.name}</div>
-                    <div className="sep text-clamptextsm">
+                    <div className="name mt-6 text-[1rem]">{data.name}</div>
+                    <div className="sep text-[0.75rem]">
                       Nailed CISSP in {data.time}
                     </div>
                   </div>
-                  <div className="justify-centers flex translate-y-[-30px] flex-col items-center px-4 text-center">
-                    <div className="text-clamptextsm">{data.text}</div>
+                  <div className="justify-centers flex translate-y-[-40px] flex-col items-center px-4 text-center">
+                    <div className="text-[0.85rem]">{data.text}</div>
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@ const Page8 = () => {
             </span>
           </strong>
         </h1>
-        <div className="relative mt-8 h-[12rem] min-h-[12em] w-[15em] overflow-hidden rounded-lg border-4 border-accent md:h-[22rem] md:w-[30rem]">
+        <div className="relative mt-8 h-[12rem] min-h-[12rem] w-[15rem] overflow-hidden rounded-lg border-4 border-accent md:h-[21rem] md:w-[30rem]">
           <Image
             src="/assets/trainerConnect.webp"
             priority
