@@ -4,6 +4,7 @@ import "./globals.css";
 // Components
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Popup from "@/components/Popup";
 
 export const metadata = {
   title: "DemoApp",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Popup />
         <Header />
         {children}
         <Footer />
