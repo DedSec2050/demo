@@ -41,8 +41,8 @@ module.exports = {
         title: "url(/assets/title.webp)",
       },
       fontSize: {
-        clampheader: "clamp(24px, 8vw, 50px)",
-        clamptitle: "clamp(20px, 6vw, 40px)",
+        clampheader: "clamp(24px, 6vw, 60px)",
+        clamptitle: "clamp(20px, 30px, 40px)",
         clamptextsm: "clamp(13px, 4vw, 16px)",
         clamptextmd: "clamp(22px, 4vw, 30px)",
       },

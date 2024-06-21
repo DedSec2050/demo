@@ -4,9 +4,11 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 
 import Image from "next/image";
+import { border } from "@cloudinary/url-gen/qualifiers/background";
 
 const imageStyle = {
   borderRadius: "10%",
+  border: "5px solid yellow",
 };
 const Slider = () => {
   const demos = ["demo1 ", "demo2 ", "demo3 ", "demo4 ", "demo5"];
@@ -14,7 +16,7 @@ const Slider = () => {
   let demolist = [];
   demos.forEach((demo, index) => {
     demolist.push(
-      <div key={index} className="mr-[5rem] mt-4 w-[100%] text-sky-500">
+      <div key={index} className="mr-[5rem] mt-4">
         {
           <Image
             src="/assets/SliderAssets/slider1.webp"

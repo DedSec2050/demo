@@ -24,16 +24,16 @@ const Hero = () => {
               </span>{" "}
             </h1>
           </div>
-
-          <h1 className="mb-2 text-clamptitle font-extralight">
-            10X enabler for your{" "}
-            <span className="font-semibold text-accent">CISSP</span> Success!{" "}
+          <hr className="mb-35 mx-auto h-[1px] w-[15rem] translate-y-[-15px] rounded border-0 bg-accent xl:w-[40rem]"></hr>
+          <h1 className="mb-2 text-clamptitle font-[700]">
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+              Pass the CISSP Exam
+              <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+                {" "}
+                with 10x confidence
+              </span>
+            </span>
           </h1>
-          <hr className="mx-auto mb-5 h-1 w-[15rem] rounded border-0 bg-accent xl:w-[40rem]"></hr>
-
-          <p className="text-grey mt-2 text-clamptextsm">
-            Your information will remain 100% private!
-          </p>
         </div>
 
         <Slider />

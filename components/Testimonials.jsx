@@ -81,22 +81,24 @@ const Page8 = () => {
           {list.map((data, index) => {
             return (
               <div className="mt-[150px] w-[100%] px-10" key={index}>
-                <div className="flex w-[20rem] flex-col rounded-[10%] border-4 border-accent">
-                  <div className="image flex translate-y-[-75px] flex-col items-center justify-center overflow-hidden py-2">
-                    <div className="bg-blue overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue">
+                <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-4 border-accent">
+                  <div className="image flex translate-y-[-45px] py-2">
+                    <div className="bg-blue h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue">
                       <Image
                         src="/assets/Testimonials/demo.webp"
                         alt=""
-                        width={130}
-                        height={80}
+                        width={100}
+                        height={50}
                       />
-                    </div>
-                    <div className="name mt-6 text-[1rem]">{data.name}</div>
-                    <div className="sep text-[0.75rem]">
-                      Nailed CISSP in {data.time}
                     </div>
                   </div>
                   <div className="justify-centers flex translate-y-[-40px] flex-col items-center px-4 text-center">
+                    <div className="name mt-6 translate-y-[-30px] text-[1rem]">
+                      {data.name}
+                    </div>
+                    <div className="sep translate-y-[-28px] text-[0.75rem]">
+                      Nailed CISSP in {data.time}
+                    </div>
                     <div className="text-[0.85rem]">{data.text}</div>
                   </div>
                 </div>
