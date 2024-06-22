@@ -11,7 +11,13 @@ const Header = () => {
       <div className="mx-auto flex items-center justify-between px-[1.5em]">
         <div className="flex max-h-[150px] max-w-[256px]">
           <Link href="/">
-            <Image src="/assets/cyberlg.webp" alt="" width={150} height={100} />
+            <Image
+              layout="responsive"
+              src="/assets/cyberlg.webp"
+              alt=""
+              width={150}
+              height={100}
+            />
           </Link>
         </div>
 

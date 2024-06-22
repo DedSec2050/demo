@@ -8,32 +8,33 @@ import { border } from "@cloudinary/url-gen/qualifiers/background";
 
 const imageStyle = {
   borderRadius: "10%",
-  border: "5px solid yellow",
+  border: "3px solid yellow",
 };
 const Slider = () => {
   const demos = ["demo1 ", "demo2 ", "demo3 ", "demo4 ", "demo5"];
   const pic = ["/assets/SliderAssets/slider1.webp"];
-  let demolist = [];
-  demos.forEach((demo, index) => {
-    demolist.push(
-      <div key={index} className="mr-[5rem] mt-4">
-        {
-          <Image
-            src="/assets/SliderAssets/slider1.webp"
-            width={300}
-            height={400}
-            style={imageStyle}
-            className={`${index}` + ""}
-            alt=""
-          />
-        }
-      </div>,
-    );
-  });
 
   return (
-    <div className="mt-7 px-6 text-center">
-      <Marquee>{demolist}</Marquee>
+    <div className="text- relative flex w-[90%]">
+      <Marquee>
+        {demos.map((url, index) => {
+          return (
+            <div
+              className="mr-[6.5rem] flex h-[25vh] w-[25vh] md:h-[35vh] md:w-[35vh]"
+              key={index}
+            >
+              <Image
+                layout="responsive"
+                src="/assets/SliderAssets/slider1.webp"
+                alt="slider"
+                style={({ width: "auto", height: "auto" }, imageStyle)}
+                height={290}
+                width={300}
+              ></Image>
+            </div>
+          );
+        })}
+      </Marquee>
     </div>
   );
 };

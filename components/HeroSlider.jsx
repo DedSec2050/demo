@@ -35,17 +35,24 @@ const HeroSlider = () => {
               <div className="tooltip bg-red-600 text-clamptextsm text-white">
                 <strong>{`${demo.rating}`}</strong>
               </div>
-              <Image src={`${demo.url}`} height={30} width={30} alt="" />
+              <Image
+                layout="responsive"
+                src={`${demo.url}`}
+                height={30}
+                width={30}
+                alt=""
+              />
             </div>
           </div>
         </div>
 
         <div
           key={index}
-          className="mt-4 hidden w-[100%] items-start justify-center lg:flex"
+          className="mt-4 hidden w-[100%] items-start justify-center px-5 lg:flex"
         >
           {
             <Image
+              layout="responsive"
               src={`${demo.urlxl}`}
               width={265}
               height={49}
