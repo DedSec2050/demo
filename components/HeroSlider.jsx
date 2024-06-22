@@ -54,8 +54,8 @@ const HeroSlider = () => {
             <Image
               layout="responsive"
               src={`${demo.urlxl}`}
-              width={265}
-              height={49}
+              width={649}
+              height={122}
               className={`${index}` + ""}
               alt="slider"
             />
