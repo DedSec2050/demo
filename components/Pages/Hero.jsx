@@ -11,7 +11,7 @@ const Hero = () => {
         {/* Text  */}
         <div className="text-center">
           <div className="inline-block">
-            <h1 className="mb-1 text-clampheader font-bold">
+            <h1 className="xxl:text-[4vw] mb-1 text-clampheader font-bold">
               <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
                 CISSP
               </span>
@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
           </div>
           <hr className="mb-35 mx-auto h-[1px] w-[15rem] translate-y-[-15px] rounded border-0 bg-accent xl:w-[50rem]"></hr>
-          <h1 className="mb-2 text-clamptitle font-[700]">
+          <h1 className="xxl:text-[2.5vw] mb-2 text-clamptitle font-[700]">
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
               Pass the CISSP Exam
               <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
