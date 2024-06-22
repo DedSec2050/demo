@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "../components/css/tooltip.css";
+import img from "../public/assets/MarqueeAssets/tags-one.webp";
 const HeroSlider = () => {
   const demos = [
     {
@@ -53,7 +54,7 @@ const HeroSlider = () => {
           {
             <Image
               layout="responsive"
-              src={demo.urlxl}
+              src={img}
               width={649}
               height={122}
               className={`${index}` + ""}
