@@ -4,12 +4,12 @@ import "../components/css/tooltip.css";
 const HeroSlider = () => {
   const demos = [
     {
-      urlxl: "/assets/MarqueeAssets/tags1.webp ",
+      urlxl: "/assets/MarqueeAssets/tags-one.webp ",
       url: "/assets/MarqueeAssets/udemylogo.webp",
       rating: "4.5/5.0",
     },
     {
-      urlxl: "/assets/MarqueeAssets/tags2.webp ",
+      urlxl: "/assets/MarqueeAssets/tags-two.webp ",
       url: "/assets/MarqueeAssets/googlelogo.webp",
       rating: "4.1/5.0",
     },
