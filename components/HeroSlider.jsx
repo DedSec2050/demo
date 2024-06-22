@@ -53,7 +53,7 @@ const HeroSlider = () => {
           {
             <Image
               layout="responsive"
-              src={`${demo.urlxl}`}
+              src={demo.urlxl}
               width={649}
               height={122}
               className={`${index}` + ""}
