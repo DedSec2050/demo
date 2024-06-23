@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaWhatsappSquare } from "react-icons/fa";
 import Image from "next/image";
 // components
 import Nav from "./Nav";
@@ -9,7 +10,7 @@ const Header = () => {
   return (
     <header className="w-[100%] py-2 text-white xl:py-4">
       <div className="mx-auto flex items-center justify-between px-[1.5em]">
-        <div className="flex max-h-[150px] max-w-[256px]">
+        <div className="flex max-h-[150px] w-[18vw] max-w-[250px]">
           <Link href="/">
             <Image
               layout="responsive"
@@ -25,14 +26,14 @@ const Header = () => {
         <div className="hidden items-center gap-8 xl:flex">
           <Nav />
         </div>
+
         <Link href="/signin">
           <Button
-            className="hidden w-[12rem] justify-around rounded-[2rem] xl:flex"
+            className="hidden w-[9rem] justify-around rounded-[2rem] text-white xl:flex"
             size="lg"
             variant="outline"
           >
-            Sign-In
-            <FaArrowRightLong />
+            Sign-In <FaArrowRightLong />
           </Button>
         </Link>
         {/* mobile navigation  */}

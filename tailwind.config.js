@@ -18,7 +18,7 @@ module.exports = {
       md: "800px",
       lg: "960px",
       xl: "1100px",
-      xxl: "2048px",
+      xxl: "2560px",
     },
     fontFamily: {
       primary: "var(--font-jetbrainsMono)",
@@ -42,10 +42,11 @@ module.exports = {
         title: "url(/assets/title.webp)",
       },
       fontSize: {
-        clampheader: "clamp(24px, 6vw, 70px)",
-        clamptitle: "clamp(20px, 4vw, 40px)",
+        clampheader: "clamp(24px, 4vw, 60px)",
+        clamptitle: "clamp(20px, 3vw, 35px)",
         clamptextsm: "clamp(13px, 4vw, 16px)",
         clamptextmd: "clamp(22px, 4vw, 30px)",
+        clamptextnav: "clamp(15px, 3vw, 30px)",
       },
       colors: {
         primary: "#060F38",
