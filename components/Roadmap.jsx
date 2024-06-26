@@ -8,10 +8,10 @@ const Page6 = () => {
       <div className="flex flex-col items-center">
         <h1 className="text-center text-clamptitle">
           <strong>
-            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent xxl:text-[2.5vw]">
               Experience the CISSP Success
             </span>{" "}
-            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent xxl:text-[2.5vw]">
               Toolkit - Roadmap
             </span>
           </strong>

@@ -14,7 +14,7 @@ const Guidelines = () => {
         </h1>
       </div>
       <div className="flex">
-        <h1 className="text-clamptextmd font-semibold text-accent xxl:text-[1.5vw]">
+        <h1 className="text-clamptextmd font-semibold text-accent xxl:mb-[4vh] xxl:mt-[6vh] xxl:text-[1.5vw]">
           Updated as per new guidelines from April 2024
         </h1>
       </div>
@@ -30,10 +30,10 @@ const Guidelines = () => {
         CISSP Success Toolkit is the one and only program which trains you for
         the challenging CISSP exam through our 60+hours of Live Exam practice.
       </div>
-      <div className="flex justify-center py-4 text-center text-clamptextsmm font-medium leading-10 xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
+      <div className="flex justify-center py-4 text-center text-clamptextsmm font-medium leading-10 xxl:mb-[4vh] xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
         This is just one feature, let me tell you more.
       </div>
-      <div className="mb-7 mt-8 h-[52vh] w-[62vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 xxl:max-h-[750px] xxl:w-[55vw] xxl:max-w-[1400px]"></div>
+      <div className="mb-7 mt-8 h-[20vh] w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:h-[52vh] md:w-[62vw] xl:max-h-[720px] xl:max-w-[1080px] xxl:max-h-[750px] xxl:w-[55vw] xxl:max-w-[1400px]"></div>
     </section>
   );
 };

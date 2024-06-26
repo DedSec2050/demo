@@ -7,6 +7,9 @@
     @apply m-0 box-border bg-primary p-0 font-primary leading-loose text-white;
   }
 }
+.floating {
+  background-image: radial-gradient(#65656d0e 10%, #a1a1a711 10%);
+}
 
 ::-webkit-scrollbar {
   display: none;

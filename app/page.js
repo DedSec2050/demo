@@ -10,6 +10,8 @@ import Testimonials from "../components/Testimonials";
 import AccordionWrap from "../components/AccordionWrap";
 import Guidelines from "@/components/Guidelines";
 import Connect from "@/components/Connect";
+import Resources from "./resources/page";
+import Positions from "@/components/Positions";
 
 export default function Home() {
   return (
@@ -19,11 +21,13 @@ export default function Home() {
       {/* <Resources /> */}
       <BootCampSlider />
       <Comparision />
-      <Toolkit />
-      <Schedule />
+      <Resources />
       <Roadmap />
+      <Positions />
       <Connect />
+      <Schedule />
       <Testimonials />
+
       <AccordionWrap />
     </main>
   );

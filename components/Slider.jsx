@@ -16,7 +16,7 @@ const Slider = () => {
 
   return (
     <div className="relative flex w-[90%]">
-      <Marquee>
+      <Marquee direction="right">
         {demos.map((url, index) => {
           return (
             <div

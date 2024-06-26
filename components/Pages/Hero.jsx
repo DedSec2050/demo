@@ -5,12 +5,13 @@ import HeroSlider from "../HeroSlider";
 import Image from "next/image";
 import logo from "../../public/assets/HeroSection/herologo.webp";
 import trainer from "../../public/assets/HeroSection/herotrainer.webp";
+import float from "../../public/assets/floating.webp";
 
 const Hero = () => {
   return (
     <div className="pb-[30px]">
       <div className="flex w-full flex-col-reverse items-center justify-center md:h-[75vh] md:flex-row">
-        <div className="relative z-[-1] flex h-[30v] w-[25v] items-center justify-center md:h-[65vh] md:w-[30.3%]">
+        <div className="relative z-[-1] mb-[60px] mt-[40px] flex h-[30vh] w-[25vh] items-center justify-center sm:mb-0 sm:mt-0 md:h-[65vh] md:w-[30.3%]">
           <Image
             layout="responsive"
             style={{ width: "100%", height: "auto" }}
@@ -53,6 +54,15 @@ const Hero = () => {
               <Slider />
             </div>
           </div>
+        </div>
+        <div className="floating fixed bottom-[14vh] right-[2vw] z-10 h-[8vw] w-[8vw] rounded-full border-2 border-white p-2 hover:cursor-pointer xxl:h-[5vw] xxl:w-[5vw]">
+          <Image
+            layout="responsive"
+            height={100}
+            width={100}
+            src={float}
+            alt="hero-trainer"
+          />
         </div>
       </div>
       <HeroSlider />

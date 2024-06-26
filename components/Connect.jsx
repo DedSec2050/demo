@@ -54,7 +54,7 @@ const Connect = () => {
               <div className="">
                 <Button
                   variant="outline"
-                  className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[24vw]"
+                  className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[24vw] xxl:text-[1vw]"
                 >
                   Follow me on {data.data}
                 </Button>
@@ -65,7 +65,7 @@ const Connect = () => {
       </div>
 
       <div className="mt-4 flex max-w-[90vw] px-4 md:mt-[35px]">
-        <p className="text-center text-clamptextsmm italic xxl:text-[2.5vw]">
+        <p className="text-center text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
           {desc}
         </p>
       </div>

@@ -8,8 +8,8 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className="w-[100%] py-2 text-white xl:py-4">
-      <div className="mx-auto flex items-center justify-between px-[1.5em]">
+    <header className="w-[100%] py-2 text-white">
+      <div className="mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
         <div className="flex max-h-[150px] w-[18vw] max-w-[250px]">
           <Link href="/">
             <Image
@@ -29,7 +29,7 @@ const Header = () => {
 
         <Link href="/signin">
           <Button
-            className="hidden w-[9rem] justify-around rounded-[2rem] text-white xl:flex"
+            className="hidden w-[9rem] justify-around rounded-[2rem] text-white xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
             size="lg"
             variant="outline"
           >

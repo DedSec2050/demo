@@ -1,7 +1,8 @@
 import Marquee from "react-fast-marquee";
-import { urls, desc } from "./data/Page8";
+
 import Image from "next/image";
 import { Button } from "./ui/button";
+import vidplay from "../public/assets/vidplay.webp";
 
 const list = [
   {
@@ -34,43 +35,14 @@ const Page8 = () => {
   return (
     // Slideshow Testimonials section
     <section className="mt-8 flex flex-col">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-center text-clamptitle leading-normal">
-          <strong>
-            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
-              Our students are serving on top
-            </span>{" "}
-            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
-              positions here
-            </span>
-          </strong>
-        </h1>
-      </div>
-      <div className="mt-8 flex w-[100%] flex-row">
-        <Marquee>
-          {urls.map((url, index) => {
-            return (
-              <div key={index} className="mr-[5rem] mt-4 w-[100%]">
-                <Image
-                  src={url}
-                  width={170}
-                  height={73}
-                  className={`${index} ` + ""}
-                  alt=""
-                />
-              </div>
-            );
-          })}
-        </Marquee>
-      </div>
       {/* Add Testimonial Section here  */}
       <div className="mt-8">
         <h1 className="mt-8 text-center text-clamptitle leading-9">
           <strong>
-            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent xxl:text-[2.5vw]">
               See what Participants say
             </span>{" "}
-            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent xxl:text-[2.5vw]">
               about us:
             </span>
             <br />
@@ -82,27 +54,35 @@ const Page8 = () => {
           {" "}
           {list.map((data, index) => {
             return (
-              <div className="mt-[150px] w-[100%] px-10" key={index}>
-                <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-4 border-accent">
-                  <div className="image flex translate-y-[-45px] py-2">
-                    <div className="bg-blue h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue">
-                      <Image
-                        src="/assets/Testimonials/demo.webp"
-                        alt=""
-                        width={100}
-                        height={50}
-                      />
+              <div
+                className="mt-[150px] w-[100%] px-10 xxl:px-[7vw]"
+                key={index}
+              >
+                <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-4 border-accent xxl:h-[43rem] xxl:w-[40rem]">
+                  <div className="image flex translate-y-[-45px] py-2 xxl:translate-y-[-120px]">
+                    <div className="bg-blue h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
+                      <Image src="/assets/Testimonials/demo.webp" alt="" fill />
                     </div>
                   </div>
                   <div className="justify-centers flex translate-y-[-40px] flex-col items-center px-4 text-center">
-                    <div className="name mt-6 translate-y-[-30px] text-[1rem]">
+                    <div className="name mt-6 translate-y-[-30px] text-[1rem] xxl:translate-y-[-100px] xxl:text-[1.3vw]">
                       {data.name}
                     </div>
-                    <div className="sep translate-y-[-28px] text-[0.75rem]">
+                    <div className="sep translate-y-[-28px] text-[0.75rem] xxl:translate-y-[-110px] xxl:text-[1.3vw]">
                       Nailed CISSP in {data.time}
                     </div>
-                    <div className="text-[0.85rem]">{data.text}</div>
+                    <div className="px-5 text-[0.85rem] xxl:translate-y-[-80px] xxl:text-[1.1vw]">
+                      {data.text}
+                    </div>
                   </div>
+                </div>
+                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.5rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[32rem] xxl:translate-y-[-8.5rem]">
+                  <Image
+                    src={vidplay}
+                    height={368}
+                    width={368}
+                    alt="video play"
+                  />
                 </div>
               </div>
             );
