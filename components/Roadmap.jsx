@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import timeline from "../public/assets/Timeline/timeline.gif";
 
 const Page6 = () => {
   return (
@@ -15,6 +16,9 @@ const Page6 = () => {
             </span>
           </strong>
         </h1>
+        <div className="px-6">
+          <Image src={timeline}></Image>
+        </div>
       </div>
     </section>
   );

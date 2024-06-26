@@ -15,12 +15,12 @@ const Slider = () => {
   const pic = ["/assets/SliderAssets/slider1.webp"];
 
   return (
-    <div className="text- relative flex w-[90%]">
+    <div className="relative flex w-[90%]">
       <Marquee>
         {demos.map((url, index) => {
           return (
             <div
-              className="mr-[6.5rem] flex h-[25vh] w-[25vh] md:h-[35vh] md:w-[35vh]"
+              className="mr-[6.5rem] flex h-[22vh] w-[21vh] md:h-[32vh] md:w-[32vh]"
               key={index}
             >
               <Image

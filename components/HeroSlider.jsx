@@ -36,20 +36,14 @@ const HeroSlider = () => {
               <div className="tooltip bg-red-600 text-clamptextsm text-white">
                 <strong>{`${demo.rating}`}</strong>
               </div>
-              <Image
-                layout="responsive"
-                src={`${demo.url}`}
-                height={30}
-                width={30}
-                alt=""
-              />
+              <Image src={`${demo.url}`} height={30} width={30} alt="" />
             </div>
           </div>
         </div>
 
         <div
           key={index}
-          className="xxl:mt-7 mt-4 hidden w-[100%] items-start justify-center px-5 lg:flex"
+          className="hidden w-[100%] items-start justify-center px-5 lg:flex xxl:mt-2"
         >
           {
             <Image
@@ -67,7 +61,7 @@ const HeroSlider = () => {
   });
 
   return (
-    <div className="mt-2 flex w-[100%] items-center justify-around px-6 py-4 text-center xl:mt-7">
+    <div className="flex w-[100%] items-center justify-around px-6 text-center xl:mt-2">
       {demolist}
     </div>
   );
