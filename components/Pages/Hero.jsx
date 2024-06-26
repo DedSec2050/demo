@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="floating fixed bottom-[14vh] right-[2vw] z-10 h-[8vw] w-[8vw] rounded-full border-2 border-white p-2 hover:cursor-pointer xxl:h-[5vw] xxl:w-[5vw]">
+        <div className="floating fixed bottom-[14vh] right-[2vw] z-10 h-[8vh] w-[8vh] rounded-full border-2 border-white p-2 hover:cursor-pointer md:h-[3vw] md:w-[3vw] xxl:h-[5vw] xxl:w-[5vw]">
           <Image
             layout="responsive"
             height={100}

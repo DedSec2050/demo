@@ -12,6 +12,8 @@ import Guidelines from "@/components/Guidelines";
 import Connect from "@/components/Connect";
 import Resources from "./resources/page";
 import Positions from "@/components/Positions";
+import QualityAssr from "@/components/QualityAssr";
+import Benefits from "@/components/Benefits";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
       <Connect />
       <Schedule />
       <Testimonials />
+      <QualityAssr />
+      <Benefits />
 
       <AccordionWrap />
     </main>

@@ -13,12 +13,23 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-between bg-footer p-10 text-center">
         <div className="flex w-[100%] flex-col items-start justify-center p-4 md:flex-row">
           <div className="flex w-[100%] flex-col items-center justify-center md:w-[50%] md:items-start">
-            <Image src="/assets/cyberlg.webp" alt="" width={150} height={100} />
-            <div className="text-clamptextsm text-accent">Copyright @ 2024</div>
-            <div className="text-clamptextsm">CISSP Success toolkit</div>
+            <div className="xxl:w-[13vw]">
+              <Image
+                src="/assets/cyberlg.webp"
+                alt=""
+                width={150}
+                height={100}
+              />
+            </div>
+            <div className="text-clamptextsm text-accent xxl:text-[1vw]">
+              Copyright @ 2024
+            </div>
+            <div className="text-clamptextsm xxl:text-[1vw]">
+              CISSP Success toolkit
+            </div>
           </div>
-          <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%]">
-            <div className="Company flex flex-col text-white">
+          <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%] xxl:justify-around">
+            <div className="Company flex flex-col text-white xxl:text-[1vw]">
               <Link href={"/"}>
                 <span className="text-md text-accent">Company</span>
               </Link>
@@ -32,7 +43,7 @@ const Footer = () => {
                 <span>Courses</span>
               </Link>
             </div>
-            <div className="Policy flex flex-col text-white">
+            <div className="Policy flex flex-col text-white xxl:text-[1vw]">
               <Link href={"/"}>
                 <span className="text-md text-accent">Policy</span>
               </Link>
@@ -46,7 +57,7 @@ const Footer = () => {
                 <span>Refund Policy</span>
               </Link>
             </div>
-            <div className="Support flex flex-col text-white">
+            <div className="Support flex flex-col text-white xxl:text-[1vw]">
               <Link href={"/"}>
                 <span className="text-md text-accent">Support</span>
               </Link>
