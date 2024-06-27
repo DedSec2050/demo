@@ -10,7 +10,7 @@ import Testimonials from "../components/Testimonials";
 import AccordionWrap from "../components/AccordionWrap";
 import Guidelines from "@/components/Guidelines";
 import Connect from "@/components/Connect";
-import Resources from "./resources/page";
+import Resources from "../components/Resources";
 import Positions from "@/components/Positions";
 import QualityAssr from "@/components/QualityAssr";
 import Benefits from "@/components/Benefits";

@@ -40,6 +40,12 @@ module.exports = {
         herosection: "url(/assets/bgimageDark.webp)",
         faq: "url(/assets/faq-bg.webp)",
         title: "url(/assets/title.webp)",
+        hv: "url(/assets/Resources/Bg/hover1.webp)",
+        bgFirst: "url(/assets/Resources/Bg/bg-1.webp)",
+        bgSecond: "url(/assets/Resources/Bg/bg-2.webp)",
+        bgThird: "url(/assets/Resources/Bg/bg-3.webp)",
+        bgFourth: "url(/assets/Resources/Bg/bg-4.webp)",
+        iconOne: "url(/assets/Resources/Bg/Icon/hoverlogo1.webp)",
       },
       fontSize: {
         clampheader: "clamp(24px, 4vw, 60px)",
@@ -66,6 +72,9 @@ module.exports = {
         },
         footer: {
           DEFAULT: "#4B4B4B",
+        },
+        cyn: {
+          DEFAULT: "#11D1C8",
         },
       },
     },

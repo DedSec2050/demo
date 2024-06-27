@@ -14,7 +14,7 @@ const Page9 = () => {
         </strong>
       </div>
       <div className="flex w-full flex-col items-center justify-center">
-        <Tabs className="w-[80vw]" defaultValue="toolkit">
+        <Tabs className="w-[95vw] md:w-[80vw]" defaultValue="toolkit">
           <TabsList className="grid h-[8vh] w-full grid-cols-2 border-[1px] border-accent bg-primary">
             <TabsTrigger value="toolkit" className="h-[6vh]">
               <span className="text-clamptextsmm">
