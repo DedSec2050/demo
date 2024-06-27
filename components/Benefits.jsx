@@ -34,7 +34,7 @@ const topBenefits = [
 const Benefits = () => {
   return (
     <div className="flex flex-col items-center justify-center xxl:mt-[40px]">
-      <h1 className="mb-[5vh] mt-[5vh] bg-gradient-to-r from-grn to-accent bg-clip-text text-clampheader font-bold text-transparent xxl:mb-[20px] xxl:text-[2.5vw]">
+      <h1 className="mb-[5vh] mt-[5vh] bg-gradient-to-r from-grn to-accent bg-clip-text text-clamptitle font-bold text-transparent xxl:mb-[20px] xxl:text-[2.5vw]">
         Benefits of doing CISSP Certification
       </h1>
       <p className="mb-[2vh] w-[80vw] text-clamptextmd font-semibold text-grn xxl:mb-[45px] xxl:text-[1.5vw]">
@@ -44,7 +44,7 @@ const Benefits = () => {
         return (
           <li
             key={index}
-            className="w-[80vw] text-clamptextmd font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
+            className="w-[80vw] text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
           >
             {data.data}
           </li>
@@ -57,7 +57,7 @@ const Benefits = () => {
         return (
           <li
             key={index}
-            className="w-[80vw] text-clamptextmd font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
+            className="w-[80vw] text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
           >
             {data.data}
           </li>

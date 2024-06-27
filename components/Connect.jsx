@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import udemy from "../public/assets/Icons/udemy.webp";
 import youtube from "../public/assets/Icons/youtube.webp";
 import linkedin from "../public/assets/Icons/linkedin.webp";
@@ -39,8 +39,9 @@ const Connect = () => {
           <Image
             src="/assets/trainerConnect.webp"
             priority
-            fill
-            objectFit="cover"
+            layout="responsive"
+            width={519}
+            height={319}
             quality={50}
             alt=""
           />

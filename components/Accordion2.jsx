@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { FiMinusCircle } from "react-icons/fi";
 import { FiPlusCircle } from "react-icons/fi";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import { faq } from "./data/Page9";
+import { faqCISSP } from "./data/Page9";
 
-const Accordion = () => {
+const Accordion2 = () => {
   const [animationParent] = useAutoAnimate();
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -15,7 +15,7 @@ const Accordion = () => {
 
   return (
     <div className="accordion flex flex-col">
-      {faq.map((data, index) => (
+      {faqCISSP.map((data, index) => (
         <div
           ref={animationParent}
           key={index}
@@ -45,4 +45,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default Accordion2;
