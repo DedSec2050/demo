@@ -17,6 +17,10 @@ const links = [
     name: "resources",
     path: "/resources",
   },
+  {
+    name: "blog",
+    path: "/blog",
+  },
 ];
 
 const Nav = () => {

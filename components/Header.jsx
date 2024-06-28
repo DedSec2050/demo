@@ -25,11 +25,13 @@ const Header = () => {
         {/* Desktop Nav  */}
         <div className="hidden items-center gap-8 xl:flex">
           <Nav />
+          <Link href="/">
+            <FaWhatsappSquare className="z-[40] ml-[3vw] h-[2vw] w-[2vw] text-green-500" />
+          </Link>
         </div>
-        <FaWhatsappSquare className="h-[3vw] w-[3vw] text-green-500" />
         <Link href="/signin">
           <Button
-            className="z-[40] hidden w-[9rem] justify-around rounded-[2rem] text-white xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
+            className="z-40 hidden w-[9rem] justify-around rounded-[2rem] text-white hover:bg-accent xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
             size="lg"
             variant="outline"
           >

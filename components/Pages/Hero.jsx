@@ -22,7 +22,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="relative flex w-[65%] flex-col items-center justify-center md:h-[92vh]">
+        <div className="relative z-[-1] flex w-[65%] flex-col items-center justify-center md:h-[92vh]">
           {/* Text  */}
           <div className="mb-4 flex h-[12vh] w-[44vw] items-center justify-center md:h-[12vh] md:w-[17vw]">
             <Image
