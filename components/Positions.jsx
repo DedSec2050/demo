@@ -17,7 +17,7 @@ const Positions = () => {
           </strong>
         </h1>
       </div>
-      <div className="mt-8 flex w-[100%] flex-row">
+      <div className="xxl:border-tb-[10px] mt-8 flex w-[100%] flex-row border-4 border-accent bg-cyan-500">
         <Marquee>
           {urls.map((url, index) => {
             return (

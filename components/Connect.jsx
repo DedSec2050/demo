@@ -34,11 +34,12 @@ const Connect = () => {
           </span>
         </strong>
       </h1>
-      <div className="flex w-full flex-col items-center justify-around lg:flex-row">
-        <div className="relative mt-8 aspect-video h-[12rem] min-h-[12rem] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:h-[39vh] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]">
+      <div className="flex w-full flex-col items-center justify-center gap-[8vw] lg:flex-row">
+        <div className="relative mt-8 aspect-video min-h-[120px] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]">
           <Image
             src="/assets/trainerConnect.webp"
             priority
+            objectFit="cover"
             layout="responsive"
             width={519}
             height={319}
@@ -46,7 +47,7 @@ const Connect = () => {
             alt=""
           />
         </div>
-        <div className="relative mt-8 aspect-video h-[12rem] min-h-[12rem] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:h-[39vh] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]"></div>
+        <div className="relative mt-8 aspect-video w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]"></div>
       </div>
       <div className="mt-[15px] flex w-full flex-col items-center justify-around gap-[15px] px-[5vw] md:mt-[35px] md:flex-row md:px-[3vw]">
         {btnlist.map((data, index) => {

@@ -16,8 +16,8 @@ const Page6 = () => {
             </span>
           </strong>
         </h1>
-        <div className="px-6">
-          <Image src={timeline}></Image>
+        <div className="w-full px-6">
+          <Image layout="responsive" src={timeline}></Image>
         </div>
       </div>
     </section>

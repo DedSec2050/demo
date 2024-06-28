@@ -76,7 +76,7 @@ const Page8 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.5rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[32rem] xxl:translate-y-[-8.5rem]">
+                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.5rem] md:h-[100px] md:w-[100px] md:translate-x-[42rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[34rem] xxl:translate-y-[-8.5rem]">
                   <Image
                     src={vidplay}
                     height={368}

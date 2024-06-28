@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 const Card = () => {
   return (
     <div
-      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black sm:w-[20rem] md:h-[26vw] md:w-[26vw] xxl:rounded-[8%] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
+      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-lg hover:drop-shadow-xl sm:w-[20rem] md:h-[26vw] md:w-[26vw] xxl:rounded-[8%] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
     >
       <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
         <div className="flex items-center">
@@ -50,34 +50,34 @@ const Page3 = () => {
           Success Toolkit ?
         </span>
       </div>
-      <div className="testimonial-section relative flex items-center justify-center py-12">
+      <div className="testimonial-section relative mx-[8vw] flex items-center justify-center py-12 md:mx-[2vw]">
         <button
           onClick={() => scroll(-320)}
-          className="bottom-100 absolute left-1 z-10 rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none"
+          className="bottom-100 absolute left-1 z-10 hidden rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none xl:flex"
         >
           <MdKeyboardArrowLeft className="text-[50px] xxl:text-[100px]" />
         </button>
         <button
           onClick={() => scroll(320)}
-          className="bottom-100 absolute right-1 z-10 rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none"
+          className="bottom-100 absolute right-1 z-10 hidden rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none xl:flex"
         >
           <MdKeyboardArrowRight className="text-[50px] xxl:text-[100px]" />
         </button>
 
         <div
           ref={scrollRef}
-          className="z-2 no-scrollbar flex snap-x snap-mandatory items-center overflow-x-auto scroll-smooth px-8"
+          className="z-2 no-scrollbar flex snap-x snap-mandatory items-center overflow-x-auto scroll-smooth md:mx-[1vw] xl:mx-[2vw] xxl:mx-[2vw]"
         >
           <div className="flex snap-center items-center justify-center">
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-[2vw] p-[2vh] xxl:p-[4vh]">
               <Card />
               <Card />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-[2vw] p-[2vh] xxl:p-[4vh]">
               <Card />
               <Card />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-[2vw] p-[2vh] xxl:p-[4vh]">
               <Card />
               <Card />
             </div>
