@@ -23,13 +23,13 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex gap-[6rem]">
+    <nav className="z-40 flex gap-[6rem]">
       {links.map((link, index) => {
         return (
           <Link
             href={link.path}
             key={index}
-            className={`${link.path === pathname && "border-b-2 border-accent text-accent"} xxl:text-clamptextnav text-clamptextsm uppercase transition-all hover:text-accent`}
+            className={`${link.path === pathname && "border-b-2 border-accent text-accent"} text-clamptextsm uppercase transition-all hover:text-accent xxl:text-clamptextnav`}
           >
             {link.name}
           </Link>

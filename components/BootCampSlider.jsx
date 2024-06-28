@@ -13,44 +13,23 @@ import { Button } from "./ui/button";
 const Card = () => {
   return (
     <div
-      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-accent hover:text-blue-600 sm:w-[20rem] [&:hover>Button]:bg-blue-700 [&:hover>Button]:text-black [&:hover>div>div>span]:text-black [&:hover>div>ul>li>span]:text-blue-600 [&:hover>div>ul]:text-black`}
+      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-accent hover:text-black sm:w-[20rem] md:h-[26vw] md:w-[26vw] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
     >
       <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
         <div className="flex items-center">
-          <FaRegCalendarAlt className="h-[2rem] w-[2rem]" />
+          <FaRegCalendarAlt className="h-[2rem] w-[2rem] md:h-[3rem] md:w-[3rem] xxl:h-[4vw] xxl:w-[4vw]" />
         </div>
         <div className="text-center">
-          <span className="text-center text-clamptextsm font-bold text-white">
-            100 Days Success Plan($250)
+          <span className="text-center text-clamptextsm font-bold text-white md:text-clamptextsmm md:leading-4 xxl:text-[2vw] xxl:leading-[70px]">
+            Individual Mentorship
           </span>
         </div>
       </div>
-      <div className="flex flex-col py-4">
-        <ul className="flex-grow-2 flex flex-col gap-4 text-center font-medium text-white hover:text-black">
-          <li className="text-clamptextsm">
-            <span className="italic text-accent">Adaptive plan</span> to meet
-            your learning pace.
-          </li>
-          <li className="text-clamptextsm">
-            <span className="italic text-accent">2 Hours</span> per day at your
-            own ease.
-          </li>
-          <li className="text-clamptextsm">
-            Learn <span className="italic text-accent">without</span> getting
-            overwhelmed.
-          </li>
-          <li className="text-clamptextsm">
-            Includes <span className="italic text-accent">Revision</span> Days
-          </li>
-        </ul>
+      <div className="flex flex-col items-center justify-center py-4">
+        <div className="flex w-[70%] text-center font-medium text-white md:py-[40px] md:text-[1.3vw] xxl:text-[1.4vw]">
+          Get personal mentorship from our CISSP Certified trainer
+        </div>
       </div>
-      <Button
-        variant="outline"
-        className="mx-auto mb-2 mt-8 w-[11rem] justify-around rounded-full"
-      >
-        Explore More
-        <FaArrowRightLong />
-      </Button>
     </div>
   );
 };
@@ -71,31 +50,37 @@ const Page3 = () => {
           Toolkit ?
         </span>
       </div>
-      <div className="testimonial-section relative py-12">
+      <div className="testimonial-section relative flex items-center justify-center py-12">
         <button
           onClick={() => scroll(-320)}
-          className="absolute bottom-60 left-1 z-10 rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none"
+          className="bottom-100 absolute left-1 z-10 rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none"
         >
-          <MdKeyboardArrowLeft className="text-[50px]" />
+          <MdKeyboardArrowLeft className="text-[50px] xxl:text-[100px]" />
         </button>
         <button
           onClick={() => scroll(320)}
-          className="absolute bottom-60 right-1 z-10 rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none"
+          className="bottom-100 absolute right-1 z-10 rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none"
         >
-          <MdKeyboardArrowRight className="text-[50px]" />
+          <MdKeyboardArrowRight className="text-[50px] xxl:text-[100px]" />
         </button>
 
         <div
           ref={scrollRef}
           className="z-2 no-scrollbar flex snap-x snap-mandatory items-center overflow-x-auto scroll-smooth px-8"
         >
-          <div className="flex snap-center">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+          <div className="flex snap-center items-center justify-center">
+            <div className="flex flex-col">
+              <Card />
+              <Card />
+            </div>
+            <div className="flex flex-col">
+              <Card />
+              <Card />
+            </div>
+            <div className="flex flex-col">
+              <Card />
+              <Card />
+            </div>
           </div>
         </div>
       </div>
