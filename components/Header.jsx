@@ -29,7 +29,7 @@ const Header = () => {
         <FaWhatsappSquare className="h-[3vw] w-[3vw] text-green-500" />
         <Link href="/signin">
           <Button
-            className="hidden w-[9rem] justify-around rounded-[2rem] text-white xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
+            className="z-[40] hidden w-[9rem] justify-around rounded-[2rem] text-white xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
             size="lg"
             variant="outline"
           >

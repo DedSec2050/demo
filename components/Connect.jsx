@@ -71,9 +71,9 @@ const Connect = () => {
       </div>
 
       <div className="mt-4 flex max-w-[90vw] px-4 md:mt-[35px]">
-        <p className="text-center text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
+        <div className="text-center text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
           {desc}
-          <section {...getCollapseProps()} className="flex flex-col">
+          <div {...getCollapseProps()} className="flex flex-col">
             <span>
               Back in 2015, I embarked on my own CISSP journey. It was a
               challenging and often lonely path. There was no support or
@@ -119,7 +119,7 @@ const Connect = () => {
               will transform your CISSP aspirations into reality.
             </span>
             <span>Your success story starts here</span>
-          </section>
+          </div>
           <button
             className="ml-[2vw] rounded-[5%] bg-slate-500 px-[5px] text-clamptextsm text-accent"
             {...getToggleProps({
@@ -128,7 +128,7 @@ const Connect = () => {
           >
             {isExpanded ? "Read Less" : "Read More"}
           </button>
-        </p>
+        </div>
       </div>
     </div>
   );
