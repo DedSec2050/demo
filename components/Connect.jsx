@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Image from "next/legacy/image";
 import udemy from "../public/assets/Icons/udemy.webp";
 import youtube from "../public/assets/Icons/youtube.webp";
 import linkedin from "../public/assets/Icons/linkedin.webp";
 import { urls, desc } from "./data/Page8";
+import { useCollapse } from "react-collapsed";
 
 const btnlist = [
   {
@@ -22,6 +24,8 @@ const btnlist = [
 ];
 
 const Connect = () => {
+  const [isExpanded, setExpanded] = useState(false);
+  const { getCollapseProps, getToggleProps } = useCollapse();
   return (
     <div className="flex w-screen flex-col items-center justify-center py-8">
       <h1 className="mt-7 text-center text-clamptitle xxl:text-[2.5vw]">
@@ -69,6 +73,61 @@ const Connect = () => {
       <div className="mt-4 flex max-w-[90vw] px-4 md:mt-[35px]">
         <p className="text-center text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
           {desc}
+          <section {...getCollapseProps()} className="flex flex-col">
+            <span>
+              Back in 2015, I embarked on my own CISSP journey. It was a
+              challenging and often lonely path. There was no support or
+              guidance available, and the resources were limited. It took me 11
+              long months to pass the CISSP exam, relying solely on my strong
+              will and determination.
+            </span>
+            <span>
+              I remember the sleepless nights, the endless hours of studying,
+              and the overwhelming feeling of uncertainty. I felt the
+              frustration of navigating complex material without a clear
+              roadmap. But I persevered, and that experience instilled in me a
+              deep understanding of the pain points CISSP aspirants face.
+            </span>
+            <span>
+              Determined to make a difference, I committed myself to mastering
+              the CISSP exam. Over the years, I’ve helped thousands of
+              professionals achieve their CISSP certification. I’ve taken my
+              hard-earned lessons and created the CISSP Success Toolkit, a
+              comprehensive, structured process designed to help you pass the
+              CISSP exam on your first attempt.
+            </span>
+            <span>
+              In my CISSP Success Toolkit, you’ll find a well-structured 100-day
+              plan tailored for busy professionals, interactive resources,
+              mindset sessions, and live classes with CISSP specialists. This
+              ecosystem is built to support you every step of the way,
+              addressing the very challenges I faced during my journey. As the
+              CISSP Exam Cost is very high, I have devised my toolkit in a way
+              to be much more affordable for every CISSP Aspirant who intend to
+              obtain the CISSP Tuitions.
+            </span>
+            <span>
+              I understand the struggles you're going through because I’ve been
+              there myself. I know the dedication it takes, the sacrifices you
+              make, and the determination required to succeed. My mission is to
+              provide you with the guidance and support I wish I had, so you can
+              achieve your CISSP dream with confidence.
+            </span>
+            <span>
+              Join the CISSP Succes toolkit program and let’s start the journey
+              together. I am sure, with my experience and your dedication, we
+              will transform your CISSP aspirations into reality.
+            </span>
+            <span>Your success story starts here</span>
+          </section>
+          <button
+            className="ml-[2vw] rounded-[5%] bg-slate-500 px-[5px] text-clamptextsm text-accent"
+            {...getToggleProps({
+              onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+            })}
+          >
+            {isExpanded ? "Read Less" : "Read More"}
+          </button>
         </p>
       </div>
     </div>
