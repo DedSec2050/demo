@@ -26,7 +26,7 @@ const Accordion2 = () => {
             onClick={() => toggleAccordion(index)}
             className="flex cursor-pointer justify-between gap-2 font-semibold sm:text-lg"
           >
-            <span className="xxl:py-4 xxl:text-[1.3vw]">{`${index + 1}. ${data.question}`}</span>
+            <span className="xxl:py-4 xxl:text-[1.3vw] xxl:leading-[50px]">{`${index + 1}. ${data.question}`}</span>
             {openIndex === index ? (
               <FiMinusCircle className="text-[23px] font-semibold text-accent xxl:text-[1.5vw]" />
             ) : (
