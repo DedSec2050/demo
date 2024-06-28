@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 const Card = () => {
   return (
     <div
-      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-accent hover:text-black sm:w-[20rem] md:h-[26vw] md:w-[26vw] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
+      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-lg bg-elevated p-6 text-accent shadow-lg drop-shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-accent hover:text-black sm:w-[20rem] md:h-[26vw] md:w-[26vw] xxl:rounded-[8%] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
     >
       <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
         <div className="flex items-center">
@@ -41,13 +41,13 @@ const Page3 = () => {
   };
 
   return (
-    <div div className="flex flex-col">
-      <div className="text-center text-clamptitle font-bold">
+    <div div className="mt-8 flex flex-col">
+      <div className="text-center text-clamptitle font-bold xxl:text-[2vw]">
         <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
-          Why CISSP Success
+          Key Features of CISSP
         </span>{" "}
         <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
-          Toolkit ?
+          Success Toolkit ?
         </span>
       </div>
       <div className="testimonial-section relative flex items-center justify-center py-12">
@@ -86,7 +86,7 @@ const Page3 = () => {
       </div>
       <Button
         variant="outline"
-        className="mx-auto mb-8 mt-8 w-[12rem] justify-around rounded-full p-4 sm:w-[19rem]"
+        className="mx-auto mb-8 mt-8 w-[12rem] justify-around rounded-full p-4 sm:w-[19rem] xxl:h-[3.5vw] xxl:w-[18vw] xxl:text-[1.2vw]"
       >
         Get Much More...
         <FaArrowRightLong />
