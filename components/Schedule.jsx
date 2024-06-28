@@ -103,7 +103,9 @@ const Page5 = () => {
                     <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                       {data.trainingSchedule}
                     </TableCell>
-                    <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                    <TableCell
+                      className={`${data.batchStatus == "Open" && "text-green-500"} ${data.batchStatus == "Closed" && "text-red-600"} border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]`}
+                    >
                       {data.batchStatus}
                     </TableCell>
                     <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
@@ -112,12 +114,6 @@ const Page5 = () => {
                   </TableRow>
                 );
               })}
-              {/* <TableRow>
-                <TableCell className="font-medium"></TableCell>
-                <TableCell>Paid</TableCell>
-                <TableCell>Credit Card</TableCell>
-                <TableCell className="text-right">$250.00</TableCell>
-              </TableRow> */}
             </TableBody>
           </Table>
         </div>
