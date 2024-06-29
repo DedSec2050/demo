@@ -47,6 +47,7 @@ const HeroSlider = () => {
         >
           {
             <Image
+              unoptimized
               layout="responsive"
               src={demo.urlxl}
               width={649}
