@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FiMinusCircle } from "react-icons/fi";
 import { FiPlusCircle } from "react-icons/fi";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import { faq } from "./data/Page9";
+import { faq } from "./data/Page9.jsx";
 
 const Accordion = () => {
   const [animationParent] = useAutoAnimate();

@@ -1,11 +1,34 @@
 export const faq = [
   {
     question: "Who should do CISSP Certification?",
-    ans: "CISSP is a good to have certification for the below designations \n1. Security Consultants \n2. Cybersecurity Specialists \n3. Cybersecurity Engineers \n4. Security Managers \n5. Cybersecurity architects 6. Head of Security 7. Security Directors 8. Security Auditors 9. IT Specialist 10. Cloud Security Engineer 11. Risk Management Professionals 12. Physical Security Roles.",
+    ans: (
+      <>
+        CISSP is a good to have certification for the below designations:
+        <br /> 1. Security Consultants <br />
+        2. Cybersecurity Specialists <br />
+        3. Cybersecurity Engineers <br />
+        4. Security Managers <br />
+        5. Cybersecurity architects <br />
+        6. Head of Security <br />
+        7. Security Directors <br />
+        8. Security Auditors <br />
+        9. IT Specialist <br />
+        10. Cloud Security Engineer <br />
+        11. Risk Management Professionals <br />
+        12. Physical Security Roles <br />
+        13. GRC Specialist
+      </>
+    ),
   },
   {
     question: "How can I prepare for the CISSP exam? ",
-    ans: "Follow the below steps: Feel free to book an appointment with me to help your further.",
+    ans: (
+      <>
+        Follow the below steps:
+        <br />
+        Feel free to book an appointment with me to help your further.
+      </>
+    ),
   },
   {
     question: "What are the prerequisites for taking the CISSP exam?",
@@ -26,7 +49,33 @@ export const faq = [
   {
     question:
       "What is CISSP Computerized Adaptive Test and how does this work?",
-    ans: "CISSP exam has almost moved away from linier exam patterns for most of the locations. A computerized adaptive test works on the basis of a backend algorithm which cumulatively evaluates your estimated proficiency level at each response from you. Which Questions you will be tested on is decided dynamically by the algorithm in realtime. Here is how the exam criteria work: 1. Confidence Interval Rule: Once you reach 100 Questions, if the estimated proficiency score is above 95%, you shall be declared pass. If you score below 70%, the criteria will close the screen and you will be declared as FAIL. 2. Maximum Length Exam Rule: If your score is between the passing baseline of 70% and below the Estimated Proficiency level of 95%, you have to face an additional 50 Operational questions. During this time, if at any point your score goes below the passing baseline of 70%, you shall be declared as Fail. However, if you are able to complete all 50 questions and maintain a score above the passing baseline,you will be declared as PASS. 3. Run-Out-of-Time Rule: If you do not complete 150 questions withing the stipulated 3 Hours, you shall automatically be declared FAIL.  ",
+    ans: (
+      <>
+        CISSP exam has almost moved away from linier exam patterns for most of
+        the locations. A computerized adaptive test works on the basis of a
+        backend algorithm which cumulatively evaluates your estimated
+        proficiency level at each response from you. Which Questions you will be
+        tested on is decided dynamically by the algorithm in realtime. Here is
+        how the exam criteria work:<br></br>
+        <br />
+        1. <b>Confidence Interval Rule:</b> Once you reach 100 Questions, if the
+        estimated proficiency score is above 95%, you shall be declared pass. If
+        you score below 70%, the criteria will close the screen and you will be
+        declared as FAIL.
+        <br />
+        <br />
+        2. <b>Maximum Length Exam Rule:</b> If your score is between the passing
+        baseline of 70% and below the Estimated Proficiency level of 95%, you
+        have to face an additional 50 Operational questions. During this time,
+        if at any point your score goes below the passing baseline of 70%, you
+        shall be declared as Fail. However, if you are able to complete all 50
+        questions and maintain a score above the passing baseline, you will be
+        declared as PASS. <br />
+        <br />
+        3. <b>Run-Out-of-Time Rule:</b> If you do not complete 150 questions
+        withing the stipulated 3 Hours, you shall automatically be declared FAIL
+      </>
+    ),
   },
   {
     question:
@@ -63,7 +112,15 @@ export const faqCISSP = [
   },
   {
     question: "Does the took it includes Enough Questions practice?",
-    ans: "a. You shall be practicing ~3000 questions through our exam engine (Domain Wise and Mixed)  b. Expect 500 High Quality tricky questions to be discussed during live sessions. c. 5 Mock tests will cover 750 Scenario based questions. Our mock test is also available on Udemy",
+    ans: (
+      <>
+        a. You shall be practicing ~3000 questions through our exam engine
+        (Domain Wise and Mixed)
+        <br /> b. Expect 500 High Quality tricky questions to be discussed
+        during live sessions. <br></br>c. 5 Mock tests will cover 750 Scenario
+        based questions. Our mock test is also available on Udemy
+      </>
+    ),
   },
   {
     question:

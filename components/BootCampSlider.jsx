@@ -13,14 +13,14 @@ import { Button } from "./ui/button";
 const Card = () => {
   return (
     <div
-      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl sm:w-[20rem] md:h-[24vw] md:w-[24vw] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
+      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl sm:w-[20rem] lg:h-[24vw] lg:w-[24vw] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
     >
       <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
         <div className="flex items-center">
-          <FaRegCalendarAlt className="h-[2rem] w-[2rem] md:h-[3rem] md:w-[3rem] xxl:h-[4vw] xxl:w-[4vw]" />
+          <FaRegCalendarAlt className="h-[2rem] w-[2rem] lg:h-[3rem] lg:w-[3rem] xxl:h-[4vw] xxl:w-[4vw]" />
         </div>
         <div className="text-center">
-          <span className="text-center text-clamptextsm font-bold text-white md:text-clamptextsmm md:leading-4 xxl:text-[2vw] xxl:leading-[70px]">
+          <span className="text-center text-clamptextsm font-bold text-white md:leading-4 lg:text-clamptextsmm xxl:text-[2vw] xxl:leading-[70px]">
             Individual Mentorship
           </span>
         </div>
