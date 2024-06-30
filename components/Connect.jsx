@@ -7,6 +7,13 @@ import youtube from "../public/assets/Icons/youtube.webp";
 import linkedin from "../public/assets/Icons/linkedin.webp";
 import { urls, desc } from "./data/Page8";
 import { useCollapse } from "react-collapsed";
+import "@vidstack/react/player/styles/base.css";
+import "@vidstack/react/player/styles/plyr/theme.css";
+import { MediaPlayer, MediaProvider } from "@vidstack/react";
+import {
+  PlyrLayout,
+  plyrLayoutIcons,
+} from "@vidstack/react/player/layouts/plyr";
 
 const btnlist = [
   {
@@ -51,7 +58,19 @@ const Connect = () => {
             alt=""
           />
         </div>
-        <div className="relative mt-8 aspect-video w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]"></div>
+        <div className="relative mt-8 aspect-video w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]">
+          <MediaPlayer
+            title="Sprite Fight"
+            src="https://www.youtube.com/watch?v=wo4p8eotDW4"
+            playsInline
+          >
+            <MediaProvider />
+            <PlyrLayout
+              thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
+              icons={plyrLayoutIcons}
+            />
+          </MediaPlayer>
+        </div>
       </div>
       <div className="mt-[15px] flex w-full flex-col items-center justify-around gap-[15px] px-[5vw] md:mt-[35px] md:flex-row md:px-[3vw]">
         {btnlist.map((data, index) => {
