@@ -38,7 +38,7 @@ const Connect = () => {
           </span>
         </strong>
       </h1>
-      <div className="flex w-full flex-col items-center justify-center gap-[8vw] lg:flex-row">
+      <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-[8vw]">
         <div className="relative mt-8 aspect-video min-h-[120px] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]">
           <Image
             src="/assets/trainerConnect.webp"

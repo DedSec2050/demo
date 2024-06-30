@@ -42,6 +42,9 @@ const Footer = () => {
               <Link href={"/"}>
                 <span>Courses</span>
               </Link>
+              <Link href={"/"}>
+                <span>Blog</span>
+              </Link>
             </div>
             <div className="Policy flex flex-col text-white xxl:text-[1vw]">
               <Link href={"/"}>
