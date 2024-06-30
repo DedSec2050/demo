@@ -1,10 +1,5 @@
-
 const Courses = () => {
-  return (
-    <div>
-      Courses Div
-    </div>
-  );
-}
+  return <div className="flex">Courses Div</div>;
+};
 
 export default Courses;

@@ -1,4 +1,11 @@
 import React from "react";
+import "@vidstack/react/player/styles/base.css";
+import "@vidstack/react/player/styles/plyr/theme.css";
+import { MediaPlayer, MediaProvider } from "@vidstack/react";
+import {
+  PlyrLayout,
+  plyrLayoutIcons,
+} from "@vidstack/react/player/layouts/plyr";
 
 const Guidelines = () => {
   return (
@@ -33,7 +40,19 @@ const Guidelines = () => {
       <div className="flex justify-center py-4 text-center text-clamptextsmm font-medium leading-10 xxl:mb-[4vh] xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
         This is just one feature, let me tell you more.
       </div>
-      <div className="mb-7 mt-8 h-[20vh] w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:h-[52vh] md:w-[62vw] xl:max-h-[720px] xl:max-w-[1080px] xxl:max-h-[750px] xxl:w-[55vw] xxl:max-w-[1400px]"></div>
+      <div className="mb-7 mt-8 flex w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:w-[62vw] xxl:w-[55vw] xxl:max-w-[1400px]">
+        <MediaPlayer
+          title="Sprite Fight"
+          src="https://www.youtube.com/watch?v=wo4p8eotDW4"
+          playsInline
+        >
+          <MediaProvider />
+          <PlyrLayout
+            thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
+            icons={plyrLayoutIcons}
+          />
+        </MediaPlayer>
+      </div>
     </section>
   );
 };
