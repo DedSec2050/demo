@@ -34,7 +34,7 @@ const list = [
 const Page8 = () => {
   return (
     // Slideshow Testimonials section
-    <section className="mt-8 flex flex-col">
+    <section className="mt-8 flex flex-col xl:px-[10vw]">
       {/* Add Testimonial Section here  */}
       <div className="mt-8">
         <h1 className="mt-8 text-center text-clamptitle leading-9">

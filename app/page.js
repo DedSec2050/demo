@@ -17,7 +17,7 @@ import Benefits from "@/components/Benefits";
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <Hero />
       <Guidelines />
       {/* <Resources /> */}

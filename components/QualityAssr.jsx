@@ -27,7 +27,7 @@ const listdata = [
 
 const QualityAssr = () => {
   return (
-    <div className="bg-grey-600 flex w-full flex-col items-center justify-center">
+    <div className="bg-grey-600 flex w-full flex-col items-center justify-center xl:px-[7vw]">
       <h1 className="mb-[5vh]">
         <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
           Quality Assurance at Cybernous

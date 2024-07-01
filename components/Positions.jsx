@@ -4,7 +4,7 @@ import { urls, desc } from "./data/Page8";
 
 const Positions = () => {
   return (
-    <div>
+    <div className="px-[9.5vw]">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center text-clamptitle leading-normal">
           <strong>

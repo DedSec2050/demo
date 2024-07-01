@@ -35,7 +35,7 @@ const Accordion = () => {
           </p>
           {/* ans */}
           {openIndex === index && (
-            <p className="text-sm text-yellow-400 sm:text-base xxl:py-4 xxl:text-[1.2vw] xxl:leading-[50px]">
+            <p className="text-sm text-slate-300 sm:text-base xxl:py-4 xxl:text-[1.2vw] xxl:leading-[50px]">
               {data.ans}
             </p>
           )}

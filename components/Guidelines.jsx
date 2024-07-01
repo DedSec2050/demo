@@ -9,7 +9,7 @@ import {
 
 const Guidelines = () => {
   return (
-    <section className="relative flex w-full flex-col items-center text-center">
+    <section className="relative flex w-full flex-col items-center text-center xl:px-[7vw]">
       <div className="flex">
         <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
           Others teach you CISSP
@@ -40,7 +40,7 @@ const Guidelines = () => {
       <div className="flex justify-center py-4 text-center text-clamptextsmm font-medium leading-10 xxl:mb-[4vh] xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
         This is just one feature, let me tell you more.
       </div>
-      <div className="mb-7 mt-8 flex w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:w-[62vw] xxl:w-[55vw] xxl:max-w-[1400px]">
+      <div className="mb-7 mt-8 flex w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:w-[62vw] xl:max-w-[860px] xxl:w-[55vw] xxl:max-w-[1080px]">
         <MediaPlayer
           title="Sprite Fight"
           src="https://www.youtube.com/watch?v=wo4p8eotDW4"

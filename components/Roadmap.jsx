@@ -4,7 +4,7 @@ import timeline from "../public/assets/Timeline/timeline.gif";
 
 const Page6 = () => {
   return (
-    <section className="py-8">
+    <section className="py-8 xl:px-[7vw]">
       <div className="flex flex-col items-center">
         <h1 className="text-center text-clamptitle">
           <strong>
@@ -16,7 +16,7 @@ const Page6 = () => {
             </span>
           </strong>
         </h1>
-        <div className="w-full px-6">
+        <div className="w-full px-6 xl:px-[3vw]">
           <Image layout="responsive" src={timeline}></Image>
         </div>
       </div>

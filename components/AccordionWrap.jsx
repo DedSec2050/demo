@@ -5,7 +5,7 @@ import Accordion2 from "./Accordion2";
 
 const Page9 = () => {
   return (
-    <section className="relative mt-8">
+    <section className="relative mt-8 xl:px-[7vw]">
       <div className="mb-8 mt-4 text-center text-clamptitle xxl:text-[2.5vw]">
         <strong>
           <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
@@ -26,15 +26,15 @@ const Page9 = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="toolkit" className="mt-10">
-            <div className="mx-auto mt-10 flex max-w-xs flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-accent sm:mt-4 sm:max-w-2xl xxl:max-w-[60vw]">
-              <div className="flex flex-col gap-4 divide-y">
+            <div className="mx-auto mt-10 flex max-w-xs flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-white sm:mt-4 sm:max-w-[80vw] xxl:max-w-[80vw]">
+              <div className="flex w-full flex-col gap-4 divide-y">
                 <Accordion />
               </div>
             </div>
           </TabsContent>
           <TabsContent value="CISSP" className="mt-10">
-            <div className="mx-auto mt-10 flex max-w-xs flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-accent sm:mt-4 sm:max-w-2xl xxl:max-w-[60vw]">
-              <div className="flex flex-col gap-4 divide-y">
+            <div className="mx-auto mt-10 flex max-w-xs flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-white sm:mt-4 sm:max-w-[80vw] xxl:max-w-[80vw]">
+              <div className="flex w-full flex-col gap-4 divide-y">
                 <Accordion2 />
               </div>
             </div>

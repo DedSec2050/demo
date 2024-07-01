@@ -9,9 +9,9 @@ import float from "../../public/assets/floating.webp";
 
 const Hero = () => {
   return (
-    <div className="pb-[30px]">
+    <div className="pb-[30px] xl:px-[7vw]">
       <div className="flex w-full flex-col-reverse items-center justify-center md:h-[75vh] md:flex-row">
-        <div className="relative z-[-1] mb-[60px] mt-[40px] flex h-[30vh] w-[25vh] items-center justify-center sm:mb-0 sm:mt-0 md:h-[65vh] md:w-[30.3%]">
+        <div className="relative z-[-1] mb-[60px] mt-[40px] flex h-[30vh] max-h-[800px] w-[25vh] max-w-[650px] items-center justify-center sm:mb-0 sm:mt-0 md:h-[65vh] md:w-[30.3%]">
           <Image
             layout="responsive"
             style={{ width: "100%", height: "auto" }}
@@ -24,7 +24,7 @@ const Hero = () => {
 
         <div className="relative z-[-1] flex w-[65%] flex-col items-center justify-center md:h-[92vh]">
           {/* Text  */}
-          <div className="mb-4 flex h-[12vh] w-[44vw] items-center justify-center md:h-[12vh] md:w-[17vw]">
+          <div className="mb-4 flex h-[12vh] max-h-[350px] w-[44vw] max-w-[350px] items-center justify-center md:h-[12vh] md:w-[17vw]">
             <Image
               layout="responsive"
               style={{ width: "100%", height: "auto" }}

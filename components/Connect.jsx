@@ -46,7 +46,7 @@ const Connect = () => {
         </strong>
       </h1>
       <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-[8vw]">
-        <div className="relative mt-8 aspect-video min-h-[120px] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]">
+        <div className="relative mt-8 aspect-video min-h-[120px] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px]">
           <Image
             src="/assets/trainerConnect.webp"
             priority
@@ -58,7 +58,7 @@ const Connect = () => {
             alt=""
           />
         </div>
-        <div className="relative mt-8 aspect-video w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[39vw] lg:min-w-[418px]">
+        <div className="relative mt-8 aspect-video w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px]">
           <MediaPlayer
             title="Sprite Fight"
             src="https://www.youtube.com/watch?v=wo4p8eotDW4"
@@ -79,7 +79,7 @@ const Connect = () => {
               <div className="">
                 <Button
                   variant="outline"
-                  className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[24vw] xxl:text-[1vw]"
+                  className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[15vw] xxl:text-[1vw]"
                 >
                   Follow me on {data.data}
                 </Button>
@@ -89,7 +89,7 @@ const Connect = () => {
         })}
       </div>
 
-      <div className="mt-4 flex max-w-[90vw] px-4 md:mt-[35px]">
+      <div className="mt-4 flex max-w-[90vw] px-[4vw] md:mt-[35px]">
         <div className="text-center text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
           {desc}
           <div {...getCollapseProps()} className="flex flex-col">
