@@ -26,14 +26,14 @@ const Page9 = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="toolkit" className="mt-10">
-            <div className="mx-auto mt-10 flex max-w-xs flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-white sm:mt-4 sm:max-w-[80vw] xxl:max-w-[80vw]">
+            <div className="mx-auto mt-10 flex flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-white sm:mt-4 sm:max-w-[80vw] xxl:max-w-[80vw]">
               <div className="flex w-full flex-col gap-4 divide-y">
                 <Accordion />
               </div>
             </div>
           </TabsContent>
           <TabsContent value="CISSP" className="mt-10">
-            <div className="mx-auto mt-10 flex max-w-xs flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-white sm:mt-4 sm:max-w-[80vw] xxl:max-w-[80vw]">
+            <div className="mx-auto mt-10 flex flex-col gap-4 rounded-lg bg-[#26355D] p-5 text-white sm:mt-4 sm:max-w-[80vw] xxl:max-w-[80vw]">
               <div className="flex w-full flex-col gap-4 divide-y">
                 <Accordion2 />
               </div>
