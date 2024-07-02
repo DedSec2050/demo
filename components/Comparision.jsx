@@ -32,7 +32,7 @@ const Page7 = () => {
         <div className="mb-[3rem] mt-[40px] w-full text-clamptextsmm font-medium leading-9 xxl:text-[1.5vw] xxl:leading-normal">
           Let me show you why I call this program as a complete Eco-system.
         </div>
-        <div className="relative mt-[45px] flex h-[50vh] w-[90%] bg-transparent md:h-[90vh]">
+        <div className="relative mt-[45px] flex h-[50vh] w-[90%] bg-transparent">
           <Image
             src={photo}
             priority

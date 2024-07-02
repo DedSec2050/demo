@@ -17,7 +17,7 @@ const Page6 = () => {
           </strong>
         </h1>
         <div className="w-full px-6 xl:px-[3vw]">
-          <Image layout="responsive" src={timeline}></Image>
+          <Image unoptimized layout="responsive" src={timeline}></Image>
         </div>
       </div>
     </section>

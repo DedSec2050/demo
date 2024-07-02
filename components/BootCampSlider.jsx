@@ -13,9 +13,24 @@ import { Button } from "./ui/button";
 const Card = () => {
   return (
     <div
-      className={`testimonial-card flex-grow-2 m-4 flex min-h-[20rem] w-[18rem] max-w-[40rem] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl sm:w-[20rem] lg:h-[24vw] lg:w-[24vw] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
+      className={`testimonial-card flex-grow-2 flex min-h-[270px] w-[18rem] min-w-[270px] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl md:h-[18rem] md:w-[18rem] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
     >
-      <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
+      <div className="flex w-full justify-evenly">
+        <div className="flex items-center">
+          <FaRegCalendarAlt className="h-[2rem] w-[2rem]" />
+        </div>
+        <div>
+          <span className="text-center text-[15px] font-bold text-white">
+            Individual Mentorship
+          </span>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center py-4">
+        <div className="flex w-[70%] text-center font-medium text-white">
+          Get personal mentorship from our CISSP Certified trainer
+        </div>
+      </div>
+      {/* <div className="item flex w-[100%] flex-row justify-around gap-[10%]">
         <div className="flex items-center">
           <FaRegCalendarAlt className="h-[2rem] w-[2rem] lg:h-[3rem] lg:w-[3rem] xxl:h-[4vw] xxl:w-[4vw]" />
         </div>
@@ -29,7 +44,7 @@ const Card = () => {
         <div className="flex w-[70%] text-center font-medium text-white md:py-[40px] md:text-[1.3vw] xxl:text-[1.4vw]">
           Get personal mentorship from our CISSP Certified trainer
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -50,38 +65,13 @@ const Page3 = () => {
           Success Toolkit ?
         </span>
       </div>
-      <div className="testimonial-section relative mx-[8vw] flex items-center justify-center py-12 md:mx-[2vw]">
-        <button
-          onClick={() => scroll(-320)}
-          className="bottom-100 absolute left-1 z-10 hidden rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none xl:flex"
-        >
-          <MdKeyboardArrowLeft className="text-[50px] xxl:text-[100px]" />
-        </button>
-        <button
-          onClick={() => scroll(320)}
-          className="bottom-100 absolute right-1 z-10 hidden rounded-full bg-gray-600 p-2 text-white hover:bg-blue-700 focus:outline-none xl:flex"
-        >
-          <MdKeyboardArrowRight className="text-[50px] xxl:text-[100px]" />
-        </button>
-
-        <div
-          ref={scrollRef}
-          className="z-2 no-scrollbar flex snap-x snap-mandatory items-center overflow-x-auto scroll-smooth md:mx-[1vw] xl:mx-[2vw] xxl:mx-[2vw]"
-        >
-          <div className="flex snap-center items-center justify-center">
-            <div className="flex flex-col gap-[2vw] p-[2vh] xxl:p-[4vh]">
-              <Card />
-              <Card />
-            </div>
-            <div className="flex flex-col gap-[2vw] p-[2vh] xxl:p-[4vh]">
-              <Card />
-              <Card />
-            </div>
-            <div className="flex flex-col gap-[2vw] p-[2vh] xxl:p-[4vh]">
-              <Card />
-              <Card />
-            </div>
-          </div>
+      <div className="testimonial-section relative flex items-center justify-center py-12">
+        <div className="grid grid-cols-1 content-center items-center justify-center gap-y-[70px] md:grid-cols-2 md:gap-x-[70px] xl:grid-cols-3 xl:gap-x-[70px]">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
       <Button

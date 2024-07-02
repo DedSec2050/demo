@@ -12,9 +12,8 @@ const Hero = () => {
     <div className="flex flex-col">
       <div className="items-center justify-center pb-[30px]">
         <div className="flex w-full flex-col-reverse items-center justify-center md:h-[75vh] md:flex-row">
-          <div className="relative z-[-1] mb-[60px] mt-[40px] flex h-[30vh] max-h-[800px] w-[25vh] max-w-[650px] items-center justify-center sm:mb-0 sm:mt-0 md:h-[65vh] md:w-[30.3%]">
+          <div className="relative z-[-1] mb-[60px] mt-[40px] flex h-full w-[40%] items-center justify-center sm:mt-0 md:mb-0">
             <Image
-              layout="responsive"
               style={{ width: "100%", height: "auto" }}
               width={1008}
               height={1318}
@@ -51,7 +50,7 @@ const Hero = () => {
               <hr className="mb-35 mx-auto h-[0.25vh] w-[15rem] rounded border-0 bg-accent xl:w-[43vw]"></hr>
             </div>
             <div className="flex w-full flex-col items-center justify-center md:h-[47.9vh] md:flex-row">
-              <div className="hidden w-[88%] items-center justify-center overflow-hidden py-6 md:flex md:py-0">
+              <div className="hidden items-center justify-center overflow-hidden py-6 md:flex md:py-0">
                 <Slider />
               </div>
             </div>

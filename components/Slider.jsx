@@ -15,7 +15,7 @@ const Slider = () => {
   const pic = ["/assets/SliderAssets/slider1.webp"];
 
   return (
-    <div className="relative flex w-[90%]">
+    <div className="relative flex w-full">
       <Marquee direction="right">
         {demos.map((url, index) => {
           return (

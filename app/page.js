@@ -17,7 +17,7 @@ import Benefits from "@/components/Benefits";
 
 export default function Home() {
   return (
-    <main className="xl:px-[15vw]">
+    <main className="px-[30px] sm:px-[50px] xl:px-[15vw]">
       <Hero />
       <Guidelines />
       {/* <Resources /> */}
