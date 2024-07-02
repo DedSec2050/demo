@@ -9,7 +9,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer">
+    <footer className="bg-footer sm:px-[7vw]">
       <section className="mt-[8rem] sm:px-[7vw]">
         <div className="flex flex-col items-center justify-between bg-footer p-10 text-center">
           <div className="flex w-[100%] flex-col items-start justify-center p-4 md:flex-row">
