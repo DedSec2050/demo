@@ -62,7 +62,7 @@ const HeroSlider = () => {
   });
 
   return (
-    <div className="flex w-[100%] items-center justify-around px-6 text-center xl:mt-2">
+    <div className="flex w-[100%] items-center justify-around text-center xl:mt-2">
       {demolist}
     </div>
   );

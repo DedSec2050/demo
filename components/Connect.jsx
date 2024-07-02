@@ -34,7 +34,7 @@ const Connect = () => {
   const [isExpanded, setExpanded] = useState(false);
   const { getCollapseProps, getToggleProps } = useCollapse();
   return (
-    <div className="flex w-screen flex-col items-center justify-center py-8">
+    <div className="flex flex-col items-center justify-center py-8">
       <h1 className="mt-7 text-center text-clamptitle xxl:text-[2.5vw]">
         <strong>
           <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
@@ -45,7 +45,7 @@ const Connect = () => {
           </span>
         </strong>
       </h1>
-      <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-[8vw]">
+      <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-[4vw]">
         <div className="relative mt-8 aspect-video min-h-[120px] w-[15rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px]">
           <Image
             src="/assets/trainerConnect.webp"

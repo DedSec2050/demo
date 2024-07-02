@@ -51,7 +51,7 @@ const Page5 = () => {
             <strong>Our Training Schedule</strong>
           </span>
         </h1>
-        <div className="mt-8 w-full overflow-x-scroll px-[4vw] sm:w-[600px] md:w-[80vw] xxl:w-[90vw]">
+        <div className="mt-8 w-full overflow-x-scroll px-[7vw] sm:w-[600px] md:w-[80vw] xxl:w-[90vw]">
           <Table>
             <TableHeader>
               <TableRow>

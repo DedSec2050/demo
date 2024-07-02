@@ -4,7 +4,7 @@ import { urls, desc } from "./data/Page8";
 
 const Positions = () => {
   return (
-    <div className="px-[9.5vw]">
+    <div className="px-[2.5vw]">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-center text-clamptitle leading-normal">
           <strong>
@@ -17,12 +17,13 @@ const Positions = () => {
           </strong>
         </h1>
       </div>
-      <div className="xxl:border-tb-[10px] mt-8 flex w-[100%] flex-row border-4 border-accent bg-cyan-500">
+      <div className="xxl:border-tb-[10px] mt-8 flex w-[100%] flex-row">
         <Marquee>
           {urls.map((url, index) => {
             return (
               <div key={index} className="mr-[5rem] mt-4 w-[100%]">
                 <Image
+                  responsive
                   src={url}
                   width={170}
                   height={73}

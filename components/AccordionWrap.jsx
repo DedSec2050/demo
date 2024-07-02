@@ -5,7 +5,7 @@ import Accordion2 from "./Accordion2";
 
 const Page9 = () => {
   return (
-    <section className="relative mt-8 xl:px-[7vw]">
+    <section className="relative mt-8 w-full">
       <div className="mb-8 mt-4 text-center text-clamptitle xxl:text-[2.5vw]">
         <strong>
           <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
@@ -14,7 +14,7 @@ const Page9 = () => {
         </strong>
       </div>
       <div className="flex w-full flex-col items-center justify-center">
-        <Tabs className="w-[95vw] md:w-[80vw]" defaultValue="toolkit">
+        <Tabs className="w-full" defaultValue="toolkit">
           <TabsList className="grid h-[8vh] w-full grid-cols-2 border-[1px] border-accent bg-primary">
             <TabsTrigger value="toolkit" className="h-[6vh]">
               <span className="text-clamptextsmm">

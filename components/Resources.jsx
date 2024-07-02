@@ -59,84 +59,76 @@ const Page2 = () => {
         <div className="grid grid-cols-2 grid-rows-2">
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
-            <div className="flex h-[3.5vw] w-[3.5vw] translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%]">
-              <BsPatchExclamationFill className="txt text-[5vw] text-cyn sm:text-[3vw]" />
+            <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
+              <BsPatchExclamationFill className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-clamptextsm font-bold leading-[25px] sm:leading-normal xxl:text-[1.5vw] xxl:leading-[50px]">
-              <span className="flex text-cyn sm:text-[1.5vw]">
-                Is CISSP BEST for Me?
-              </span>
+            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.4vw] sm:leading-normal xxl:text-[1.3vw] xxl:leading-[50px]">
+              <span className="flex text-cyn">Is CISSP BEST for Me?</span>
             </div>
             <Button
               variant="outline"
-              className="rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.3vw] md:translate-y-[2vh] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
+              className="w-[70%] rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:text-[1.1vw] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
             >
               Explore More
             </Button>
           </div>
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgSecond bg-cover bg-no-repeat py-[20%] text-[.6em] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
-            <div className="flex h-[3.5vw] w-[3.5vw] translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%]">
-              <FaHeart className="txt text-[5vw] text-cyn sm:text-[3vw]" />
+            <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
+              <BsPatchExclamationFill className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[65%] translate-y-[-10px] items-center justify-center text-center text-clamptextsm font-bold leading-[25px] sm:text-clamptextsmm sm:leading-normal xxl:text-[1.5vw] xxl:leading-[50px]">
-              <span className="flex text-cyn sm:text-[1.5vw]">
-                Join FREE CISSP Masterclass
-              </span>
+            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.4vw] sm:leading-normal xxl:text-[1.3vw] xxl:leading-[50px]">
+              <span className="flex text-cyn">Is CISSP BEST for Me?</span>
             </div>
             <Button
               variant="outline"
-              className="rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.3vw] md:translate-y-[2vh] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
+              className="w-[70%] rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:text-[1.1vw] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
             >
               Explore More
             </Button>
           </div>
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgThird bg-cover bg-no-repeat py-[20%] text-[.6em] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
-            <div className="flex h-[3.5vw] w-[3.5vw] translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%]">
-              <FaWindowMaximize className="txt text-[5vw] text-cyn sm:text-[3vw]" />
+            <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
+              <BsPatchExclamationFill className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-clamptextsm font-bold leading-[25px] sm:text-clamptextsmm sm:leading-normal xxl:text-[1.5vw] xxl:leading-[50px]">
-              <span className="flex text-cyn sm:text-[1.5vw]">
-                Study FREE CISSP Notes
-              </span>
+            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.4vw] sm:leading-normal xxl:text-[1.3vw] xxl:leading-[50px]">
+              <span className="flex text-cyn">Is CISSP BEST for Me?</span>
             </div>
             <Button
               variant="outline"
-              className="rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.3vw] md:translate-y-[2vh] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
+              className="w-[70%] rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:text-[1.1vw] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
             >
               Explore More
             </Button>
           </div>
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFourth bg-cover bg-no-repeat py-[20%] text-[.6em] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
-            <div className="flex h-[3.5vw] w-[3.5vw] translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%]">
-              <MdHourglassFull className="txt text-[5vw] text-cyn sm:text-[3vw]" />
+            <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
+              <BsPatchExclamationFill className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-clamptextsm font-bold leading-[25px] sm:text-clamptextsmm sm:leading-normal xxl:text-[1.5vw] xxl:leading-[50px]">
-              <span className="flex text-cyn sm:text-[1.5vw]">
-                Study FREE CISSP Notes
-              </span>
+            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.4vw] sm:leading-normal xxl:text-[1.3vw] xxl:leading-[50px]">
+              <span className="flex text-cyn">Is CISSP BEST for Me?</span>
             </div>
             <Button
               variant="outline"
-              className="rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.3vw] md:translate-y-[2vh] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
+              className="w-[70%] rounded-full border-white text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:text-[1.1vw] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[0.9vw]"
             >
               Explore More
             </Button>

@@ -4,7 +4,7 @@ import timeline from "../public/assets/Timeline/timeline.gif";
 
 const Page6 = () => {
   return (
-    <section className="py-8 xl:px-[7vw]">
+    <section className="py-8">
       <div className="flex flex-col items-center">
         <h1 className="text-center text-clamptitle">
           <strong>
