@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React from "react";
 import timeline from "../public/assets/Timeline/timeline.gif";
 
@@ -17,7 +17,12 @@ const Page6 = () => {
           </strong>
         </h1>
         <div className="w-full px-6 xl:px-[3vw]">
-          <Image unoptimized layout="responsive" src={timeline}></Image>
+          <Image
+            alt="timeline"
+            unoptimized
+            layout="responsive"
+            src={timeline}
+          ></Image>
         </div>
       </div>
     </section>

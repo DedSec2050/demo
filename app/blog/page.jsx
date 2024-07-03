@@ -58,7 +58,13 @@ const Blog = () => {
             >
               {/* image  */}
               <div className="h-[50%]">
-                <Image responsive src={data.imgLoc} height={675} width={1200} />
+                <Image
+                  alt="blogsPicture"
+                  responsive
+                  src={data.imgLoc}
+                  height={675}
+                  width={1200}
+                />
               </div>
               {/* title  */}
               <div className="flex flex-col gap-[1.5vw]">
