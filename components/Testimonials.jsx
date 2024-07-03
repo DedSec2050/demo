@@ -1,37 +1,65 @@
+"use client";
 import Marquee from "react-fast-marquee";
-
 import Image from "next/image";
-import { Button } from "./ui/button";
 import vidplay from "../public/assets/vidplay.webp";
+import { db } from "@/app/firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
+import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const list = [
   {
     name: "Gautham Bangari",
-    time: "Sep 22",
+    date: "Sep 22",
     text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
   },
   {
     name: "Gautham Bangari",
-    time: "Sep 22",
+    date: "Sep 22",
     text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
   },
   {
     name: "Gautham Bangari",
-    time: "Sep 22",
+    date: "Sep 22",
     text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
   },
   {
     name: "Gautham Bangari",
-    time: "Sep 22",
+    date: "Sep 22",
     text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
   },
   {
     name: "Gautham Bangari",
-    time: "Sep 22",
+    date: "Sep 22",
     text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
   },
 ];
+
+async function fetchDataFromFirestore() {
+  const querySnapshot = await getDocs(collection(db, "testimonials"));
+  console.log(querySnapshot);
+  const data = [];
+  querySnapshot.forEach((doc) => {
+    data.push({ id: doc.id, ...doc.data() });
+  });
+  console.log(data);
+  return data;
+}
+
 const Page8 = () => {
+  const [testiData, settestiData] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchDataFromFirestore();
+      console.log(data[0].test[0]);
+      settestiData(data[0].test);
+    }
+    console.log(testiData);
+    fetchData();
+  }, []);
+  const testimonialDataList = testiData;
+  console.log(testimonialDataList);
+
   return (
     // Slideshow Testimonials section
     <section className="mt-8 flex flex-col">
@@ -52,37 +80,39 @@ const Page8 = () => {
       <div className="flex px-4 py-8">
         <Marquee>
           {" "}
-          {list.map((data, index) => {
+          {testimonialDataList.map((data, index) => {
             return (
               <div
                 className="mt-[150px] w-[100%] px-10 xxl:px-[7vw]"
                 key={index}
               >
                 <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-4 border-accent xxl:h-[43rem] xxl:w-[40rem]">
-                  <div className="image flex translate-y-[-45px] py-2 xxl:translate-y-[-120px]">
-                    <div className="bg-blue h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
+                  <div className="image flex translate-y-[-65px] py-2 xxl:translate-y-[-120px]">
+                    <div className="bg-blue relative h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
                       <Image src="/assets/Testimonials/demo.webp" alt="" fill />
                     </div>
                   </div>
-                  <div className="justify-centers flex translate-y-[-40px] flex-col items-center px-4 text-center">
+                  <div className="justify-centers flex h-[70%] translate-y-[-40px] flex-col items-center px-4 text-center">
                     <div className="name mt-6 translate-y-[-30px] text-[1rem] xxl:translate-y-[-100px] xxl:text-[1.3vw]">
                       {data.name}
                     </div>
                     <div className="sep translate-y-[-28px] text-[0.75rem] xxl:translate-y-[-110px] xxl:text-[1.3vw]">
-                      Nailed CISSP in {data.time}
+                      Nailed CISSP in {data.date}
                     </div>
                     <div className="px-5 text-[0.85rem] xxl:translate-y-[-80px] xxl:text-[1.1vw]">
-                      {data.text}
+                      {data.desc}
                     </div>
                   </div>
                 </div>
-                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.5rem] md:h-[100px] md:w-[100px] md:translate-x-[42rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[34rem] xxl:translate-y-[-8.5rem]">
-                  <Image
-                    src={vidplay}
-                    height={368}
-                    width={368}
-                    alt="video play"
-                  />
+                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.5rem] md:h-[100px] md:w-[100px] md:translate-x-[17rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[34rem] xxl:translate-y-[-8.5rem]">
+                  <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
+                    <Image
+                      src={vidplay}
+                      height={368}
+                      width={368}
+                      alt="video play"
+                    />
+                  </Link>
                 </div>
               </div>
             );
