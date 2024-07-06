@@ -14,7 +14,6 @@ const Hero = () => {
         <div className="flex w-full flex-col-reverse items-center justify-center md:h-[75vh] md:flex-row">
           <div className="relative z-[-1] mb-[60px] mt-[40px] flex h-full w-[40%] items-center justify-center sm:mt-0 md:mb-0">
             <Image
-              style={{ width: "100%", height: "auto" }}
               width={1008}
               height={1318}
               src={trainer}
@@ -27,7 +26,6 @@ const Hero = () => {
             <div className="mb-4 flex h-[12vh] max-h-[350px] w-[44vw] max-w-[350px] items-center justify-center md:h-[12vh] md:w-[17vw]">
               <Image
                 layout="responsive"
-                style={{ width: "100%", height: "auto" }}
                 width={1200}
                 height={1200}
                 src={logo}

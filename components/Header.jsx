@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
-import Image from "next/image";
+import Image from "next/legacy/image";
 // components
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";

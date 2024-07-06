@@ -1,3 +1,4 @@
+"use client";
 import {
   Table,
   TableBody,
@@ -8,6 +9,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import React from "react";
+import { db } from "@/app/firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
+import { useState, useEffect } from "react";
 
 const TableData = [
   {
@@ -42,7 +46,31 @@ const TableData = [
   },
 ];
 
+async function fetchDataFromFirestore() {
+  const querySnapshot = await getDocs(collection(db, "schedule"));
+  console.log(querySnapshot);
+  const data = [];
+  querySnapshot.forEach((doc) => {
+    data.push({ id: doc.id, ...doc.data() });
+  });
+  console.log(data);
+  return data;
+}
+
 const Page5 = () => {
+  const [schData, setschData] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchDataFromFirestore();
+      console.log(data[0]);
+      setschData(data[0].scheduleData);
+    }
+    // console.log(testiData);
+    fetchData();
+  }, []);
+  const scheduleDataList = schData;
+  console.log(scheduleDataList);
+
   return (
     <section className="mx-auto mt-8">
       <div className="flex flex-col items-center justify-center">
@@ -82,7 +110,7 @@ const Page5 = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {TableData.map((data, index) => {
+              {scheduleDataList.map((data, index) => {
                 return (
                   <TableRow key={index}>
                     <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">

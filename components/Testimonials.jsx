@@ -37,12 +37,12 @@ const list = [
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));
-  // console.log(querySnapshot);
+  console.log(querySnapshot);
   const data = [];
   querySnapshot.forEach((doc) => {
     data.push({ id: doc.id, ...doc.data() });
   });
-  // console.log(data);
+  console.log(data);
   return data;
 }
 
@@ -104,7 +104,7 @@ const Page8 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.5rem] md:h-[100px] md:w-[100px] md:translate-x-[17rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[34rem] xxl:translate-y-[-8.5rem]">
+                <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.8rem] md:h-[100px] md:w-[100px] md:translate-x-[17.2rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[34rem] xxl:translate-y-[-8.5rem]">
                   <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
                     <Image
                       src={vidplay}
