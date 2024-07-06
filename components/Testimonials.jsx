@@ -37,12 +37,12 @@ const list = [
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));
-  console.log(querySnapshot);
+  // console.log(querySnapshot);
   const data = [];
   querySnapshot.forEach((doc) => {
     data.push({ id: doc.id, ...doc.data() });
   });
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
@@ -51,10 +51,10 @@ const Page8 = () => {
   useEffect(() => {
     async function fetchData() {
       const data = await fetchDataFromFirestore();
-      console.log(data[0].test[0]);
+      // console.log(data[0].test[0]);
       settestiData(data[0].test);
     }
-    console.log(testiData);
+    // console.log(testiData);
     fetchData();
   }, []);
   const testimonialDataList = testiData;

@@ -14,25 +14,33 @@ import Resources from "../components/Resources";
 import Positions from "@/components/Positions";
 import QualityAssr from "@/components/QualityAssr";
 import Benefits from "@/components/Benefits";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Popup from "@/components/Popup";
 
 export default function Home() {
   return (
-    <main className="px-[30px] sm:px-[50px] xl:px-[15vw]">
-      <Hero />
-      <Guidelines />
-      {/* <Resources /> */}
-      <BootCampSlider />
-      <Comparision />
-      <Resources />
-      <Roadmap />
-      <Positions />
-      <Connect />
-      <Schedule />
-      <Testimonials />
-      <QualityAssr />
-      <Benefits />
+    <>
+      <Popup />
+      <Header />
+      <main className="px-[30px] sm:px-[50px] xl:px-[15vw]">
+        <Hero />
+        <Guidelines />
+        {/* <Resources /> */}
+        <BootCampSlider />
+        <Comparision />
+        <Resources />
+        <Roadmap />
+        <Positions />
+        <Connect />
+        <Schedule />
+        <Testimonials />
+        <QualityAssr />
+        <Benefits />
 
-      <AccordionWrap />
-    </main>
+        <AccordionWrap />
+      </main>
+      <Footer />
+    </>
   );
 }
