@@ -66,12 +66,12 @@ const Page2 = () => {
             <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
               <BsPatchExclamationFill className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
+            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:w-[75%] md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
               <span className="flex text-cyn">Is CISSP BEST for Me?</span>
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="h-[17px] w-[60%] rounded-full border-accent py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
@@ -90,7 +90,7 @@ const Page2 = () => {
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="h-[17px] w-[60%] rounded-full border-accent py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
@@ -104,12 +104,12 @@ const Page2 = () => {
             <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
               <FaWindowMaximize className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
+            <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
               <span className="flex text-cyn">Study FREE CISSP Notes</span>
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="h-[17px] w-[60%] rounded-full border-accent py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
@@ -128,7 +128,7 @@ const Page2 = () => {
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="h-[17px] w-[60%] rounded-full border-accent py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
