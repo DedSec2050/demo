@@ -59,7 +59,7 @@ const Page2 = () => {
         <div className="grid grid-cols-2 grid-rows-2">
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFirst bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[16vw] xl:w-[16vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
@@ -71,33 +71,33 @@ const Page2 = () => {
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[50%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
           </div>
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgSecond bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgSecond bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[16vw] xl:w-[16vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
             <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
               <FaHeart className="txt text-[15px] text-cyn sm:text-[2vw]" />
             </div>
-            <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
+            <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
               <span className="flex text-cyn">Join FREE CISSP Masterclass</span>
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[50%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
           </div>
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgThird bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgThird bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[16vw] xl:w-[16vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
@@ -109,14 +109,14 @@ const Page2 = () => {
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[50%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
           </div>
           <div
             className={
-              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFourth bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[15vw] xl:w-[15vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
+              "mx-4 my-4 flex h-[35vw] w-[35vw] flex-col items-center justify-between overflow-hidden rounded-[13%] bg-opacity-25 bg-bgFourth bg-cover bg-no-repeat py-[20%] hover:border-2 hover:border-accent hover:bg-hv md:h-[20vw] md:w-[20vw] xl:h-[16vw] xl:w-[16vw] xxl:h-[20vw] xxl:w-[20vw] xxl:rounded-[45px] " +
               "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-accent [&:hover>div>span]:text-accent"
             }
           >
@@ -128,7 +128,7 @@ const Page2 = () => {
             </div>
             <Button
               variant="outline"
-              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[50%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+              className="w-[70%] rounded-full border-accent text-[7.5px] text-white sm:translate-y-[15px] sm:text-[1.4vw] md:translate-y-[2vh] xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
             >
               Explore More
             </Button>
