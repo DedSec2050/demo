@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%] xxl:justify-around">
-              <div className="Company flex flex-col text-white xxl:text-[1vw]">
+              <div className="Company flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
                 <Link href={"/"}>
                   <span className="text-md text-accent">Company</span>
                 </Link>
@@ -47,17 +47,17 @@ const Footer = () => {
                   <span>Blog</span>
                 </Link>
               </div>
-              <div className="Policy flex flex-col text-white xxl:text-[1vw]">
+              <div className="Policy flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
                 <Link href={"/"}>
                   <span className="text-md text-accent">Policy</span>
                 </Link>
                 <Link href={"/privacypolicy"}>
                   <span>Privacy Policy</span>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/cookiepolicy"}>
                   <span>Cookie Policy</span>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/refundpolicy"}>
                   <span>Refund Policy</span>
                 </Link>
               </div>

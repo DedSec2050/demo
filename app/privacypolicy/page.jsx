@@ -9,7 +9,9 @@ export default function page() {
       <div className="flex flex-col items-center justify-center pt-[30px]">
         <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.3rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
           <div>
-            <h1>Privacy Policy</h1>
+            <h2 className="text-center text-[1.9rem] font-bold text-accent">
+              Privacy Policy
+            </h2>
             <p>
               We understand that privacy and the security of your personal
               information is extremely important. This policy sets out what we

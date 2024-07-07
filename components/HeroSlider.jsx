@@ -43,7 +43,7 @@ const HeroSlider = () => {
 
         <div
           key={index}
-          className="hidden w-[100%] items-start justify-center px-5 lg:flex xxl:mt-2"
+          className={`xxl:mt-2" hidden w-[100%] items-stretch justify-center lg:flex`}
         >
           {
             <Image
@@ -52,7 +52,7 @@ const HeroSlider = () => {
               src={demo.urlxl}
               width={649}
               height={122}
-              className={`${index}` + ""}
+              className={`${index != 3 && "pr-5"}`}
               alt="slider"
             />
           }
