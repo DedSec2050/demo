@@ -51,7 +51,7 @@ const Footer = () => {
                 <Link href={"/"}>
                   <span className="text-md text-accent">Policy</span>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/privacypolicy"}>
                   <span>Privacy Policy</span>
                 </Link>
                 <Link href={"/"}>
