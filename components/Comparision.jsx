@@ -3,8 +3,8 @@ import React from "react";
 import photo from "../public/assets/Comparision/comparisionfinal.webp";
 const Page7 = () => {
   return (
-    <section className="mt-7 flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center px-[2vw]">
+    <section className="my-7 flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center [&>div]:text-justify">
         <h1 className="text-center text-clamptitle">
           <strong>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent xxl:text-[2vw]">
@@ -32,14 +32,14 @@ const Page7 = () => {
         <div className="mb-[3rem] mt-[40px] w-full text-clamptextsmm font-medium leading-9 xxl:text-[1.5vw] xxl:leading-normal">
           Let me show you why I call this program as a complete Eco-system.
         </div>
-        <div className="relative mt-[45px] flex h-[50vh] w-[90%] bg-transparent">
+        <div className="relative mt-[45px] flex w-full bg-transparent">
           <Image
             src={photo}
             priority
-            quality={80}
-            fill
-            alt=""
-            className="object-contain"
+            height={1281}
+            width={2056}
+            responsive
+            alt="comparision"
           />
         </div>
       </div>

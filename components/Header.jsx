@@ -8,9 +8,9 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-    <header className="w-[100%] py-3 text-white lg:px-[40px]">
+    <header className="w-[100%] py-3 text-white sm:px-[50px] xl:px-[12vw]">
       <div className="mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
-        <div className="flex max-h-[150px] w-[18vw] max-w-[250px]">
+        <div className="flex max-h-[150px] w-[18vw] max-w-[200px]">
           <Link href="/">
             <Image
               layout="responsive"
@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <Link href="/signin">
           <Button
-            className="z-40 hidden w-[9rem] justify-around rounded-[2rem] text-white hover:bg-accent xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
+            className="z-40 hidden w-[8rem] justify-around rounded-[2rem] text-white hover:bg-accent xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
             size="lg"
             variant="outline"
           >

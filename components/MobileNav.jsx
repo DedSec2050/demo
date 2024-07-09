@@ -3,6 +3,7 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { IoMenuSharp } from "react-icons/io5";
 
 const links = [
   {
@@ -28,7 +29,7 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger className="flex items-center justify-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+        <IoMenuSharp className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="mb-20 text-left text-2xl text-accent-hover">logo</div>

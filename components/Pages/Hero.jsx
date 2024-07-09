@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "../Slider";
 import HeroSlider from "../HeroSlider";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import logo from "../../public/assets/HeroSection/herologo.webp";
 import trainer from "../../public/assets/HeroSection/herotrainer.webp";
 import float from "../../public/assets/floating.webp";
