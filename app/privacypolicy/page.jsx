@@ -7,7 +7,7 @@ export default function page() {
     <section>
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">
-        <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.3rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
+        <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.7rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
           <div>
             <h2 className="text-center text-[1.9rem] font-bold text-accent">
               Privacy Policy
