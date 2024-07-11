@@ -20,7 +20,6 @@ const Sliding = () => {
       effect={"coverflow"}
       loop={true}
       breakpoints={{
-        200: { slidesPerView: 1, spaceBetween: 10 },
         500: { slidesPerView: 3, spaceBetween: 30 },
         600: {
           slidesPerView: 3,

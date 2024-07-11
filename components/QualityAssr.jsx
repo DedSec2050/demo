@@ -83,22 +83,19 @@ const QualityAssr = () => {
       <p className="mb-[2vh] mt-[2vh] w-full text-left text-clamptextmd font-bold text-grn xxl:mt-[6vh] xxl:text-[1.8vw]">
         CISSP Course Curriculum
       </p>
-      <Table className="md:hidden">
-        <TableBody>
-          {listdata.map((data, index) => {
-            <ul>
-              return (
-              <li
-                className="py-4 text-clamptextsmm font-medium md:text-[1.3rem] xxl:py-[40px] xxl:text-[1.3vw]"
-                key={index}
-              >
-                {`${index + 1}. ` + data.data}
-              </li>
-              );
-            </ul>;
-          })}
-        </TableBody>
-      </Table>
+      <ul className="w-full text-justify md:hidden">
+        {listdata.map((data, index) => {
+          return (
+            <li
+              className="py-4 text-clamptextsmm font-medium md:text-[1.3rem] xxl:py-[40px] xxl:text-[1.3vw]"
+              key={index}
+            >
+              {`${index + 1}. ` + data.data}
+            </li>
+          );
+        })}
+      </ul>
+
       <div className="hidden w-full items-center justify-center md:flex">
         <Table className="hidden w-full flex-col md:flex">
           <TableBody className="w-full items-center justify-center">

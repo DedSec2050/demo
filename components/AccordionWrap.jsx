@@ -17,8 +17,8 @@ const Page9 = () => {
         <Tabs className="w-full" defaultValue="toolkit">
           <TabsList className="grid h-[8vh] w-full grid-cols-2 border-[1px] border-accent bg-primary">
             <TabsTrigger value="toolkit" className="h-[6vh]">
-              <span className="text-clamptextsmm leading-10">
-                Related to CISSP<br className="flex py-4 md:hidden"></br>{" "}
+              <span className="text-clamptextsmm leading-8">
+                Related to CISSP<br className="flex py-4 xl:hidden"></br>{" "}
                 Success Toolkit
               </span>
             </TabsTrigger>
