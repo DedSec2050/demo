@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 
 import Image from "next/image";
 import { border } from "@cloudinary/url-gen/qualifiers/background";
+import Swiper from "./swiper";
 
 const imageStyle = {
   borderRadius: "10%",
@@ -15,27 +16,9 @@ const Slider = () => {
   const pic = ["/assets/SliderAssets/slider1.webp"];
 
   return (
-    <div className="relative flex w-full">
-      <Marquee direction="right">
-        {demos.map((url, index) => {
-          return (
-            <div
-              className="mr-[6.5rem] flex h-[22vh] w-[21vh] md:h-[32vh] md:w-[32vh]"
-              key={index}
-            >
-              <Image
-                layout="responsive"
-                src="/assets/SliderAssets/slider1.webp"
-                alt="slider"
-                style={({ width: "auto", height: "auto" }, imageStyle)}
-                height={290}
-                width={300}
-              ></Image>
-            </div>
-          );
-        })}
-      </Marquee>
-    </div>
+    <section className="container z-40 hidden items-center justify-center sm:flex">
+      <Swiper />
+    </section>
   );
 };
 
