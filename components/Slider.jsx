@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 import Image from "next/image";
 import { border } from "@cloudinary/url-gen/qualifiers/background";
-import Swiper from "./swiper";
+import Swiper from "./Swiper";
 
 const imageStyle = {
   borderRadius: "10%",
