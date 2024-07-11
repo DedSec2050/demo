@@ -33,37 +33,41 @@ const topBenefits = [
 
 const Benefits = () => {
   return (
-    <div className="flex flex-col items-center justify-center xxl:mt-[40px]">
-      <h1 className="mb-[5vh] mt-[5vh] bg-gradient-to-r from-grn to-accent bg-clip-text text-clamptitle font-bold text-transparent xl:px-[7vw] xxl:mb-[20px] xxl:text-[2.5vw]">
-        Benefits of doing CISSP Certification
-      </h1>
-      <p className="mb-[2vh] w-full text-clamptextmd font-semibold text-grn xxl:mb-[45px] xxl:text-[1.5vw]">
-        Who should Do CISSP Certification ?
-      </p>
-      {shouldDo.map((data, index) => {
-        return (
-          <li
-            key={index}
-            className="w-full text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
-          >
-            {data.data}
-          </li>
-        );
-      })}
-      <p className="mb-[2vh] mt-[2vh] w-full text-clamptextmd font-semibold text-grn xxl:mb-[45px] xxl:mt-[40px] xxl:text-[1.5vw]">
-        Here are the top Benefits of achieving the CISSP Designation
-      </p>
-      {topBenefits.map((data, index) => {
-        return (
-          <li
-            key={index}
-            className="w-full text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
-          >
-            {data.data}
-          </li>
-        );
-      })}
-    </div>
+    <section>
+      <div className="px-[30px] sm:px-[50px] xl:px-[15vw]">
+        <div className="flex flex-col items-center justify-center xxl:mt-[40px]">
+          <h1 className="mb-[5vh] mt-[5vh] bg-gradient-to-r from-grn to-accent bg-clip-text text-clamptitle font-bold text-transparent xl:px-[7vw] xxl:mb-[20px] xxl:text-[2.5vw]">
+            Benefits of doing CISSP Certification
+          </h1>
+          <p className="mb-[2vh] w-full text-clamptextmd font-semibold text-grn xxl:mb-[45px] xxl:text-[1.5vw]">
+            Who should Do CISSP Certification ?
+          </p>
+          {shouldDo.map((data, index) => {
+            return (
+              <li
+                key={index}
+                className="w-full text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
+              >
+                {data.data}
+              </li>
+            );
+          })}
+          <p className="mb-[2vh] mt-[2vh] w-full text-clamptextmd font-semibold text-grn xxl:mb-[45px] xxl:mt-[40px] xxl:text-[1.5vw]">
+            Here are the top Benefits of achieving the CISSP Designation
+          </p>
+          {topBenefits.map((data, index) => {
+            return (
+              <li
+                key={index}
+                className="w-full text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
+              >
+                {data.data}
+              </li>
+            );
+          })}
+        </div>
+      </div>
+    </section>
   );
 };
 

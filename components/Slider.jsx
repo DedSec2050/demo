@@ -16,7 +16,7 @@ const Slider = () => {
   const pic = ["/assets/SliderAssets/slider1.webp"];
 
   return (
-    <section className="container z-40 hidden items-center justify-center sm:flex">
+    <section className="container hidden items-center justify-center sm:flex">
       <Swiper />
     </section>
   );

@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <Popup />
       <Header />
-      <main className="px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <main className="">
         <Hero />
         <Guidelines />
         {/* <Resources /> */}
