@@ -44,7 +44,7 @@ const Sliding = () => {
         return (
           <SwiperSlide key={index}>
             <div
-              className="xlls:w-[380px] xlls:h-[380px] flex h-[100px] w-[100px] sm:mx-5 sm:h-[150px] sm:w-[150px] md:h-[180px] md:w-[180px] lg:h-[250px] lg:w-[250px]"
+              className="flex h-[100px] w-[100px] sm:mx-5 sm:h-[150px] sm:w-[150px] md:h-[180px] md:w-[180px] lg:h-[250px] lg:w-[250px] xlls:h-[380px] xlls:w-[380px]"
               key={index}
             >
               <Image

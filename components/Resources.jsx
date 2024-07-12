@@ -1,13 +1,11 @@
 "use client";
 import { Button } from "./ui/button";
-import { FaArrowRightLong } from "react-icons/fa6";
-import Photo from "./Photo";
+
 import Image from "next/legacy/image";
 import image from "../public/assets/Resources/resource.webp";
 import { BsPatchExclamationFill } from "react-icons/bs";
 import { FaWindowMaximize } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
-import { MdHourglassFull } from "react-icons/md";
 
 const text = [
   {
@@ -35,7 +33,7 @@ const Page2 = () => {
         <h1 className="flex bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
           Free CISSP resources
         </h1>
-        <div className="flex w-full flex-col items-center justify-around md:flex-row">
+        <div className="flex w-full flex-col items-center justify-between md:flex-row">
           {/* imagediv  */}
           <div className="order-2 mt-[40px] flex h-[100%] w-[25%] flex-col md:order-none">
             <div className="flex flex-col">
@@ -51,7 +49,7 @@ const Page2 = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="mt-4 rounded-full py-4 capitalize xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
+                className="mt-4 rounded-full py-4 capitalize xl:mt-10 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
               >
                 Get Much More...
               </Button>

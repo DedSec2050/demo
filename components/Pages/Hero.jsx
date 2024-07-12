@@ -5,7 +5,6 @@ import HeroSlider from "../HeroSlider";
 import Image from "next/image";
 import logo from "../../public/assets/HeroSection/herologo.webp";
 import trainer from "../../public/assets/HeroSection/herotrainer.webp";
-import float from "../../public/assets/floating.webp";
 import Marquee from "react-fast-marquee";
 const imageStyle = {
   borderRadius: "10%",
@@ -46,7 +45,7 @@ const Hero = () => {
                     Give me 100 Days &
                   </span>
                 </h1>
-                <h1 className="my-2 text-clampheader font-[700] leading-[4rem] xxl:text-[2.5vw]">
+                <h1 className="my-2 text-clampheader font-[700] leading-[4rem] xl:my-8 xxl:text-[2.5vw]">
                   <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text leading-10 text-transparent">
                     {" "}
                     I will get you CISSP Certified
@@ -54,19 +53,10 @@ const Hero = () => {
                 </h1>
               </div>
             </div>
-            <div className="floating fixed bottom-[12vh] right-[2vw] z-10 h-[8vh] w-[8vh] rounded-full border-2 border-white p-2 hover:cursor-pointer md:h-[3vw] md:w-[3vw] xxl:h-[5vw] xxl:w-[5vw]">
-              <Image
-                layout="responsive"
-                height={100}
-                width={100}
-                src={float}
-                alt="hero-trainer"
-              />
-            </div>
           </div>
           <HeroSlider />
         </div>
-        <div className="relative flex w-full sm:hidden">
+        <div className="relative mb-10 flex w-full sm:hidden">
           <Marquee direction="right">
             {demos.map((url, index) => {
               return (

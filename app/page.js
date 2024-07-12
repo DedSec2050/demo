@@ -17,11 +17,13 @@ import Benefits from "@/components/Benefits";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Popup from "@/components/Popup";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <>
       <Popup />
+      <Banner />
       <Header />
       <main className="">
         <Hero />

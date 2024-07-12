@@ -49,6 +49,7 @@ module.exports = {
         bgThird: "url(/assets/Resources/Bg/bg-3.webp)",
         bgFourth: "url(/assets/Resources/Bg/bg-4.webp)",
         iconOne: "url(/assets/Resources/Bg/Icon/hoverlogo1.webp)",
+        banner: "url(/assets/Banner/banner.webp)",
       },
       fontSize: {
         clampheader: "clamp(24px, 4vw, 60px)",

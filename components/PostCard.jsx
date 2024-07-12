@@ -18,18 +18,20 @@ export default function PostCard({ title, description, image, slug }) {
     >
       <Card className="bg-elevated text-white">
         <CardHeader className="my-2 gap-5">
-          <CardTitle>{title}</CardTitle>
-          <Image
-            className="rounded-md"
-            src={image}
-            height={500}
-            width={500}
-            alt={`${slug}`}
-          />
+          <CardTitle>{`${title.substring(0, 50)} ...`}</CardTitle>
+          <div className="max-h-[210px] overflow-hidden">
+            <Image
+              className="rounded-md"
+              src={image}
+              height={500}
+              width={500}
+              alt={`${slug}`}
+            />
+          </div>
         </CardHeader>
         <CardContent>
           <CardDescription className="text-slate-300">
-            {description}
+            {`${description.substring(0, 250)}...`}
           </CardDescription>
         </CardContent>
       </Card>

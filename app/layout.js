@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Popup from "@/components/Popup";
+import Floater from "@/components/Floater";
 
 export const metadata = {
   title: "DemoApp",
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Floater />
+      </body>
     </html>
   );
 }
