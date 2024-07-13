@@ -17,7 +17,7 @@ const Page6 = () => {
               </span>
             </strong>
           </h1>
-          <div className="w-full px-6 xl:px-[3vw]">
+          <div className="w-full">
             <Image
               alt="timeline"
               unoptimized

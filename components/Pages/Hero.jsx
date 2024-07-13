@@ -41,12 +41,12 @@ const Hero = () => {
 
               <div className="flex flex-col text-center">
                 <h1 className="text-clampheader font-[700] leading-8 xxl:text-[2.5vw]">
-                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent">
+                  <span className="drop-shadow-hero bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent">
                     Give me 100 Days &
                   </span>
                 </h1>
                 <h1 className="my-2 text-clampheader font-[700] leading-[4rem] xl:my-8 xxl:text-[2.5vw]">
-                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text leading-10 text-transparent">
+                  <span className="drop-shadow-hero bg-gradient-to-r from-grn via-accent to-grn bg-clip-text leading-10 text-transparent">
                     {" "}
                     I will get you CISSP Certified
                   </span>

@@ -28,6 +28,7 @@ module.exports = {
     },
     extend: {
       dropShadow: {
+        hero: "2.5px 1px 2px #FFD600",
         xl: "0px 1px 5px rgba(250, 204, 0, 1)",
         "4xl": [
           "0 35px 35px rgba(0, 0, 0, 0.25)",

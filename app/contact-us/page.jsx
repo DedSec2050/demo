@@ -58,7 +58,7 @@ const ContactUs = () => {
           </form>
         </div>
         <div className="flex-grow-1 flex h-full flex-col items-center justify-start text-center font-semibold lg:max-w-[50%]">
-          <h1 className="mb-8 text-clamptextsmm text-accent">
+          <h1 className="mb-4 text-clamptextsmm text-accent">
             Contact Information
           </h1>
           <div>Our HeadQuarter</div>
@@ -66,6 +66,29 @@ const ContactUs = () => {
             <p>Cybernous Infosec Consulting LLP,</p>
             <p>GSTN- 29AASFC9800E1Z6</p>
             <p>Yelahanka, Bangalore - 560063, Karnataka, India</p>
+          </div>
+
+          <div className="text-textclampsm mt-4 flex flex-col text-justify">
+            <p>
+              <span className="font-semibold text-accent">Contact No.</span> -
+              +91-8882343900 | +91-8130126306
+            </p>
+            <p>
+              <span className="font-semibold text-accent">Contact Email</span> -
+              contact@cybernous.com
+            </p>
+            <p>
+              <span className="font-semibold text-accent">
+                Director Sales and Marketing:
+              </span>{" "}
+              Pratima@cybernous
+            </p>
+            <p>
+              <span className="font-semibold text-accent">
+                Director Trainings:
+              </span>{" "}
+              manoj@cybernous.com
+            </p>
           </div>
         </div>
       </div>

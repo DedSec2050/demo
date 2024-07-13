@@ -2,11 +2,8 @@ import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MultiSteps from "@/components/MultiSteps";
-// import useMultiStepForm from "@/components/hooks/useMultiStepForm.jsx";
 
 const Resources = () => {
-  // const steps = ["Customer Info", "Shipping Info"];
-
   return (
     <div className="">
       <Banner />

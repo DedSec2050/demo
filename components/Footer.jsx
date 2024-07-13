@@ -37,13 +37,10 @@ const Footer = () => {
                 <Link href={"/"}>
                   <span>Home</span>
                 </Link>
-                <Link href={"/"}>
-                  <span>About Us</span>
+                <Link href={"/resources"}>
+                  <span>Resources</span>
                 </Link>
-                <Link href={"/"}>
-                  <span>Courses</span>
-                </Link>
-                <Link href={"/"}>
+                <Link href={"/blog"}>
                   <span>Blog</span>
                 </Link>
               </div>
@@ -61,11 +58,11 @@ const Footer = () => {
                   <span>Refund Policy</span>
                 </Link>
               </div>
-              <div className="Support flex flex-col text-white xxl:text-[1vw]">
+              <div className="Support flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
                 <Link href={"/"}>
                   <span className="text-md text-accent">Support</span>
                 </Link>
-                <Link href={"/"}>
+                <Link href={"/contact-us"}>
                   <span>Contact Us</span>
                 </Link>
               </div>
