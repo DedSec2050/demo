@@ -1,10 +1,24 @@
+import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import MultiSteps from "@/components/MultiSteps";
+// import useMultiStepForm from "@/components/hooks/useMultiStepForm.jsx";
 
 const Resources = () => {
+  // const steps = ["Customer Info", "Shipping Info"];
+
   return (
-    <div>
-      Resources Div
+    <div className="">
+      <Banner />
+      <Header />
+      <div className="flex flex-col items-center justify-center pt-[30px]">
+        <div className="flex flex-col justify-between border-4 border-accent p-20">
+          <MultiSteps />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default Resources;

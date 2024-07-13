@@ -4,6 +4,7 @@ import { urlForImage } from "@/sanity/lib/image";
 import PostCard from "@/components/PostCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Banner from "@/components/Banner";
 
 const getPosts = async () => {
   const query = groq`*[_type == 'blog'] | order(_createdAt desc){
@@ -22,6 +23,7 @@ const Blog = async () => {
 
   return (
     <div>
+      <Banner />
       <Header />
       <section className="flex flex-col items-center justify-center p-24 md:p-8">
         <h1 className="font-700 mb-[30px] text-[40px] font-bold text-accent">

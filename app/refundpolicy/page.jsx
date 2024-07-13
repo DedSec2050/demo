@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
@@ -5,6 +6,7 @@ import React from "react";
 export default function refundpolicy() {
   return (
     <section>
+      <Banner />
       <Header />
       <div>
         <div className="flex flex-col items-center justify-center pt-[30px]">
