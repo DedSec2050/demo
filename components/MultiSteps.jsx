@@ -1,6 +1,8 @@
 "use client";
 import Select from "react-select";
 import React, { useEffect, useState } from "react";
+import { Button } from "./ui/button";
+import { X } from "lucide-react";
 
 const data = [
   {
@@ -58,9 +60,10 @@ const MultiSteps = () => {
     }
   }, [domain, topic]);
   return (
-    <div style={{ width: 400, marginBottom: 20 }} className="text-white">
+    <div className="mb-20 w-[250px] text-white md:w-[350px]">
       <b>Domain</b>
       <Select
+        className="text-black"
         placeholder="Select Domain"
         value={domain}
         options={data}
@@ -69,14 +72,24 @@ const MultiSteps = () => {
         getOptionValue={(x) => x.code}
       ></Select>
       <br />
+      <b>Topic</b>
       <Select
+        className="text-black"
         placeholder="Select Topic"
         value={topic}
         options={topicList}
         onChange={handleTopicChange}
         getOptionLabel={(x) => x.name}
-        getOptionValue={(X) => X.code}
+        getOptionValue={(x) => x.code}
       ></Select>
+      {console.log(domain && topic ? topic.code : "-")}
+      <Button
+        variant="outline"
+        href={domain && topic ? topic.code : "-"}
+        className="mt-8 rounded-md border-accent text-white"
+      >
+        Go
+      </Button>
     </div>
   );
 };

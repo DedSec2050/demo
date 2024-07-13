@@ -12,7 +12,7 @@ const Resources = () => {
       <Banner />
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">
-        <div className="flex flex-col justify-between border-4 border-accent p-20">
+        <div className="flex flex-col justify-between rounded-md border-4 border-accent p-6 md:p-20">
           <MultiSteps />
         </div>
       </div>
