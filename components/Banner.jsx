@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="w-full bg-banner px-10 text-[0.9rem] md:px-0 md:text-[1.2rem]">
+    <section className="w-full bg-banner px-10 text-[0.7rem] md:px-0 md:text-[1.2rem]">
       <div className="w-full py-1 text-center">
         UP TO <span className="text-accent">50%</span> OFF on Combo Courses!
         <Link

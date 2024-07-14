@@ -28,6 +28,11 @@ module.exports = {
     },
     extend: {
       dropShadow: {
+        green: "2.5px 1px 2px #008080",
+        pink: "2.5px 1px 2px #FF00FF",
+        cyan: "2.5px 1px 2px #00FFFF",
+        red: "2.5px 1px 2px #Ff0000",
+
         hero: "2.5px 1px 2px #FFD600",
         xl: "0px 1px 5px rgba(250, 204, 0, 1)",
         "4xl": [
