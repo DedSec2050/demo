@@ -5,7 +5,7 @@ import "./css/floater.css";
 
 const Floater = () => {
   return (
-    <div className="floating-icon z-2 floating fixed bottom-[12vh] right-[2vw] flex flex-col gap-5 rounded-full transition-all duration-100 [&:hover>.menu]:flex [&:hover>.menu]:translate-y-[0px] [&:hover>.menu]:opacity-100 [&>.menu]:translate-y-[50px]">
+    <div className="floating-icon floating fixed bottom-[12vh] right-[2vw] z-10 flex flex-col gap-5 rounded-full transition-all duration-100 [&:hover>.menu]:flex [&:hover>.menu]:translate-y-[0px] [&:hover>.menu]:opacity-100 [&>.menu]:translate-y-[50px]">
       <div className="menu hover:drop-shadow-green hidden overflow-hidden rounded-full transition-all duration-500">
         <SocialIcon url="https://whatsapp.com" />
       </div>
