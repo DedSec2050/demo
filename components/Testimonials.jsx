@@ -21,14 +21,6 @@ async function fetchDataFromFirestore() {
 const Page8 = () => {
   const [testiData, settestiData] = useState([]);
   const handleText = (text) => {
-    let i = 0;
-    // return (
-    //   <>
-    //     <p>{text.slice(0, 40)}</p>
-    //     <p>{text.slice(0, 40)}</p>
-    //     <p>{text.slice(0, 40)}</p>
-    //   </>
-    // );
     if (40 < text.length)
       return (
         <>
@@ -37,7 +29,15 @@ const Page8 = () => {
           <p>{text.slice(71, 100)}...</p>
         </>
       );
-    else {
+    else if (100 < text.length) {
+      return (
+        <>
+          <p>{text.slice(0, 40)}</p>
+          <p>{text.slice(41, 75)}</p>
+          <p>{text.slice(76, 100)}</p>
+        </>
+      );
+    } else {
       return <p>{text}</p>;
     }
   };
