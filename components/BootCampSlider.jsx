@@ -219,10 +219,6 @@ const bootData = [
 
 const Page3 = () => {
   // Here starts custom slider
-  const scrollRef = useRef(null);
-  const scroll = (scrollOffset) => {
-    scrollRef.current.scrollBy({ left: scrollOffset, behaviour: "smooth" });
-  };
 
   return (
     <section>

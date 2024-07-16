@@ -1,3 +1,4 @@
+"use client";
 import Hero from "@/components/Pages/Hero";
 // import Popup from "@/components/Popup";
 

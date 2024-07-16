@@ -7,34 +7,6 @@ import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const list = [
-  {
-    name: "Gautham Bangari",
-    date: "Sep 22",
-    text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
-  },
-  {
-    name: "Gautham Bangari",
-    date: "Sep 22",
-    text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
-  },
-  {
-    name: "Gautham Bangari",
-    date: "Sep 22",
-    text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
-  },
-  {
-    name: "Gautham Bangari",
-    date: "Sep 22",
-    text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
-  },
-  {
-    name: "Gautham Bangari",
-    date: "Sep 22",
-    text: "Lorem ipsum dolor sit amet consectetur. Viverra egestas cursus placerat in sagittis consectetur elit sed. Arcu a consectetur aenean semper lobortis in eget bibendum ipsum.",
-  },
-];
-
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));
   console.log(querySnapshot);
@@ -48,6 +20,27 @@ async function fetchDataFromFirestore() {
 
 const Page8 = () => {
   const [testiData, settestiData] = useState([]);
+  const handleText = (text) => {
+    let i = 0;
+    // return (
+    //   <>
+    //     <p>{text.slice(0, 40)}</p>
+    //     <p>{text.slice(0, 40)}</p>
+    //     <p>{text.slice(0, 40)}</p>
+    //   </>
+    // );
+    if (40 < text.length)
+      return (
+        <>
+          <p>{text.slice(0, 40)}</p>
+          <p>{text.slice(41, 70)}</p>
+          <p>{text.slice(71, 100)}...</p>
+        </>
+      );
+    else {
+      return <p>{text}</p>;
+    }
+  };
   useEffect(() => {
     async function fetchData() {
       const data = await fetchDataFromFirestore();
@@ -104,8 +97,8 @@ const Page8 = () => {
                       <div className="sep translate-y-[-28px] text-[0.75rem] xxl:translate-y-[-110px] xxl:text-[1.3vw]">
                         Nailed CISSP in {data.date}
                       </div>
-                      <div className="px-5 text-[0.85rem] xxl:translate-y-[-80px] xxl:text-[1.1vw]">
-                        {data.desc}
+                      <div className="w-full px-5 text-[0.85rem] xxl:translate-y-[-80px] xxl:text-[1.1vw]">
+                        {handleText(data.desc)}
                       </div>
                     </div>
                   </div>

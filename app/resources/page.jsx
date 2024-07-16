@@ -2,8 +2,25 @@ import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MultiSteps from "@/components/MultiSteps";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/app/firebaseConfig";
 
+// async function fetchDataFromFirestore() {
+//   const querySnapshot = await getDocs(collection(db, "resources"));
+//   console.log(querySnapshot);
+//   const data = [];
+//   querySnapshot.forEach((doc) => {
+//     data.push(doc.data().resources);
+//   });
+//   console.log(data);
+//   data[0].resources.forEach((item) => {
+//     console.log(item);
+//   });
+//   console.log(data[0].resources);
+//   return querySnapshot;
+// }
 const Resources = () => {
+  // const data = fetchDataFromFirestore();
   return (
     <div className="">
       <Banner />
