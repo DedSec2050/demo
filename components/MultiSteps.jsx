@@ -2,17 +2,37 @@
 import Select from "react-select";
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 import { Input } from "./ui/input";
 import { db, auth } from "@/app/firebaseConfig";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, doc, setDoc, addDoc } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   fetchSignInMethodsForEmail,
+  signInWithPopup,
+  GoogleAuthProvider,
 } from "firebase/auth";
-import { useLocalStorage } from "@uidotdev/usehooks";
-import { UserAuth } from "@/app/context/AuthContext";
+import { useAuthState } from "react-firebase-hooks/auth";
 
+async function fetchUsersFromFirestore(checkmail) {
+  const userSnap = await getDocs(collection(db, "users"));
+  console.log(userSnap);
+  const userList = [];
+  userSnap.forEach((doc) => {
+    console.log(doc);
+    userList.push({ ...doc.data() });
+  });
+  console.log(userList);
+
+  var emailFlag = false;
+  userList.forEach((e) => {
+    console.log(e.email);
+    if (checkmail == e.email) emailFlag = true;
+    console.log(emailFlag);
+  });
+  return emailFlag;
+}
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "resources"));
   // console.log(querySnapshot);
@@ -25,8 +45,6 @@ async function fetchDataFromFirestore() {
 }
 
 const MultiSteps = () => {
-  console.log("verify", auth.config);
-
   const [data3, setdata3] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -40,6 +58,7 @@ const MultiSteps = () => {
   const finalData = data3;
   console.log(finalData);
   //
+  const router = useRouter();
   const [domain, setDomain] = useState(null);
   const [topic, setTopic] = useState(null);
   const [topicList, setTopicList] = useState([]);
@@ -48,14 +67,22 @@ const MultiSteps = () => {
   const [email, setEmail] = useState("john@example.com");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
-  const [userEmail, setUserEmail] = useState("");
-
+  const googleAuth = new GoogleAuthProvider();
+  const [user, setUser] = useAuthState(auth);
+  // fetchusers();
   const handleSignUp = async () => {
     try {
       const signInMethod = await fetchSignInMethodsForEmail(auth, email);
+      console.log(user);
+      if (user) {
+        console.log(user);
+        router.push("/blog");
+        return;
+      }
+
       if (signInMethod.length > 0) {
-        setError("Email already in use");
+        alert("Email already in use");
+        setEmail("");
         return;
       }
 
@@ -63,35 +90,116 @@ const MultiSteps = () => {
       console.log(auth);
       alert("Account Created");
       setUserEmail(email);
-      // localStorage.setItem("userEmail", email);
+      // fetchusers(email);
       setError("");
     } catch (error) {
       console.log(error);
       alert(error.message);
-      setError(error.message);
+      setError("");
     }
   };
+  const createUser = async () => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(async (u) => {
+        await addDoc(collection(db, "users"), { email: email });
+      })
+      .catch((error) => {
+        switch (error.code) {
+          case "auth/email-already-in-use":
+            // alert(error.message);
+            handleSignIn();
+            break;
+          case "auth/invalid-email":
+            alert(error.message);
+            console.log(`Email address ${email} is invalid.`);
+            break;
+          case "auth/operation-not-allowed":
+            console.log(`Error during sign up.`);
+            break;
+          case "auth/weak-password":
+            alert(error.message);
+            console.log(
+              "Password is not strong enough. Add additional characters including special characters and numbers.",
+            );
+            break;
+          default:
+            console.log(error.message);
+            break;
+        }
+      });
+  };
+
   const handleSignIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      console.log(user.email);
 
-      if (email == userEmail) {
+      if (email == user.email) {
         setError("User already logged in.");
         return;
       }
 
       alert("Login success");
-      setLoggedEmail(email);
-      setUserEmail(email);
-      // localStorage.setItem("userEmail", email);
-      // localStorage.setItem("userEmail", email);
+
       setError("");
     } catch (error) {
       console.log(error);
       setError(error.message);
+      if (error.code == "auth/invalid-credential") {
+        alert(error.code);
+        setError("");
+        return;
+      }
       handleSignUp();
     }
   };
+  const [userEmail, setUserEmail] = useState("");
+  const handleGoogleLogIn = async () => {
+    if (user) {
+      {
+        router.push("/blog");
+        return;
+      }
+    }
+    const result = await signInWithPopup(auth, googleAuth)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+
+        const user = result.user;
+        console.log(user.email);
+        console.log(user.displayName);
+        //Logic for Adding new data
+        fetchUsersFromFirestore(user.email)
+          .then(async (data) => {
+            console.log(data);
+            if (!data) {
+              await addDoc(collection(db, "users"), { email: user.email });
+              console(user.email);
+            }
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        console.log(errorCode);
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
+    console.log(auth.currentUser);
+  };
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
 
   const handleDomainChange = (obj) => {
     setDomain(obj);
@@ -104,7 +212,6 @@ const MultiSteps = () => {
     setOpen(false);
   };
   const handleClick = () => {
-    // If exists
     setOpen(true);
   };
   const closePopUp = () => {
@@ -142,7 +249,7 @@ const MultiSteps = () => {
       ></Select>
 
       {console.log(domain && topic ? topic.code : "-")}
-
+      {console.log(user ? "/blogs" : link)}
       <Button
         variant="outline"
         onClick={handleClick}
@@ -154,7 +261,8 @@ const MultiSteps = () => {
       {open && (
         <>
           {topic == null && <p>Enter some value</p>}
-          {topic != null && (
+          {user && topic != null ? router.push("/blog") : ""}
+          {topic != null && !user && (
             <div className="absolute left-0 top-0 flex h-screen w-screen items-center justify-center px-[15px]">
               <div className="z-40 flex h-[400px] w-[500px] flex-col items-center justify-center border-4 bg-[#26355D] bg-opacity-[100%] md:h-[500px]">
                 {" "}
@@ -189,7 +297,7 @@ const MultiSteps = () => {
                       variant="outline"
                       className="h-40px mt-[40px] w-[100px]"
                       type="submit"
-                      onClick={handleSignIn}
+                      onClick={createUser}
                     >
                       Submit
                     </Button>
@@ -198,16 +306,12 @@ const MultiSteps = () => {
                       variant="outline"
                       className="h-40px mt-[40px] w-[100px]"
                       type="submit"
-                      onClick={handleGoogleSignIn}
+                      onClick={handleGoogleLogIn}
                     >
                       Google
                     </Button>
 
                     <p>{error}</p>
-                    {/* <p className="z-40">
-                      Currently loggged in as :{" "}
-                      {localStorage.getItem("userEmail", email)}
-                    </p> */}
                   </div>
                 </div>
               </div>
@@ -215,6 +319,7 @@ const MultiSteps = () => {
           )}
         </>
       )}
+
       {/* {<p>Current User: {localStorage.getItem("userEmail", email)}</p>} */}
     </div>
   );
