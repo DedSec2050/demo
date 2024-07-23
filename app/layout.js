@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Popup from "@/components/Popup";
 import Floater from "@/components/Floater";
 import { AuthContextProvider } from "./context/AuthContext";
+import Script from "next/script";
 
 // export const metadata = {
 //   title: "DemoApp",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Floater />
+        <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
       </body>
     </html>
   );

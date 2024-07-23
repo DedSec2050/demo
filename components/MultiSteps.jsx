@@ -3,7 +3,6 @@ import Select from "react-select";
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
-import { Input } from "./ui/input";
 import { db, auth } from "@/app/firebaseConfig";
 import { collection, getDocs, doc, setDoc, addDoc } from "firebase/firestore";
 import {
@@ -33,6 +32,7 @@ async function fetchUsersFromFirestore(checkmail) {
   });
   return emailFlag;
 }
+// Resources
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "resources"));
   // console.log(querySnapshot);
