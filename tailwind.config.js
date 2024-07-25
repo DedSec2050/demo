@@ -86,6 +86,9 @@ module.exports = {
         cyn: {
           DEFAULT: "#11D1C8",
         },
+        matteblue: {
+          DEFAULT: "#26355D",
+        },
       },
     },
   },

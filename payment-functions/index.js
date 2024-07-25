@@ -138,6 +138,7 @@ app.get("/success", async (req, res) => {
             amount: parseInt(ParsedResponse.transactions[0].amount.total),
             courseId: ParsedResponse.transactions[0].item_list.items[0].sku,
             payment_via: ParsedResponse.payer.payment_method,
+            currency: "USD",
           });
 
           return res.redirect("http://localhost:3000/success");
