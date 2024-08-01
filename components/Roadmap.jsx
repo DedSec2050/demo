@@ -1,6 +1,6 @@
 import Image from "next/legacy/image";
 import React from "react";
-import timeline from "../public/assets/Timeline/timeline.gif";
+import timeline from "../public/assets/Timeline/timeline.webp";
 
 const Page6 = () => {
   return (
@@ -17,7 +17,7 @@ const Page6 = () => {
               </span>
             </strong>
           </h1>
-          <div className="w-full">
+          <div className="my-6 w-full overflow-hidden rounded-[30px] border-2 border-accent">
             <Image
               alt="timeline"
               unoptimized
