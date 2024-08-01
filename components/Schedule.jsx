@@ -91,22 +91,22 @@ const Page5 = () => {
                     Start Date
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Number of Hours
-                  </TableHead>
-                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Batch Type
-                  </TableHead>
-                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Training Mode
-                  </TableHead>
-                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                     Training Schedule
+                  </TableHead>
+                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                    Enrolment Status
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                     Batch Status
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Enrolment Status
+                    Training Mode
+                  </TableHead>
+                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                    Number of Hours
+                  </TableHead>
+                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                    Batch Type
                   </TableHead>
                 </TableRow>
               </TableHeader>
@@ -121,16 +121,10 @@ const Page5 = () => {
                         {data.startDate}
                       </TableCell>
                       <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.numberOfHours}
-                      </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.batchType}
-                      </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.trainingMode}
-                      </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                         {data.trainingSchedule}
+                      </TableCell>
+                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                        {data.enrollmentStatus}
                       </TableCell>
                       <TableCell
                         className={`${data.batchStatus == "Open" && "text-green-500"} ${data.batchStatus == "Closed" && "text-red-600"} border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]`}
@@ -138,7 +132,13 @@ const Page5 = () => {
                         {data.batchStatus}
                       </TableCell>
                       <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.enrollmentStatus}
+                        {data.trainingMode}
+                      </TableCell>
+                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                        {data.numberOfHours}
+                      </TableCell>
+                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                        {data.batchType}
                       </TableCell>
                     </TableRow>
                   );

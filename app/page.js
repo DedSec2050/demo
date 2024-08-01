@@ -19,14 +19,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Popup from "@/components/Popup";
 import Banner from "@/components/Banner";
+import BackWrapper from "@/components/BackWrapper";
 
 export default function Home() {
   return (
     <div className="">
+      <BackWrapper />
       <Popup />
       <Banner />
       <main className="">
-        <div className="bg-herosection bg-cover bg-no-repeat">
+        <div className="">
           <Header />
           <Hero />
         </div>

@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    @apply m-0 box-border bg-primary p-0 font-primary leading-loose text-white;
+    /* @apply m-0 box-border bg-primary p-0 font-primary leading-loose text-white; */
+    @apply m-0 box-border bg-transparent p-0 font-primary leading-loose text-white;
   }
 }
 .floating {

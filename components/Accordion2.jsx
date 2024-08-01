@@ -28,7 +28,7 @@ const Accordion2 = () => {
           >
             <span className="xxl:py-4 xxl:text-[1.3vw] xxl:leading-[50px]">{`${index + 1}. ${data.question}`}</span>
             {openIndex === index ? (
-              <FiMinusCircle className="text-[23px] font-semibold text-accent xxl:text-[1.5vw]" />
+              <FiMinusCircle className="flex-grow-1 flex text-[23px] font-semibold text-accent xxl:text-[1.5vw]" />
             ) : (
               <FiPlusCircle className="text-[23px] font-semibold text-accent xxl:text-[1.5vw]" />
             )}

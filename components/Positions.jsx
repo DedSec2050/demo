@@ -6,8 +6,8 @@ const Positions = () => {
   return (
     <section>
       <div className="px-[30px] sm:px-[50px] xl:px-[15vw]">
-        <div className="px-[2.5vw]">
-          <div className="flex flex-col items-center justify-center">
+        <div className="rounded-[30px] border-4 bg-gradient-to-r from-[#FFFFFF66] via-[#F9F9F9] to-[#F9F9F9]">
+          {/* <div className="flex flex-col items-center justify-center">
             <h1 className="text-center text-clamptitle leading-normal">
               <strong>
                 <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
@@ -18,8 +18,8 @@ const Positions = () => {
                 </span>
               </strong>
             </h1>
-          </div>
-          <div className="xxl:border-tb-[10px] mt-8 flex w-[100%] flex-row">
+          </div> */}
+          <div className="xxl:border-tb-[10px] flex w-[100%] flex-row">
             <Marquee>
               {urls.map((url, index) => {
                 return (
