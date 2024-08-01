@@ -5,6 +5,7 @@ import HeroSlider from "../HeroSlider";
 import Image from "next/image";
 import logo from "../../public/assets/HeroSection/herologo.webp";
 import trainer from "../../public/assets/HeroSection/herotrainer.webp";
+import back from "../../public/assets/bgmotion.gif";
 import Marquee from "react-fast-marquee";
 const imageStyle = {
   borderRadius: "10%",
@@ -14,11 +15,11 @@ const Hero = () => {
   const demos = ["demo1 ", "demo2 ", "demo3 ", "demo4 ", "demo5"];
   const pic = ["/assets/SliderAssets/slider1.webp"];
   return (
-    <section>
+    <section className="">
       <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[15vw]">
         <div className="flex flex-col items-center justify-center pb-[30px]">
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
-            <div className="relative z-[-1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-center sm:mt-0 md:mb-0 xl:flex">
+            <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-center sm:mt-0 md:mb-0 xl:flex">
               <Image
                 width={1008}
                 height={1318}
@@ -27,7 +28,7 @@ const Hero = () => {
               />
             </div>
 
-            <div className="relative z-[-1] flex w-full flex-col items-center justify-center xl:w-[65%]">
+            <div className="relative z-[1] flex w-full flex-col items-center justify-center xl:w-[65%]">
               {/* Text  */}
               <div className="mb-4 flex h-[12vh] max-h-[350px] w-[44vw] max-w-[350px] items-center justify-center md:h-[12vh] md:w-[17vw]">
                 <Image
@@ -41,12 +42,12 @@ const Hero = () => {
 
               <div className="flex flex-col text-center">
                 <h1 className="text-clampheader font-[700] leading-8 xxl:text-[2.5vw]">
-                  <span className="drop-shadow-hero bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
                     Give me 100 Days &
                   </span>
                 </h1>
                 <h1 className="my-2 text-clampheader font-[700] leading-[4rem] xl:my-8 xxl:text-[2.5vw]">
-                  <span className="drop-shadow-hero bg-gradient-to-r from-grn via-accent to-grn bg-clip-text leading-10 text-transparent">
+                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text leading-10 text-transparent drop-shadow-hero">
                     {" "}
                     I will get you CISSP Certified
                   </span>

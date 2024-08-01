@@ -22,12 +22,14 @@ import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       <Popup />
       <Banner />
-      <Header />
       <main className="">
-        <Hero />
+        <div className="bg-herosection bg-cover bg-no-repeat">
+          <Header />
+          <Hero />
+        </div>
         <Guidelines />
         {/* <Resources /> */}
         <BootCampSlider />
@@ -44,6 +46,6 @@ export default function Home() {
         <AccordionWrap />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

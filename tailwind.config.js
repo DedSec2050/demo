@@ -46,7 +46,7 @@ module.exports = {
         ],
       },
       backgroundImage: {
-        herosection: "url(/assets/bgimageDark.webp)",
+        herosection: "url(/assets/bgmotion.gif)",
         faq: "url(/assets/faq-bg.webp)",
         title: "url(/assets/title.webp)",
         hv: "url(/assets/Resources/Bg/hover1.webp)",
