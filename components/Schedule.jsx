@@ -85,7 +85,7 @@ const Page5 = () => {
               <TableHeader>
                 <TableRow>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Course Name
+                    Batch No
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                     Start Date
