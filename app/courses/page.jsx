@@ -121,7 +121,7 @@ const Page = () => {
     <section>
       <Banner />
       <Header />
-      <div className="flex w-screen flex-col items-center justify-center gap-4">
+      <div className="flex h-[50vw] w-screen flex-col items-center justify-center gap-4">
         Test course 1
         <Button
           onClick={(e) => HandleSubmit(e, "Course_1")}
