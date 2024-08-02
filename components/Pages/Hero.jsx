@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[15vw]">
         <div className="flex flex-col items-center justify-center pb-[30px]">
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
-            <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-center sm:mt-0 md:mb-0 xl:flex">
+            <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-center drop-shadow-xl sm:mt-0 md:mb-0 xl:flex">
               <Image
                 width={1008}
                 height={1318}
@@ -30,17 +30,18 @@ const Hero = () => {
 
             <div className="relative z-[1] flex w-full flex-col items-center justify-center xl:w-[65%]">
               {/* Text  */}
-              <div className="mb-4 flex h-[12vh] max-h-[350px] w-[44vw] max-w-[350px] items-center justify-center md:h-[12vh] md:w-[17vw]">
+              <div className="my-8 flex h-[12vh] max-h-[230px] w-[44vw] max-w-[230px] items-center justify-center md:h-[12vh] md:w-[17vw]">
                 <Image
                   layout="responsive"
                   width={1200}
                   height={1200}
                   src={logo}
-                  alt="hero-trainer"
+                  alt="hero-logo"
                 />
               </div>
+              <hr class="mx-auto my-2 h-1 w-48 rounded border-0 bg-accent dark:bg-gray-700 md:my-4" />
 
-              <div className="flex flex-col text-center">
+              <div className="relative mt-4 flex flex-col text-center">
                 <h1 className="text-clampheader font-[700] leading-8 xxl:text-[2.5vw]">
                   <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
                     Give me 100 Days &
