@@ -80,7 +80,7 @@ const Connect = () => {
                 <div className="">
                   <Button
                     variant="outline"
-                    className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[15vw] xxl:text-[1vw]"
+                    className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[200px] xxl:text-[1vw]"
                   >
                     Follow me on {data.data}
                   </Button>

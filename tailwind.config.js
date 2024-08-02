@@ -71,6 +71,12 @@ module.exports = {
           DEFAULT: "#FFD600",
           hover: "#11D1C8",
         },
+        resources: {
+          DEFAULT: "#C8FE05",
+        },
+        resourceshov: {
+          DEFAULT: "#C8FF04",
+        },
         elevated: {
           DEFAULT: "#021833",
         },
