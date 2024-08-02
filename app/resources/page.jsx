@@ -6,6 +6,9 @@ import MultiSteps from "@/components/MultiSteps";
 import { collection, getDocs } from "firebase/firestore";
 import { auth, db } from "@/app/firebaseConfig";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { SlOptionsVertical } from "react-icons/sl";
+import { Button } from "@/components/ui/button";
+
 const cardData = [
   {
     text: 1,
@@ -42,13 +45,35 @@ const Resources = () => {
                 key={index}
                 className="flex flex-col items-center justify-center bg-slate-500 px-4 py-2"
               >
+                {/* Header  */}
+
                 {/* For Text  */}
-                <div className="flex min-h-[400px] w-[300px] flex-col items-center gap-4 rounded-[5px] border-2 border-accent bg-matteblue bg-opacity-[90%] p-8">
-                  <div className="h-[90px] w-[190px] rounded-[5%] bg-black text-justify md:h-[150px] md:w-[250px]"></div>
-                  <h1 className="font-semibold text-accent">
-                    CISSP DOMAIN SUMMARIES
+                <div className="flex min-h-[400px] w-[300px] flex-col items-center gap-4 rounded-[25px] border-2 border-accent bg-matteblue bg-opacity-[90%]">
+                  <div className="flex w-full items-center justify-between px-4 pt-4">
+                    <div className="flex">
+                      {/* Avatar  */}
+                      <div className="h-[50px] w-[50px] overflow-hidden rounded-full bg-green-500"></div>
+                      <div className="ml-3 flex flex-col leading-6">
+                        <span className="font-semibold text-slate-400">
+                          Header
+                        </span>
+                        <span className="font-normal text-slate-400">
+                          SubHead
+                        </span>
+                      </div>
+                    </div>
+                    <div className="cursor-pointer">
+                      <SlOptionsVertical className="text-white" />
+                    </div>
+                  </div>
+                  <div className="h-[150px] w-full bg-gray-700"></div>
+                  <h1 className="flex w-full flex-col px-4 text-left font-semibold leading-6 text-accent">
+                    <span>Title</span>
+                    <span className="w-full text-justify text-accent">
+                      Subhead
+                    </span>
                   </h1>
-                  <p className="leading-snug text-slate-200">
+                  <p className="px-4 pb-6 leading-snug text-gray-300">
                     The CISSP exam covers an incredibly broad number of topics
                     across 8 domains - it can be overwhelming knowing what to
                     study! Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -56,6 +81,17 @@ const Resources = () => {
                     recusandae facere animi veniam autem ut quae aut quia,
                     accusantium eos incidunt?
                   </p>
+                  <div className="flex w-full justify-end gap-4 px-4 pb-4">
+                    <Button variant="outline" className="rounded-[40px]">
+                      Disabled
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="rounded-[40px] bg-accent text-black hover:bg-transparent hover:text-accent"
+                    >
+                      Enabled
+                    </Button>
+                  </div>
                 </div>
               </div>
             );
