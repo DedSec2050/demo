@@ -1,6 +1,8 @@
 import Image from "next/legacy/image";
 import React from "react";
 import timeline from "../public/assets/Timeline/timeline.webp";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const Page6 = () => {
   return (
@@ -25,6 +27,24 @@ const Page6 = () => {
               src={timeline}
             ></Image>
           </div>
+        </div>
+        <div className="my-6 flex w-full flex-col items-center justify-around md:flex-row">
+          <Link href="https://calendly.com/cisspsuccess">
+            <Button
+              variant="outline"
+              className="rounded-[30px] transition-all duration-500"
+            >
+              Book An appointment
+            </Button>
+          </Link>
+          <Link href="https://chat.whatsapp.com/GUnUOJtxzD7DrGu1YlUDCd ">
+            <Button
+              variant="outline"
+              className="rounded-[30px] transition-all duration-500"
+            >
+              Join our FREE Study Group
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

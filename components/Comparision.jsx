@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import photo from "../public/assets/Comparision/comparisionfinal.webp";
+import { Button } from "./ui/button";
+import Link from "next/link";
 const Page7 = () => {
   return (
     <section>
@@ -93,6 +95,16 @@ const Page7 = () => {
               alt="comparision"
             />
           </div>
+        </div>
+        <div className="my-8 flex w-full items-center justify-center">
+          <Link href="https://calendly.com/cisspsuccess">
+            <Button
+              className="scale-105 rounded-[30px] transition-all duration-500"
+              variant="outline"
+            >
+              Book a FREE Demo Class
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

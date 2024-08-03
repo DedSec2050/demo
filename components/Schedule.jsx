@@ -12,6 +12,8 @@ import React from "react";
 import { db } from "@/app/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 const TableData = [
   {
@@ -124,7 +126,14 @@ const Page5 = () => {
                         {data.trainingSchedule}
                       </TableCell>
                       <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.enrollmentStatus}
+                        <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy/plan/95551">
+                          <Button
+                            className="rounded-[30px] transition-all duration-500"
+                            variant="outline"
+                          >
+                            {data.enrollmentStatus}
+                          </Button>
+                        </Link>
                       </TableCell>
                       <TableCell
                         className={`${data.batchStatus == "Open" && "text-green-500"} ${data.batchStatus == "Closed" && "text-red-600"} border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]`}

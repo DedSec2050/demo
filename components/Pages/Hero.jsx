@@ -7,6 +7,8 @@ import logo from "../../public/assets/HeroSection/herologo.webp";
 import trainer from "../../public/assets/HeroSection/herotrainer.webp";
 import back from "../../public/assets/bgmotion.gif";
 import Marquee from "react-fast-marquee";
+import { Button } from "../ui/button";
+import Link from "next/link";
 const imageStyle = {
   borderRadius: "10%",
   border: "3px solid yellow",
@@ -28,7 +30,7 @@ const Hero = () => {
               />
             </div>
 
-            <div className="relative z-[1] flex w-full flex-col items-center justify-center xl:w-[65%]">
+            <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
               {/* Text  */}
               <div className="my-8 flex h-[12vh] max-h-[230px] w-[44vw] max-w-[230px] items-center justify-center md:h-[12vh] md:w-[17vw]">
                 <Image
@@ -53,6 +55,16 @@ const Hero = () => {
                     I will get you CISSP Certified
                   </span>
                 </h1>
+              </div>
+              <div>
+                <Link href="https://calendly.com/cisspsuccess">
+                  <Button
+                    variant="outline"
+                    className="rounded-[30px] transition-all duration-500"
+                  >
+                    Book a FREE Consultation
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -83,6 +95,16 @@ const Hero = () => {
           <div className="flex items-center justify-center overflow-hidden py-6 md:py-0">
             <Slider />
           </div>
+        </div>
+        <div className="flex w-full items-center justify-center pb-6">
+          <Link href="https://www.youtube.com/watch?v=_d8Jxaq_WSI&list=PLJ1GEK2Q0WrS5FNz6s2pLWlf0z_E_v0qM">
+            <Button
+              variant="outline"
+              className="rounded-[30px] transition-all duration-500"
+            >
+              See more Success Stories
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import { db } from "@/app/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));
@@ -116,6 +117,16 @@ const Page8 = () => {
               );
             })}
           </Marquee>
+        </div>
+        <div className="flex w-full translate-y-[-30px] items-center justify-center">
+          <Link href="https://www.youtube.com/watch?v=_d8Jxaq_WSI&list=PLJ1GEK2Q0WrS5FNz6s2pLWlf0z_E_v0qM">
+            <Button
+              className="rounded-[30px] transition-all duration-500"
+              variant="outline"
+            >
+              Watch more Success Stories
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

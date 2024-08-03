@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const bootData = [
   {
@@ -259,6 +260,16 @@ const Page3 = () => {
               );
             })}
           </div>
+        </div>
+        <div className="flex w-full items-center justify-center">
+          <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy/plan/95551">
+            <Button
+              className="rounded-[30px] transition-all duration-500"
+              variant="outline"
+            >
+              Enroll Now!
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

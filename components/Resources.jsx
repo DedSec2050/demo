@@ -67,7 +67,7 @@ const Page2 = () => {
               </div>
               <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:w-[75%] md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
                 <span className="flex text-resources">
-                  Is CISSP BEST for Me?
+                  FREE CISSP Flash Cards
                 </span>
               </div>
               <Button

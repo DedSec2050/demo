@@ -14,19 +14,23 @@ import {
   PlyrLayout,
   plyrLayoutIcons,
 } from "@vidstack/react/player/layouts/plyr";
+import Link from "next/link";
 
 const btnlist = [
   {
     data: "LinkedIn",
     icon: linkedin,
+    link: "https://www.linkedin.com/in/mksharma007/",
   },
   {
     data: "Udemy",
     icon: udemy,
+    link: "https://www.udemy.com/user/manoj-kumar-sharma-2013/",
   },
   {
     data: "YouTube",
     icon: youtube,
+    link: "https://www.youtube.com/watch?v=FbDVfEE81cY",
   },
 ];
 
@@ -77,14 +81,14 @@ const Connect = () => {
           {btnlist.map((data, index) => {
             return (
               <div key={index}>
-                <div className="">
+                <Link href={data.link} className="">
                   <Button
                     variant="outline"
                     className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[200px] xxl:text-[1vw]"
                   >
                     Follow me on {data.data}
                   </Button>
-                </div>
+                </Link>
               </div>
             );
           })}
