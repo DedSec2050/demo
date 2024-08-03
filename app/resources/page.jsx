@@ -8,6 +8,7 @@ import { auth, db } from "@/app/firebaseConfig";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { SlOptionsVertical } from "react-icons/sl";
 import { Button } from "@/components/ui/button";
+import BackWrapper from "@/components/BackWrapper";
 
 const cardData = [
   {
@@ -30,6 +31,7 @@ const Resources = () => {
   return (
     <div className="">
       <Banner />
+      <BackWrapper />
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">
         <div className="flex flex-col justify-between rounded-md border-4 border-accent p-6 md:p-20">

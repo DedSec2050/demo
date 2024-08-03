@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import axios from "axios";
 import { useAuthState } from "react-firebase-hooks/auth";
+import BackWrapper from "@/components/BackWrapper";
 
 const coursesList = ["Test_Course_1", "Test_Course_2", "Test_Course_3"];
 
@@ -121,6 +122,7 @@ const Page = () => {
     <section>
       <Banner />
       <Header />
+      <BackWrapper />
       <div className="flex h-[50vw] w-screen flex-col items-center justify-center gap-4">
         Test course 1
         <Button

@@ -6,6 +6,7 @@ import image from "../public/assets/Resources/resource.webp";
 import { BsPatchExclamationFill } from "react-icons/bs";
 import { FaWindowMaximize } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import Link from "next/link";
 
 const text = [
   {
@@ -70,12 +71,15 @@ const Page2 = () => {
                   FREE CISSP Flash Cards
                 </span>
               </div>
-              <Button
-                variant="outline"
-                className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-              >
-                Explore More
-              </Button>
+
+              <Link href="/coming-soon">
+                <Button
+                  variant="outline"
+                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                >
+                  Explore More
+                </Button>
+              </Link>
             </div>
             <div
               className={
@@ -91,12 +95,14 @@ const Page2 = () => {
                   Join FREE CISSP Masterclass
                 </span>
               </div>
-              <Button
-                variant="outline"
-                className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-              >
-                Explore More
-              </Button>
+              <Link href="/coming-soon">
+                <Button
+                  variant="outline"
+                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                >
+                  Explore More
+                </Button>
+              </Link>
             </div>
             <div
               className={
@@ -112,12 +118,14 @@ const Page2 = () => {
                   Study FREE CISSP Notes
                 </span>
               </div>
-              <Button
-                variant="outline"
-                className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-              >
-                Explore More
-              </Button>
+              <Link href="/coming-soon">
+                <Button
+                  variant="outline"
+                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                >
+                  Explore More
+                </Button>
+              </Link>
             </div>
             <div
               className={
@@ -133,12 +141,14 @@ const Page2 = () => {
                   FREE CISSP Mock Test
                 </span>
               </div>
-              <Button
-                variant="outline"
-                className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-              >
-                Explore More
-              </Button>
+              <Link href="/coming-soon">
+                <Button
+                  variant="outline"
+                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                >
+                  Explore More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

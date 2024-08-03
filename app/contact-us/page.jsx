@@ -4,11 +4,13 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import React from "react";
 import "./contact.css";
+import BackWrapper from "@/components/BackWrapper";
 
 const ContactUs = () => {
   return (
     <section>
       <Banner />
+      <BackWrapper />
       <Header />
       <h2 className="text-center text-clamptitle font-bold text-accent">
         Contact Form

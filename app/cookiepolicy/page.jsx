@@ -1,3 +1,4 @@
+import BackWrapper from "@/components/BackWrapper";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -9,6 +10,7 @@ export default function cookiepolicy() {
   return (
     <section>
       <Banner />
+      <BackWrapper />
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">
         <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.7rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p>a:hover]:text-accent-hover [&>div>p>a]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
@@ -74,22 +76,22 @@ export default function cookiepolicy() {
             </p>
             <p>
               Categories of use: <br />
-              <p className="pl-5">
+              <span className="pl-5">
                 <strong>Session cookies </strong>: these are only stored on your
                 computer during your web session and are automatically deleted
                 when you close your browser - they usually store an anonymous
                 session ID allowing you to browse a website without having to
                 log in to each page but they do not collect any personal data
                 from your computer; or
-              </p>
-              <p className="pl-5">
+              </span>
+              <span className="pl-5">
                 <strong>Persistent cookies </strong>: a persistent cookie is
                 stored as a file on your computer and it remains there when you
                 close your web browser. The cookie can be read by the website
                 that created it when you visit that website again. We may use
                 persistent cookies for this website Analytics , Google
                 Analytics, Mixpanel Analytics or Segment.io Analytics.
-              </p>
+              </span>
               <p>
                 Cookies can also be categorised as follows: <br />
                 <p className="pl-5">

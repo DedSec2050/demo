@@ -1,3 +1,4 @@
+import BackWrapper from "@/components/BackWrapper";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -7,6 +8,7 @@ export default function refundpolicy() {
   return (
     <section>
       <Banner />
+      <BackWrapper />
       <Header />
       <div>
         <div className="flex flex-col items-center justify-center pt-[30px]">
