@@ -80,7 +80,7 @@ const Page8 = () => {
                   className="mt-[150px] w-[100%] px-10 xxl:px-[7vw]"
                   key={index}
                 >
-                  <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-4 border-accent xxl:h-[43rem] xxl:w-[40rem]">
+                  <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-2 border-accent xxl:h-[43rem] xxl:w-[40rem]">
                     <div className="image flex translate-y-[-65px] py-2 xxl:translate-y-[-120px]">
                       <div className="bg-blue relative h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
                         <Image

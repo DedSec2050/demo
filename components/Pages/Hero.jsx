@@ -16,13 +16,13 @@ const Hero = () => {
   const pic = ["/assets/SliderAssets/slider1.webp"];
   return (
     <section className="">
-      <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[13vw]">
         <div className="flex flex-col items-center justify-center pb-[30px]">
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
-            <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-center drop-shadow-xl sm:mt-0 md:mb-0 xl:flex">
+            <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-start drop-shadow-xl sm:mt-0 md:mb-0 xl:flex">
               <Image
-                width={1008}
-                height={1318}
+                width={424}
+                height={692}
                 src={trainer}
                 alt="hero-trainer"
               />

@@ -35,8 +35,8 @@ const Page2 = () => {
         </h1>
         <div className="flex w-full flex-col items-center justify-center gap-x-[170px] md:flex-row">
           {/* imagediv  */}
-          <div className="order-2 mt-[40px] flex h-[100%] w-[25%] flex-col md:order-none">
-            <div className="mt-[40px] flex flex-col pt-[50px]">
+          <div className="order-2 flex h-[100%] w-[28%] flex-col md:order-none">
+            <div className="mt-[40px] flex flex-col">
               <Image
                 layout="responsive"
                 src={image}
@@ -45,11 +45,11 @@ const Page2 = () => {
                 alt="image"
               />
             </div>
-            <div className="flex items-center justify-center py-[10px]">
+            <div className="flex items-center justify-center pb-[10px]">
               <Button
                 variant="outline"
                 size="lg"
-                className="mt-4 rounded-full py-4 capitalize xl:mt-10 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
+                className="rounded-full py-4 capitalize xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
               >
                 Get Much More...
               </Button>

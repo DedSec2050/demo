@@ -91,7 +91,7 @@ const Connect = () => {
         </div>
 
         <div className="mt-4 flex max-w-[90vw] px-[4vw] md:mt-[35px]">
-          <div className="text-center text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
+          <div className="text-justify text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
             {desc}
             <div {...getCollapseProps()} className="flex flex-col">
               <span>
@@ -142,7 +142,7 @@ const Connect = () => {
               <span>Your success story starts here</span>
             </div>
             <button
-              className="ml-[2vw] rounded-[5%] bg-slate-500 px-[5px] text-clamptextsm text-accent"
+              className="ml-[2vw] rounded-[30px] bg-slate-500 px-[15px] text-clamptextsm font-semibold text-accent transition-all duration-500 hover:scale-105 xl:px-[25px] xl:text-[18px]"
               {...getToggleProps({
                 onClick: () => setExpanded((prevExpanded) => !prevExpanded),
               })}

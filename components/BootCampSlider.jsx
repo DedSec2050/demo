@@ -245,13 +245,13 @@ const Page3 = () => {
                   <div className="flex w-full justify-evenly text-center">
                     <div className="flex items-center">{data.svg}</div>
                     <div className="leading-1 px-[1rem]">
-                      <span className="text-center text-[15px] font-bold text-white">
+                      <span className="text-center text-[15px] font-bold text-white xl:text-[20px]">
                         {data.title}
                       </span>
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center py-4">
-                    <div className="flex w-[70%] text-center font-medium text-white">
+                    <div className="flex w-[70%] text-center font-medium text-white xl:text-[17px]">
                       {data.desc}
                     </div>
                   </div>
@@ -260,13 +260,6 @@ const Page3 = () => {
             })}
           </div>
         </div>
-        <Button
-          variant="outline"
-          className="mx-auto mb-8 mt-8 w-[12rem] justify-around rounded-full p-4 sm:w-[19rem] xxl:h-[3.5vw] xxl:w-[18vw] xxl:text-[1.2vw]"
-        >
-          Get Much More...
-          <FaArrowRightLong />
-        </Button>
       </div>
     </section>
   );
