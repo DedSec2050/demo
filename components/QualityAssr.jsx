@@ -81,48 +81,50 @@ const QualityAssr = () => {
         <p className="w-full text-left text-clamptextsmm font-semibold xxl:mt-[6vh] xxl:text-[1.5vw]">
           Even our Competitors get inspired and copy us.
         </p>
-        <p className="mb-[2vh] mt-[2vh] w-full text-left text-clamptextmd font-bold text-grn xxl:mt-[6vh] xxl:text-[1.8vw]">
-          CISSP Course Curriculum
-        </p>
-        <ul className="flex w-full flex-col text-justify md:hidden">
-          {listdata.map((data, index) => {
-            return (
-              <li
-                className="py-4 text-clamptextsmm font-medium md:text-[1.3rem] xxl:py-[40px] xxl:text-[1.3vw]"
-                key={index}
-              >
-                {`${index + 1}. ` + data.data}
-              </li>
-            );
-          })}
-        </ul>
+        <div className="my-6 w-full rounded-[30px] border-2 bg-gradient-to-r from-[#E8E8E808] to-[#FFFFFF24] p-6">
+          <p className="mb-[2vh] mt-[2vh] w-full text-left text-clamptextmd font-bold text-grn xxl:mt-[6vh] xxl:text-[1.8vw]">
+            CISSP Course Curriculum
+          </p>
+          <ul className="flex w-full flex-col text-justify md:hidden">
+            {listdata.map((data, index) => {
+              return (
+                <li
+                  className="py-4 text-clamptextsmm font-medium md:text-[1.3rem] xxl:py-[40px] xxl:text-[1.3vw]"
+                  key={index}
+                >
+                  {`${index + 1}. ` + data.data}
+                </li>
+              );
+            })}
+          </ul>
 
-        <div className="hidden w-full items-center justify-center md:flex">
-          <Table className="hidden w-full flex-col md:flex">
-            <TableBody className="w-full items-center justify-center">
-              {listdata2.map((data, index) => {
-                return (
-                  <TableRow
-                    key={index}
-                    className="flex w-full items-center justify-around border-none py-4 text-clamptextsmm leading-10 hover:bg-transparent"
-                  >
-                    <TableCell
-                      colSpan={1}
-                      className="w-full hover:cursor-pointer hover:bg-slate-500"
+          <div className="hidden w-full items-center justify-center md:flex">
+            <Table className="hidden w-full flex-col md:flex">
+              <TableBody className="w-full items-center justify-center">
+                {listdata2.map((data, index) => {
+                  return (
+                    <TableRow
+                      key={index}
+                      className="flex w-full items-center justify-around border-none py-4 text-clamptextsmm leading-10 hover:bg-transparent"
                     >
-                      {data.data.one}
-                    </TableCell>
-                    <TableCell
-                      colSpan={1}
-                      className="w-full hover:cursor-pointer hover:bg-slate-500"
-                    >
-                      {data.data.two}
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
+                      <TableCell
+                        colSpan={1}
+                        className="w-full hover:cursor-pointer hover:bg-slate-500"
+                      >
+                        {data.data.one}
+                      </TableCell>
+                      <TableCell
+                        colSpan={1}
+                        className="w-full hover:cursor-pointer hover:bg-slate-500"
+                      >
+                        {data.data.two}
+                      </TableCell>
+                    </TableRow>
+                  );
+                })}
+              </TableBody>
+            </Table>
+          </div>
         </div>
         {/* {listdata.map((data, index) => {
       return (
