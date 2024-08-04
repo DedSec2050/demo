@@ -9,6 +9,8 @@ import back from "../../public/assets/bgmotion.gif";
 import Marquee from "react-fast-marquee";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import VideoPlayer from "../VidPlayr";
+
 const imageStyle = {
   borderRadius: "10%",
   border: "3px solid yellow",
@@ -16,9 +18,11 @@ const imageStyle = {
 const Hero = () => {
   const demos = ["demo1 ", "demo2 ", "demo3 ", "demo4 ", "demo5"];
   const pic = ["/assets/SliderAssets/slider1.webp"];
+
   return (
     <section className="">
       <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[13vw]">
+        {/* <VideoPlayer /> */}
         <div className="flex flex-col items-center justify-center pb-[30px]">
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
             <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-start drop-shadow-xl sm:mt-0 md:mb-0 xl:flex">
