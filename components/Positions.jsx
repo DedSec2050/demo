@@ -25,7 +25,6 @@ const Positions = () => {
                 return (
                   <div key={index} className="mr-[5rem] mt-4 w-[100%]">
                     <Image
-                      responsive
                       src={url}
                       width={170}
                       height={73}

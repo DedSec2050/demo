@@ -41,7 +41,7 @@ const Hero = () => {
                   alt="hero-logo"
                 />
               </div>
-              <hr class="mx-auto my-2 h-1 w-48 rounded border-0 bg-accent dark:bg-gray-700 md:my-4" />
+              <hr className="mx-auto my-2 h-1 w-48 rounded border-0 bg-accent dark:bg-gray-700 md:my-4" />
 
               <div className="relative mt-4 flex flex-col text-center">
                 <h1 className="text-clampheader font-[700] leading-8 xxl:text-[2.5vw]">

@@ -68,13 +68,32 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <p className="text-accent">
+            CISSP® is a registered trademark of ISC2, Inc. We make no claim of
+            ownership of any trademark held by ISC2, nor are we affiliated with
+            ISC2 in any way. We are just passionate about the CISSP®
+            certification - and the difference it can make in your security
+            career - and want to help you achieve your goal of getting
+            certified. We refer to the registered trademark for
+            educational purposes only.
+          </p>
           <div className="socials relative bottom-0 mt-10 flex w-screen flex-row items-center justify-center gap-3 text-accent">
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
-            <BsLinkedin />
-            <FaFacebook />
-            <FiInstagram />
-            <TiSocialTwitter />
-            <AiFillYoutube />
+            <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
+              <BsLinkedin />
+            </Link>
+            <Link href="https://www.facebook.com/cybernous">
+              <FaFacebook />
+            </Link>
+            <Link href="https://www.instagram.com/cybernous_infosec">
+              <FiInstagram />
+            </Link>
+            <Link href="">
+              <TiSocialTwitter />
+            </Link>
+            <Link href="https://www.youtube.com/@cybernous">
+              <AiFillYoutube />
+            </Link>
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
           </div>
         </div>
