@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className="">
       <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[13vw]">
-        {/* <VideoPlayer /> */}
+        <VideoPlayer />
         <div className="flex flex-col items-center justify-center pb-[30px]">
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
             <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-start drop-shadow-xl sm:mt-0 md:mb-0 xl:flex">
