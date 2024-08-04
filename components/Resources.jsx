@@ -75,7 +75,7 @@ const Page2 = () => {
               <Link href="/coming-soon">
                 <Button
                   variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
                 >
                   Explore More
                 </Button>
@@ -92,13 +92,13 @@ const Page2 = () => {
               </div>
               <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
                 <span className="flex text-resources">
-                  Join FREE CISSP Masterclass
+                  Join FREE CISSP<br className="sm:hidden"></br> Masterclass
                 </span>
               </div>
               <Link href="/coming-soon">
                 <Button
                   variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
                 >
                   Explore More
                 </Button>
@@ -115,13 +115,13 @@ const Page2 = () => {
               </div>
               <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
                 <span className="flex text-resources">
-                  Study FREE CISSP Notes
+                  Study FREE <br className="sm:hidden"></br>CISSP Notes
                 </span>
               </div>
               <Link href="/coming-soon">
                 <Button
                   variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
                 >
                   Explore More
                 </Button>
@@ -144,7 +144,7 @@ const Page2 = () => {
               <Link href="/coming-soon">
                 <Button
                   variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources px-[65px] py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
+                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
                 >
                   Explore More
                 </Button>

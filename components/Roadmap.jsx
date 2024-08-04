@@ -28,7 +28,7 @@ const Page6 = () => {
             ></Image>
           </div>
         </div>
-        <div className="my-6 flex w-full flex-col items-center justify-around md:flex-row">
+        <div className="my-6 flex w-full flex-col items-center justify-around gap-y-8 md:flex-row">
           <Link href="https://calendly.com/cisspsuccess">
             <Button
               variant="outline"
