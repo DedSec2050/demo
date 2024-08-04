@@ -12,7 +12,6 @@ const VideoPlayer = () => {
 
   return (
     <div id="vp-player-container">
-      Player Loadin
       <Script
         src="https://videopal.me/js/vp_player.min.js?v=1.1.29"
         strategy="afterInteractive"
