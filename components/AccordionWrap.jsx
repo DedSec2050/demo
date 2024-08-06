@@ -23,14 +23,14 @@ const Page9 = () => {
               variant="outline"
               className="rounded-[30px] border-white text-white duration-500"
             >
-              Explore More{" "}
+              CISSP Free Resources{" "}
             </Button>
           </div>
         </div>
         <div className="mb-8 mt-4 text-center text-clamptitle xxl:text-[2.5vw]">
           <strong>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
-              FAQ's
+              Frequently Asked Questions
             </span>
           </strong>
         </div>

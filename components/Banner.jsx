@@ -15,7 +15,7 @@ const Banner = () => {
         </Link>
       </div>
       <div className="pb-1 text-center md:ml-6">
-        Contact Us: +91 85953 38705
+        Whatsapp Us: +91 85953 38705
       </div>
     </section>
   );

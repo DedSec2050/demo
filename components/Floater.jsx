@@ -6,7 +6,7 @@ const Floater = () => {
   return (
     <div className="floating-icon floating fixed bottom-[12vh] right-[2vw] z-10 flex flex-col items-center justify-center gap-5 rounded-full transition-all duration-100 [&:hover>.menu]:flex [&:hover>.menu]:translate-y-[0px] [&:hover>.menu]:opacity-100 [&>.menu]:translate-y-[50px]">
       <div className="menu hidden overflow-hidden rounded-full transition-all duration-500 hover:drop-shadow-green">
-        <SocialIcon url="2.	https://chat.whatsapp.com/GUnUOJtxzD7DrGu1YlUDCd" />
+        <SocialIcon url="https://chat.whatsapp.com/GUnUOJtxzD7DrGu1YlUDCd" />
       </div>
       <div className="menu hidden overflow-hidden rounded-full transition-all duration-500 hover:drop-shadow-pink">
         <SocialIcon url="https://www.instagram.com/cybernous_infosec" />
