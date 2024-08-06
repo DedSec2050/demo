@@ -223,7 +223,7 @@ const Page3 = () => {
 
   return (
     <section>
-      <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="text-center text-clamptitle font-bold xxl:text-[2vw]">
           <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
             Key Features of CISSP

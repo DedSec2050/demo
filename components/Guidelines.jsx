@@ -10,7 +10,7 @@ import {
 const Guidelines = () => {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <section className="relative flex w-full flex-col items-center text-justify">
           <div className="flex">
             <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">

@@ -30,7 +30,7 @@ const text = [
 const Page2 = () => {
   return (
     <section>
-      <div className="flex w-full flex-col items-center justify-center px-[30px] text-center sm:px-[50px] xl:px-[15vw]">
+      <div className="flex w-full flex-col items-center justify-center px-[30px] text-center sm:px-[50px] xl:px-[10vw]">
         <h1 className="flex bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
           Free CISSP resources
         </h1>

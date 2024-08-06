@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 const Page9 = () => {
   return (
     <section>
-      <div className="relative mt-8 w-full px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="relative mt-8 w-full px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="flex h-[250px] w-full flex-col items-center justify-center rounded-[40px] border-[2px] border-white bg-gradient-to-l from-[#D7D7D766] via-[#D7D7D766] to-[#E9E0A5B5] text-center">
           <div>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-clamptextsm font-bold leading-6 text-transparent sm:leading-8 md:text-clamptextsmm">

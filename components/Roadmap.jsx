@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 const Page6 = () => {
   return (
     <section>
-      <div className="px-[30px] py-8 sm:px-[50px] xl:px-[15vw]">
+      <div className="px-[30px] py-8 sm:px-[50px] xl:px-[10vw]">
         <div className="flex flex-col items-center">
           <h1 className="text-center text-clamptitle">
             <strong>

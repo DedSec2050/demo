@@ -59,7 +59,7 @@ const listdata = [
 const QualityAssr = () => {
   return (
     <section>
-      <div className="bg-grey-600 flex w-full flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="bg-grey-600 flex w-full flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <h1 className="mb-[5vh]">
           <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
             Quality Assurance at Cybernous

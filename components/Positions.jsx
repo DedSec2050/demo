@@ -5,7 +5,7 @@ import { urls, desc } from "./data/Page8";
 const Positions = () => {
   return (
     <section>
-      <div className="px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="rounded-[30px] border-4 bg-gradient-to-r from-[#FFFFFF66] via-[#F9F9F9] to-[#F9F9F9]">
           {/* <div className="flex flex-col items-center justify-center">
             <h1 className="text-center text-clamptitle leading-normal">

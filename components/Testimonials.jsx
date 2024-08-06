@@ -57,7 +57,7 @@ const Page8 = () => {
   return (
     // Slideshow Testimonials section
     <section>
-      <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[10vw]">
         {/* Add Testimonial Section here  */}
         <div className="mt-8">
           <h1 className="mt-8 text-center text-clamptitle leading-9">

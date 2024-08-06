@@ -39,7 +39,7 @@ const Connect = () => {
   const { getCollapseProps, getToggleProps } = useCollapse();
   return (
     <section>
-      <div className="flex flex-col items-center justify-center px-[30px] py-8 sm:px-[50px] xl:px-[15vw]">
+      <div className="flex flex-col items-center justify-center px-[30px] py-8 sm:px-[50px] xl:px-[10vw]">
         <h1 className="mt-7 text-center text-clamptitle xxl:text-[2.5vw]">
           <strong>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
@@ -50,7 +50,7 @@ const Connect = () => {
             </span>
           </strong>
         </h1>
-        <div className="flex w-full flex-col items-center justify-center lg:flex-row lg:gap-[4vw]">
+        <div className="flex w-full flex-col items-center justify-between lg:flex-row lg:gap-[4vw]">
           <div className="relative mt-8 aspect-video min-h-[120px] w-[18rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent sm:w-[30rem] md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px]">
             <Image
               src="/assets/trainerConnect.webp"
@@ -77,7 +77,7 @@ const Connect = () => {
             </MediaPlayer>
           </div>
         </div>
-        <div className="mt-[15px] flex w-full flex-col items-center justify-around gap-[15px] px-[5vw] md:mt-[35px] md:flex-row md:px-[3vw]">
+        <div className="mt-[15px] flex w-full flex-col items-center justify-between gap-[15px] px-[5vw] md:mt-[35px] md:flex-row md:px-[3vw] xl:px-0">
           {btnlist.map((data, index) => {
             return (
               <div key={index}>
@@ -94,7 +94,7 @@ const Connect = () => {
           })}
         </div>
 
-        <div className="mt-4 flex max-w-[90vw] px-[4vw] md:mt-[35px]">
+        <div className="mt-4 flex max-w-[90vw] px-[4vw] md:mt-[35px] xl:px-0">
           <div className="text-justify text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
             {desc}
             <div {...getCollapseProps()} className="flex flex-col">

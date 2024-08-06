@@ -6,7 +6,7 @@ import Link from "next/link";
 const Page7 = () => {
   return (
     <section>
-      <div className="my-7 flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[15vw]">
+      <div className="my-7 flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
             <h1 className="text-center text-clamptitle">

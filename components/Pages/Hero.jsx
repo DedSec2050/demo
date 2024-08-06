@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section className="">
-      <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[13vw]">
+      <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[9vw] xxl:px-[15vw]">
         <VideoPlayer />
         <div className="flex flex-col items-center justify-center pb-[30px]">
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
@@ -73,6 +73,11 @@ const Hero = () => {
             </div>
           </div>
           <HeroSlider />
+        </div>
+        <div className="mt-4 text-center">
+          <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
+            Our Success Stories
+          </span>
         </div>
         <div className="relative mb-10 flex w-full sm:hidden">
           <Marquee direction="right">
