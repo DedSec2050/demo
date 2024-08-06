@@ -88,7 +88,7 @@ const Footer = () => {
             <Link href="https://www.instagram.com/cybernous_infosec">
               <FiInstagram />
             </Link>
-            <Link href="">
+            <Link href="https://x.com/cybernous2024">
               <TiSocialTwitter />
             </Link>
             <Link href="https://www.youtube.com/@cybernous">
