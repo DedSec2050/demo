@@ -225,10 +225,10 @@ const Page3 = () => {
     <section>
       <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="text-center text-clamptitle font-bold xxl:text-[2vw]">
-          <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
             Key Features of CISSP
           </span>{" "}
-          <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
             Success Toolkit ?
           </span>
         </div>
@@ -260,10 +260,7 @@ const Page3 = () => {
         </div>
         <div className="flex w-full items-center justify-center">
           <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy/plan/95551">
-            <Button
-              className="rounded-[30px] transition-all duration-500"
-              variant="outline"
-            >
+            <Button className="rounded-[30px] transition-all duration-500">
               Enroll Now!
             </Button>
           </Link>

@@ -120,10 +120,7 @@ const Page8 = () => {
         </div>
         <div className="flex w-full translate-y-[-30px] items-center justify-center">
           <Link href="https://www.youtube.com/watch?v=_d8Jxaq_WSI&list=PLJ1GEK2Q0WrS5FNz6s2pLWlf0z_E_v0qM">
-            <Button
-              className="rounded-[30px] transition-all duration-500"
-              variant="outline"
-            >
+            <Button className="rounded-[30px] transition-all duration-500">
               Watch more Success Stories
             </Button>
           </Link>

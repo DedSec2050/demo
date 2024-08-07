@@ -12,9 +12,6 @@
   background-image: radial-gradient(#65656d0e 10%, #a1a1a711 10%);
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
 .rounded-br-md {
   border-bottom-right-radius: 2vw;
 }

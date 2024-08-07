@@ -30,10 +30,7 @@ const Header = () => {
           </Link>
         </div>
         <Link href="https://www.cybernous.com/login">
-          <Button
-            className="z-40 hidden w-[7rem] justify-around rounded-[1.3rem] text-white hover:bg-accent xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]"
-            variant="outline"
-          >
+          <Button className="z-40 hidden w-[7rem] justify-around rounded-[1.3rem] hover:border-2 hover:border-accent hover:bg-transparent hover:text-white xl:flex xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]">
             Sign-In
           </Button>
         </Link>

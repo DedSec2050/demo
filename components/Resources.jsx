@@ -31,7 +31,7 @@ const Page2 = () => {
   return (
     <section>
       <div className="flex w-full flex-col items-center justify-center px-[30px] text-center sm:px-[50px] xl:px-[10vw]">
-        <h1 className="flex bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
+        <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
           Free CISSP resources
         </h1>
         <div className="flex w-full flex-col items-center justify-center gap-x-[170px] md:flex-row">
@@ -48,9 +48,8 @@ const Page2 = () => {
             </div>
             <div className="flex items-center justify-center pb-[10px]">
               <Button
-                variant="outline"
                 size="lg"
-                className="rounded-full py-4 capitalize xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
+                className="rounded-full py-4 capitalize transition-all duration-500 xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
               >
                 Get Much More...
               </Button>
@@ -73,10 +72,7 @@ const Page2 = () => {
               </div>
 
               <Link href="/coming-soon">
-                <Button
-                  variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-                >
+                <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
               </Link>
@@ -96,10 +92,7 @@ const Page2 = () => {
                 </span>
               </div>
               <Link href="/coming-soon">
-                <Button
-                  variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-                >
+                <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
               </Link>
@@ -119,10 +112,7 @@ const Page2 = () => {
                 </span>
               </div>
               <Link href="/coming-soon">
-                <Button
-                  variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-                >
+                <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
               </Link>
@@ -142,10 +132,7 @@ const Page2 = () => {
                 </span>
               </div>
               <Link href="/coming-soon">
-                <Button
-                  variant="outline"
-                  className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] text-white sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]"
-                >
+                <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
               </Link>

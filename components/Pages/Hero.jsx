@@ -20,7 +20,7 @@ const Hero = () => {
   const pic = ["/assets/SliderAssets/slider1.webp"];
 
   return (
-    <section className="">
+    <section className="h-full">
       <div className="flex flex-col px-[30px] sm:px-[50px] xl:px-[9vw] xxl:px-[15vw]">
         <VideoPlayer />
         <div className="flex flex-col items-center justify-center pb-[30px]">
@@ -62,10 +62,7 @@ const Hero = () => {
               </div>
               <div>
                 <Link href="https://calendly.com/cisspsuccess">
-                  <Button
-                    variant="outline"
-                    className="rounded-[30px] transition-all duration-500"
-                  >
+                  <Button className="rounded-[30px] transition-all duration-500">
                     Book a FREE Consultation
                   </Button>
                 </Link>
@@ -101,16 +98,13 @@ const Hero = () => {
           </Marquee>
         </div>
         <div className="hidden w-full flex-col items-center justify-center overflow-hidden py-[100px] sm:flex md:flex-row">
-          <div className="flex items-center justify-center overflow-hidden py-6 md:py-0">
+          <div className="flex items-center justify-center overflow-hidden py-2 md:py-0">
             <Slider />
           </div>
         </div>
         <div className="flex w-full items-center justify-center pb-6">
           <Link href="https://www.youtube.com/watch?v=_d8Jxaq_WSI&list=PLJ1GEK2Q0WrS5FNz6s2pLWlf0z_E_v0qM">
-            <Button
-              variant="outline"
-              className="rounded-[30px] transition-all duration-500"
-            >
+            <Button className="rounded-[30px] transition-all duration-500">
               See more Success Stories
             </Button>
           </Link>

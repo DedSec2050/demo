@@ -10,10 +10,10 @@ const Page7 = () => {
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
             <h1 className="text-center text-clamptitle">
-              <strong>
+              <strong className="flex-row items-center justify-center gap-x-2">
                 <span className="flex items-center justify-center bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-transparent xxl:text-[2vw]">
                   <svg
-                    className="mx-2 translate-y-[-10px]"
+                    className="mx-2 hidden xl:flex xl:translate-y-[-10px]"
                     width="30"
                     height="40"
                     viewBox="0 0 67 38"
@@ -59,11 +59,10 @@ const Page7 = () => {
                       </radialGradient>
                     </defs>
                   </svg>
-                  CISSP Certification Bootcamp VS CISSP
+                  CISSP Certification Bootcamp <br className="xl:hidden" />
+                  VS <br className="xl:hidden" />
+                  CISSP Success Toolkit
                 </span>{" "}
-                <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent xxl:text-[2.5vw]">
-                  Success Toolkit
-                </span>
               </strong>
             </h1>
             <div className="mt-10 text-clamptextsmm font-medium leading-9 xxl:text-[1.5vw] xxl:leading-normal">
@@ -97,10 +96,7 @@ const Page7 = () => {
         </div>
         <div className="my-8 flex w-full items-center justify-center">
           <Link href="https://calendly.com/cisspsuccess">
-            <Button
-              className="scale-105 rounded-[30px] transition-all duration-500"
-              variant="outline"
-            >
+            <Button className="scale-105 rounded-[30px] transition-all duration-500">
               Book a FREE Demo Class
             </Button>
           </Link>

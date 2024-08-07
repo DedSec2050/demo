@@ -29,7 +29,7 @@ const HeroSlider = () => {
   let demolist = [];
   demos.forEach((demo, index) => {
     demolist.push(
-      <div key={index} className="py-4 sm:pt-[30px]">
+      <div key={index} className="py-4 sm:py-0">
         <div className="flex lg:hidden">
           <div className="wrapper flex flex-col items-center justify-center">
             <div className="icon cursor-pointer overflow-hidden rounded-full">

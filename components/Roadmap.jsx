@@ -11,10 +11,10 @@ const Page6 = () => {
         <div className="flex flex-col items-center">
           <h1 className="text-center text-clamptitle">
             <strong>
-              <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent xxl:text-[2.5vw]">
+              <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
                 Experience the CISSP Success
               </span>{" "}
-              <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent xxl:text-[2.5vw]">
+              <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
                 Toolkit - Roadmap
               </span>
             </strong>
@@ -30,18 +30,12 @@ const Page6 = () => {
         </div>
         <div className="my-6 flex w-full flex-col items-center justify-around gap-y-8 md:flex-row">
           <Link href="https://calendly.com/cisspsuccess">
-            <Button
-              variant="outline"
-              className="rounded-[30px] transition-all duration-500"
-            >
+            <Button className="rounded-[30px] transition-all duration-500">
               Book An appointment
             </Button>
           </Link>
           <Link href="https://chat.whatsapp.com/GUnUOJtxzD7DrGu1YlUDCd ">
-            <Button
-              variant="outline"
-              className="rounded-[30px] transition-all duration-500"
-            >
+            <Button className="rounded-[30px] transition-all duration-500">
               Join our FREE Study Group
             </Button>
           </Link>

@@ -13,12 +13,12 @@ const Guidelines = () => {
       <div className="flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <section className="relative flex w-full flex-col items-center text-justify">
           <div className="flex">
-            <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
+            <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               Others teach you CISSP
             </h1>
           </div>
-          <div className="flex translate-y-[-15px]">
-            <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clamptitle font-bold text-transparent xxl:text-[2.5vw]">
+          <div className="flex translate-y-[-35px]">
+            <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               We coach you how to pass CISSP
             </h1>
           </div>

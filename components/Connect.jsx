@@ -82,10 +82,7 @@ const Connect = () => {
             return (
               <div key={index}>
                 <Link href={data.link} className="">
-                  <Button
-                    variant="outline"
-                    className="h-[5vh] w-[44vw] rounded-full text-white hover:bg-accent hover:text-black md:w-[200px] xxl:text-[1vw]"
-                  >
+                  <Button className="h-[5vh] w-[44vw] rounded-full transition-all duration-500 md:w-[200px] xxl:text-[1vw]">
                     Follow me on {data.data}
                   </Button>
                 </Link>

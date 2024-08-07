@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="">
       <BackWrapper />
-      <Popup />
+      {/* <Popup /> */}
       <Banner />
       <main className="">
         <div className="">
