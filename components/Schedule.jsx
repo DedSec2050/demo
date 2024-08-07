@@ -77,11 +77,11 @@ const Page5 = () => {
     <section>
       <div className="mx-auto mt-8 px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-clamptitle xxl:text-[2.5vw]">
+          <h2 className="text-clamptitle xxl:text-[2.5vw]">
             <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent">
               <strong>Our Training Schedule</strong>
             </span>
-          </h1>
+          </h2>
           <div className="mt-8 w-full overflow-x-scroll px-[7vw] sm:w-[600px] md:w-[80vw] xl:px-0 xxl:w-[90vw]">
             <Table>
               <TableHeader>

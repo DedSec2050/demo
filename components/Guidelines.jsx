@@ -13,19 +13,19 @@ const Guidelines = () => {
       <div className="flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <section className="relative flex w-full flex-col items-center text-justify">
           <div className="flex">
-            <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
+            <h2 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               Others teach you CISSP
-            </h1>
+            </h2>
           </div>
           <div className="flex translate-y-[-35px]">
-            <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
+            <h2 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               We coach you how to pass CISSP
-            </h1>
+            </h2>
           </div>
           <div className="flex">
-            <h1 className="text-clamptextmd font-semibold text-accent xxl:mb-[4vh] xxl:mt-[6vh] xxl:text-[1.5vw]">
+            <h2 className="text-clamptextmd font-semibold text-accent xxl:mb-[4vh] xxl:mt-[6vh] xxl:text-[1.5vw]">
               Updated as per new guidelines from April 2024
-            </h1>
+            </h2>
           </div>
           <div className="flex py-2 text-justify text-clamptextsmm font-medium leading-10 xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
             (ISC)2 CISSP Exam is tricky and only studying the course content is
@@ -38,12 +38,10 @@ const Guidelines = () => {
           <div className="flex py-4 text-clamptextsmm font-medium leading-10 xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
             CISSP Success Toolkit is the one and only program which trains you
             for the challenging CISSP exam through our 60+hours of Live Exam
-            practice.
+            practice. This is just one feature, let me tell you more.
           </div>
-          <div className="w-full justify-center py-4 text-clamptextsmm font-medium leading-10 xxl:mb-[4vh] xxl:text-[1.3vw] xxl:leading-normal">
-            This is just one feature, let me tell you more.
-          </div>
-          <div className="mb-7 mt-8 flex w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:w-[62vw] xl:max-w-[860px] xxl:w-[55vw] xxl:max-w-[1080px]">
+
+          <div className="mb-7 mt-8 flex w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:w-[62vw] xl:max-w-[860px] xxl:w-[55vw] xxl:max-w-[1080px] [&>div>div>button]:bg-red-600 [&>div>div>button]:bg-opacity-100">
             <MediaPlayer
               title="Sprite Fight"
               src="https://www.youtube.com/watch?v=wo4p8eotDW4"

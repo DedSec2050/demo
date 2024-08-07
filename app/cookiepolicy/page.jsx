@@ -13,11 +13,11 @@ export default function cookiepolicy() {
       <BackWrapper />
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">
-        <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.7rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p>a:hover]:text-accent-hover [&>div>p>a]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
+        <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h2]:py-2 [&>div>h2]:text-[1.7rem] [&>div>h2]:font-semibold [&>div>h2]:text-accent [&>div>p>a:hover]:text-accent-hover [&>div>p>a]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
           <div>
-            <h2 className="text-center text-[1.9rem] font-bold text-accent">
+            <h1 className="text-center text-clampheader font-[700] text-accent xxl:text-[2.5vw]">
               Cookie Policy
-            </h2>
+            </h1>
             <p>
               In this website, we believe in being transparent about how we
               collect and use data. This policy provides information about how
@@ -29,7 +29,7 @@ export default function cookiepolicy() {
             </p>
           </div>
           <div>
-            <h1>What is a cookie?</h1>
+            <h2>What is a cookie?</h2>
             <p>
               Cookies are small text files sent by us to your computer or mobile
               device. They are unique to your account or your browser. They
@@ -46,7 +46,7 @@ export default function cookiepolicy() {
             </p>
           </div>
           <div>
-            <h1>Does this website use cookies?</h1>
+            <h2>Does this website use cookies?</h2>
             <p>
               Yes. This website uses cookies and similar technologies like
               single-pixel gifs and web beacons. We use both session-based and
@@ -57,7 +57,7 @@ export default function cookiepolicy() {
             </p>
           </div>
           <div>
-            <h1>How is this website using cookies?</h1>
+            <h2>How is this website using cookies?</h2>
             <p>
               We use cookies to track your use of our website. This enables us
               to understand how you use the site and track any patterns with
@@ -124,10 +124,10 @@ export default function cookiepolicy() {
             </p>
           </div>
           <div>
-            <h1>
+            <h2>
               What can you do if you don't want cookies to be set or want them
               to be removed?
-            </h1>
+            </h2>
             <p>
               Some people prefer not to allow cookies, which is why most
               browsers give you the ability to manage cookies to suit you. In

@@ -60,7 +60,7 @@ const Page8 = () => {
       <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[10vw]">
         {/* Add Testimonial Section here  */}
         <div className="mt-8">
-          <h1 className="mt-8 text-center text-clamptitle leading-9">
+          <h2 className="mt-8 text-center text-clamptitle leading-9">
             <strong>
               <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent xxl:text-[2.5vw]">
                 See what Participants say
@@ -70,7 +70,7 @@ const Page8 = () => {
               </span>
               <br />
             </strong>
-          </h1>
+          </h2>
         </div>
         <div className="flex px-4 py-8">
           <Marquee>
@@ -81,9 +81,9 @@ const Page8 = () => {
                   className="mt-[150px] w-[100%] px-10 xxl:px-[7vw]"
                   key={index}
                 >
-                  <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-2 border-accent xxl:h-[43rem] xxl:w-[40rem]">
+                  <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-2 border-accent xl:h-[370px] xxl:h-[43rem] xxl:w-[40rem]">
                     <div className="image flex translate-y-[-65px] py-2 xxl:translate-y-[-120px]">
-                      <div className="bg-blue relative h-[100px] w-[100px] overflow-hidden rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
+                      <div className="bg-blue relative h-[100px] w-[100px] overflow-auto rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
                         <Image
                           src="/assets/Testimonials/demo.webp"
                           alt=""
@@ -92,7 +92,7 @@ const Page8 = () => {
                       </div>
                     </div>
                     <div className="justify-centers flex h-[70%] translate-y-[-40px] flex-col items-center px-4 text-center">
-                      <div className="name mt-6 translate-y-[-30px] text-[1rem] xxl:translate-y-[-100px] xxl:text-[1.3vw]">
+                      <div className="name mt-6 translate-y-[-30px] text-[1rem] font-semibold xl:text-[1.2rem] xxl:translate-y-[-100px] xxl:text-[1.3vw]">
                         {data.name}
                       </div>
                       <div className="sep translate-y-[-28px] text-[0.75rem] xxl:translate-y-[-110px] xxl:text-[1.3vw]">
@@ -102,23 +102,20 @@ const Page8 = () => {
                         {handleText(data.desc)}
                       </div>
                     </div>
-                  </div>
-                  <div className="relative z-10 h-[75px] w-[75px] translate-x-[43rem] translate-y-[-2.8rem] md:h-[100px] md:w-[100px] md:translate-x-[17.2rem] xxl:h-[250px] xxl:w-[250px] xxl:translate-x-[34rem] xxl:translate-y-[-8.5rem]">
-                    <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
-                      <Image
-                        src={vidplay}
-                        height={368}
-                        width={368}
-                        alt="video play"
-                      />
-                    </Link>
+                    <div className="relative mb-10">
+                      <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
+                        <Button className="rounded-[3rem] bg-red-700 text-white transition-all duration-500 hover:border-red-700">
+                          Watch Here
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               );
             })}
           </Marquee>
         </div>
-        <div className="flex w-full translate-y-[-30px] items-center justify-center">
+        <div className="flex w-full translate-y-[-30px] items-center justify-center xl:translate-y-0">
           <Link href="https://www.youtube.com/watch?v=_d8Jxaq_WSI&list=PLJ1GEK2Q0WrS5FNz6s2pLWlf0z_E_v0qM">
             <Button className="rounded-[30px] transition-all duration-500">
               Watch more Success Stories

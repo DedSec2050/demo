@@ -9,7 +9,7 @@ const Page7 = () => {
       <div className="my-7 flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
-            <h1 className="text-center text-clamptitle">
+            <h2 className="text-center text-clamptitle">
               <strong className="flex-row items-center justify-center gap-x-2">
                 <span className="flex items-center justify-center bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-transparent xxl:text-[2vw]">
                   <svg
@@ -64,7 +64,7 @@ const Page7 = () => {
                   CISSP Success Toolkit
                 </span>{" "}
               </strong>
-            </h1>
+            </h2>
             <div className="mt-10 text-clamptextsmm font-medium leading-9 xxl:text-[1.5vw] xxl:leading-normal">
               CISSP Exam not only test your knowledge but also test your ability
               to take security decisions based on cognitive thinking as a

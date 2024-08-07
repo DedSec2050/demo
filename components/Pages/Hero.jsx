@@ -48,13 +48,11 @@ const Hero = () => {
               <hr className="mx-auto my-2 h-1 w-48 rounded border-0 bg-accent dark:bg-gray-700 md:my-4" />
 
               <div className="relative mt-4 flex flex-col text-center">
-                <h1 className="text-clampheader font-[700] leading-8 xxl:text-[2.5vw]">
+                <h1 className="text-clampheader font-[700] xxl:text-[2.5vw]">
                   <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
-                    Give me 100 Days &
+                    Give me 100 Days &<br className="hidden xl:flex"></br>
                   </span>
-                </h1>
-                <h1 className="my-2 text-clampheader font-[700] leading-[4rem] xl:my-8 xxl:text-[2.5vw]">
-                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text leading-10 text-transparent drop-shadow-hero">
+                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
                     {" "}
                     I will get you CISSP Certified
                   </span>
@@ -62,7 +60,7 @@ const Hero = () => {
               </div>
               <div>
                 <Link href="https://calendly.com/cisspsuccess">
-                  <Button className="rounded-[30px] transition-all duration-500">
+                  <Button className="rounded-[30px] transition-all duration-500 xl:text-[17px]">
                     Book a FREE Consultation
                   </Button>
                 </Link>

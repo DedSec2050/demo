@@ -238,7 +238,7 @@ const Page3 = () => {
               return (
                 <div
                   key={index}
-                  className={`testimonial-card flex-grow-2 flex min-h-[270px] w-[18rem] min-w-[270px] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl md:h-[20rem] md:w-[20rem] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>.svg1]:hidden [&:hover>div>div>.svg2]:flex [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
+                  className={`testimonial-card flex-grow-2 flex max-h-[450px] min-h-[270px] w-[18rem] min-w-[270px] max-w-[450px] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl md:h-[20rem] md:w-[20rem] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>.svg1]:hidden [&:hover>div>div>.svg2]:flex [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
                 >
                   <div className="flex w-full justify-evenly text-center">
                     <div className="flex items-center">{data.svg}</div>

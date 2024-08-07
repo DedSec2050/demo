@@ -31,9 +31,9 @@ const Page2 = () => {
   return (
     <section>
       <div className="flex w-full flex-col items-center justify-center px-[30px] text-center sm:px-[50px] xl:px-[10vw]">
-        <h1 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
+        <h2 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
           Free CISSP resources
-        </h1>
+        </h2>
         <div className="flex w-full flex-col items-center justify-center gap-x-[170px] md:flex-row">
           {/* imagediv  */}
           <div className="order-2 flex h-[100%] w-[28%] flex-col md:order-none">

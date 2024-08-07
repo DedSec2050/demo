@@ -5,20 +5,20 @@ const Page4 = () => {
   return (
     <section className="flex flex-col items-center justify-center">
       <div className="flex h-[10rem] w-[100%] flex-col items-center justify-evenly bg-title bg-cover bg-center bg-no-repeat text-center leading-8">
-        <h1 className="text-clamptextmd">
+        <h2 className="text-clamptextmd">
           <strong>
             <span className="text-accent">
               "FAQs: Uncover Answers Instantly!"
             </span>
           </strong>
-        </h1>
-        <h1 className="text-clamptextsm text-black">
+        </h2>
+        <h2 className="text-clamptextsm text-black">
           <strong>Your Queries, Our Quick Solutions.</strong>
-        </h1>
+        </h2>
       </div>
       <div className="flex flex-col items-center justify-between px-4 md:flex-row">
         <div className="mt-8 w-full md:w-[70vw]">
-          <h1 className="text-clampheader md:text-clamptitle">
+          <h2 className="text-clampheader md:text-clamptitle">
             <strong>
               <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
                 Why CISSP Success{" "}
@@ -27,8 +27,8 @@ const Page4 = () => {
                 toolkit
               </span>
             </strong>{" "}
-          </h1>
-          <h1 className="leading-2 mb-4 text-clamptextmd">{toolkitTitle}</h1>
+          </h2>
+          <h2 className="leading-2 mb-4 text-clamptextmd">{toolkitTitle}</h2>
           {toolkitData.map((data, index) => {
             return (
               <li className="px-6 text-clamptextsm" key={index}>

@@ -278,7 +278,7 @@ const MultiSteps = () => {
                     </Button>
                   </div>
                   <div className="flex flex-col gap-2 px-5 pt-[50px]">
-                    <h1>E-mail</h1>
+                    <h2>E-mail</h2>
                     <input
                       type="email"
                       placeholder="john@example.com"
@@ -286,7 +286,7 @@ const MultiSteps = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       required
                     />
-                    <h1>Password</h1>
+                    <h2>Password</h2>
                     <input
                       type="text"
                       placeholder="Password"

@@ -9,7 +9,7 @@ const Page6 = () => {
     <section>
       <div className="px-[30px] py-8 sm:px-[50px] xl:px-[10vw]">
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-clamptitle">
+          <h2 className="text-center text-clamptitle">
             <strong>
               <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
                 Experience the CISSP Success
@@ -18,7 +18,7 @@ const Page6 = () => {
                 Toolkit - Roadmap
               </span>
             </strong>
-          </h1>
+          </h2>
           <div className="my-6 w-full overflow-hidden rounded-[30px] border-2 border-accent">
             <Image
               alt="timeline"

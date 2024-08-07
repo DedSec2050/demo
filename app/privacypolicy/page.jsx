@@ -11,11 +11,11 @@ export default function page() {
       <Header />
       <BackWrapper />
       <div className="flex flex-col items-center justify-center pt-[30px]">
-        <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.7rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
+        <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h2]:py-2 [&>div>h2]:text-[1.7rem] [&>div>h2]:font-semibold [&>div>h2]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
           <div>
-            <h2 className="text-center text-[1.9rem] font-bold text-accent">
+            <h1 className="text-center text-clampheader font-[700] text-accent xxl:text-[2.5vw]">
               Privacy Policy
-            </h2>
+            </h1>
             <p>
               We understand that privacy and the security of your personal
               information is extremely important. This policy sets out what we
@@ -27,7 +27,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Introduction</h1>
+            <h2>Introduction</h2>
             <p>
               This privacy notice applies to this website and other interactions
               (e.g, when you create an account with the Website, purchase or
@@ -50,7 +50,7 @@ export default function page() {
               to get the contact information of the Website instructors and
               administrator(s).
             </p>
-            <h1>What Data Do We Collect About you</h1>
+            <h2>What Data Do We Collect About you</h2>
             <p className="pt-2">
               Personal data means any information capable of identifying an
               individual. It does not include anonymised data. We may collect
@@ -93,7 +93,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Other Information Collected</h1>
+            <h2>Other Information Collected</h2>
             <p>
               We may collect data about you by you providing the data directly
               to us (for example by filling in forms on our site or by sending
@@ -111,8 +111,8 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Third parties or publicly available sources</h1>
-            <h1>Sensitive Data</h1>
+            <h2>Third parties or publicly available sources</h2>
+            <h2>Sensitive Data</h2>
             <p>
               <b>We do not collect any Sensitive Data about you</b>. Sensitive
               data refers to data that includes details about your race or
@@ -130,7 +130,7 @@ export default function page() {
               cancel a product or service you have ordered but if we do, we will
               notify you at the time.
             </p>
-            <h1>How we use your Personal Data</h1>
+            <h2>How we use your Personal Data</h2>
             <p>
               We will only use your personal data when legally permitted. The
               most common uses of your personal data are:
@@ -160,9 +160,9 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>
+            <h2>
               Purpose and Legitimate Basis for processing your personal data
-            </h1>
+            </h2>
             <p>
               Set out below is a description of the ways we intend to use your
               personal data and the legal grounds on which we will process such
@@ -224,7 +224,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Marketing communications</h1>
+            <h2>Marketing communications</h2>
             <p>
               Our lawful ground of processing your personal data to send you
               marketing communications is either your consent or our legitimate
@@ -256,7 +256,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Disclosures of your Personal Data</h1>
+            <h2>Disclosures of your Personal Data</h2>
             <p>
               We may have to share your personal data with the parties set out
               below:
@@ -291,7 +291,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>International transfers</h1>
+            <h2>International transfers</h2>
             <p>
               We share your personal data within our group of companies which
               involves transferring your data outside the European Economic Area
@@ -341,7 +341,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Data Security</h1>
+            <h2>Data Security</h2>
             <p>
               We have put in place appropriate security measures to prevent your
               personal data from being accidentally lost, used or accessed in an
@@ -357,7 +357,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Data Retention</h1>
+            <h2>Data Retention</h2>
             <p>
               We will only retain your personal data for as long as necessary to
               fulfill the purposes we collected it for, including for the
@@ -379,7 +379,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Your Legal Rights</h1>
+            <h2>Your Legal Rights</h2>
             <p>
               Under certain circumstances, you have rights under data protection
               laws in relation to your personal data. These include the right
@@ -431,7 +431,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Third Party Links</h1>
+            <h2>Third Party Links</h2>
             <p>
               We may include links to third-party websites, addons and
               applications. Clicking on those links or enabling those
@@ -443,7 +443,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Cookies</h1>
+            <h2>Cookies</h2>
             <p>
               You can set your browser to refuse all or some browser cookies, or
               to alert you when websites set or access cookies. If you disable
@@ -458,14 +458,14 @@ export default function page() {
               </Link>
               .
             </p>
-            <h1>Age Limitations</h1>
+            <h2>Age Limitations</h2>
             <p>
               By providing us with your data, you warrant to us that you are
               over 13 years of age.
             </p>
           </div>
           <div>
-            <h1>How to contact us</h1>
+            <h2>How to contact us</h2>
             <p>
               You can contact Zenler at any time if you have any questions about
               this Privacy Policy or our practices, or if you are seeking to
@@ -475,7 +475,7 @@ export default function page() {
             </p>
           </div>
           <div>
-            <h1>Data protection Authority</h1>
+            <h2>Data protection Authority</h2>
             <p>
               If you are not happy with any aspect of how we collect and use
               your data, you have the right to complain to the Information

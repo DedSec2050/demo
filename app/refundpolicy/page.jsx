@@ -12,16 +12,17 @@ export default function refundpolicy() {
       <Header />
       <div>
         <div className="flex flex-col items-center justify-center pt-[30px]">
-          <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h1]:py-2 [&>div>h1]:text-[1.7rem] [&>div>h1]:font-semibold [&>div>h1]:text-accent [&>div>p>a:hover]:text-accent-hover [&>div>p>a]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
+          <div className="px-[30px] sm:px-[50px] xl:px-[15vw] [&>div>h2]:py-2 [&>div>h2]:text-[1.7rem] [&>div>h2]:font-semibold [&>div>h2]:text-accent [&>div>p>a:hover]:text-accent-hover [&>div>p>a]:text-accent [&>div>p]:text-[1.2rem] [&>div>p]:text-slate-300 [&>div>ul>li]:text-slate-300">
             <div>
-              <h2 className="text-center text-[1.9rem] font-bold text-accent">
+              <h1 className="text-center text-clampheader font-[700] text-accent xxl:text-[2.5vw]">
                 Refund Policy
-                <br />
-                <span>Effective from 01 Dec 2020</span>
+              </h1>
+              <h2 className="text-center text-clampheader font-[700] text-accent xxl:text-[2.5vw]">
+                Effective from 01 Dec 2020
               </h2>
             </div>
             <div>
-              <h1>Course Refund Policy</h1>
+              <h2>Course Refund Policy</h2>
               <p>
                 We stand behind all of our products and your satisfaction is
                 very important to us. All purchases made from CYBERNOUS)
@@ -31,7 +32,7 @@ export default function refundpolicy() {
               </p>
             </div>
             <div>
-              <h1>General Policy</h1>
+              <h2>General Policy</h2>
               <p>
                 Offers/Coupons cannot be used in conjunction with each other
                 unless otherwise stated. Coupons are only valid during the
@@ -71,7 +72,7 @@ export default function refundpolicy() {
               </p>
             </div>
             <div>
-              <h1>Training Access</h1>
+              <h2>Training Access</h2>
               <p>
                 You will receive access to THE COMPANY training platform for the
                 amount of time that was stated on the product description you
@@ -94,7 +95,7 @@ export default function refundpolicy() {
               </p>
             </div>
             <div>
-              <h1>Specific Product Refund Policies</h1>
+              <h2>Specific Product Refund Policies</h2>
               <p>
                 Complete CISSP Training Refund Policy Money-Back Guarantee
                 Refund Any student that enrolled in the Complete CISSP training

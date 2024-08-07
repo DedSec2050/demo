@@ -40,7 +40,7 @@ const Connect = () => {
   return (
     <section>
       <div className="flex flex-col items-center justify-center px-[30px] py-8 sm:px-[50px] xl:px-[10vw]">
-        <h1 className="mt-7 text-center text-clamptitle xxl:text-[2.5vw]">
+        <h2 className="mt-7 text-center text-clamptitle xxl:text-[2.5vw]">
           <strong>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
               Connect with your
@@ -49,7 +49,7 @@ const Connect = () => {
               coach
             </span>
           </strong>
-        </h1>
+        </h2>
         <div className="flex w-full flex-col items-center justify-between lg:flex-row lg:gap-[4vw]">
           <div className="relative mt-8 aspect-video min-h-[120px] w-[18rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent sm:w-[30rem] md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px]">
             <Image
@@ -63,7 +63,7 @@ const Connect = () => {
               alt=""
             />
           </div>
-          <div className="relative mt-8 aspect-video w-[18rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 sm:w-[30rem] md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px]">
+          <div className="relative mt-8 aspect-video w-[18rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 sm:w-[30rem] md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px] [&>div>div>button]:bg-red-600">
             <MediaPlayer
               title="Sprite Fight"
               src="https://www.youtube.com/watch?v=wo4p8eotDW4"
