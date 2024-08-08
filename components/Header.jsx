@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 import { FaWhatsappSquare } from "react-icons/fa";
 import Image from "next/image";
 // components
@@ -27,6 +29,12 @@ const Header = () => {
           <Nav />
           <Link href="https://wa.me/+918595338705">
             <FaWhatsappSquare className="z-[40] ml-[3vw] h-[2vw] w-[2vw] text-green-500" />
+          </Link>
+          <Link href="https://www.youtube.com/@cybernous">
+            <FaYoutube className="z-[40] ml-[3vw] h-[2vw] w-[2vw] text-red-500" />
+          </Link>
+          <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
+            <BsLinkedin className="z-[40] ml-[3vw] h-[2vw] w-[2vw] overflow-hidden rounded-[3px] bg-white text-blue-500" />
           </Link>
         </div>
         <Link href="https://www.cybernous.com/login">

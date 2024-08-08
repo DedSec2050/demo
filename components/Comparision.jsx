@@ -6,14 +6,14 @@ import Link from "next/link";
 const Page7 = () => {
   return (
     <section>
-      <div className="my-7 flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
+      <div className="mt-[30px] flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:my-[60px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
             <h2 className="text-center text-clamptitle">
               <strong className="flex-row items-center justify-center gap-x-2">
-                <span className="flex items-center justify-center bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-center text-transparent xxl:text-[2vw]">
+                <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
                   <svg
-                    className="mx-2 hidden xl:flex xl:translate-y-[-10px]"
+                    className="mx-2 hidden xl:flex xl:translate-y-[10px]"
                     width="30"
                     height="40"
                     viewBox="0 0 67 38"
@@ -94,9 +94,9 @@ const Page7 = () => {
             />
           </div>
         </div>
-        <div className="my-8 flex w-full items-center justify-center">
+        <div className="mt-6 flex w-full items-center justify-center">
           <Link href="https://calendly.com/cisspsuccess">
-            <Button className="scale-105 rounded-[30px] transition-all duration-500">
+            <Button className="scale-105 rounded-[30px] transition-all duration-500 xl:mt-10">
               Book a FREE Demo Class
             </Button>
           </Link>

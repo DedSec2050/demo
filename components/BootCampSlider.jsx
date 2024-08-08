@@ -223,8 +223,8 @@ const Page3 = () => {
 
   return (
     <section>
-      <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[10vw]">
-        <div className="text-center text-clamptitle font-bold xxl:text-[2vw]">
+      <div className="flex flex-col px-[30px] sm:px-[50px] xl:mt-10 xl:px-[10vw]">
+        <div className="text-center text-clamptitle font-bold xl:mb-8 xxl:text-[2vw]">
           <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
             Key Features of CISSP
           </span>{" "}
@@ -258,7 +258,7 @@ const Page3 = () => {
             })}
           </div>
         </div>
-        <div className="flex w-full items-center justify-center">
+        <div className="my-2 flex w-full items-center justify-center">
           <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy/plan/95551">
             <Button className="rounded-[30px] transition-all duration-500">
               Enroll Now!

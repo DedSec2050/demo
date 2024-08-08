@@ -10,14 +10,14 @@ import {
 const Guidelines = () => {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
+      <div className="flex flex-col items-center justify-center px-[30px] py-0 sm:px-[50px] xl:px-[10vw]">
         <section className="relative flex w-full flex-col items-center text-justify">
           <div className="flex">
             <h2 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               Others teach you CISSP
             </h2>
           </div>
-          <div className="flex translate-y-[-35px]">
+          <div className="mb-6 flex xl:mb-0 xl:translate-y-[-35px]">
             <h2 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               We coach you how to pass CISSP
             </h2>

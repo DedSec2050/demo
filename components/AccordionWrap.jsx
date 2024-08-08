@@ -10,7 +10,7 @@ const Page9 = () => {
       <div className="relative mt-8 w-full px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="flex h-[250px] w-full flex-col items-center justify-center rounded-[40px] border-[2px] border-white bg-gradient-to-l from-[#D7D7D766] via-[#D7D7D766] to-[#E9E0A5B5] text-center">
           <div>
-            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-clamptextsm font-bold leading-6 text-transparent sm:leading-8 md:text-clamptextsmm">
+            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-clamptextsm font-bold leading-6 text-transparent sm:leading-8 md:text-clampheader">
               " FAQ's: <br className="flex sm:py-4 xl:hidden"></br> Uncover
               Answers Instantly! "
             </span>
@@ -27,7 +27,7 @@ const Page9 = () => {
             </Button>
           </div>
         </div>
-        <div className="mb-8 mt-4 text-center text-clamptitle xxl:text-[2.5vw]">
+        <div className="mb-8 mt-4 text-center text-clampheader xxl:text-[2.5vw]">
           <strong>
             <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
               Frequently Asked Questions

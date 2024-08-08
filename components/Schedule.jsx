@@ -78,7 +78,7 @@ const Page5 = () => {
       <div className="mx-auto mt-8 px-[30px] sm:px-[50px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-clamptitle xxl:text-[2.5vw]">
-            <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               <strong>Our Training Schedule</strong>
             </span>
           </h2>
@@ -93,22 +93,22 @@ const Page5 = () => {
                     Start Date
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Training Schedule
+                    Number of Hours
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Enrolment Status
-                  </TableHead>
-                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Batch Status
+                    Batch Type
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                     Training Mode
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Number of Hours
+                    Training Schedule
                   </TableHead>
                   <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                    Batch Type
+                    Batch Status
+                  </TableHead>
+                  <TableHead className="text-center text-accent md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                    Enrolment Status
                   </TableHead>
                 </TableRow>
               </TableHeader>
@@ -123,7 +123,21 @@ const Page5 = () => {
                         {data.startDate}
                       </TableCell>
                       <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                        {data.numberOfHours}
+                      </TableCell>
+                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                        {data.batchType}
+                      </TableCell>
+                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
+                        {data.trainingMode}
+                      </TableCell>
+                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                         {data.trainingSchedule}
+                      </TableCell>
+                      <TableCell
+                        className={`${data.batchStatus == "Open" && "text-green-500"} ${data.batchStatus == "Closed" && "text-red-600"} border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]`}
+                      >
+                        {data.batchStatus}
                       </TableCell>
                       <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
                         <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy/plan/95551">
@@ -134,20 +148,6 @@ const Page5 = () => {
                             {data.enrollmentStatus}
                           </Button>
                         </Link>
-                      </TableCell>
-                      <TableCell
-                        className={`${data.batchStatus == "Open" && "text-green-500"} ${data.batchStatus == "Closed" && "text-red-600"} border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]`}
-                      >
-                        {data.batchStatus}
-                      </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.trainingMode}
-                      </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.numberOfHours}
-                      </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        {data.batchType}
                       </TableCell>
                     </TableRow>
                   );

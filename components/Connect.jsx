@@ -42,10 +42,10 @@ const Connect = () => {
       <div className="flex flex-col items-center justify-center px-[30px] py-8 sm:px-[50px] xl:px-[10vw]">
         <h2 className="mt-7 text-center text-clamptitle xxl:text-[2.5vw]">
           <strong>
-            <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               Connect with your
             </span>{" "}
-            <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
               coach
             </span>
           </strong>
@@ -77,12 +77,12 @@ const Connect = () => {
             </MediaPlayer>
           </div>
         </div>
-        <div className="mt-[15px] flex w-full flex-col items-center justify-between gap-[15px] px-[5vw] md:mt-[35px] md:flex-row md:px-[3vw] xl:px-0">
+        <div className="mt-[15px] flex w-full flex-col items-center justify-around gap-[15px] px-[5vw] md:mt-[35px] md:flex-row md:px-[3vw] xl:px-0">
           {btnlist.map((data, index) => {
             return (
               <div key={index}>
                 <Link href={data.link} className="">
-                  <Button className="h-[5vh] w-[44vw] rounded-full transition-all duration-500 md:w-[200px] xxl:text-[1vw]">
+                  <Button className="h-[5vh] w-[44vw] rounded-full px-4 transition-all duration-500 md:w-[200px] xxl:text-[1vw]">
                     Follow me on {data.data}
                   </Button>
                 </Link>

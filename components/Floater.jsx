@@ -4,7 +4,7 @@ import "./css/floater.css";
 
 const Floater = () => {
   return (
-    <div className="floating fixed bottom-[12vh] right-[2vw] z-10 hidden flex-col items-center justify-center gap-5 rounded-full bg-transparent transition-all duration-100 md:flex [&>.menu-item]:hidden md:[&>.menu-item]:flex">
+    <div className="floating fixed bottom-0 right-0 z-10 mb-4 mr-2 hidden flex-col items-center justify-center gap-5 rounded-full bg-transparent transition-all duration-100 md:flex [&>.menu-item]:hidden md:[&>.menu-item]:flex">
       <div className="menu-item overflow-hidden rounded-full transition-all duration-500 hover:drop-shadow-green">
         <SocialIcon network="whatsapp" url="https://wa.me/+918595338705" />
       </div>

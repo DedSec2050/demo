@@ -57,15 +57,15 @@ const Page8 = () => {
   return (
     // Slideshow Testimonials section
     <section>
-      <div className="mt-8 flex flex-col px-[30px] sm:px-[50px] xl:px-[10vw]">
+      <div className="flex flex-col px-[30px] sm:px-[50px] xl:mt-8 xl:px-[10vw]">
         {/* Add Testimonial Section here  */}
-        <div className="mt-8">
-          <h2 className="mt-8 text-center text-clamptitle leading-9">
+        <div className="mt-10">
+          <h2 className="mt-2 text-center text-clamptitle">
             <strong>
-              <span className="bg-gradient-to-r from-accent via-grn to-accent bg-clip-text text-transparent xxl:text-[2.5vw]">
+              <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
                 See what Participants say
               </span>{" "}
-              <span className="bg-gradient-to-r from-accent to-grn bg-clip-text text-transparent xxl:text-[2.5vw]">
+              <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
                 about us:
               </span>
               <br />
@@ -78,31 +78,33 @@ const Page8 = () => {
             {testimonialDataList.map((data, index) => {
               return (
                 <div
-                  className="mt-[150px] w-[100%] px-10 xxl:px-[7vw]"
+                  className="mt-[100px] w-[100%] translate-y-[-30px] px-10 xxl:px-[7vw]"
                   key={index}
                 >
-                  <div className="flex h-[300px] w-[20rem] flex-col items-center justify-center rounded-[3%] border-2 border-accent xl:h-[370px] xxl:h-[43rem] xxl:w-[40rem]">
-                    <div className="image flex translate-y-[-65px] py-2 xxl:translate-y-[-120px]">
-                      <div className="bg-blue relative h-[100px] w-[100px] overflow-auto rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
+                  <div className="flex h-[300px] w-[300px] flex-col items-center justify-center rounded-[3%] border-2 border-accent bg-gradient-to-r from-[#E8E8E808] to-[#FFFFFF24] xl:h-[370px] xl:w-[20rem] xxl:h-[43rem] xxl:w-[40rem]">
+                    <div className="image flex py-2 xxl:translate-y-[-120px]">
+                      <div className="bg-blue fixed top-0 mt-2 h-[100px] w-[100px] translate-x-[-50%] translate-y-[-65px] overflow-auto rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
                         <Image
                           src="/assets/Testimonials/demo.webp"
-                          alt=""
+                          alt="testimonials"
                           fill
                         />
                       </div>
                     </div>
-                    <div className="justify-centers flex h-[70%] translate-y-[-40px] flex-col items-center px-4 text-center">
-                      <div className="name mt-6 translate-y-[-30px] text-[1rem] font-semibold xl:text-[1.2rem] xxl:translate-y-[-100px] xxl:text-[1.3vw]">
+                    <div className="fixed top-0 mt-[40px] flex flex-col items-center justify-center px-4 text-center">
+                      <div className="mt-[30px] text-[1rem] font-semibold xl:text-[1.2rem] xxl:text-[1.3vw]">
                         {data.name}
                       </div>
-                      <div className="sep translate-y-[-28px] text-[0.75rem] xxl:translate-y-[-110px] xxl:text-[1.3vw]">
+                      <div className="text-[0.75rem] xxl:translate-y-[-110px] xxl:text-[1.3vw]">
                         Nailed CISSP in {data.date}
                       </div>
-                      <div className="w-full px-5 text-[0.85rem] xxl:translate-y-[-80px] xxl:text-[1.1vw]">
+                    </div>
+                    <div className="fixed top-0 mt-[150px] flex translate-y-[0] flex-col items-center justify-center px-4 text-center">
+                      <div className="w-full px-5 text-[0.85rem] xxl:text-[1.1vw]">
                         {handleText(data.desc)}
                       </div>
                     </div>
-                    <div className="relative mb-10">
+                    <div className="fixed bottom-0 mb-6 xl:translate-y-[-30px]">
                       <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
                         <Button className="rounded-[3rem] bg-red-700 text-white transition-all duration-500 hover:border-red-700">
                           Watch Here
