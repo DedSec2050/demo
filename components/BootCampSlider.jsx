@@ -5,13 +5,14 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const bootData = [
   {
     svg: (
       <>
         <svg
-          className="svg1"
+          className="svg1 xl:h-[3.5rem] xl:w-[3.5rem]"
           width="2rem"
           height="2rem"
           viewBox="0 0 41 33"
@@ -25,7 +26,7 @@ const bootData = [
         </svg>
 
         <svg
-          className="svg2 hidden"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
           width="2rem"
           height="2rem"
           viewBox="0 0 43 34"
@@ -46,7 +47,7 @@ const bootData = [
     svg: (
       <>
         <svg
-          className="svg1"
+          className="svg1 xl:h-[3.5rem] xl:w-[3.5rem]"
           width="2rem"
           height="2rem"
           viewBox="0 0 44 38"
@@ -62,7 +63,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg2 hidden"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 46 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +84,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg1"
+          className="svg1 xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 40 36"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +96,7 @@ const bootData = [
         </svg>
 
         <svg
-          className="svg2 hidden"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
           width="2rem"
           height="2rem"
           viewBox="0 0 42 38"
@@ -118,7 +119,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg1"
+          className="svg1 xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 40 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +133,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg2 hidden"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 42 42"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +154,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg1"
+          className="svg1 xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 36 40"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +168,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg2 hidden"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 38 42"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +187,7 @@ const bootData = [
     svg: (
       <>
         <svg
-          className="svg1 flex"
+          className="svg1 flex xl:h-[3.5rem] xl:w-[3.5rem]"
           width="2rem"
           height="2rem"
           viewBox="0 0 41 41"
@@ -201,7 +202,7 @@ const bootData = [
         <svg
           width="2rem"
           height="2rem"
-          className="svg2 hidden"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
           viewBox="0 0 43 42"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +214,115 @@ const bootData = [
         </svg>
       </>
     ),
-    title: "3500+ practice Questions + 05 Mock Tests ",
+    title: "3500+ practice Questions ",
+    desc: "World class CISSP Exam Engine with 05 Mock tests ",
+  },
+  {
+    svg: (
+      <>
+        <svg
+          className="svg1 flex xl:h-[3.5rem] xl:w-[3.5rem]"
+          width="2rem"
+          height="2rem"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            {" "}
+            <path
+              d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21"
+              stroke="#FFD600"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>{" "}
+          </g>
+        </svg>
+        <svg
+          width="2rem"
+          height="2rem"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            {" "}
+            <path
+              d="M4 19V6.2C4 5.0799 4 4.51984 4.21799 4.09202C4.40973 3.71569 4.71569 3.40973 5.09202 3.21799C5.51984 3 6.0799 3 7.2 3H16.8C17.9201 3 18.4802 3 18.908 3.21799C19.2843 3.40973 19.5903 3.71569 19.782 4.09202C20 4.51984 20 5.0799 20 6.2V17H6C4.89543 17 4 17.8954 4 19ZM4 19C4 20.1046 4.89543 21 6 21H20M9 7H15M9 11H15M19 17V21"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>{" "}
+          </g>
+        </svg>
+      </>
+    ),
+    title: "One stop For CISSP Prep",
+    desc: "World class CISSP Exam Engine with 05 Mock tests ",
+  },
+  ///
+  {
+    svg: (
+      <>
+        <svg
+          fill="#FFD600"
+          height="2rem"
+          width="2rem"
+          className="svg1 xl:h-[3.5rem] xl:w-[3.5rem]"
+          viewBox="0 0 256 256"
+          id="Flat"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            {" "}
+            <path d="M200.00781,88V200a16.01833,16.01833,0,0,1-16,16h-144a16.01833,16.01833,0,0,1-16-16V88a16.01833,16.01833,0,0,1,16-16h144A16.01833,16.01833,0,0,1,200.00781,88Zm16-48h-152a8,8,0,0,0,0,16h152V176a8,8,0,0,0,16,0V56A16.01833,16.01833,0,0,0,216.00781,40Z"></path>{" "}
+          </g>
+        </svg>
+
+        <svg
+          fill="black"
+          height="2rem"
+          width="2rem"
+          className="svg2 hidden xl:h-[3.5rem] xl:w-[3.5rem]"
+          viewBox="0 0 256 256"
+          id="Flat"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            {" "}
+            <path d="M200.00781,88V200a16.01833,16.01833,0,0,1-16,16h-144a16.01833,16.01833,0,0,1-16-16V88a16.01833,16.01833,0,0,1,16-16h144A16.01833,16.01833,0,0,1,200.00781,88Zm16-48h-152a8,8,0,0,0,0,16h152V176a8,8,0,0,0,16,0V56A16.01833,16.01833,0,0,0,216.00781,40Z"></path>{" "}
+          </g>
+        </svg>
+      </>
+    ),
+    title: "950+ Unique Concept Cards",
     desc: "World class CISSP Exam Engine with 05 Mock tests ",
   },
 ];
@@ -233,24 +342,19 @@ const Page3 = () => {
           </span>
         </div>
         <div className="testimonial-section relative flex items-center justify-center py-12">
-          <div className="grid grid-cols-1 content-center items-center justify-center gap-y-[70px] md:grid-cols-2 md:gap-x-[70px] xl:grid-cols-3 xl:gap-x-[100px]">
+          <div className="grid grid-cols-1 content-center items-center justify-center gap-y-[70px] md:grid-cols-2 md:gap-x-[70px] xl:grid-cols-3 xl:gap-x-[100px] xlls:grid-cols-4 xlls:gap-x-[60px]">
             {bootData.map((data, index) => {
               return (
                 <div
                   key={index}
                   className={`testimonial-card flex-grow-2 flex max-h-[450px] min-h-[270px] w-[18rem] min-w-[270px] max-w-[450px] transform flex-col items-center justify-center rounded-[10%] bg-elevated p-6 text-accent shadow-[0px_0px_20px_15px_#FFD600] transition-transform duration-200 hover:scale-105 hover:bg-[#E5CF5F] hover:text-black hover:shadow-[0px_0px_13px_11px_#FFD600] hover:drop-shadow-xl md:h-[20rem] md:w-[20rem] xxl:h-[26vw] xxl:w-[26vw] xxl:rounded-[8%] xxl:shadow-[0px_0px_35px_20px_#FFD600] hover:xxl:shadow-[0px_0px_15px_9px_#FFD600] [&:hover>div>div>.svg1]:hidden [&:hover>div>div>.svg2]:flex [&:hover>div>div>span]:text-black [&:hover>div>div]:text-black [&:hover>div]:text-black`}
                 >
-                  <div className="flex w-full justify-evenly text-center">
+                  <div className="flex w-full flex-col items-center justify-center gap-8 text-center">
                     <div className="flex items-center">{data.svg}</div>
                     <div className="leading-1 px-[1rem]">
-                      <span className="text-center text-[15px] font-bold text-white xl:text-[20px]">
+                      <span className="text-center text-[20px] font-bold text-white xl:text-[25px]">
                         {data.title}
                       </span>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center py-4">
-                    <div className="flex w-[70%] text-center font-medium text-white xl:text-[17px]">
-                      {data.desc}
                     </div>
                   </div>
                 </div>
