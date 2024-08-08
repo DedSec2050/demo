@@ -36,7 +36,7 @@ const HeroSlider = () => {
               <div className="tooltip bg-red-600 text-clamptextsm text-white">
                 <strong>{`${demo.rating}`}</strong>
               </div>
-              <Image src={`${demo.url}`} height={30} width={30} alt="" />
+              <Image src={`${demo.url}`} height={30} width={30} alt="slider" />
             </div>
           </div>
         </div>

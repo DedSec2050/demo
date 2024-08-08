@@ -17,7 +17,7 @@ const Header = () => {
             <Image
               layout="responsive"
               src="/assets/cyberlg.webp"
-              alt=""
+              alt="cybernous logo"
               width={150}
               height={100}
             />

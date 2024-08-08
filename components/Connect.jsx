@@ -60,9 +60,10 @@ const Connect = () => {
               width={519}
               height={319}
               quality={50}
-              alt=""
+              alt="trainer"
             />
           </div>
+          <div class="mt-[40px] hidden min-h-[1em] w-px border-accent lg:flex lg:h-[300px] lg:border-2"></div>
           <div className="relative mt-8 aspect-video w-[18rem] min-w-[252px] overflow-hidden rounded-[30px] border-4 border-accent bg-gray-600 sm:w-[30rem] md:max-w-[750px] lg:max-h-[560px] lg:min-h-[219px] lg:w-[30vw] lg:min-w-[418px] [&>div>div>button]:bg-red-600">
             <MediaPlayer
               title="Sprite Fight"

@@ -29,7 +29,7 @@ const Positions = () => {
                       width={170}
                       height={73}
                       className={`${index} ` + ""}
-                      alt=""
+                      alt="positions"
                     />
                   </div>
                 );

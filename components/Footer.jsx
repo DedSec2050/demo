@@ -26,7 +26,7 @@ const Footer = () => {
               <div className="xxl:w-[13vw]">
                 <Image
                   src="/assets/cyberlg.webp"
-                  alt=""
+                  alt="cybernous logo"
                   width={150}
                   height={100}
                 />

@@ -9,7 +9,7 @@ const Photo = () => {
         priority
         quality={50}
         fill
-        alt=""
+        alt="Manoj Sharma"
         className="object-contain xl:object-cover"
       />
     </div>
