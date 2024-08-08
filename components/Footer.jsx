@@ -66,6 +66,9 @@ const Footer = () => {
                 <Link href={"/refundpolicy"}>
                   <span>Refund Policy</span>
                 </Link>
+                <Link href={"/terms-conditions"}>
+                  <span>Terms & Conditions</span>
+                </Link>
               </div>
               <div className="Support flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
                 <Link href={"/"}>
@@ -81,19 +84,19 @@ const Footer = () => {
           <div className="socials relative bottom-0 mt-10 flex w-screen flex-row items-center justify-center gap-3 text-accent">
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
             <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
-              <BsLinkedin />
+              <BsLinkedin className="md:h-[25px] md:w-[25px]" />
             </Link>
             <Link href="https://www.facebook.com/cybernous">
-              <FaFacebook />
+              <FaFacebook className="md:h-[25px] md:w-[25px]" />
             </Link>
             <Link href="https://www.instagram.com/cybernous_infosec">
-              <FiInstagram />
+              <FiInstagram className="md:h-[25px] md:w-[25px]" />
             </Link>
             <Link href="https://x.com/cybernous2024">
-              <TiSocialTwitter />
+              <TiSocialTwitter className="md:h-[25px] md:w-[25px]" />
             </Link>
             <Link href="https://www.youtube.com/@cybernous">
-              <AiFillYoutube />
+              <AiFillYoutube className="md:h-[25px] md:w-[25px]" />
             </Link>
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
           </div>
