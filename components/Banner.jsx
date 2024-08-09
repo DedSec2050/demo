@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 
 const Banner = () => {
   return (
@@ -16,6 +18,13 @@ const Banner = () => {
       </div>
       <div className="pb-1 text-center md:ml-6">
         Whatsapp Us: +91 85953 38705
+      </div>
+      <div className="ml-6 hidden items-center justify-center gap-4 rounded-[10px] px-2 text-[1.2rem] lg:flex">
+        <div className="flex w-full translate-y-[-2px]">Get CISSP Updates</div>
+        <Input className="h-8" type="email" placeholder="Email" />
+        <Button className="h-8 transition-all duration-500" type="submit">
+          Subscribe
+        </Button>
       </div>
     </section>
   );
