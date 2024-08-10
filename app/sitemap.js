@@ -15,13 +15,14 @@ const getPosts = async () => {
   return client.fetch(query);
 };
 export default async function sitemap() {
-  const baseUrl = "https://demo-gamma-ebon.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  console.log(baseUrl);
   const posts = await getPosts();
   //   console.log(posts);
   const postEntries = posts.map((post) => {
-    // console.log(post);
+    console.log(post);
     return {
-      url: `${baseUrl}/blog/${post.title}`,
+      url: `${baseUrl}/blog/${post.currentSlug}`,
       //   lastModified: new Date(post._createdAt),
       //    changeFrequency
       //    priority:
