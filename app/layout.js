@@ -9,13 +9,20 @@ import Floater from "@/components/Floater";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Cybernous CISSP Online Training",
+  metadataBase: new URL("https://www.cybernous.com/"),
+  title: {
+    default: "Cybernous CISSP Online Training",
+    template: `%s | Cybernous`,
+  },
   description:
     "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
   openGraph: {
     title: "Cybernous CISSP Online Training",
     description:
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
+  },
+  verification: {
+    google: "give verification id here",
   },
 };
 

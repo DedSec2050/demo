@@ -14,6 +14,17 @@ export async function generateMetadata({ params: { slug } }) {
     return {
       title: post.title,
       description: post.smallDescription,
+      robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+      },
+      // twitter: {
+      //   card: "",
+      //   title: post.title,
+      //   description: post.smallDescription,
+
+      // },
       openGraph: {
         title: post.title,
         description: post.smallDescription,
