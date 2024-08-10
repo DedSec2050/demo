@@ -6,6 +6,28 @@ import Image from "next/image";
 import React from "react";
 import { PortableText } from "@portabletext/react";
 
+export async function generateMetadata({ params: { slug } }) {
+  console.log(slug);
+  const [post] = await getPost(slug);
+  console.log(post.smallDescription);
+  try {
+    return {
+      title: post.title,
+      description: post.smallDescription,
+      openGraph: {
+        title: post.title,
+        description: post.smallDescription,
+      },
+    };
+  } catch (error) {
+    console.log(error);
+    return {
+      title: "Not Found",
+      description: "The page you are looking for does not exits",
+    };
+  }
+}
+
 const getPost = async (slug) => {
   const query = groq`*[_type== 'blog' && slug.current == $slug]
       {
