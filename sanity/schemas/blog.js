@@ -21,6 +21,16 @@ export default {
       validation: (rule) => [rule.required()],
     },
     {
+      name: "author",
+      type: "reference",
+      title: "Author",
+      to: [
+        {
+          type: "author",
+        },
+      ],
+    },
+    {
       name: "titleImage",
       type: "image",
       title: "Title Image",

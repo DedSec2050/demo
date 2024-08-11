@@ -45,7 +45,7 @@
     "media-icons": "^1.1.4",
     "next": "14.2.3",
     "next-cloudinary": "^6.6.2",
-    "next-sanity": "^9.4.2",
+    "next-sanity": "^9.4.5",
     "paypal-rest-sdk": "^1.8.1",
     "razorpay": "^2.9.4",
     "react": "^18",
