@@ -63,12 +63,11 @@ export default async function Post({ params: { slug } }) {
       image: ({ value }) => (
         <div className="my-8 flex justify-center">
           <Image
-            src={urlForImage(value.asset).url()}
+            src={urlForImage(value.asset)}
             alt={value.alt || " "}
             width={800}
             height={500}
             className="object-contain"
-            fill
           />
           {value.caption && (
             <p className="text-center italic text-gray-500">{value.caption}</p>
