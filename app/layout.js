@@ -22,7 +22,7 @@ export const metadata = {
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
     images: [
       {
-        url: "@/public/assets/cyberlg.webp",
+        url: "/favicon.ico",
         alt: "Cybernous",
       },
     ],

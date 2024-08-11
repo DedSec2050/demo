@@ -5,6 +5,7 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 import React from "react";
 import { PortableText } from "@portabletext/react";
+import { component } from "sanity/structure";
 
 export async function generateMetadata({ params: { slug } }) {
   console.log(slug);
@@ -55,7 +56,34 @@ const getPost = async (slug) => {
 
 export default async function Post({ params: { slug } }) {
   const [post] = await getPost(slug);
-  //   console.log(post);
+  const components = {
+    types: {
+      image: ({ value }) => (
+        <div className="my-8 flex justify-center">
+          <Image
+            src={urlForImage(value.asset).url()}
+            alt={value.alt || " "}
+            width={800}
+            height={500}
+            className="object-contain"
+            fill
+          />
+          {value.caption && (
+            <p className="text-center italic text-gray-500">{value.caption}</p>
+          )}
+        </div>
+      ),
+    },
+  };
+  console.log(post.content);
+  // post.content.map((data, index) => {
+  //   try {
+  //     console.log(data._type);
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // });
+  // console.log(post.content);
   return (
     <div className="container mx-auto">
       <div className="min-h-screen">
@@ -77,6 +105,7 @@ export default async function Post({ params: { slug } }) {
               ></Image>
               <div className="prose prose-2xl prose-invert flex w-full flex-col items-center justify-center">
                 <PortableText
+                  components={components}
                   value={post.content}
                   className="flex w-full flex-col items-center justify-center text-justify text-white"
                 />
