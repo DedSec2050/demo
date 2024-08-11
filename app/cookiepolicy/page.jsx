@@ -1,5 +1,6 @@
 import BackWrapper from "@/components/BackWrapper";
 import Banner from "@/components/Banner";
+import Floater from "@/components/Floater";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Link from "next/link";
@@ -10,6 +11,7 @@ export default function cookiepolicy() {
   return (
     <section>
       <Banner />
+      <Floater />
       <BackWrapper />
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">

@@ -6,6 +6,7 @@ import PostCard from "@/components/PostCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import Floater from "@/components/Floater";
 
 const getPosts = async () => {
   const query = groq`*[_type == 'blog'] | order(_createdAt desc){
@@ -25,6 +26,7 @@ const Blog = async () => {
   return (
     <div>
       <Banner />
+      <Floater />
       <Header />
       <section className="flex flex-col items-center justify-center p-4 md:p-8 lg:p-20">
         <h1 className="font-700 mb-[30px] text-[40px] font-bold text-accent">

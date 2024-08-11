@@ -6,10 +6,12 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import BackWrapper from "@/components/BackWrapper";
+import Floater from "@/components/Floater";
 const page = () => {
   return (
     <section>
       <Header />
+      <Floater />
       <BackWrapper />
       <div className="flex w-full flex-col px-[30px] sm:px-[50px] xl:px-[13vw]">
         <div className="flex w-full flex-col items-center justify-center">

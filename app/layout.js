@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-primary">
         {children}
-        <Floater />
+
         <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
       </body>
     </html>

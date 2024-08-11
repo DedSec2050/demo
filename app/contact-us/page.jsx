@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import "./contact.css";
 import BackWrapper from "@/components/BackWrapper";
+import Floater from "@/components/Floater";
 
 const ContactUs = () => {
   return (
     <section>
       <Banner />
+      <Floater />
       <BackWrapper />
       <Header />
       <h2 className="text-center text-clamptitle font-bold text-accent">

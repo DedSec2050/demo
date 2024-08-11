@@ -9,6 +9,7 @@ import Link from "next/link";
 import axios from "axios";
 import { useAuthState } from "react-firebase-hooks/auth";
 import BackWrapper from "@/components/BackWrapper";
+import Floater from "@/components/Floater";
 
 const coursesList = ["Test_Course_1", "Test_Course_2", "Test_Course_3"];
 
@@ -121,6 +122,7 @@ const Page = () => {
   return (
     <section>
       <Banner />
+      <Floater />
       <Header />
       <BackWrapper />
       <div className="flex h-[50vw] w-screen flex-col items-center justify-center gap-4">

@@ -1,5 +1,6 @@
 import BackWrapper from "@/components/BackWrapper";
 import Banner from "@/components/Banner";
+import Floater from "@/components/Floater";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
@@ -8,6 +9,7 @@ export default function refundpolicy() {
   return (
     <section>
       <Banner />
+      <Floater />
       <BackWrapper />
       <Header />
       <div>

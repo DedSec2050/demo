@@ -75,7 +75,7 @@ export default async function Post({ params: { slug } }) {
       ),
     },
   };
-  console.log(post.content);
+  // console.log(post.content);
   // post.content.map((data, index) => {
   //   try {
   //     console.log(data._type);
