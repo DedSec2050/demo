@@ -29,7 +29,7 @@ export default {
           type: "author",
         },
       ],
-      validation: (rule) => [rule.require()],
+      validation: (rule) => [rule.required()],
     },
     {
       name: "titleImage",
