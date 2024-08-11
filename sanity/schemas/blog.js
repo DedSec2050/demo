@@ -1,3 +1,5 @@
+import { validation } from "sanity";
+
 export default {
   name: "blog",
   type: "document",
@@ -7,6 +9,7 @@ export default {
       name: "title",
       type: "string",
       title: "Title of blog article",
+      validation: (rule) => [rule.required()],
     },
     {
       name: "slug",
