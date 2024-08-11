@@ -41,6 +41,7 @@ export async function generateMetadata({ params: { slug } }) {
 }
 
 const getPost = async (slug) => {
+  console.log(slug);
   const query = groq`*[_type== 'blog' && slug.current == $slug]
       {
       _id,
