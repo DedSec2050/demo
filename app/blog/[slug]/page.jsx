@@ -56,6 +56,7 @@ const getPost = async (slug) => {
 
 export default async function Post({ params: { slug } }) {
   const [post] = await getPost(slug);
+  console.log(post.content);
   const components = {
     types: {
       image: ({ value }) => (
