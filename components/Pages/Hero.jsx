@@ -39,13 +39,7 @@ const Hero = () => {
             <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
               {/* Text  */}
               <div className="my-0 flex h-[12vh] max-h-[230px] w-[44vw] max-w-[230px] items-center justify-center md:h-[12vh] md:w-[17vw]">
-                <Image
-                  layout="responsive"
-                  width={442}
-                  height={196}
-                  src={logold}
-                  alt="hero-logo"
-                />
+                <Image width={442} height={196} src={logold} alt="hero-logo" />
               </div>
               {/* <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
                
@@ -61,7 +55,7 @@ const Hero = () => {
               <hr className="mx-auto my-2 h-1 w-48 rounded border-0 bg-accent dark:bg-gray-700 md:my-4" />
 
               <div className="relative mt-4 flex flex-col text-center">
-                <h1 className="xlg:mt-0 text-clampheader font-[700] xl:mt-[-80px] xxl:text-[2.5vw]">
+                <h1 className="text-clampheader font-[700] xl:mt-[-80px] xlg:mt-0 xxl:text-[2.5vw]">
                   <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
                     Give me 100 Days &<br className="hidden xl:flex"></br>
                   </span>
@@ -101,7 +95,6 @@ const Hero = () => {
                   key={index}
                 >
                   <Image
-                    layout="responsive"
                     src="/assets/SliderAssets/slider1.webp"
                     alt="slider"
                     style={({ width: "auto", height: "auto" }, imageStyle)}

@@ -1,4 +1,3 @@
-"use client";
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import { urlForImage } from "@/sanity/lib/image";
@@ -22,7 +21,7 @@ const getPosts = async () => {
 
 const Blog = async () => {
   const posts = await getPosts();
-  console.log(posts);
+  // console.log(posts);
   return (
     <div>
       <Banner />

@@ -6,6 +6,10 @@ import Image from "next/image";
 import React from "react";
 import { PortableText } from "@portabletext/react";
 import { component } from "sanity/structure";
+import Header from "@/components/Header";
+import BackWrapper from "@/components/BackWrapper";
+import Floater from "@/components/Floater";
+import Footer from "@/components/Footer";
 
 export async function generateMetadata({ params: { slug } }) {
   console.log(slug);
@@ -50,14 +54,16 @@ const getPost = async (slug) => {
         content,
         _createdAt,
         "currentSlug": slug.current,
-        titleImage
+        titleImage,
+        author->
     }`;
   return client.fetch(query, { slug });
 };
 
 export default async function Post({ params: { slug } }) {
   const [post] = await getPost(slug);
-  console.log(post.content);
+  console.log(post.author);
+
   const components = {
     types: {
       image: ({ value }) => (
@@ -86,17 +92,43 @@ export default async function Post({ params: { slug } }) {
   // });
   // console.log(post.content);
   return (
-    <div className="container mx-auto">
+    <div className="">
+      <Header />
+      <BackWrapper />
+      <Floater />
       <div className="min-h-screen">
         <div className="flex items-center justify-center rounded-md px-[30px] py-8 text-center shadow-md sm:px-[50px] xl:px-[10vw]">
           <div className="md:w-2xl mx-auto flex items-center justify-center text-justify xl:w-full">
             <div className="flex w-full flex-col items-center justify-center py-8 text-accent">
-              <time dateTime={post._createdAt}>
-                {format(post._createdAt, "LLLL d, yyyy")}
-              </time>
-              <h1 className="pb-4 text-4xl font-extrabold leading-10 text-white">
-                {post.title}
-              </h1>
+              <div className="flex w-full flex-col rounded-[30px] border-2 border-accent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
+                <time
+                  dateTime={post._createdAt}
+                  className="font-semibold xl:text-[1.3rem]"
+                >
+                  {format(post._createdAt, "LLLL d, yyyy")}
+                </time>
+                <h1 className="pb-4 text-justify text-4xl font-extrabold leading-10 text-white">
+                  {post.title}
+                </h1>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={urlForImage(post.author.image)}
+                    height={55}
+                    width={55}
+                    alt={post.author.name}
+                    className="rounded-full object-contain"
+                  ></Image>
+                  <div className="flex flex-col justify-center leading-normal">
+                    <span className="font-semibold text-white xl:text-[1.2rem]">
+                      {post.author.name}
+                    </span>
+
+                    <span className="font-semibold text-white xl:text-[1.2rem]">
+                      {post.author.bio}
+                    </span>
+                  </div>
+                </div>
+              </div>
               <Image
                 src={urlForImage(post.titleImage)}
                 height={500}
@@ -104,7 +136,7 @@ export default async function Post({ params: { slug } }) {
                 alt=""
                 className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
               ></Image>
-              <div className="prose prose-2xl prose-invert flex w-full flex-col items-center justify-center">
+              <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col">
                 <PortableText
                   components={components}
                   value={post.content}
@@ -115,6 +147,7 @@ export default async function Post({ params: { slug } }) {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

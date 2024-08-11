@@ -13,7 +13,12 @@ export const author = {
       name: "bio",
       type: "text",
       title: "Bio",
-      validation: (rule) => [rule.required()],
+      validation: (rule) => [
+        rule
+          .required()
+          .max(60)
+          .error("Please enter BIO of at most 60 characters"),
+      ],
     },
     {
       name: "image",

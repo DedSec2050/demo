@@ -6,6 +6,8 @@ import image from "../public/assets/Resources/resource.webp";
 import { BsPatchExclamationFill } from "react-icons/bs";
 import { FaWindowMaximize } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { ImHourGlass } from "react-icons/im";
+
 import Link from "next/link";
 
 const text = [
@@ -62,11 +64,11 @@ const Page2 = () => {
                 "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-resourceshov [&:hover>div>span]:text-resourceshov"
               }
             >
-              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
-                <BsPatchExclamationFill className="txt text-[15px] text-resources sm:text-[2vw]" />
+              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px] md:h-[35px] md:w-[35px]">
+                <BsPatchExclamationFill className="txt text-[15px] text-resources sm:text-[2vw] xl:text-[2.0rem]" />
               </div>
               <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:w-[75%] md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
-                <span className="flex text-resources">
+                <span className="flex text-resources xl:text-[1.4rem]">
                   FREE CISSP Flash Cards
                 </span>
               </div>
@@ -83,11 +85,11 @@ const Page2 = () => {
                 "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-resourceshov [&:hover>div>span]:text-resourceshov"
               }
             >
-              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
-                <FaHeart className="txt text-[15px] text-resources sm:text-[2vw]" />
+              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px] md:h-[35px] md:w-[35px]">
+                <FaHeart className="txt text-[15px] text-resources sm:text-[2vw] xl:text-[2.0rem]" />
               </div>
-              <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
-                <span className="flex text-resources">
+              <div className="flex w-[85%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
+                <span className="flex text-resources xl:text-[1.4rem]">
                   Join FREE CISSP<br className="sm:hidden"></br> Masterclass
                 </span>
               </div>
@@ -103,11 +105,11 @@ const Page2 = () => {
                 "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-resourceshov [&:hover>div>span]:text-resourceshov"
               }
             >
-              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
-                <FaWindowMaximize className="txt text-[15px] text-resources sm:text-[2vw]" />
+              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px] md:h-[35px] md:w-[35px]">
+                <FaWindowMaximize className="txt text-[15px] text-resources sm:text-[2vw] xl:text-[2.0rem]" />
               </div>
               <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
-                <span className="flex text-resources">
+                <span className="flex text-resources xl:text-[1.4rem]">
                   Study FREE <br className="sm:hidden"></br>CISSP Notes
                 </span>
               </div>
@@ -123,11 +125,11 @@ const Page2 = () => {
                 "transition-all duration-500 hover:scale-105 [&:hover>div>.txt]:text-resourceshov [&:hover>div>span]:text-resourceshov"
               }
             >
-              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px]">
-                <BsPatchExclamationFill className="txt text-[15px] text-resources sm:text-[2vw]" />
+              <div className="flex translate-y-[-20px] items-center justify-center rounded-md bg-white bg-opacity-[8%] sm:h-[25px] sm:w-[25px] md:h-[35px] md:w-[35px]">
+                <ImHourGlass className="txt text-[15px] text-resources sm:text-[2vw] xl:text-[2.0rem]" />
               </div>
-              <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
-                <span className="flex text-resources">
+              <div className="flex w-[55%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:w-[85%] md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
+                <span className="flex text-resources xl:text-[1.4rem]">
                   FREE CISSP Mock Test
                 </span>
               </div>
