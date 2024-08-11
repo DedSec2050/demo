@@ -29,6 +29,7 @@ export default {
           type: "author",
         },
       ],
+      validation: (rule) => [rule.require()],
     },
     {
       name: "titleImage",
