@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import Popup from "@/components/Popup";
 import Floater from "@/components/Floater";
 import Script from "next/script";
-
+import logo from "@/public/assets/cyberlg.webp";
 export const metadata = {
   metadataBase: new URL("https://www.cybernous.com/"),
   title: {
@@ -20,6 +20,12 @@ export const metadata = {
     title: "Cybernous CISSP Online Training",
     description:
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
+    images: [
+      {
+        url: "@/public/assets/cyberlg.webp",
+        alt: "Cybernous",
+      },
+    ],
   },
   verification: {
     google: "give verification id here",

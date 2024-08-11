@@ -1,7 +1,5 @@
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
-import { urlForImage } from "@/sanity/lib/image";
-import { CldUploadButton } from "next-cloudinary";
 
 const getPosts = async () => {
   const query = groq`*[_type == 'blog'] | order(_createdAt desc){
