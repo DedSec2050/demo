@@ -59,9 +59,9 @@ export default async function Post({ params: { slug } }) {
   return (
     <div className="container mx-auto">
       <div className="min-h-screen">
-        <div className="flex items-center rounded-md shadow-md">
-          <div className="md:w-2xl mx-auto flex items-center justify-center xl:w-[1200px]">
-            <div className="px-4 py-8 text-accent">
+        <div className="flex items-center justify-center rounded-md px-[30px] py-8 text-center shadow-md sm:px-[50px] xl:px-[10vw]">
+          <div className="md:w-2xl mx-auto flex items-center justify-center text-justify xl:w-full">
+            <div className="flex w-full flex-col items-center justify-center py-8 text-accent">
               <time dateTime={post._createdAt}>
                 {format(post._createdAt, "LLLL d, yyyy")}
               </time>
@@ -75,8 +75,11 @@ export default async function Post({ params: { slug } }) {
                 alt=""
                 className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
               ></Image>
-              <div className="prose prose-xl prose-invert">
-                <PortableText value={post.content} className="text-white" />
+              <div className="prose prose-2xl prose-invert flex w-full flex-col items-center justify-center">
+                <PortableText
+                  value={post.content}
+                  className="flex w-full flex-col items-center justify-center text-justify text-white"
+                />
               </div>
             </div>
           </div>

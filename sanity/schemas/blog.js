@@ -36,10 +36,14 @@ export default {
       name: "content",
       type: "array",
       title: "Content",
+
       validation: (rule) => [rule.required()],
       of: [
         {
           type: "block",
+        },
+        {
+          type: "image",
         },
       ],
     },
