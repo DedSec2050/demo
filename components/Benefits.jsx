@@ -47,12 +47,13 @@ const Benefits = () => {
               return (
                 <li
                   key={index}
-                  className="w-full text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
+                  className="w-full text-clamptextsmm xxl:text-[1.3vw] xxl:leading-[65px]"
                 >
                   {data.data}
                 </li>
               );
             })}
+            <br />
             <p className="mb-[2vh] mt-[2vh] w-full text-clamptextmd font-semibold text-grn xxl:mb-[45px] xxl:mt-[40px] xxl:text-[1.5vw]">
               Here are the top Benefits of achieving the CISSP Designation
             </p>
@@ -60,7 +61,7 @@ const Benefits = () => {
               return (
                 <li
                   key={index}
-                  className="w-full text-clamptextsmm font-semibold xxl:text-[1.3vw] xxl:leading-[65px]"
+                  className="w-full text-clamptextsmm xxl:text-[1.3vw] xxl:leading-[65px]"
                 >
                   {data.data}
                 </li>

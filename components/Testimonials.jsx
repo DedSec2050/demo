@@ -7,6 +7,19 @@ import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { FaPlay } from "react-icons/fa";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import parse from "html-react-parser";
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));
@@ -84,11 +97,7 @@ const Page8 = () => {
                   <div className="flex h-[300px] w-[300px] flex-col items-center justify-center rounded-[3%] border-2 border-accent bg-gradient-to-r from-[#E8E8E808] to-[#FFFFFF24] xl:h-[370px] xl:w-[20rem] xxl:h-[43rem] xxl:w-[40rem]">
                     <div className="image flex py-2 xxl:translate-y-[-120px]">
                       <div className="bg-blue fixed top-0 mt-2 h-[100px] w-[100px] translate-x-[-50%] translate-y-[-65px] overflow-auto rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
-                        <Image
-                          src="/assets/Testimonials/demo.webp"
-                          alt="testimonials"
-                          fill
-                        />
+                        <Image src={data.photoUrl} alt="testimonials" fill />
                       </div>
                     </div>
                     <div className="fixed top-0 mt-[40px] flex flex-col items-center justify-center px-4 text-center">
@@ -102,12 +111,37 @@ const Page8 = () => {
                     <div className="fixed top-0 mt-[150px] flex translate-y-[0] flex-col items-center justify-center px-4 text-center">
                       <div className="w-full px-5 text-[0.85rem] xxl:text-[1.1vw]">
                         {handleText(data.desc)}
+                        {data.desc.length > 100 ? (
+                          <AlertDialog>
+                            <AlertDialogTrigger>
+                              <div className="text-right text-accent">
+                                Read more..
+                              </div>
+                            </AlertDialogTrigger>
+                            <AlertDialogContent>
+                              <AlertDialogHeader>
+                                {/* <AlertDialogTitle>
+                                  Are you absolutely sure?
+                                </AlertDialogTitle> */}
+                                <AlertDialogDescription>
+                                  {parse("<div>" + data.desc + "</div>")}
+                                </AlertDialogDescription>
+                              </AlertDialogHeader>
+                              <AlertDialogFooter>
+                                <AlertDialogCancel>Close</AlertDialogCancel>
+                                {/* <AlertDialogAction>Continue</AlertDialogAction> */}
+                              </AlertDialogFooter>
+                            </AlertDialogContent>
+                          </AlertDialog>
+                        ) : (
+                          <></>
+                        )}
                       </div>
                     </div>
                     <div className="fixed bottom-0 mb-6 xl:translate-y-[-30px]">
                       <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
                         <Button className="rounded-[3rem] bg-red-700 text-white transition-all duration-500 hover:border-red-700">
-                          Watch Here
+                          Watch Here <FaPlay className="ml-2 text-white" />
                         </Button>
                       </Link>
                     </div>

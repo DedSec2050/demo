@@ -10,7 +10,7 @@ import { FaFacebook } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-footer sm:px-[5vw]">
-      <section className="mt-[8rem] sm:px-[3vw]">
+      <section className="mt-[8rem] sm:px-[3vw] xl:text-[1.2rem]">
         <div className="flex flex-col items-center justify-between bg-footer p-10 text-center">
           <p className="text-justify">
             CISSP® is a registered trademark of ISC2, Inc. We make no claim of
@@ -31,26 +31,28 @@ const Footer = () => {
                   height={100}
                 />
               </div>
-              <div className="text-clamptextsm text-accent xxl:text-[1vw]">
+              <div className="text-clamptextsm text-accent xl:text-[1.2rem] xxl:text-[1vw]">
                 Copyright @ 2024
               </div>
-              <div className="text-clamptextsm xxl:text-[1vw]">
-                CISSP Success toolkit
+              <div className="text-clamptextsm xl:text-[1.2rem] xxl:text-[1vw]">
+                CISSP Success Toolkit
               </div>
             </div>
             <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%] xxl:justify-around">
               <div className="Company flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
                 <Link href={"/"}>
-                  <span className="text-md text-accent">Company</span>
+                  <span className="text-md text-accent xl:text-[1.2rem]">
+                    Company
+                  </span>
                 </Link>
                 <Link href={"/"}>
-                  <span>Home</span>
+                  <span className="xl:text-[1.2rem]">Home</span>
                 </Link>
                 <Link href={"/resources"}>
-                  <span>Resources</span>
+                  <span className="xl:text-[1.2rem]">Resources</span>
                 </Link>
                 <Link href={"/blog"}>
-                  <span>Blog</span>
+                  <span className="xl:text-[1.2rem]">Blog</span>
                 </Link>
               </div>
               <div className="Policy flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">

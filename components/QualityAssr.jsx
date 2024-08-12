@@ -62,28 +62,28 @@ const QualityAssr = () => {
       <div className="bg-grey-600 mt-10 flex w-full flex-col items-center justify-center px-[30px] sm:px-[50px] xl:px-[10vw]">
         <h2 className="mb-6 text-center leading-normal">
           <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
-            Our Commitment to Excellence: Your Path to CISSP Success
+            Our Commitment to Excellence : <br></br> Your Path to CISSP Success
           </span>
         </h2>
-        <p className="text-justify text-clamptextsmm font-semibold xxl:mt-[6vh] xxl:text-[1.5vw]">
+        <p className="text-justify text-clamptextsmm xxl:mt-[6vh] xxl:text-[1.5vw]">
           We have a strong vision to change lives and have positively impacted
           thousands of Careers. Almost every second Security professional wish
           to achieve the prestigious CISSP Designation, however many of such
           professionals never start the preparation due to fear of failure.
           Finding the right Training partner for your preparation can be a make
-          or break in your CISSP journey.{" "}
+          or break in your CISSP journey. We at Cybernous are committed to
+          follow strict quality standards to provide you the Best CISSP Training
+          experience during your CISSP Exam preparation. Even our Competitors
+          get inspired and copy us.
         </p>
-        <p className="text-justify text-clamptextsmm font-semibold xxl:mt-[6vh] xxl:text-[1.5vw]">
-          We at Cybernous are committed to follow strict quality standards to
-          provide you the Best CISSP Training experience during your CISSP Exam
-          preparation.
-        </p>
-        <p className="w-full text-left text-clamptextsmm font-semibold xxl:mt-[6vh] xxl:text-[1.5vw]">
-          Even our Competitors get inspired and copy us.
-        </p>
+        <br />
+        {/* <p className="text-justify text-clamptextsmm font-semibold xxl:mt-[6vh] xxl:text-[1.5vw]">
+          
+        </p> */}
+        {/* <p className="w-full text-left text-clamptextsmm font-semibold xxl:mt-[6vh] xxl:text-[1.5vw]"></p> */}
         <div className="my-6 w-full rounded-[30px] border-2 bg-gradient-to-r from-[#E8E8E808] to-[#FFFFFF24] p-6">
-          <p className="mb-[2vh] mt-[2vh] w-full text-left text-clamptextmd font-bold text-grn xxl:mt-[6vh] xxl:text-[1.8vw]">
-            CISSP Course Curriculum
+          <p className="mb-[2vh] mt-[2vh] w-full text-center text-clamptextmd font-bold text-grn xxl:mt-[6vh] xxl:text-[1.8vw]">
+            CISSP Domains<br className=""></br> (Weightage as per 15th Apr 2024)
           </p>
           <ul className="flex w-full flex-col text-justify md:hidden">
             {listdata.map((data, index) => {
@@ -111,13 +111,13 @@ const QualityAssr = () => {
                         colSpan={1}
                         className="w-full hover:cursor-pointer hover:bg-slate-500"
                       >
-                        {data.data.one}
+                        {"D" + (index + 1) + "- " + data.data.one}
                       </TableCell>
                       <TableCell
                         colSpan={1}
                         className="w-full hover:cursor-pointer hover:bg-slate-500"
                       >
-                        {data.data.two}
+                        {"D" + (index + 5) + "- " + data.data.two}
                       </TableCell>
                     </TableRow>
                   );

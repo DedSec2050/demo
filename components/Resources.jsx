@@ -49,12 +49,14 @@ const Page2 = () => {
               />
             </div>
             <div className="flex items-center justify-center pb-[10px]">
-              <Button
-                size="lg"
-                className="rounded-full py-4 capitalize transition-all duration-500 xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
-              >
-                Get Much More...
-              </Button>
+              <Link href="/resources">
+                <Button
+                  size="lg"
+                  className="rounded-full py-4 capitalize transition-all duration-500 xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
+                >
+                  Get Much More...
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-2 grid-rows-2">

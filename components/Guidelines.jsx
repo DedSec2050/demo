@@ -44,7 +44,7 @@ const Guidelines = () => {
           <div className="mb-7 mt-8 flex w-[70vw] overflow-hidden rounded-[25px] border-2 border-accent bg-gray-600 sm:min-h-[320px] md:w-[62vw] xl:max-w-[860px] xxl:w-[55vw] xxl:max-w-[1080px] [&>div>div>button]:bg-red-600 [&>div>div>button]:bg-opacity-100">
             <MediaPlayer
               title="Sprite Fight"
-              src="https://www.youtube.com/watch?v=wo4p8eotDW4"
+              src="https://www.youtube.com/watch?v=FbDVfEE81cY&t=738s"
               playsInline
             >
               <MediaProvider />

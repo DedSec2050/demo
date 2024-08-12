@@ -3,6 +3,7 @@ import Accordion from "./Accordion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Accordion2 from "./Accordion2";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Page9 = () => {
   return (
@@ -19,12 +20,14 @@ const Page9 = () => {
             Your Queries, Our Quick Solutions.
           </div>
           <div className="pt-4">
-            <Button
-              variant="outline"
-              className="rounded-[30px] border-white text-white duration-500"
-            >
-              CISSP Free Resources{" "}
-            </Button>
+            <Link href="https://calendly.com/cisspsuccess">
+              <Button
+                variant="outline"
+                className="rounded-[30px] transition-all duration-500 xl:text-[17px]"
+              >
+                Book a FREE Consultation
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="mb-8 mt-4 text-center text-clampheader xxl:text-[2.5vw]">

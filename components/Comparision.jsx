@@ -12,7 +12,7 @@ const Page7 = () => {
             <h2 className="text-center text-clamptitle">
               <strong className="flex-row items-center justify-center gap-x-2">
                 <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
-                  <svg
+                  {/* <svg
                     className="mx-2 hidden xl:flex xl:translate-y-[10px]"
                     width="30"
                     height="40"
@@ -58,10 +58,10 @@ const Page7 = () => {
                         />
                       </radialGradient>
                     </defs>
-                  </svg>
-                  CISSP Certification Bootcamp <br className="xl:hidden" />
-                  VS <br className="xl:hidden" />
-                  CISSP Success Toolkit
+                  </svg> */}
+                  CISSP Certification Bootcamps <br className="" />
+                  VS <br className="" />
+                  CISSP Success Toolkit (CST)
                 </span>{" "}
               </strong>
             </h2>
