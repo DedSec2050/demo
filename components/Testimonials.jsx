@@ -20,6 +20,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import parse from "html-react-parser";
+import { data } from "autoprefixer";
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));
@@ -139,7 +140,12 @@ const Page8 = () => {
                       </div>
                     </div>
                     <div className="fixed bottom-0 mb-6 xl:translate-y-[-30px]">
-                      <Link href="https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi">
+                      <Link
+                        href={
+                          data.url ||
+                          "https://youtu.be/_d8Jxaq_WSI?si=wku649exTUWMVgwi"
+                        }
+                      >
                         <Button className="rounded-[3rem] bg-red-700 text-white transition-all duration-500 hover:border-red-700">
                           Watch Here <FaPlay className="ml-2 text-white" />
                         </Button>
