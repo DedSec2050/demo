@@ -2,3 +2,6 @@
   display: hidden;
   opacity: 0;
 }
+.animate__animated.animate__bounce {
+  --animation-duration: 50s;
+}

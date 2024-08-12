@@ -1,7 +1,7 @@
 "use client";
 import Hero from "@/components/Pages/Hero";
 // import Popup from "@/components/Popup";
-
+import "animate.css";
 import BootCampSlider from "../components/BootCampSlider";
 import Toolkit from "../components/Toolkit";
 import Schedule from "../components/Schedule";
@@ -27,6 +27,7 @@ export default function Home() {
     <div className="">
       <BackWrapper />
       {/* <Popup /> */}
+      {/* <div className="">text</div> */}
       <Banner />
       <main className="">
         <div className="">
