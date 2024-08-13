@@ -96,7 +96,7 @@ const Page8 = () => {
                   className="mt-[100px] w-[100%] translate-y-[-30px] px-10 xxl:px-[7vw]"
                   key={index}
                 >
-                  <div className="flex h-[300px] w-[300px] flex-col items-center justify-center rounded-[3%] border-2 border-accent bg-gradient-to-r from-[#E8E8E808] to-[#FFFFFF24] xl:h-[370px] xl:w-[20rem] xxl:h-[43rem] xxl:w-[40rem]">
+                  <div className="flex h-[370px] w-[300px] flex-col items-center justify-center rounded-[3%] border-2 border-accent bg-gradient-to-r from-[#E8E8E808] to-[#FFFFFF24] xl:h-[370px] xl:w-[20rem] xxl:h-[43rem] xxl:w-[40rem]">
                     <div className="image flex py-2 xxl:translate-y-[-120px]">
                       <div className="bg-blue fixed top-0 mt-2 h-[100px] w-[100px] translate-x-[-50%] translate-y-[-65px] overflow-auto rounded-full border-4 border-blue-500 drop-shadow-blue xxl:h-[200px] xxl:w-[200px]">
                         <Image src={data.photoUrl} alt="testimonials" fill />
@@ -120,13 +120,17 @@ const Page8 = () => {
                                 Read more..
                               </div>
                             </AlertDialogTrigger>
-                            <AlertDialogContent>
+                            <AlertDialogContent className="bg-primary">
                               <AlertDialogHeader>
                                 {/* <AlertDialogTitle>
                                   Are you absolutely sure?
                                 </AlertDialogTitle> */}
                                 <AlertDialogDescription>
-                                  {parse("<div>" + data.desc + "</div>")}
+                                  {parse(
+                                    '<div className="text-white xl:text-[1.2rem] leading-normal">' +
+                                      data.desc +
+                                      "</div>",
+                                  )}
                                 </AlertDialogDescription>
                               </AlertDialogHeader>
                               <AlertDialogFooter>
