@@ -39,17 +39,18 @@ const Page8 = () => {
     if (40 < text.length)
       return (
         <>
-          <p>{text.slice(0, 40)}</p>
-          <p>{text.slice(41, 70)}</p>
-          <p>{text.slice(71, 100)}...</p>
+          <p className="px-10">
+            {parse("<p>" + text.slice(0, 100) + "...</p>")}
+          </p>
         </>
       );
     else if (100 < text.length) {
       return (
         <>
-          <p>{text.slice(0, 40)}</p>
+          <p>{parse("<p>" + text + "</p>")}</p>
+          {/* <p>{text.slice(0, 40)}</p>
           <p>{text.slice(41, 75)}</p>
-          <p>{text.slice(76, 100)}</p>
+          <p>{text.slice(76, 100)}</p> */}
         </>
       );
     } else {
