@@ -38,13 +38,13 @@ const Page2 = () => {
         </h2>
         <div className="flex w-full flex-col items-center justify-center gap-x-[170px] md:flex-row">
           {/* imagediv  */}
-          <div className="order-2 flex h-[100%] w-[28%] flex-col md:order-none">
+          <div className="order-2 flex w-[25%] flex-col md:order-none xl:translate-y-[-3%]">
             <div className="mt-[40px] flex flex-col">
               <Image
                 layout="responsive"
                 src={image}
-                width={825}
-                height={1200}
+                width={674}
+                height={1018}
                 alt="image"
               />
             </div>

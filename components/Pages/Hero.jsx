@@ -19,8 +19,11 @@ const imageStyle = {
   border: "3px solid yellow",
 };
 const Hero = () => {
-  const demos = ["demo1 ", "demo2 ", "demo3 ", "demo4 ", "demo5"];
-  const pic = ["/assets/SliderAssets/slider1.webp"];
+  const demos = [];
+  for (let i = 1; i <= 26; i++) {
+    demos.push(`${i}.webp`);
+  }
+  // const pic = ["/assets/SliderAssets/slider1.webp"];
 
   return (
     <section className="h-full">
@@ -115,13 +118,14 @@ const Hero = () => {
         <div className="relative my-10 flex w-full sm:hidden">
           <Marquee direction="right">
             {demos.map((url, index) => {
+              // console.log("/assets/SliderAssets/" + url);
               return (
                 <div
                   className="mr-[6.5rem] flex h-[22vh] w-[21vh] md:h-[32vh] md:w-[32vh]"
                   key={index}
                 >
                   <Image
-                    src="/assets/SliderAssets/slider1.webp"
+                    src={"/assets/SliderAssets/" + url}
                     alt="slider"
                     style={({ width: "auto", height: "auto" }, imageStyle)}
                     height={290}

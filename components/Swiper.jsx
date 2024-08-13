@@ -9,7 +9,10 @@ import "swiper/css/effect-coverflow";
 import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 import Image from "next/image";
 const Sliding = () => {
-  const demos = ["demo1 ", "demo2 ", "demo3 ", "demo4 ", "demo5"];
+  const demos = [];
+  for (let i = 1; i <= 26; i++) {
+    demos.push(`${i}.webp`);
+  }
   const pic = ["/assets/SliderAssets/slider1.webp"];
   const imageStyle = {
     borderRadius: "10%",
@@ -49,7 +52,7 @@ const Sliding = () => {
             >
               <Image
                 layout="responsive"
-                src="/assets/SliderAssets/slider1.webp"
+                src={"/assets/SliderAssets/" + url}
                 alt="slider"
                 style={({ width: "auto", height: "auto" }, imageStyle)}
                 height={290}
