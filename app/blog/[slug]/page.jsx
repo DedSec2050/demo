@@ -12,9 +12,9 @@ import Floater from "@/components/Floater";
 import Footer from "@/components/Footer";
 
 export async function generateMetadata({ params: { slug } }) {
-  console.log(slug);
+  // console.log(slug);
   const [post] = await getPost(slug);
-  console.log(post.smallDescription);
+  // console.log(post.smallDescription);
   try {
     return {
       title: post.title,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params: { slug } }) {
 }
 
 const getPost = async (slug) => {
-  console.log(slug);
+  // console.log(slug);
   const query = groq`*[_type== 'blog' && slug.current == $slug]
       {
       _id,
@@ -62,15 +62,16 @@ const getPost = async (slug) => {
 
 export default async function Post({ params: { slug } }) {
   const [post] = await getPost(slug);
-  console.log(post.author);
+  // console.log(post.author);
 
   const components = {
     types: {
       image: ({ value }) => (
         <div className="my-8 flex justify-center">
+          {/* {console.log(slug)} */}
           <Image
             src={urlForImage(value.asset)}
-            alt={value.alt || " "}
+            alt={slug || "blog image"}
             width={800}
             height={500}
             className="object-contain"
@@ -133,7 +134,7 @@ export default async function Post({ params: { slug } }) {
                 src={urlForImage(post.titleImage)}
                 height={500}
                 width={500}
-                alt=""
+                alt={post.title}
                 className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
               ></Image>
               <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col">
