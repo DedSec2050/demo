@@ -85,7 +85,10 @@ const Page7 = () => {
               Let me show you why I call this program as a complete Eco-system.
             </div>
           </div>
-          <div className="relative mt-[45px] flex w-full items-center justify-center rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] p-10">
+          <div className="relative mt-[45px] flex w-full flex-col items-center justify-center gap-y-10 rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] p-10">
+            <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
+              Contact Us
+            </span>
             <HeroContact />
           </div>
           <div className="relative mt-[45px] flex w-full rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] p-10">

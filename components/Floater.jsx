@@ -2,6 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import "./css/floater.css";
 import "animate.css";
+import Link from "next/link";
 
 const Floater = () => {
   return (
@@ -23,14 +24,16 @@ const Floater = () => {
         <SocialIcon url="https://www.instagram.com/cybernous_infosec" />
       </div>
 
-      <div className="rounded-[30px] border-2 border-grn px-4 py-2 font-semibold transition-all duration-500 hover:scale-105 hover:border-accent hover:bg-accent hover:text-black">
-        {/* <SocialIcon
+      <Link href="/contact-us">
+        <div className="rounded-[30px] border-2 border-grn px-4 py-2 font-semibold transition-all duration-500 hover:scale-105 hover:border-accent hover:bg-accent hover:text-black">
+          {/* <SocialIcon
           url="https://shareit.com"
           className="pointer-events-none"
           href=""
         /> */}
-        Contact Us
-      </div>
+          Contact Us
+        </div>
+      </Link>
     </div>
   );
 };

@@ -6,12 +6,13 @@ import { BsLinkedin } from "react-icons/bs";
 import { TiSocialTwitter } from "react-icons/ti";
 import { AiFillYoutube } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa6";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer sm:px-[5vw]">
+    <footer className="bg-elevated sm:px-[5vw]">
       <section className="mt-[8rem] sm:px-[3vw] xl:text-[1.2rem]">
-        <div className="flex flex-col items-center justify-between bg-footer p-10 text-center">
+        <div className="flex flex-col items-center justify-between bg-elevated p-10 text-center">
           <p className="text-justify">
             CISSP® is a registered trademark of ISC2, Inc. We make no claim of
             ownership of any trademark held by ISC2, nor are we affiliated with
@@ -40,11 +41,11 @@ const Footer = () => {
             </div>
             <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%] xxl:justify-around">
               <div className="Company flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
-                <Link href={"/"}>
+                <>
                   <span className="text-md text-accent xl:text-[1.2rem]">
                     Company
                   </span>
-                </Link>
+                </>
                 <Link href={"/"}>
                   <span className="xl:text-[1.2rem]">Home</span>
                 </Link>
@@ -56,9 +57,9 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="Policy flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
-                <Link href={"/"}>
+                <>
                   <span className="text-md text-accent">Policy</span>
-                </Link>
+                </>
                 <Link href={"/privacypolicy"}>
                   <span>Privacy Policy</span>
                 </Link>
@@ -73,9 +74,9 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="Support flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
-                <Link href={"/"}>
+                <>
                   <span className="text-md text-accent">Support</span>
-                </Link>
+                </>
                 <Link href={"/contact-us"}>
                   <span>Contact Us</span>
                 </Link>
@@ -86,19 +87,19 @@ const Footer = () => {
           <div className="socials relative bottom-0 mt-10 flex w-screen flex-row items-center justify-center gap-3 text-accent">
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
             <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
-              <BsLinkedin className="md:h-[25px] md:w-[25px]" />
+              <SocialIcon url="https://linkedin.com" />
             </Link>
             <Link href="https://www.facebook.com/cybernous">
-              <FaFacebook className="md:h-[25px] md:w-[25px]" />
+              <SocialIcon url="https://www.facebook.com/cybernous" />
             </Link>
             <Link href="https://www.instagram.com/cybernous_infosec">
-              <FiInstagram className="md:h-[25px] md:w-[25px]" />
+              <SocialIcon url="https://www.instagram.com/cybernous_infosec" />
             </Link>
-            <Link href="https://x.com/cybernous2024">
-              <TiSocialTwitter className="md:h-[25px] md:w-[25px]" />
+            <Link href="/">
+              <SocialIcon url="https://www.telegram.com" />
             </Link>
             <Link href="https://www.youtube.com/@cybernous">
-              <AiFillYoutube className="md:h-[25px] md:w-[25px]" />
+              <SocialIcon url="https://www.youtube.com/@cybernous" />
             </Link>
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
           </div>

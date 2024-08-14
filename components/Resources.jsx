@@ -52,7 +52,7 @@ const Page2 = () => {
               <Link href="/resources">
                 <Button
                   size="lg"
-                  className="rounded-full py-4 capitalize transition-all duration-500 xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
+                  className="rounded-full py-4 capitalize transition-all duration-500 xl:ml-[10%] xl:mt-4 xxl:h-[5vh] xxl:w-[20vw] xxl:rounded-full xxl:text-[1.3vw]"
                 >
                   Get Much More...
                 </Button>
@@ -75,7 +75,7 @@ const Page2 = () => {
                 </span>
               </div>
 
-              <Link href="/coming-soon">
+              <Link href="https://cyb-lms.web.app/#/dashboard">
                 <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
@@ -95,7 +95,7 @@ const Page2 = () => {
                   Join FREE CISSP<br className="sm:hidden"></br> Masterclass
                 </span>
               </div>
-              <Link href="/coming-soon">
+              <Link href="https://cyb-lms.web.app/#/dashboard">
                 <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
@@ -112,10 +112,10 @@ const Page2 = () => {
               </div>
               <div className="flex w-[75%] translate-y-[-10px] items-center justify-center text-center text-[2vw] font-bold leading-[25px] xs:text-[3vw] sm:text-[1.2rem] sm:leading-normal md:text-[1rem] xl:text-[1.1rem] xxl:text-[3rem] xxl:leading-[50px]">
                 <span className="flex text-resources xl:text-[1.4rem]">
-                  Study FREE <br className="sm:hidden"></br>CISSP Notes
+                  Study FREE <br className="sm:hidden"></br>CISSP Domain Summary
                 </span>
               </div>
-              <Link href="/coming-soon">
+              <Link href="/resources">
                 <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>
@@ -135,7 +135,7 @@ const Page2 = () => {
                   FREE CISSP Mock Test
                 </span>
               </div>
-              <Link href="/coming-soon">
+              <Link href="https://cyb-lms.web.app/#/dashboard">
                 <Button className="h-[17px] w-[60%] rounded-full border-resources py-2 text-[7.5px] transition-all duration-500 sm:w-[55%] sm:translate-y-[15px] sm:px-[65px] sm:text-[1.4vw] md:h-[25px] md:translate-y-[2vh] md:py-4 xl:w-[60%] xl:text-[1.1rem] xxl:h-[15%] xxl:w-[60%] xxl:py-[30px] xxl:text-[1.2rem]">
                   Explore More
                 </Button>

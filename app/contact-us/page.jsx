@@ -172,7 +172,7 @@ const ContactUs = () => {
             </Button>
           </form>
         </div>
-        <div className="flex-grow-1 flex h-full flex-col items-center justify-start text-center font-semibold lg:max-w-[50%]">
+        <div className="flex-grow-1 flex h-full flex-col items-center justify-start text-center font-semibold lg:max-w-[50%] xl:text-[1.5rem]">
           <h1 className="mb-4 text-clamptextsmm text-accent">
             Contact Information
           </h1>
@@ -186,7 +186,7 @@ const ContactUs = () => {
           <div className="text-textclampsm mt-4 flex flex-col text-justify">
             <p>
               <span className="font-semibold text-accent">Contact No.</span> -
-              +91-8882343900 | +91-8130126306
+              +91-8595338705 | +91-8130126306
             </p>
             <p>
               <span className="font-semibold text-accent">Contact Email</span> -
