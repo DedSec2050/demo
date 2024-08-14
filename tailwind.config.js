@@ -61,7 +61,7 @@ module.exports = {
       fontSize: {
         clampheader: "clamp(24px, 4vw, 60px)",
         clamptitle: "clamp(20px, 3vw, 35px)",
-        clamptextsm: "clamp(13px, 4vw, 16px)",
+        clamptextsm: "clamp(13px, 4vw, 20px)",
         clamptextsmm: "clamp(12px,3vw,26px)",
         clamptextmd: "clamp(22px, 4vw, 30px)",
         clamptextnav: "clamp(15px, 3vw, 30px)",
