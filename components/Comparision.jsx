@@ -3,6 +3,7 @@ import React from "react";
 import photo from "../public/assets/Comparision/comparisionfinal.webp";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import HeroContact from "./HeroContact";
 const Page7 = () => {
   return (
     <section>
@@ -84,6 +85,9 @@ const Page7 = () => {
               Let me show you why I call this program as a complete Eco-system.
             </div>
           </div>
+          <div className="relative mt-[45px] flex w-full items-center justify-center rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] p-10">
+            <HeroContact />
+          </div>
           <div className="relative mt-[45px] flex w-full rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] p-10">
             <Image
               src={photo}
@@ -94,6 +98,7 @@ const Page7 = () => {
             />
           </div>
         </div>
+
         <div className="mt-6 flex w-full items-center justify-center">
           <Link href="https://calendly.com/cisspsuccess">
             <Button className="scale-105 rounded-[30px] transition-all duration-500 xl:mt-10">
