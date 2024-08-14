@@ -63,18 +63,19 @@ const Hero = () => {
                   <h2>CISSP 10X Simplified!</h2>
                 </span>
               </div>
-              <div className="relative mt-4 flex flex-col text-center xl:translate-y-[-140px]">
+              <div className="relative mt-4 flex flex-col text-center xl:translate-y-[-100px] xlg:translate-y-[-140px]">
                 <h1 className="text-clampheader font-[700] xl:mt-[-80px] xlg:mt-0 xxl:text-[2.5vw]">
-                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
-                    Give me 100 Days &<br className="hidden xl:flex"></br>
+                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero xl:text-[2.9rem] xlg:text-clampheader">
+                    Give me 100 Days &<br className="hidden xl:flex"></br> I
+                    will get you CISSP Certified
                   </span>
-                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
+                  {/* <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
                     {" "}
-                    I will get you CISSP Certified
-                  </span>
+                    
+                  </span> */}
                 </h1>
               </div>
-              <div className="flex gap-4 xl:translate-y-[-140px] xl:gap-10">
+              <div className="flex gap-4 xl:translate-y-[100px] xl:gap-10 xlg:translate-y-[-140px]">
                 <Link href="https://calendly.com/cisspsuccess">
                   <Button
                     variant="outline"
