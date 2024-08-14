@@ -91,7 +91,7 @@ export default async function Post({ params: { slug } }) {
   //     console.log(e);
   //   }
   // });
-  // console.log(post.content);
+  console.log(post);
   return (
     <div className="">
       <Header />
@@ -106,6 +106,7 @@ export default async function Post({ params: { slug } }) {
                   dateTime={post._createdAt}
                   className="font-semibold xl:text-[1.3rem]"
                 >
+                  {/* {console.log(post)} */}
                   {format(post._createdAt, "LLLL d, yyyy")}
                 </time>
                 <h1 className="pb-4 text-justify text-4xl font-extrabold leading-10 text-white">
