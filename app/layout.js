@@ -113,6 +113,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify(jsonLd),
           }}
         />
+
         {children}
 
         <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
