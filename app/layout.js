@@ -8,6 +8,7 @@ import Popup from "@/components/Popup";
 import Floater from "@/components/Floater";
 import Script from "next/script";
 import logo from "@/public/assets/cyberlg.webp";
+import logop from "@/public/assets/og-image/image.png";
 export const metadata = {
   metadataBase: new URL("https://www.cybernous.com/"),
   title: {
@@ -17,14 +18,14 @@ export const metadata = {
   description:
     "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
   openGraph: {
-    url: "https://demo-gamma-ebon.vercel.app",
+    url: "https://demo-gamma-ebon.vercel.app/public/assets/og-image/image.png",
     type: "website",
     title: "Cybernous CISSP Online Training",
     description:
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
     images: [
       {
-        url: "https://demo-gamma-ebon.vercel.app/base-og",
+        url: "https://demo-gamma-ebon.vercel.app/public/assets/og-image/image.png",
         width: 1200,
         height: 630,
         alt: "Cybernous",
@@ -57,7 +58,7 @@ export const metadata = {
     site: "@Marsal_Soren06",
     images: [
       {
-        url: "https://demo-gamma-ebon.vercel.app/base-og",
+        url: "https://demo-gamma-ebon.vercel.app/public/assets/og-image/image.png",
         height: 630,
         Width: 1200,
         alt: "cybernous logo",
