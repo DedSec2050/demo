@@ -101,6 +101,39 @@ const jsonLd = {
     height: 630,
   },
 };
+const jsonLdBlogs = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "%s | Cybernous CISSP Online Training",
+  url: "https://www.cybernous.com/blog",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.cybernous.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+  sameAs: [
+    "https://www.facebook.com/YourFacebookPage",
+    "https://www.linkedin.com/company/YourLinkedInPage",
+    "https://twitter.com/Marsal_Soren06",
+  ],
+  publisher: {
+    "@type": "Organization",
+    name: "Cybernous",
+    url: "https://www.cybernous.com/",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
+  image: {
+    "@type": "ImageObject",
+    url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
+    width: 1200,
+    height: 630,
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -111,6 +144,13 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLd),
+          }}
+        />
+        <Script
+          id="blogs-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdBlogs),
           }}
         />
 
