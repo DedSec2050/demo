@@ -17,7 +17,7 @@ export const metadata = {
   description:
     "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
   openGraph: {
-    url: "www.cybernous.com",
+    url: "demo-gamma-ebon.vercel.app",
     type: "website",
     title: "Cybernous CISSP Online Training",
     description:
