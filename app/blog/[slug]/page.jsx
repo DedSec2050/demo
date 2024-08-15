@@ -104,10 +104,10 @@ export default async function Post({ params: { slug } }) {
     },
     publisher: {
       "@type": "Person",
-      name: "Manoj Sharma",
+      name: post.author.name,
       logo: {
         "@type": "ImageObject",
-        url: "https://dminhvu.com/avatar_zoom.jpg",
+        url: urlForImage(post.author.image),
       },
     },
     isFamilyFriendly: "true",
