@@ -83,6 +83,7 @@ export default async function Post({ params: { slug } }) {
   console.log(post.currentSlug);
   console.log(`${process.env.NEXT_PUBLIC_BASE_URL}`);
   console.log(post.author);
+  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.currentSlug}`);
   // Generate JSON schema
   const jsonLd = {
     "@context": "https://schema.org",
@@ -103,10 +104,10 @@ export default async function Post({ params: { slug } }) {
     },
     publisher: {
       "@type": "Person",
-      name: post.author.name,
+      name: "Manoj Sharma",
       logo: {
         "@type": "ImageObject",
-        url: urlForImage(post.author.image),
+        url: "https://dminhvu.com/avatar_zoom.jpg",
       },
     },
     isFamilyFriendly: "true",
