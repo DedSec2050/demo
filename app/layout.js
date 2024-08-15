@@ -17,12 +17,16 @@ export const metadata = {
   description:
     "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
   openGraph: {
+    url: "www.cybernous.com",
+    type: "website",
     title: "Cybernous CISSP Online Training",
     description:
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
     images: [
       {
-        url: "/favicon.ico",
+        url: "@/public/assets/cyberlg.webp",
+        width: 1200,
+        height: 630,
         alt: "Cybernous",
       },
     ],
