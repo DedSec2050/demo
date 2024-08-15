@@ -24,7 +24,7 @@ export const metadata = {
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
     images: [
       {
-        url: "https://demo-gamma-ebon.vercel.app/public/assets/cyberlg.webp",
+        url: "https://demo-gamma-ebon.vercel.app/base-og",
         width: 1200,
         height: 630,
         alt: "Cybernous",
@@ -57,7 +57,7 @@ export const metadata = {
     site: "@Marsal_Soren06",
     images: [
       {
-        url: "https://demo-gamma-ebon.vercel.app/public/assets/cyberlg.webp",
+        url: "https://demo-gamma-ebon.vercel.app/base-og",
         height: 630,
         Width: 1200,
         alt: "cybernous logo",
