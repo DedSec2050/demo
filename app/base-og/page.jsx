@@ -7,7 +7,7 @@ const page = () => {
   return (
     <section className="flex h-screen w-full items-center justify-center">
       <div className="rounded-30px flex h-[630px] w-[1200px] justify-between rounded-[30px] p-6">
-        <Image src={logo}></Image>
+        <Image src={logo} alt="og image"></Image>
       </div>
     </section>
   );

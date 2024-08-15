@@ -5,7 +5,6 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 import React from "react";
 import { PortableText } from "@portabletext/react";
-import { component } from "sanity/structure";
 import Header from "@/components/Header";
 import BackWrapper from "@/components/BackWrapper";
 import Floater from "@/components/Floater";
@@ -20,20 +19,17 @@ export async function generateMetadata({ params: { slug } }) {
     return {
       title: post.title,
       description: post.smallDescription,
-      // robots: {
-      //   index: true,
-      //   follow: true,
-      //   nocache: true,
-      // },
-      // twitter: {
-      //   card: "",
-      //   title: post.title,
-      //   description: post.smallDescription,
-
-      // },
       openGraph: {
         title: post.title,
         description: post.smallDescription,
+        images: [
+          {
+            url: urlForImage(post.titleImage),
+            width: 800,
+            height: 600,
+            alt: post.title,
+          },
+        ],
       },
     };
   } catch (error) {
@@ -84,14 +80,37 @@ export default async function Post({ params: { slug } }) {
       ),
     },
   };
-  // console.log(post.content);
-  // post.content.map((data, index) => {
-  //   try {
-  //     console.log(data._type);
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // });
+  console.log(post.currentSlug);
+  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}`);
+  console.log(post.author);
+  // Generate JSON schema
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.currentSlug}`,
+    },
+    headline: post.title,
+    description: post.smallDescription,
+    image: urlForImage(post.titleImage),
+    dateCreated: post._createdAt,
+    datePublished: post._createdAt,
+    author: {
+      "@type": "Person",
+      name: post.author.name,
+      url: "https://www.linkedin.com/in/mksharma007/",
+    },
+    publisher: {
+      "@type": "Person",
+      name: post.author.name,
+      logo: {
+        "@type": "ImageObject",
+        url: urlForImage(post.author.image),
+      },
+    },
+    isFamilyFriendly: "true",
+  };
   console.log(post);
   return (
     <>
