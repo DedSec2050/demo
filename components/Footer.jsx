@@ -86,21 +86,21 @@ const Footer = () => {
 
           <div className="socials relative bottom-0 mt-10 flex w-screen flex-row items-center justify-center gap-3 text-accent">
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
-            <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
-              <SocialIcon url="https://linkedin.com" />
-            </Link>
-            <Link href="https://www.facebook.com/cybernous">
+            <>
+              <SocialIcon url="https://www.linkedin.com/company/cybenrousinfosecconsulting" />
+            </>
+            <>
               <SocialIcon url="https://www.facebook.com/cybernous" />
-            </Link>
-            <Link href="https://www.instagram.com/cybernous_infosec">
+            </>
+            <>
               <SocialIcon url="https://www.instagram.com/cybernous_infosec" />
-            </Link>
-            <Link href="/">
+            </>
+            <>
               <SocialIcon url="https://www.telegram.com" />
-            </Link>
-            <Link href="https://www.youtube.com/@cybernous">
+            </>
+            <>
               <SocialIcon url="https://www.youtube.com/@cybernous" />
-            </Link>
+            </>
             <hr className="h-px w-[25%] border-0 bg-accent dark:bg-gray-700"></hr>
           </div>
         </div>

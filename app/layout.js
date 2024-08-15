@@ -27,8 +27,38 @@ export const metadata = {
       },
     ],
   },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snipper": -1,
+    "max-video-preview": -1,
+    googleBot: "index, follow",
+  },
+  keywords: [
+    "CISSP",
+    "Cybernous",
+    "Cyber Security",
+    "Cyber Security Online Training",
+    "FREE CyberSecurity Resources",
+  ],
   verification: {
     google: "give verification id here",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cybernous CISSP Online Training",
+    description: "",
+    creator: "@Marsal_Soren06",
+    site: "@Marsal_Soren06",
+    images: [
+      {
+        url: "@/public/assets/cyberlg.webp",
+        height: 630,
+        Width: 1200,
+        alt: "cybernous logo",
+      },
+    ],
   },
 };
 
