@@ -10,19 +10,31 @@ import { SlOptionsVertical } from "react-icons/sl";
 import { Button } from "@/components/ui/button";
 import BackWrapper from "@/components/BackWrapper";
 import Floater from "@/components/Floater";
-
+import Image from "next/image";
+import img1 from "@/public/assets/ResourcePage/TileImg/domainsummaries.webp";
+import img2 from "@/public/assets/ResourcePage/TileImg/masterclass.webp";
+import img3 from "@/public/assets/ResourcePage/TileImg/mocktest.webp";
+import img4 from "@/public/assets/ResourcePage/TileImg/flashcards.webp";
 const cardData = [
   {
-    text: 1,
+    header: "CISSP Domain Notes",
+    text: "CISSP is vast and it is important for you to have a short and concise revision. These Domain summaries will help you quickly grasp concepts you need to know before you CISSP exam. ",
+    imgPath: img1,
   },
   {
-    text: 1,
+    header: "FREE CISSP Masterclass",
+    text: "Experience an immersive learning experience for your CISSP Exam with our FREE Master class. Register for it today!",
+    imgPath: img2,
   },
   {
-    text: 1,
+    header: "FREE Mock Test",
+    text: "CISSP is a Tricky Exam and practicing right CISSP Questions is a must before the Exam. The Mock Test is scenario based and pointed to help you understand the technicalities of the CISSP Exam.",
+    imgPath: img3,
   },
   {
-    text: 1,
+    header: "FREE CISSP Flash Cards",
+    text: "The FREE Flashcards has been designed to help candidates quickly revise the topics in an easy understandable format, providing you confidence for the CISSP Exam.",
+    imgPath: img4,
   },
 ];
 const Resources = () => {
@@ -42,60 +54,27 @@ const Resources = () => {
       </div>
       {user ? <p>your currently logged email: {user.email}</p> : ""}
       <div className="flex items-center justify-center">
-        <div className="grid max-w-[1280px] items-center justify-center md:grid-cols-2 xl:grid-cols-3 xlls:grid-cols-4">
+        <div className="grid max-w-[1280px] items-center justify-center gap-x-6 gap-y-6 md:grid-cols-2 xl:grid-cols-3 xlg:max-w-[1400px] xlls:grid-cols-4">
           {cardData.map((data, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center bg-slate-500 px-4 py-2"
+                className="h-[400px] w-[300px] overflow-hidden rounded-[15px] bg-transparent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] transition-all duration-500 hover:translate-y-[-10px] xl:h-[400px] xl:w-[300px]"
               >
-                {/* Header  */}
-
-                {/* For Text  */}
-                <div className="flex min-h-[400px] w-[300px] flex-col items-center gap-4 rounded-[25px] border-2 border-accent bg-matteblue bg-opacity-[90%]">
-                  <div className="flex w-full items-center justify-between px-4 pt-4">
-                    <div className="flex">
-                      {/* Avatar  */}
-                      <div className="h-[50px] w-[50px] overflow-hidden rounded-full bg-green-500"></div>
-                      <div className="ml-3 flex flex-col leading-6">
-                        <span className="font-semibold text-slate-400">
-                          Header
-                        </span>
-                        <span className="font-normal text-slate-400">
-                          SubHead
-                        </span>
-                      </div>
-                    </div>
-                    <div className="cursor-pointer">
-                      <SlOptionsVertical className="text-white" />
-                    </div>
-                  </div>
-                  <div className="h-[150px] w-full bg-gray-700"></div>
-                  <h1 className="flex w-full flex-col px-4 text-left font-semibold leading-6 text-accent">
-                    <span>Title</span>
-                    <span className="w-full text-justify text-accent">
-                      Subhead
-                    </span>
-                  </h1>
-                  <p className="px-4 pb-6 leading-snug text-gray-300">
-                    The CISSP exam covers an incredibly broad number of topics
-                    across 8 domains - it can be overwhelming knowing what to
-                    study! Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit. Repellat hic sed, ipsa at quas modi quidem, unde odio
-                    recusandae facere animi veniam autem ut quae aut quia,
-                    accusantium eos incidunt?
-                  </p>
-                  <div className="flex w-full justify-end gap-4 px-4 pb-4">
-                    <Button variant="outline" className="rounded-[40px]">
-                      Disabled
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="rounded-[40px] bg-accent text-black hover:bg-transparent hover:text-accent"
-                    >
-                      Enabled
-                    </Button>
-                  </div>
+                <div className="flex h-[51px] items-center justify-center bg-gradient-to-b from-[#fad10354] to-transparent">
+                  <span className="font-bold">{data.header}</span>
+                </div>
+                <div className="h- flex h-[173px] items-center justify-center overflow-hidden object-contain">
+                  <Image
+                    src={data.imgPath}
+                    height={126}
+                    width={233}
+                    objectFit="contain"
+                    alt="tile Image"
+                  ></Image>
+                </div>
+                <div className="px-6 py-4 leading-normal">
+                  <span>{data.text}</span>
                 </div>
               </div>
             );

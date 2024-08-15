@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
 import Floater from "@/components/Floater";
+import BlogData from "@/components/data/BlogData";
 
 const getPosts = async () => {
   const query = groq`*[_type == 'blog'] | order(_createdAt desc){
@@ -21,9 +22,12 @@ const getPosts = async () => {
 
 const Blog = async () => {
   const posts = await getPosts();
-  // console.log(posts);
+
+  console.log(posts);
+
   return (
     <div>
+      {/* <BlogData /> */}
       <Banner />
       <Floater />
       <Header />

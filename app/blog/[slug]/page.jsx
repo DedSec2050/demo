@@ -80,6 +80,7 @@ export default async function Post({ params: { slug } }) {
       ),
     },
   };
+  console.log(post);
   console.log(post.currentSlug);
   console.log(`${process.env.NEXT_PUBLIC_BASE_URL}`);
   console.log(post.author);
@@ -112,7 +113,7 @@ export default async function Post({ params: { slug } }) {
     },
     isFamilyFriendly: "true",
   };
-  console.log(post);
+  // console.log(post);
   return (
     <>
       <Head>
