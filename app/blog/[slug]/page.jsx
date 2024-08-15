@@ -114,7 +114,12 @@ export default async function Post({ params: { slug } }) {
   console.log(post);
   return (
     <>
-      <Head></Head>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </Head>
       <div className="">
         <Header />
         <BackWrapper />
