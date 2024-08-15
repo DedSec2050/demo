@@ -48,13 +48,13 @@ const Resources = () => {
       <BackWrapper />
       <Header />
       <div className="flex flex-col items-center justify-center pt-[30px]">
-        <div className="flex flex-col justify-between rounded-md border-4 border-accent p-6 md:p-20">
+        <div className="flex flex-col justify-between rounded-[15px] border-2 border-accent bg-gradient-to-b from-[#739DED66] via-[#A8AEE000] to-[#fad1031a] p-6 transition-all duration-500 md:p-20">
           <MultiSteps />
         </div>
       </div>
       {user ? <p>your currently logged email: {user.email}</p> : ""}
       <div className="flex items-center justify-center">
-        <div className="grid max-w-[1280px] items-center justify-center gap-x-6 gap-y-6 md:grid-cols-2 xl:grid-cols-3 xlg:max-w-[1400px] xlls:grid-cols-4">
+        <div className="mt-8 grid max-w-[1280px] items-center justify-center gap-x-6 gap-y-6 md:grid-cols-2 xl:grid-cols-3 xlg:max-w-[1400px] xlls:grid-cols-4">
           {cardData.map((data, index) => {
             return (
               <div
