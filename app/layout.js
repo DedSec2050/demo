@@ -58,7 +58,7 @@ export const metadata = {
     site: "@Marsal_Soren06",
     images: [
       {
-        url: "https://demo-gamma-ebon.vercel.app/public/assets/og-image/image.png",
+        url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
         height: 630,
         Width: 1200,
         alt: "cybernous logo",
