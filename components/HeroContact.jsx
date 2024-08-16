@@ -79,10 +79,10 @@ const ContactUs = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-x-[5vw] xl:flex-row xl:gap-x-[20vw]">
-      <div className="flex-grow-1 flex flex-row items-center justify-center p-10 lg:max-w-[50%]">
+      <div className="flex-grow-1 flex flex-row items-center justify-center sm:p-10 lg:max-w-[50%]">
         <form
           action=""
-          className="items-center justify-center rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] text-black sm:border-2 sm:px-4 md:ml-[20%] md:px-8"
+          className="items-center justify-center rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-4 text-black sm:border-2 md:ml-[20%] md:px-8"
         >
           <div className="input-box my-4 flex flex-col gap-y-2">
             <label htmlFor="contact-name" className="font-semibold text-white">
@@ -157,7 +157,7 @@ const ContactUs = () => {
           </Button>
         </form>
       </div>
-      <div className="flex-grow-1 flex h-full flex-col items-center justify-start p-10 text-center font-semibold lg:max-w-[50%] xl:text-[1.5rem]">
+      <div className="flex-grow-1 hidden h-full flex-col items-center justify-start p-10 text-center font-semibold lg:max-w-[50%] xl:flex xl:text-[1.5rem]">
         <div className="items-center justify-center rounded-[25px] bg-transparent sm:px-4 md:px-8">
           {/* <h1>Get More Information Here</h1> */}
           <div className="my-[40px] flex flex-col">
