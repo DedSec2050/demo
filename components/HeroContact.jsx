@@ -82,7 +82,7 @@ const ContactUs = () => {
       <div className="flex-grow-1 flex flex-row items-center justify-center sm:p-10 lg:max-w-[50%]">
         <form
           action=""
-          className="items-center justify-center rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-4 text-black sm:border-2 md:ml-[20%] md:px-8"
+          className="items-center justify-center rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-2 text-black sm:border-2 md:ml-[20%] md:px-8"
         >
           <div className="input-box my-4 flex flex-col gap-y-2">
             <label htmlFor="contact-name" className="font-semibold text-white">
@@ -91,7 +91,7 @@ const ContactUs = () => {
             <input
               id="contact-name"
               type="text"
-              className="field w-[280px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
+              className="field w-[250px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
               placeholder="Enter your name"
               ref={fname}
               required
@@ -104,7 +104,7 @@ const ContactUs = () => {
             <input
               id="contact-email"
               type="email"
-              className="w-[280px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
+              className="w-[250px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
               placeholder="Enter your email"
               ref={email}
               required
@@ -118,7 +118,7 @@ const ContactUs = () => {
               id="contact-phone"
               country="in"
               type="text"
-              className="w-[280px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
+              className="rounded-md p-1 active:bg-accent md:max-w-[350px] [&>.form-control]:max-w-[250px]"
               inputProps={{
                 required: true,
               }}
@@ -141,7 +141,7 @@ const ContactUs = () => {
             <textarea
               id="contact-queries"
               cols="40"
-              className="field max-w-[400px] rounded-md p-1 pb-10 text-black active:bg-accent"
+              className="field w-[280px] max-w-[400px] rounded-md p-1 pb-10 text-black active:bg-accent"
               placeholder="Enter your Queries"
               ref={query}
               required
