@@ -27,7 +27,7 @@ const Guidelines = () => {
               Updated as per new guidelines from April 2024
             </h2>
           </div>
-          <div className="flex py-2 text-justify text-clamptextsmm font-medium leading-10 xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
+          <div className="flex py-2 text-justify text-[1.3rem] font-medium leading-10 sm:text-clamptextsmm xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
             (ISC)2 CISSP Exam is tricky and only studying the course content is
             not enough to pass the exam. Believe me, many Aspirants do in-depth
             CISSP Preparation but they still fail the CISSP Certification Exam.
@@ -35,7 +35,7 @@ const Guidelines = () => {
             challenging exam. Unfortunately, most of the training focus on the
             content but not on the Exam taking skills.{" "}
           </div>
-          <div className="flex py-4 text-clamptextsmm font-medium leading-10 xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
+          <div className="flex py-4 text-[1.3rem] font-medium leading-10 sm:text-clamptextsmm xxl:w-[65vw] xxl:text-[1.3vw] xxl:leading-normal">
             CISSP Success Toolkit is the one and only program which trains you
             for the challenging CISSP exam through our 60+hours of Live Exam
             practice. This is just one feature, let me tell you more.

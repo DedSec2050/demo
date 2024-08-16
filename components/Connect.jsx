@@ -93,7 +93,7 @@ const Connect = () => {
         </div>
 
         <div className="mt-4 flex max-w-[90vw] px-[4vw] md:mt-[35px] xl:px-0">
-          <div className="text-justify text-clamptextsmm italic xxl:text-[2.5vw] xxl:leading-[6vh]">
+          <div className="text-justify text-[1.2rem] italic leading-normal sm:text-clamptextsmm xxl:text-[2.5vw] xxl:leading-[6vh]">
             {desc}
             <div {...getCollapseProps()} className="flex flex-col">
               <span>

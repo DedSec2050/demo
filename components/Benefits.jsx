@@ -47,7 +47,7 @@ const Benefits = () => {
               return (
                 <li
                   key={index}
-                  className="w-full text-clamptextsmm xxl:text-[1.3vw] xxl:leading-[65px]"
+                  className="w-full text-[1.2rem] leading-normal md:text-clamptextsmm xxl:text-[1.3vw] xxl:leading-[65px]"
                 >
                   {data.data}
                 </li>
@@ -61,7 +61,7 @@ const Benefits = () => {
               return (
                 <li
                   key={index}
-                  className="w-full text-clamptextsmm xxl:text-[1.3vw] xxl:leading-[65px]"
+                  className="mt-2 w-full text-left text-[1.2rem] leading-normal md:text-clamptextsmm xxl:text-[1.3vw] xxl:leading-[65px]"
                 >
                   {data.data}
                 </li>

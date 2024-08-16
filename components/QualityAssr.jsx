@@ -65,7 +65,7 @@ const QualityAssr = () => {
             Our Commitment to Excellence : <br></br> Your Path to CISSP Success
           </span>
         </h2>
-        <p className="text-justify text-clamptextsmm xxl:mt-[6vh] xxl:text-[1.5vw]">
+        <p className="text-justify text-[1.3rem] leading-normal sm:text-clamptextsmm xxl:mt-[6vh] xxl:text-[1.5vw]">
           We have a strong vision to change lives and have positively impacted
           thousands of Careers. Almost every second Security professional wish
           to achieve the prestigious CISSP Designation, however many of such
@@ -85,11 +85,11 @@ const QualityAssr = () => {
           <p className="mb-[2vh] mt-[2vh] w-full text-center text-clamptextmd font-bold text-grn xxl:mt-[6vh] xxl:text-[1.8vw]">
             CISSP Domains<br className=""></br> (Weightage as per 15th Apr 2024)
           </p>
-          <ul className="flex w-full flex-col text-justify md:hidden">
+          <ul className="flex w-full flex-col text-left md:hidden">
             {listdata.map((data, index) => {
               return (
                 <li
-                  className="py-4 text-clamptextsmm font-medium md:text-[1.3rem] xxl:py-[40px] xxl:text-[1.3vw]"
+                  className="py-4 text-[1.2rem] font-medium leading-normal md:text-[1.3rem] xxl:py-[40px] xxl:text-[1.3vw]"
                   key={index}
                 >
                   {`${index + 1}. ` + data.data}
