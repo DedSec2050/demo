@@ -6,7 +6,7 @@ import Link from "next/link";
 import HeroContact from "./HeroContact";
 const Page7 = () => {
   return (
-    <section className="translate-x-2 sm:translate-x-0">
+    <section className="hidden translate-x-2 sm:translate-x-0 md:flex">
       <div className="mt-[30px] flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:my-[60px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
