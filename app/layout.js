@@ -1,8 +1,5 @@
 import { JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-
-// Components
-
 import Script from "next/script";
 import Head from "next/head";
 
@@ -33,7 +30,7 @@ export const metadata = {
     index: true,
     follow: true,
     "max-image-preview": "large",
-    "max-snipper": -1,
+    "max-snippet": -1,
     "max-video-preview": -1,
     googleBot: "index, follow",
   },
@@ -57,7 +54,7 @@ export const metadata = {
       {
         url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
         height: 630,
-        Width: 1200,
+        width: 1200,
         alt: "cybernous logo",
       },
     ],
@@ -88,6 +85,7 @@ const jsonLd = {
     longitude: 77.571198,
   },
 };
+
 const jsonLdBlogs = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -114,8 +112,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        {/* Metadata */}
+        <meta
+          name="google-site-verification"
+          content="3V77gokHFiFVtwpFrn6FH7tDTq8Q9KwUlNJG05_an0"
+        />
+      </Head>
+      <body className="bg-primary">
         {/* LinkedIn Tag Manager */}
-        <script
+        <Script
+          id="linkedin-tag-manager-init"
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -125,7 +131,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <script
+        <Script
+          id="linkedin-tag-manager-script"
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
@@ -141,15 +148,14 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <meta
-          name="google-site-verification"
-          content="3V77gokHFiFVtwpFrn6FH7tDTq8Q9KwUlNJG05_an0"
-        />
-        <script
+
+        {/* Google Tag Manager */}
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-16584736238"
-        ></script>
-        <script
+        ></Script>
+        <Script
+          id="google-tag-manager-script"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -159,9 +165,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <script src="https://cdnin.pagesense.io/js/cybernous8/9feb95c098fc4684b0369d37356bb969.js"></script>
-      </Head>
-      <body className="bg-primary">
+
+        {/* Structured Data */}
         <Script
           id="website-schema"
           type="application/ld+json"
@@ -178,21 +183,17 @@ export default function RootLayout({ children }) {
         />
 
         {children}
+
+        {/* Additional Scripts */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=GJE148Z2662"
         ></Script>
-
         <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JE148Z2662"
         ></Script>
-        <Script type="text/javascript">
-          _linkedin_partner_id = "5937948"; window._linkedin_data_partner_ids =
-          window._linkedin_data_partner_ids || [];
-          window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-        </Script>
       </body>
     </html>
   );
