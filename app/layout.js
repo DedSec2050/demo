@@ -99,7 +99,7 @@ const jsonLd = {
 };
 const jsonLdBlogs = {
   "@context": "https://schema.org",
-  "@type": "Blogs",
+  "@type": "BlogPosting",
   name: "Blogs | Cybernous CISSP Online Training",
   url: "https://www.cybernous.com/blog",
   publisher: {
