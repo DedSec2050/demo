@@ -25,7 +25,7 @@ const ContactUs = () => {
   const fname = useRef(null);
   const phno = useRef(null);
 
-  const [valid, setValid] = useState(false);
+  const [valid, setValid] = useState(true);
   const handleChange = (value) => {
     setPhoneNumber(value);
     console.log(value);
@@ -55,9 +55,6 @@ const ContactUs = () => {
       } else if (!email.current.value.includes("@")) {
         alert("Enter a valid Email");
         return;
-      } else if (query.current.value.length < 10) {
-        alert("Please enter atleast query of 10 characters.");
-        return;
       } else {
         console.log(email.current.value);
         console.log(fname.current.value);
@@ -79,10 +76,10 @@ const ContactUs = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-x-[5vw] xl:flex-row xl:gap-x-[20vw]">
-      <div className="flex-grow-1 flex flex-row items-center justify-center sm:p-10 lg:max-w-[50%]">
+      <div className="flex-grow-1 flex flex-row items-center justify-center sm:p-10">
         <form
           action=""
-          className="items-center justify-center rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-2 text-black sm:border-2 md:ml-[20%] md:px-8"
+          className="flex flex-col items-center justify-center gap-x-2 rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-2 text-black md:gap-x-2 md:px-8 xl:flex-row xl:gap-x-[5vw]"
         >
           <div className="input-box my-4 flex flex-col gap-y-2">
             <label htmlFor="contact-name" className="font-semibold text-white">
@@ -131,7 +128,7 @@ const ContactUs = () => {
               <p className="text-red-300">Enter a valid Phone number</p>
             )}
           </div>
-          <div className="input-box my-4 flex flex-col gap-y-2">
+          {/* <div className="input-box my-4 flex flex-col gap-y-2">
             <label
               htmlFor="contact-queries"
               className="font-semibold text-white"
@@ -146,7 +143,7 @@ const ContactUs = () => {
               ref={query}
               required
             />
-          </div>
+          </div> */}
           <Button
             variant="outline"
             className="my-6"
@@ -156,28 +153,6 @@ const ContactUs = () => {
             Submit
           </Button>
         </form>
-      </div>
-      <div className="flex-grow-1 hidden h-full flex-col items-center justify-start p-10 text-center font-semibold lg:max-w-[50%] xl:flex xl:text-[1.5rem]">
-        <div className="items-center justify-center rounded-[25px] bg-transparent sm:px-4 md:px-8">
-          {/* <h1>Get More Information Here</h1> */}
-          <div className="my-[40px] flex flex-col">
-            <Image
-              layout="responsive"
-              src={image}
-              width={700}
-              height={1018}
-              alt="image"
-            />
-          </div>
-          <div>
-            <Button
-              // variant="outline"
-              className="my-6 rounded-[30px] transition-all duration-500 xl:text-[17px]"
-            >
-              Book a FREE Consultation
-            </Button>
-          </div>
-        </div>
       </div>
     </div>
   );

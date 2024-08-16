@@ -6,8 +6,8 @@ import Link from "next/link";
 import HeroContact from "./HeroContact";
 const Page7 = () => {
   return (
-    <section className="hidden translate-x-2 sm:translate-x-0 md:flex">
-      <div className="mt-[30px] flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:my-[60px] xl:px-[10vw]">
+    <section className="flex translate-x-2 sm:translate-x-0">
+      <div className="mt-[30px] flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:my-[60px]">
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
             <h2 className="text-center text-clamptitle">
@@ -38,7 +38,7 @@ const Page7 = () => {
               Let me show you why I call this program as a complete Eco-system.
             </div>
           </div>
-          <div className="relative mt-[45px] flex w-full flex-col items-center justify-center gap-y-10 rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] sm:p-10">
+          <div className="relative mt-[45px] flex w-full flex-col items-center justify-center gap-y-2 rounded-[30px] bg-transparent from-[#739DED66] to-[#A8AEE000] sm:p-10 md:border-2 md:bg-gradient-to-l">
             <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
               Contact Us
             </span>
