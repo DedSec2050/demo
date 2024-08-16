@@ -2,13 +2,9 @@ import { JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
 // Components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Popup from "@/components/Popup";
-import Floater from "@/components/Floater";
+
 import Script from "next/script";
-import logo from "@/public/assets/cyberlg.webp";
-import logop from "@/public/assets/og-image/image.png";
+
 export const metadata = {
   metadataBase: new URL("https://www.cybernous.com/"),
   title: {
@@ -104,18 +100,8 @@ const jsonLd = {
 const jsonLdBlogs = {
   "@context": "https://schema.org",
   "@type": "Blogs",
-  name: "%s | Cybernous CISSP Online Training",
+  name: "Blogs | Cybernous CISSP Online Training",
   url: "https://www.cybernous.com/blog",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://www.cybernous.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
-  sameAs: [
-    "https://www.facebook.com/YourFacebookPage",
-    "https://www.linkedin.com/company/YourLinkedInPage",
-    "https://twitter.com/Marsal_Soren06",
-  ],
   publisher: {
     "@type": "Organization",
     name: "Cybernous",
@@ -133,6 +119,12 @@ const jsonLdBlogs = {
     width: 1200,
     height: 630,
   },
+  author: {
+    "@type": "Person",
+    name: "Manoj Sharma",
+  },
+  headline: "Title of the Blog Post",
+  description: "A brief description of the blog post.",
 };
 
 export default function RootLayout({ children }) {
