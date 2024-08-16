@@ -15,7 +15,6 @@ const Header = () => {
         <div className="flex max-h-[150px] w-[18vw] max-w-[200px]">
           <Link href="/">
             <Image
-              layout="responsive"
               src="/assets/cyberlg.webp"
               alt="cybernous logo"
               width={150}

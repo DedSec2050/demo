@@ -13,7 +13,6 @@ const Sliding = () => {
   for (let i = 1; i <= 26; i++) {
     demos.push(`${i}.webp`);
   }
-  const pic = ["/assets/SliderAssets/slider1.webp"];
   const imageStyle = {
     borderRadius: "10%",
     border: "3px solid yellow",
