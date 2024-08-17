@@ -6,6 +6,12 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 import { parsePhoneNumberFromString } from "libphonenumber-js";
+// Imports FOR decoding the abbreviation of COUNTRIES
+import countries from "i18n-iso-countries";
+import en from "i18n-iso-countries/langs/en.json";
+
+// REGISTER THE LOCALE DATA
+countries.registerLocale(en);
 
 // FireStore CODE
 import { db } from "@/app/firebaseConfig";
@@ -44,15 +50,21 @@ const LeadGen = () => {
     return leadData.some((data) => data.email === getMail);
   };
 
-  //
-  const registerLeadDoc = async (gotEmail, gotPhone, gotCountryCode) => {
+  // Register if not Duplicate
+  const registerLeadDoc = async (
+    gotEmail,
+    gotCountryCode,
+    gotPhone,
+    gotCname,
+  ) => {
     console.log(gotEmail);
     console.log(gotPhone);
     console.log(gotCountryCode);
+    console.log(gotCname);
     const docRef = await addDoc(collection(db, "LeadGen"), {
       email: gotEmail,
       phone: gotPhone,
-      isLead: false,
+      countryName: gotCname,
       countryCode: gotCountryCode,
     });
     console.log("Document written with ID", docRef.id);
@@ -105,14 +117,14 @@ const LeadGen = () => {
         console.log(tempMail);
         if (flag) {
           console.log(flag);
-          alert("You are already a lead");
+          alert("You have already enrolled for Master CLASS!");
           email.current.value = "";
           setPhoneNumber("");
           return;
         } else {
           console.log(email.current.value);
           console.log(phno);
-          console.log("false");
+          console.log(parsePhoneNumberFromString("+" + phoneNumber));
           console.log(
             parsePhoneNumberFromString("+" + phoneNumber).countryCallingCode,
           );
@@ -123,6 +135,10 @@ const LeadGen = () => {
             email.current.value,
             parsePhoneNumberFromString("+" + phoneNumber).countryCallingCode,
             parsePhoneNumberFromString("+" + phoneNumber).nationalNumber,
+            countries.getName(
+              parsePhoneNumberFromString("+" + phoneNumber).country,
+              "en",
+            ),
           );
           //   registerLeadDoc()
         }
@@ -156,7 +172,7 @@ const LeadGen = () => {
           <input
             id="contact-email"
             type="email"
-            className="rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
+            className="my-[5px] h-[35px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
             placeholder="Enter your email"
             ref={email}
             required
@@ -186,7 +202,11 @@ const LeadGen = () => {
           {/* {!valid && <p className="text-red-300">Enter a valid Phone number</p>} */}
         </div>
 
-        <Button className="my-6" type="submit" onClick={handleSubmit}>
+        <Button
+          className="my-[35px] h-[35px]"
+          type="submit"
+          onClick={handleSubmit}
+        >
           Subscribe
         </Button>
       </form>
