@@ -20,6 +20,8 @@ import Popup from "@/components/Popup";
 import Banner from "@/components/Banner";
 import BackWrapper from "@/components/BackWrapper";
 import Floater from "@/components/Floater";
+import Tags from "@/components/Pages/Tags";
+import SuccessStories from "@/components/Pages/SuccessStories";
 
 export default function Home() {
   return (
@@ -32,6 +34,10 @@ export default function Home() {
         <div className="">
           <Header />
           <Hero />
+        </div>
+        <div className="lg:mt-[7vw] xl:mt-0">
+          <Tags />
+          <SuccessStories />
         </div>
         <Guidelines />
         {/* <Resources /> */}

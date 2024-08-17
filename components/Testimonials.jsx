@@ -1,7 +1,7 @@
 "use client";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import vidplay from "../public/assets/vidplay.webp";
+// import vidplay from "../public/assets/vidplay.webp";
 import { db } from "@/app/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 import { useState, useEffect } from "react";
@@ -20,7 +20,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import parse from "html-react-parser";
-import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
 
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "testimonials"));

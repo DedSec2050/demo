@@ -13,6 +13,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import VideoPlayer from "../VidPlayr";
 import { Input } from "../ui/input";
+import LeadGen from "./LeadGen";
 
 const imageStyle = {
   borderRadius: "10%",
@@ -74,80 +75,34 @@ const Hero = () => {
                     
                   </span> */}
                 </h1>
+                <div className="flex flex-col justify-center gap-4 md:flex-row xl:gap-10">
+                  <Link href="https://calendly.com/cisspsuccess">
+                    <Button
+                      variant="outline"
+                      className="rounded-[30px] transition-all duration-500 xl:text-[17px]"
+                    >
+                      Book a FREE Consultation
+                    </Button>
+                  </Link>
+                  <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy">
+                    <Button
+                      variant="outline"
+                      className="rounded-[30px] transition-all duration-500 xl:text-[17px]"
+                    >
+                      Enroll Now !
+                    </Button>
+                  </Link>
+                </div>
               </div>
-              <div className="flex gap-4 xl:translate-y-[100px] xl:gap-10 xlg:translate-y-[-140px]">
-                <Link href="https://calendly.com/cisspsuccess">
-                  <Button
-                    variant="outline"
-                    className="rounded-[30px] transition-all duration-500 xl:text-[17px]"
-                  >
-                    Book a FREE Consultation
-                  </Button>
-                </Link>
-                <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy">
-                  <Button
-                    variant="outline"
-                    className="rounded-[30px] transition-all duration-500 xl:text-[17px]"
-                  >
-                    Enroll Now !
-                  </Button>
-                </Link>
-              </div>
-              <div className="flex flex-col items-center justify-center gap-6 rounded-[30px] border-opacity-[50%] bg-opacity-[10%] bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] px-[60px] py-6 xl:translate-y-[-130px]">
+
+              <div className="flex flex-col items-center justify-center gap-6 rounded-[30px] border-opacity-[50%] bg-opacity-[10%] from-[#739DED66] to-[#A8AEE000] py-6 md:bg-gradient-to-l md:px-[60px] xl:translate-y-[-70px] xlg:translate-y-[-150px]">
                 <span className="flex w-full min-w-[240px] items-center justify-center text-[1.4rem] font-semibold">
                   Join our FREE Master Class{" "}
                 </span>
-                <div className="flex w-full gap-x-6">
-                  <Input className="h-8" type="email" placeholder="Email" />
-                  <Button
-                    className="h-8 transition-all duration-500"
-                    type="submit"
-                  >
-                    Subscribe
-                  </Button>
-                </div>
+                <LeadGen />
               </div>
             </div>
           </div>
-          <HeroSlider />
-        </div>
-        <div className="text-center xl:mt-10">
-          <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-clampheader font-[700] leading-8 text-transparent xxl:text-[2.5vw]">
-            Our Success Stories
-          </span>
-        </div>
-        <div className="relative my-10 flex w-full sm:hidden">
-          <Marquee direction="right">
-            {demos.map((url, index) => {
-              // console.log("/assets/SliderAssets/" + url);
-              return (
-                <div
-                  className="mr-[6.5rem] flex h-[22vh] w-[21vh] md:h-[32vh] md:w-[32vh]"
-                  key={index}
-                >
-                  <Image
-                    src={"/assets/SliderAssets/" + url}
-                    alt="slider"
-                    style={({ width: "auto", height: "auto" }, imageStyle)}
-                    height={290}
-                    width={300}
-                  ></Image>
-                </div>
-              );
-            })}
-          </Marquee>
-        </div>
-        <div className="hidden w-full flex-col items-center justify-center overflow-hidden py-[60px] sm:flex md:flex-row">
-          <div className="flex items-center justify-center overflow-hidden py-2 md:py-0">
-            <Slider />
-          </div>
-        </div>
-        <div className="flex w-full items-center justify-center pb-6">
-          <Link href="https://www.youtube.com/watch?v=_d8Jxaq_WSI&list=PLJ1GEK2Q0WrS5FNz6s2pLWlf0z_E_v0qM">
-            <Button className="rounded-[30px] transition-all duration-500">
-              See more Success Stories
-            </Button>
-          </Link>
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@ const Banner = () => {
           className="pointer-events-none mx-2 px-4 py-4 transition-all duration-500 hover:text-black"
         >
           {" "}
-          <Link href="\" className="text-[1.2rem] font-bold">
+          <Link href="\" className="font-bold md:text-[1.2rem]">
             Use Coupon Code 'INDEPENDENCE'
           </Link>
         </Button>{" "}
@@ -33,17 +33,8 @@ const Banner = () => {
             Claim Now!
           </Link>
         </Button>{" "}
-        {/* <Link
-          href="/"
-          className="font-semibold text-accent hover:text-accent-hover"
-        >
-          {" "}
-          CLAIM NOW
-        </Link> */}
       </div>
-      {/* <div className="pb-1 text-center md:ml-6">
-        Whatsapp Us: +91 85953 38705
-      </div> */}
+
       <div className="hidden items-center justify-center gap-4 rounded-[10px] lg:flex">
         <div className="ml-4 flex w-full min-w-[250px] translate-y-[0px] flex-row items-center justify-between">
           <Link
