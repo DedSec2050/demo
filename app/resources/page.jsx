@@ -15,6 +15,7 @@ import img1 from "@/public/assets/ResourcePage/TileImg/domainsummaries.webp";
 import img2 from "@/public/assets/ResourcePage/TileImg/masterclass.webp";
 import img3 from "@/public/assets/ResourcePage/TileImg/mocktest.webp";
 import img4 from "@/public/assets/ResourcePage/TileImg/flashcards.webp";
+import Link from "next/link";
 const cardData = [
   {
     header: "CISSP Domain Notes",
@@ -52,31 +53,33 @@ const Resources = () => {
           <MultiSteps />
         </div>
       </div>
-      {user ? <p>your currently logged email: {user.email}</p> : ""}
+      {/* {user ? <p>your currently logged email: {user.email}</p> : ""} */}
       <div className="flex items-center justify-center">
         <div className="mt-8 grid max-w-[1280px] items-center justify-center gap-x-6 gap-y-6 md:grid-cols-2 xl:grid-cols-3 xlg:max-w-[1400px] xlls:grid-cols-4">
           {cardData.map((data, index) => {
             return (
-              <div
-                key={index}
-                className="h-[400px] w-[300px] overflow-hidden rounded-[15px] bg-transparent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] transition-all duration-500 hover:translate-y-[-10px] xl:h-[400px] xl:w-[300px]"
-              >
-                <div className="flex h-[51px] items-center justify-center bg-gradient-to-b from-[#fad10354] to-transparent">
-                  <span className="font-bold">{data.header}</span>
+              <Link key={index} href="/coming-soon">
+                <div
+                  key={index}
+                  className="h-[400px] w-[300px] overflow-hidden rounded-[15px] bg-transparent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] transition-all duration-500 hover:translate-y-[-10px] xl:h-[400px] xl:w-[300px]"
+                >
+                  <div className="flex h-[51px] items-center justify-center bg-gradient-to-b from-[#fad10354] to-transparent">
+                    <span className="font-bold">{data.header}</span>
+                  </div>
+                  <div className="h- flex h-[173px] items-center justify-center overflow-hidden object-contain">
+                    <Image
+                      src={data.imgPath}
+                      height={126}
+                      width={233}
+                      objectFit="contain"
+                      alt="tile Image"
+                    ></Image>
+                  </div>
+                  <div className="px-6 py-4 leading-normal">
+                    <span>{data.text}</span>
+                  </div>
                 </div>
-                <div className="h- flex h-[173px] items-center justify-center overflow-hidden object-contain">
-                  <Image
-                    src={data.imgPath}
-                    height={126}
-                    width={233}
-                    objectFit="contain"
-                    alt="tile Image"
-                  ></Image>
-                </div>
-                <div className="px-6 py-4 leading-normal">
-                  <span>{data.text}</span>
-                </div>
-              </div>
+              </Link>
             );
           })}
         </div>

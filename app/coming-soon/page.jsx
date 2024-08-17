@@ -21,6 +21,7 @@ const page = () => {
           </div>
           <div>
             <Image
+              unoptimized
               alt="coming soon"
               height={350}
               width={350}
