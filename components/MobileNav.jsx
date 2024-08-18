@@ -32,10 +32,12 @@ const MobileNav = () => {
         <IoMenuSharp className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="mb-20 text-left text-2xl text-accent-hover">logo</div>
+        <div className="mb-20 text-left text-2xl text-accent-hover">
+          Cybernous
+        </div>
         <nav className="flex flex-col items-center justify-center gap-6">
           {links.map((link, index) => {
-            console.log(index);
+            // console.log(index);
             return (
               <SheetClose asChild key={index}>
                 <Link

@@ -28,7 +28,7 @@ const Banner = () => {
           {" "}
           <Link
             href="https://www.cybernous.com/courses/mission-cissp-bundle/buy"
-            className="text-[1.2rem] font-bold"
+            className="mt-2 text-[1.2rem] font-bold sm:mt-0"
           >
             Claim Now!
           </Link>

@@ -10,7 +10,7 @@ export const metadata = {
     template: `%s | Cybernous`,
   },
   description:
-    "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
+    "Cybernous is the best platform for CISSP Certification Online Training. Explore expert-led CISSP preparation to advance your skills. Enroll now!",
   openGraph: {
     url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
     type: "website",
@@ -117,6 +117,7 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="3V77gokHFiFVtwpFrn6FH7tDTq8Q9KwUlNJG05_an0"
         />
+        <link rel="canonical" href="https://www.cybernous.com/" />
       </Head>
       <body className="bg-primary">
         {/* LinkedIn Tag Manager */}
