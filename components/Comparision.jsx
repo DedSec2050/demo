@@ -50,7 +50,7 @@ const Page7 = () => {
               priority
               height={1281}
               width={2056}
-              alt="comparision"
+              alt="comparison"
             />
           </div>
         </div>

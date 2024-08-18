@@ -21,10 +21,10 @@ const Page6 = () => {
           </h2>
           <div className="my-6 w-full overflow-hidden rounded-[30px] border-2 border-accent">
             <Image
-              alt="timeline"
               unoptimized
               layout="responsive"
               src={timeline}
+              alt="timeline"
             ></Image>
           </div>
         </div>

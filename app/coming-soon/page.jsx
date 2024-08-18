@@ -22,10 +22,10 @@ const page = () => {
           <div>
             <Image
               unoptimized
-              alt="coming soon"
               height={350}
               width={350}
               src={gify}
+              alt="coming soon"
             ></Image>
           </div>
           <div className="my-6">
