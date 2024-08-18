@@ -23,12 +23,12 @@ const Banner = () => {
         </Button>{" "}
         <Button
           variant=""
-          className="mx-2 rounded-[30px] bg-[#f54943] px-4 py-4 text-white transition-all duration-500 hover:text-black"
+          className="mx-2 mt-2 rounded-[30px] bg-[#f54943] px-4 py-4 text-white transition-all duration-500 hover:text-black sm:mt-0"
         >
           {" "}
           <Link
             href="https://www.cybernous.com/courses/mission-cissp-bundle/buy"
-            className="mt-2 text-[1.2rem] font-bold sm:mt-0"
+            className="text-[1.2rem] font-bold"
           >
             Claim Now!
           </Link>
