@@ -13,7 +13,8 @@ const getPosts = async () => {
   return client.fetch(query);
 };
 export default async function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  // const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseUrl = "https://cybernous.me";
   console.log(baseUrl);
   const posts = await getPosts();
   //   console.log(posts);
