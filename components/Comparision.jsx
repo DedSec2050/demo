@@ -7,7 +7,7 @@ import HeroContact from "./HeroContact";
 const Page7 = () => {
   return (
     <section className="flex translate-x-2 sm:translate-x-0">
-      <div className="mt-[30px] flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:my-[60px]">
+      <div className="mt-[30px] flex flex-col items-center justify-center px-[30px] sm:px-[50px] xl:my-[60px] xl:px-[10vw]">
         <div className="flex flex-col items-center justify-center [&>div]:text-justify">
           <div className="rounded-[30px] border-2 bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
             <h2 className="text-center text-clamptitle">

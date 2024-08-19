@@ -225,7 +225,7 @@ const MultiSteps = () => {
   }, [domain, topic]);
 
   return (
-    <div className="mb-20 w-[250px] text-white md:w-[350px]">
+    <div className="mb-20 w-[250px] text-white md:w-[280px]">
       <b>Domain</b>
       <Select
         className="text-black"

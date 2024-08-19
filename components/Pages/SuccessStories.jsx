@@ -43,7 +43,7 @@ const SuccessStories = () => {
           })}
         </Marquee>
       </div>
-      <div className="hidden w-full flex-col items-center justify-center overflow-hidden py-[60px] sm:flex md:flex-row">
+      <div className="hidden w-full flex-col items-center justify-center overflow-hidden py-[60px] sm:flex md:flex-row xl:translate-x-[2rem] xxl:translate-x-[5rem]">
         <div className="flex items-center justify-center overflow-hidden py-2 md:py-0">
           <Slider />
         </div>
