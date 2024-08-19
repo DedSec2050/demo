@@ -12,7 +12,7 @@ const links = [
   },
   {
     name: "courses",
-    path: "/courses",
+    path: "/coming-soon",
   },
   {
     name: "blog",
@@ -20,7 +20,7 @@ const links = [
   },
   {
     name: "resources",
-    path: "/resources",
+    path: "/coming-soon",
   },
 ];
 const MobileNav = () => {
