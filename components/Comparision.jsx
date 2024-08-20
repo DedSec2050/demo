@@ -23,7 +23,7 @@ const Page7 = () => {
               CISSP Exam not only test your knowledge but also test your ability
               to take security decisions based on cognitive thinking as a
               leader. To Establish yourself as a Subject Matter Expert (SME) and
-              a thought leader, you need to relate the CISSP Concepts with real
+              a thought leader,you need to relate the CISSP Concepts with real
               world scenarios. This transformation requires time and a 5 day
               CISSP Certification bootcamp providing CISSP Training Online is
               barely effective. These CISSP Courses are very high level.
