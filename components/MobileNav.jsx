@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMenuSharp } from "react-icons/io5";
+import { Button } from "./ui/button";
 
 const links = [
   {
@@ -35,6 +36,7 @@ const MobileNav = () => {
         <div className="mb-20 text-left text-2xl text-accent-hover">
           Cybernous
         </div>
+
         <nav className="flex flex-col items-center justify-center gap-6">
           {links.map((link, index) => {
             // console.log(index);
@@ -51,6 +53,12 @@ const MobileNav = () => {
             );
           })}
         </nav>
+        <div>
+          <Link href="https://cybernous.newzenler.com/login">
+            {" "}
+            <Button>Sign in</Button>
+          </Link>
+        </div>
       </SheetContent>
     </Sheet>
   );
