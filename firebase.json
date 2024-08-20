@@ -9,16 +9,5 @@
       "firebase-debug.*.log",
       "*.local"
     ]
-  },
-  "hosting": {
-    "site": "cybernous",
-    "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
   }
 }
