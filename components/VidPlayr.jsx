@@ -1,32 +1,34 @@
 "use client";
-import Script from "next/script";
 import React, { useEffect } from "react";
 
 const VideoPlayer = () => {
   useEffect(() => {
-    if (window.VpPlayer) {
-      new VpPlayer({
-        embedId: "Hb2ydhhgMWJK",
-      });
-    }
+    // Load the VideoPal script dynamically
+    const script = document.createElement("script");
+    script.src = "https://videopal.me/js/vp_player.min.js?v=1.1.29";
+    script.async = false;
+    script.setAttribute("data-cfasync", "false");
+
+    script.onload = () => {
+      if (window.VpPlayer) {
+        new VpPlayer({
+          embedId: "ECBfvrvUV8zx",
+        });
+      }
+    };
+
+    script.onerror = (e) =>
+      console.error("Error loading the VideoPal script:", e);
+
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup the script from the document when the component unmounts
+      document.body.removeChild(script);
+    };
   }, []);
 
-  return (
-    <div id="vp-player-container">
-      <Script
-        src="https://videopal.me/js/vp_player.min.js?v=1.1.29"
-        strategy="afterInteractive"
-        onLoad={() => {
-          if (window.VpPlayer) {
-            new VpPlayer({
-              embedId: "Hb2ydhhgMWJK",
-            });
-          }
-        }}
-        onError={(e) => console.error("Error loading the VideoPal script:", e)}
-      />
-    </div>
-  );
+  return <div id="vp-player-container"></div>;
 };
 
 export default VideoPlayer;
