@@ -84,7 +84,7 @@ const Hero = () => {
                       Book a FREE Consultation
                     </Button>
                   </Link>
-                  <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy">
+                  <Link href="https://cybernous.newzenler.com/courses/cissp-success-toolkit/buy">
                     <Button
                       variant="outline"
                       className="rounded-[30px] transition-all duration-500 xl:text-[17px]"
