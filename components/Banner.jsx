@@ -27,7 +27,7 @@ const Banner = () => {
         >
           {" "}
           <Link
-            href="https://www.cybernous.com/courses/mission-cissp-bundle/buy"
+            href="https://cybernous.newzenler.com/courses/cissp-success-toolkit/buy"
             className="text-[1.2rem] font-bold"
           >
             Claim Now!

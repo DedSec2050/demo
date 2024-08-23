@@ -140,7 +140,7 @@ const Page5 = () => {
                         {data.batchStatus}
                       </TableCell>
                       <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        <Link href="https://www.cybernous.com/courses/mission-cissp-bundle/buy/plan/95551">
+                        <Link href="https://cybernous.newzenler.com/courses/cissp-success-toolkit/buy">
                           <Button
                             className="rounded-[30px] transition-all duration-500"
                             variant="outline"
