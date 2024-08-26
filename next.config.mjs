@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/login",
+        destination: "https://cybernous.newzenler.com/login",
+        permanent: false,
+      },
+    ];
+  },
   images: {
     // domains: ["firebasestorage.googleapis.com"],
     remotePatterns: [
