@@ -166,6 +166,22 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-804MQWV9JY"
+        ></Script>
+        {/* Script for google analytics  */}
+        <Script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-804MQWV9JY');
+          `,
+          }}
+        />
 
         {/* Structured Data */}
         <Script
@@ -190,11 +206,34 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=GJE148Z2662"
         ></Script>
-        <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
+        <Script
+          id="google-analytics-1"
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GJE148Z2662');
+    `,
+          }}
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JE148Z2662"
         ></Script>
+        <Script
+          id="google-analytics-2"
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JE148Z2662');
+    `,
+          }}
+        />
+
+        <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
       </body>
     </html>
   );

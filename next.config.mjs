@@ -7,6 +7,11 @@ const nextConfig = {
         destination: "https://cybernous.newzenler.com/login",
         permanent: false,
       },
+      {
+        source: "/terms",
+        destination: "/terms-conditions",
+        permanent: false,
+      },
     ];
   },
   images: {
