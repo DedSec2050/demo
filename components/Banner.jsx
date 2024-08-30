@@ -9,28 +9,28 @@ import { IoCall } from "react-icons/io5";
 
 const Banner = () => {
   return (
-    <section className="flex-grow-1 flex w-full flex-col items-center justify-center bg-gradient-to-r from-[#FF9933] via-[#FFF] to-[#128807] text-[0.7rem] font-semibold text-black md:flex-row md:px-0 md:text-[1.2rem]">
-      <div className="py-1 text-center font-bold text-red-600">
-        INDEPENDENCE DAY OFFER{" "}
+    <section className="flex-grow-1 flex w-full flex-col items-center justify-center bg-banner text-[0.7rem] font-semibold text-black md:flex-row md:px-0 md:text-[1.2rem]">
+      <div className="py-1 text-center font-bold text-white">
+        Enrolments open for{" "}
         <Button
           variant=""
           className="pointer-events-none mx-2 px-4 py-4 transition-all duration-500 hover:text-black"
         >
           {" "}
           <Link href="\" className="font-bold md:text-[1.2rem]">
-            Use Coupon Code 'INDEPENDENCE'
+            Batch-37
           </Link>
         </Button>{" "}
         <Button
           variant=""
-          className="mx-2 mt-2 rounded-[30px] bg-[#f54943] px-4 py-4 text-white transition-all duration-500 hover:text-black sm:mt-0"
+          className="mx-2 mt-2 rounded-[30px] bg-accent px-4 py-4 text-black transition-all duration-500 hover:text-white sm:mt-0"
         >
           {" "}
           <Link
             href="https://cybernous.newzenler.com/courses/cissp-success-toolkit/buy"
             className="text-[1.2rem] font-bold"
           >
-            Claim Now!
+            Enroll Now!
           </Link>
         </Button>{" "}
       </div>
@@ -42,7 +42,7 @@ const Banner = () => {
             className=""
           >
             <Button
-              className="mt-[2px] translate-y-[3px] gap-x-4 rounded-[30px] border-[2px] border-[#f54943] font-bold text-black transition-all duration-500 hover:text-black"
+              className="mt-[2px] translate-y-[3px] gap-x-4 rounded-[30px] border-[2px] border-accent font-bold transition-all duration-500 hover:text-black"
               variant="outline"
             >
               <FaWhatsappSquare className="z-[40] h-[2vw] w-[2vw] text-green-500" />
@@ -51,7 +51,7 @@ const Banner = () => {
           </Link>
           <div className="flex items-center gap-[0]">
             <IoCall className="z-[40] ml-[1vw] h-[2vw] w-[2vw] rotate-[25deg] text-blue-600" />
-            <span>+91 8595338705</span>
+            <span className="text-white">+91 8595338705</span>
           </div>
           <Link href="https://www.youtube.com/@cybernous">
             <FaYoutube className="z-[40] ml-[2vw] h-[3vw] w-[3vw] text-red-600" />

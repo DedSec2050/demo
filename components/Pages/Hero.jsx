@@ -44,7 +44,7 @@ const Hero = () => {
             <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
               {/* Text  */}
               <div className="my-0 flex h-[12vh] max-h-[230px] w-[44vw] max-w-[260px] items-center justify-center md:h-[12vh] md:w-[17vw]">
-                <Image width={442} height={196} src={logold} alt="hero-logo" />
+                <Image width={150} height={150} src={logold} alt="hero-logo" />
               </div>
               {/* <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
                
@@ -58,24 +58,21 @@ const Hero = () => {
                 />
               </div> */}
 
-              <hr className="mx-auto my-2 h-1 w-48 rounded border-0 bg-accent dark:bg-gray-700 md:my-4" />
-              <div className="xl:translate-y-[-100px]">
+              <div className="">
                 <span className="text-clamptitle font-bold">
                   <h2>CISSP 10X Simplified!</h2>
                 </span>
               </div>
-              <div className="relative mt-4 flex flex-col text-center xl:translate-y-[-100px] xlg:translate-y-[-140px]">
-                <h1 className="text-clampheader font-[700] xl:mt-[-80px] xlg:mt-0 xxl:text-[2.5vw]">
-                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero xl:text-[2.9rem] xlg:text-clampheader">
-                    Give me 100 Days &<br className="hidden xl:flex"></br> I
-                    will get you CISSP Certified
+              <div className="relative flex translate-y-[-30px] flex-col text-center sm:my-8 md:translate-y-0">
+                <h1 className="flex flex-col text-clampheader font-[700] xl:mt-[-80px] xxl:text-[2.5vw]">
+                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero xl:text-[2.5rem] xlg:text-[2.5rem]">
+                    Give me 100 Days &{" "}
                   </span>
-                  {/* <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero">
-                    {" "}
-                    
-                  </span> */}
+                  <span className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-transparent drop-shadow-hero xl:text-[2.5rem] xlg:text-[2.5rem]">
+                    I will get you CISSP Certified
+                  </span>
                 </h1>
-                <div className="flex flex-col justify-center gap-4 md:flex-row xl:gap-10">
+                <div className="flex flex-col justify-center gap-4 md:flex-row xl:gap-10 xl:pt-4">
                   <Link href="https://calendly.com/cisspsuccess">
                     <Button
                       variant="outline"
@@ -95,7 +92,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col items-center justify-center gap-6 rounded-[30px] border-opacity-[50%] bg-opacity-[10%] from-[#739DED66] to-[#A8AEE000] py-6 md:bg-gradient-to-l md:px-[60px] xl:translate-y-[-70px] xlg:translate-y-[-150px]">
+              <div className="flex flex-col items-center justify-center gap-6 rounded-[30px] border-opacity-[50%] bg-opacity-[10%] from-[#739DED66] to-[#A8AEE000] py-6 md:bg-gradient-to-l md:px-[60px]">
                 <span className="flex w-full min-w-[240px] items-center justify-center text-[1.4rem] font-semibold">
                   Join our FREE Master Class{" "}
                 </span>
