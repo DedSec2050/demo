@@ -12,13 +12,13 @@ const Header = () => {
   return (
     <header className="w-[100%] py-3 text-white sm:px-[50px] xl:px-[8vw]">
       <div className="mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
-        <div className="flex max-h-[150px] w-[18vw] max-w-[200px]">
+        <div className="flex max-h-[180px] w-[20vw] max-w-[230px]">
           <Link href="/">
             <Image
               src="/assets/cyberlg.webp"
               alt="cybernous logo"
               width={150}
-              height={100}
+              height={130}
             />
           </Link>
         </div>
