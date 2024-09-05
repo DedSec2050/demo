@@ -33,7 +33,7 @@ const Footer = () => {
                 />
               </div>
               <div className="text-clamptextsm text-accent xl:text-[1.2rem] xxl:text-[1vw]">
-                Copyright @ 2024
+                Copyright @ Cybernous Infosec Consulting LLP
               </div>
               <div className="text-clamptextsm xl:text-[1.2rem] xxl:text-[1vw]">
                 CISSP Success Toolkit
