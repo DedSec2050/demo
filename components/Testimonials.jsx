@@ -29,7 +29,7 @@ async function fetchDataFromFirestore() {
   querySnapshot.forEach((doc) => {
     data.push({ id: doc.id, ...doc.data() });
   });
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
@@ -39,15 +39,15 @@ const Page8 = () => {
     if (40 < text.length)
       return (
         <>
-          <p className="px-10">
+          <span className="px-10">
             {parse("<p>" + text.slice(0, 100) + "...</p>")}
-          </p>
+          </span>
         </>
       );
     else if (100 < text.length) {
       return (
         <>
-          <p>{parse("<p>" + text + "</p>")}</p>
+          <span>{parse("<p>" + text + "</p>")}</span>
           {/* <p>{text.slice(0, 40)}</p>
           <p>{text.slice(41, 75)}</p>
           <p>{text.slice(76, 100)}</p> */}
@@ -67,7 +67,7 @@ const Page8 = () => {
     fetchData();
   }, []);
   const testimonialDataList = testiData;
-  console.log(testimonialDataList);
+  // console.log(testimonialDataList);
 
   return (
     // Slideshow Testimonials section

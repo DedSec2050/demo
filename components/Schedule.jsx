@@ -15,47 +15,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-const TableData = [
-  {
-    courseName: "Course 1",
-    startDate: "20 July 2024",
-    numberOfHours: "160(Cohort)",
-    batchType: "Weekend",
-    trainingMode: "Online",
-    trainingSchedule: "Sat 8:30 AM - 12:30 PM IST",
-    batchStatus: "Closed",
-    enrollmentStatus: "Enroll Now",
-  },
-  {
-    courseName: "Course 1",
-    startDate: "20 July 2024",
-    numberOfHours: "160(Cohort)",
-    batchType: "Weekend",
-    trainingMode: "Offline",
-    trainingSchedule: "Sat 8:30 AM - 12:30 PM IST",
-    batchStatus: "Open",
-    enrollmentStatus: "Enroll Now",
-  },
-  {
-    courseName: "Course 1",
-    startDate: "20 July 2024",
-    numberOfHours: "160(Cohort)",
-    batchType: "Weekend",
-    trainingMode: "Online",
-    trainingSchedule: "Sat 8:30 AM - 12:30 PM IST",
-    batchStatus: "Closed",
-    enrollmentStatus: "Enroll Now",
-  },
-];
-
 async function fetchDataFromFirestore() {
   const querySnapshot = await getDocs(collection(db, "schedule"));
-  console.log(querySnapshot);
+  // console.log(querySnapshot);
   const data = [];
   querySnapshot.forEach((doc) => {
     data.push({ id: doc.id, ...doc.data() });
   });
-  console.log(data);
+  // console.log(data);
   return data;
 }
 
@@ -64,14 +31,14 @@ const Page5 = () => {
   useEffect(() => {
     async function fetchData() {
       const data = await fetchDataFromFirestore();
-      console.log(data[0]);
+      // console.log(data[0]);
       setschData(data[0].scheduleData);
     }
     // console.log(testiData);
     fetchData();
   }, []);
   const scheduleDataList = schData;
-  console.log(scheduleDataList);
+  // console.log(scheduleDataList);
 
   return (
     <section>
