@@ -153,39 +153,6 @@ export default function RootLayout({ children }) {
         />
 
         {/* Google Tag Manager */}
-        <Script
-          defer
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16584736238"
-        ></Script>
-        <Script
-          defer
-          id="google-tag-manager-script"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16584736238');
-            `,
-          }}
-        />
-        <Script
-          defer
-          src="https://www.googletagmanager.com/gtag/js?id=G-804MQWV9JY"
-        ></Script>
-        {/* Script for google analytics  */}
-        <Script
-          defer
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-804MQWV9JY');
-          `,
-          }}
-        />
 
         {/* Structured Data */}
         <Script
@@ -208,22 +175,7 @@ export default function RootLayout({ children }) {
         {children}
 
         {/* Additional Scripts */}
-        <Script
-          defer
-          src="https://www.googletagmanager.com/gtag/js?id=GJE148Z2662"
-        ></Script>
-        <Script
-          defer
-          id="google-analytics-1"
-          dangerouslySetInnerHTML={{
-            __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GJE148Z2662');
-    `,
-          }}
-        />
+
         <Script
           defer
           src="https://www.googletagmanager.com/gtag/js?id=G-JE148Z2662"

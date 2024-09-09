@@ -47,7 +47,7 @@ const Page7 = () => {
           <div className="relative mt-[45px] flex w-full rounded-[30px] border-2 bg-transparent bg-gradient-to-l from-[#739DED66] to-[#A8AEE000] p-10">
             <Image
               src={photo}
-              priority
+              loading="lazy"
               height={1281}
               width={2056}
               alt="comparison"
