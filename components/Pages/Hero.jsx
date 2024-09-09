@@ -34,6 +34,7 @@ const Hero = () => {
           <div className="flex w-full flex-col-reverse items-center justify-center md:flex-row">
             <div className="relative z-[1] mb-[60px] mt-[40px] hidden h-full w-[40%] items-center justify-start drop-shadow-xl sm:mt-0 md:mb-0 xl:flex">
               <Image
+                priority
                 width={424}
                 height={692}
                 src={trainer}

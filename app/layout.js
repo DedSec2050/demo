@@ -122,6 +122,7 @@ export default function RootLayout({ children }) {
       <body className="bg-primary">
         {/* LinkedIn Tag Manager */}
         <Script
+          defer
           id="linkedin-tag-manager-init"
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -133,6 +134,7 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
+          defer
           id="linkedin-tag-manager-script"
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -152,10 +154,11 @@ export default function RootLayout({ children }) {
 
         {/* Google Tag Manager */}
         <Script
-          async
+          defer
           src="https://www.googletagmanager.com/gtag/js?id=AW-16584736238"
         ></Script>
         <Script
+          defer
           id="google-tag-manager-script"
           dangerouslySetInnerHTML={{
             __html: `
@@ -167,11 +170,12 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
-          async
+          defer
           src="https://www.googletagmanager.com/gtag/js?id=G-804MQWV9JY"
         ></Script>
         {/* Script for google analytics  */}
         <Script
+          defer
           id="google-analytics"
           dangerouslySetInnerHTML={{
             __html: `
@@ -185,6 +189,7 @@ export default function RootLayout({ children }) {
 
         {/* Structured Data */}
         <Script
+          defer
           id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -192,6 +197,7 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
+          defer
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -203,10 +209,11 @@ export default function RootLayout({ children }) {
 
         {/* Additional Scripts */}
         <Script
-          async
+          defer
           src="https://www.googletagmanager.com/gtag/js?id=GJE148Z2662"
         ></Script>
         <Script
+          defer
           id="google-analytics-1"
           dangerouslySetInnerHTML={{
             __html: `
@@ -218,10 +225,11 @@ export default function RootLayout({ children }) {
           }}
         />
         <Script
-          async
+          defer
           src="https://www.googletagmanager.com/gtag/js?id=G-JE148Z2662"
         ></Script>
         <Script
+          defer
           id="google-analytics-2"
           dangerouslySetInnerHTML={{
             __html: `
@@ -233,7 +241,10 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
+        <Script
+          defer
+          src="https://checkout.razorpay.com/v1/checkout.js"
+        ></Script>
       </body>
     </html>
   );
