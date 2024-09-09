@@ -1,18 +1,13 @@
 import React from "react";
 
-import Slider from "../Slider";
-import HeroSlider from "../HeroSlider";
 import Image from "next/image";
-import logo from "../../public/assets/HeroSection/herologo.webp";
+// import logo from "../../public/assets/HeroSection/herologo.webp";
 import logold from "../../public/assets/HeroSection/cyberlogold.webp";
 
 import trainer from "../../public/assets/HeroSection/herotrainer.webp";
-import back from "../../public/assets/bgmotion.gif";
-import Marquee from "react-fast-marquee";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import VideoPlayer from "../VidPlayr";
-import { Input } from "../ui/input";
 import LeadGen from "./LeadGen";
 
 const imageStyle = {
