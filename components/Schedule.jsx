@@ -106,10 +106,22 @@ const Page5 = () => {
                       >
                         {data.batchStatus}
                       </TableCell>
-                      <TableCell className="border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]">
-                        <Link href="https://cybernous.newzenler.com/courses/cissp-success-toolkit/buy">
+                      <TableCell
+                        className={
+                          "border-2 border-accent text-center font-medium md:text-[0.9vw] xxl:py-[40px] xxl:text-[1.3vw]"
+                        }
+                      >
+                        <Link
+                          className={`${data.batchStatus == "Closed" && "pointer-events-none"}`}
+                          href={
+                            "https://cybernous.newzenler.com/courses/cissp-success-toolkit/buy"
+                          }
+                        >
                           <Button
-                            className="rounded-[30px] transition-all duration-500"
+                            className={
+                              "rounded-[30px] transition-all duration-500" +
+                              `${data.batchStatus == "Closed" && " bg-gray-300 text-gray-500"}`
+                            }
                             variant="outline"
                           >
                             {data.enrollmentStatus}
