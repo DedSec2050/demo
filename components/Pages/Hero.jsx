@@ -44,7 +44,13 @@ const Hero = () => {
             <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
               {/* Text  */}
               <div className="my-0 flex h-[12vh] max-h-[230px] w-[44vw] max-w-[260px] items-center justify-center md:h-[12vh] md:w-[17vw]">
-                <Image width={150} height={150} src={logold} alt="hero-logo" />
+                <Image
+                  width={150}
+                  height={150}
+                  src={logold}
+                  priority
+                  alt="hero-logo"
+                />
               </div>
               {/* <div className="relative z-[1] my-6 flex w-full flex-col items-center justify-start gap-y-6 md:h-[640px] md:py-0 xl:w-[65%]">
                

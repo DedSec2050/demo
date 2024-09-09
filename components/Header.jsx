@@ -36,7 +36,7 @@ const Header = () => {
             <BsLinkedin className="z-[40] ml-[3vw] h-[2vw] w-[2vw] overflow-hidden rounded-[3px] bg-white text-blue-500" />
           </Link> */}
         </div>
-        <Link href="https://cybernous.newzenler.com/login">
+        <Link href="https://cybernous.newzenler.com/login" prefetch={false}>
           <Button className="z-40 hidden w-[7rem] justify-around rounded-[1.3rem] hover:border-2 hover:border-accent hover:bg-transparent hover:text-white xl:flex xl:text-[17px] xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]">
             Sign-In
           </Button>

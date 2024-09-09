@@ -26,6 +26,7 @@ const Nav = () => {
       {links.map((link, index) => {
         return (
           <Link
+            prefetch={false}
             href={link.path}
             key={index}
             className={`${link.path === pathname && "border-b-2 border-accent text-accent"} text-clamptextsm font-bold uppercase transition-all hover:text-accent xl:px-8 xl:text-[1.5rem] xxl:text-clamptextnav`}
