@@ -11,6 +11,7 @@ export default function robots() {
           "/payment",
           "/assets",
           "/_next",
+          "/articles",
         ],
       },
     ],
