@@ -80,11 +80,11 @@ export default async function Post({ params: { slug } }) {
       ),
     },
   };
-  console.log(post);
-  console.log(post.currentSlug);
-  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}`);
-  console.log(post.author);
-  console.log(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.currentSlug}`);
+  // console.log(post);
+  // console.log(post.currentSlug);
+  // console.log(`${process.env.NEXT_PUBLIC_BASE_URL}`);
+  // console.log(post.author);
+  // console.log(`${process.env.NEXT_PUBLIC_BASE_URL}/blog/${post.currentSlug}`);
   // Generate JSON schema
   const jsonLd = {
     "@context": "https://schema.org",
@@ -118,6 +118,7 @@ export default async function Post({ params: { slug } }) {
     <>
       <Head>
         <script
+          defer
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />

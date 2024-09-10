@@ -26,12 +26,6 @@ export default {
       validation: (rule) => rule.required(),
     },
     {
-      name: "source",
-      type: "string",
-      title: "Source of the Article",
-      description: "Provide the source of the article, if it's external",
-    },
-    {
       name: "readingTime",
       type: "number",
       title: "Reading Time (in minutes)",

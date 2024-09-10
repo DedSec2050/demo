@@ -9,11 +9,11 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PostCard({ title, description, image, slug }) {
+export default function PostCard({ title, description, image, slug, type }) {
   // console.log(slug);
   return (
     <Link
-      href={`blog/${slug}`}
+      href={`${type}/${slug}`}
       className="transition-all duration-300 hover:translate-y-[-10px]"
     >
       <Card className="bg-elevated text-white">

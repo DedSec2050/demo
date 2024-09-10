@@ -42,6 +42,7 @@ const Blog = async () => {
               description={post.smallDescription}
               image={urlForImage(post.titleImage)}
               slug={post.currentSlug}
+              type="blog"
             />
           ))}
         </div>
