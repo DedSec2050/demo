@@ -9,7 +9,7 @@ import { IoCall } from "react-icons/io5";
 
 const Banner = () => {
   return (
-    <section className="flex-grow-1 hidden w-full flex-col items-center justify-center bg-banner text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
+    <section className="flex-grow-1 hidden w-full flex-col items-center justify-center bg-none text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
       <div className="py-1 text-center font-bold text-white">
         Enrolments open for{" "}
         <Button
@@ -35,7 +35,7 @@ const Banner = () => {
         </Button>{" "}
       </div>
 
-      <div className="hidden items-center justify-center gap-4 rounded-[10px] lg:flex">
+      <div className="hidden items-center justify-center gap-4 rounded-[10px] xl:flex">
         <div className="ml-4 flex w-full min-w-[250px] translate-y-[0px] flex-row items-center justify-between">
           <Link
             href="https://chat.whatsapp.com/GUnUOJtxzD7DrGu1YlUDCd"
