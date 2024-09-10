@@ -32,7 +32,7 @@ const Article = async () => {
       <Header />
       <section className="flex flex-col items-center justify-center p-4 md:p-8 lg:p-20">
         <h1 className="font-700 mb-[30px] text-[40px] font-bold text-accent">
-          CyberSecurity Certification Blogs
+          CyberSecurity Certification Articles
         </h1>
         <div className="grid max-w-xl grid-cols-1 gap-x-[30px] gap-y-[30px] md:grid-cols-2 xl:max-w-[1280px] xl:grid-cols-3 xxl:grid-cols-4">
           {posts.map((post) => (
