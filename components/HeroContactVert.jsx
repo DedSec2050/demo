@@ -4,7 +4,7 @@
 // import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import React, { useRef, useState } from "react";
-import image from "@/public/assets/Resources/resource.webp";
+// import image from "@/public/assets/Resources/resource.webp";
 
 // import "./contact.css";
 // import BackWrapper from "@/components/BackWrapper";
@@ -13,7 +13,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 import { parsePhoneNumberFromString } from "libphonenumber-js";
-import Image from "next/legacy/image";
+// import Image from "next/legacy/image";
 
 const ContactUs = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -75,8 +75,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-x-[5vw]">
-      <div className="flex-grow-1 flex flex-row items-center justify-center sm:p-10">
+    <div className="flex flex-col items-center justify-center">
+      <div className="flex-grow-1 flex flex-row items-center justify-center sm:py-10 sm:pr-10">
         <form
           action=""
           className="flex flex-col items-center justify-center gap-x-2 rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-2 text-black md:gap-x-2 md:px-8 xl:gap-x-[5vw]"

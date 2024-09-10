@@ -11,6 +11,7 @@ import Floater from "@/components/Floater";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import HeroContactVert from "@/components/HeroContactVert";
+import BlogsList from "./BlogsList";
 
 export async function generateMetadata({ params: { slug } }) {
   // console.log(slug);
@@ -129,7 +130,7 @@ export default async function Post({ params: { slug } }) {
         <Header />
         <BackWrapper />
         <Floater />
-        <div className="flex min-h-screen flex-col xl:flex-row">
+        <div className="flex min-h-screen flex-col md:flex-row">
           <div className="flex items-center justify-center rounded-md px-[30px] py-8 text-center shadow-md sm:px-[50px] xl:px-[4vw]">
             <div className="md:w-2xl mx-auto flex items-center justify-center text-justify xl:w-full">
               <div className="flex w-full flex-col items-center justify-center py-8 text-accent">
@@ -185,8 +186,9 @@ export default async function Post({ params: { slug } }) {
               </div>
             </div>
           </div>
-          <div className="py-8">
+          <div className="flex flex-col py-8">
             <HeroContactVert />
+            <BlogsList />
           </div>
         </div>
         <Footer />
