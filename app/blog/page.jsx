@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
 import Floater from "@/components/Floater";
-import BlogData from "@/components/data/BlogData";
 
 const getPosts = async () => {
   const query = groq`*[_type == 'blog'] | order(_createdAt desc){

@@ -1,5 +1,3 @@
-import { validation } from "sanity";
-
 export default {
   name: "blog",
   type: "document",
