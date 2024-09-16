@@ -69,7 +69,7 @@ module.exports = {
       colors: {
         primary: "#060F38",
         accent: {
-          DEFAULT: "#FFD600",
+          DEFAULT: "#f3ad2a",
           hover: "#11D1C8",
         },
         resources: {
