@@ -125,7 +125,6 @@ export default async function Post({ params: { slug } }) {
       </Head>
       <div className="">
         <Header />
-        <BackWrapper />
         <Floater />
         <div className="min-h-screen">
           <div className="flex items-center justify-center rounded-md px-[30px] py-8 text-center shadow-md sm:px-[50px] xl:px-[10vw]">

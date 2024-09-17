@@ -24,18 +24,26 @@ const BlogsList = async () => {
   const articleposts = await getArticles();
   console.log(posts);
   return (
-    <section className="hidden flex-col md:flex">
+    <section className="mx-2 hidden flex-col md:flex">
       <strong className="text-accent">Other Domain Summaries</strong>
       {articleposts.map((post, id) => (
-        <Link key={id} href={`/articles/${post.currentSlug}`}>
-          {id + 1}. {post.title}
+        <Link
+          key={id}
+          className="transistion-all my-2 rounded-md border-2 border-accent px-4 font-semibold duration-500 hover:translate-y-[-2px]"
+          href={`/articles/${post.currentSlug}`}
+        >
+          {post.title}
         </Link>
       ))}
       <br />
       <strong className="text-accent">Blogs List</strong>
       {posts.map((post, id) => (
-        <Link key={id} href={`/blog/${post.currentSlug}`}>
-          {id + 1}. {post.title}
+        <Link
+          key={id}
+          className="transistion-all my-2 rounded-md border-2 border-accent px-4 font-semibold duration-500 hover:translate-y-[-2px]"
+          href={`/blog/${post.currentSlug}`}
+        >
+          {post.title}
         </Link>
       ))}
     </section>

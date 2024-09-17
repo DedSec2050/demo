@@ -81,6 +81,9 @@ const ContactUs = () => {
           action=""
           className="flex flex-col items-center justify-center gap-x-2 rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed34] to-[#A8AEE000] px-2 text-black md:gap-x-2 md:px-8 xl:gap-x-[5vw]"
         >
+          <h2 className="pt-4 text-[1.4rem] font-bold text-accent">
+            Contact Form
+          </h2>
           <div className="input-box my-4 flex flex-col gap-y-2">
             <label htmlFor="contact-name" className="font-semibold text-white">
               Full Name

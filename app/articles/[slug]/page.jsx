@@ -128,12 +128,10 @@ export default async function Post({ params: { slug } }) {
       </Head>
       <div className="">
         <Header />
-        <BackWrapper />
-        <Floater />
         <div className="flex min-h-screen flex-col md:flex-row">
-          <div className="flex items-center justify-center rounded-md px-[30px] py-8 text-center shadow-md sm:px-[50px] xl:px-[4vw]">
+          <div className="flex items-start justify-center rounded-md px-[30px] pt-10 text-center shadow-md sm:px-[50px] xl:px-[4vw]">
             <div className="md:w-2xl mx-auto flex items-center justify-center text-justify xl:w-full">
-              <div className="flex w-full flex-col items-center justify-center py-8 text-accent">
+              <div className="flex w-full flex-col items-center justify-center text-accent">
                 <div className="flex w-full flex-col rounded-[30px] border-2 border-accent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
                   <time
                     dateTime={post._createdAt}
