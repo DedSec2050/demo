@@ -9,18 +9,9 @@ import { IoCall } from "react-icons/io5";
 
 const Banner = () => {
   return (
-    <section className="flex-grow-1 hidden w-full flex-col items-center justify-center bg-none text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
+    <section className="flex-grow-1 hidden w-full flex-col items-center justify-center bg-matteblue text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
       <div className="py-1 text-center font-bold text-white">
-        Enrolments open for{" "}
-        <Button
-          variant=""
-          className="pointer-events-none mx-2 px-4 py-4 transition-all duration-500 hover:text-black"
-        >
-          {" "}
-          <Link href="\" className="font-bold md:text-[1.2rem]">
-            Batch-37
-          </Link>
-        </Button>{" "}
+        Enrolments open for Batch-37
         <Button
           variant=""
           className="mx-2 mt-2 rounded-[30px] bg-accent px-4 py-4 text-black transition-all duration-500 hover:text-white sm:mt-0"
