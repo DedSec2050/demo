@@ -16,7 +16,7 @@ export default function PostCard({ title, description, image, slug, type }) {
       href={`${type}/${slug}`}
       className="transition-all duration-300 hover:translate-y-[-10px]"
     >
-      <Card className="bg-elevated text-white">
+      <Card className="bg-elevated text-white transition-all duration-1000 hover:bg-gradient-to-b hover:from-primary hover:via-[#34438333] hover:to-[#ffffff0c]">
         <CardHeader className="my-2 gap-5">
           <CardTitle>{`${title.substring(0, 50)} ...`}</CardTitle>
           <div className="max-h-[210px] overflow-hidden">
