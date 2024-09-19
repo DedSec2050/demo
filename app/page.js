@@ -24,7 +24,7 @@ import SuccessStories from "@/components/Pages/SuccessStories";
 export default function Home() {
   return (
     <div className="">
-      <BackWrapper />
+      {/* <BackWrapper /> */}
       {/* <Popup /> */}
       {/* <div className="">text</div> */}
       <Banner />

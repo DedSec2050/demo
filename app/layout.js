@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-primary">
         {/* LinkedIn Tag Manager */}
-        <Script
+        {/* <Script
           defer
           id="linkedin-tag-manager-init"
           type="text/javascript"
@@ -145,7 +145,7 @@ export default function RootLayout({ children }) {
               })(window.lintrk);
             `,
           }}
-        />
+        /> */}
 
         {/* Google Tag Manager */}
 
