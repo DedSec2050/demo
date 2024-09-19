@@ -12,6 +12,11 @@ const nextConfig = {
         destination: "/terms-conditions",
         permanent: false,
       },
+      {
+        source: "/",
+        destination: "/CISSP",
+        permanent: false,
+      },
     ];
   },
   images: {
