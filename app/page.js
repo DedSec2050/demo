@@ -49,7 +49,7 @@ export default function Home() {
         <Testimonials />
         <QualityAssr />
         <Benefits />
-        <Floater />
+        {/* <Floater /> */}
         <AccordionWrap />
       </main>
       <Footer />
