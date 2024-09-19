@@ -42,7 +42,10 @@ export const metadata = {
     "FREE CyberSecurity Resources",
   ],
   verification: {
-    google: "give verification id here",
+    google: "3V77gokHFiFVtwpFrn6FH7tDTq8Q9KwUlNJG05_an0",
+  },
+  alternates: {
+    canonical: "https://www.cybernous.com/",
   },
   twitter: {
     card: "summary_large_image",
@@ -111,14 +114,6 @@ const jsonLdBlogs = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        {/* Metadata */}
-        <meta
-          name="google-site-verification"
-          content="3V77gokHFiFVtwpFrn6FH7tDTq8Q9KwUlNJG05_an0"
-        />
-        <link rel="canonical" href="https://www.cybernous.com/" />
-      </Head>
       <body className="bg-primary">
         {/* LinkedIn Tag Manager */}
         <Script

@@ -4,10 +4,7 @@ import { Button } from "../ui/button";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-import {
-  parsePhoneNumberFromString,
-  isPossiblePhoneNumber,
-} from "libphonenumber-js";
+import { parsePhoneNumberFromString } from "libphonenumber-js";
 // Imports FOR decoding the abbreviation of COUNTRIES
 import countries from "i18n-iso-countries";
 import en from "i18n-iso-countries/langs/en.json";
@@ -27,7 +24,7 @@ async function fetchDataFromFirestore() {
       id: doc.id,
       ...doc.data(),
     }));
-    // console.log(docsData);
+    console.log(docsData);
     return docsData;
   } catch (e) {
     console.log(e);
@@ -45,7 +42,7 @@ const LeadGen = () => {
     fetchData();
   }, []);
 
-  // console.log(leadData);
+  console.log(leadData);
 
   // Duplicacy Validation On Basis Of a email as Primary Key
   const isDuplicate = (getMail) => {
@@ -59,46 +56,39 @@ const LeadGen = () => {
     gotPhone,
     gotCname,
   ) => {
-    // console.log(gotEmail);
-    // console.log(gotPhone);
-    // console.log(gotCountryCode);
-    // console.log(gotCname);
+    console.log(gotEmail);
+    console.log(gotPhone);
+    console.log(gotCountryCode);
+    console.log(gotCname);
     const docRef = await addDoc(collection(db, "LeadGen"), {
       email: gotEmail,
       phone: gotPhone,
       countryName: gotCname,
       countryCode: gotCountryCode,
     });
-    // console.log("Document written with ID", docRef.id);
+    console.log("Document written with ID", docRef.id);
     window.location.reload();
   };
+  const [flag, setFlag] = useState(false);
 
   // Phone - Email validation
   const [phoneNumber, setPhoneNumber] = useState("");
   const [tempMail, setTempMail] = useState("");
   const email = useRef(null);
   const phno = useRef(null);
+  const fname = useRef(null);
 
   const [valid, setValid] = useState(false);
   const handleChange = (value) => {
     setPhoneNumber(value);
-    // console.log(value);
+    console.log(value);
     setValid(validatePhoneNumber(value));
-    console.log(validatePhoneNumber(value));
   };
 
   const validatePhoneNumber = (phoneNumber) => {
     const phoneNumberObject = parsePhoneNumberFromString("+" + phoneNumber);
-    // console.log(phoneNumberObject);
-    // console.log({
-    //   "National Number is :": phoneNumberObject
-    //     ? phoneNumberObject.nationalNumber
-    //     : "Not Valid",
-    //   "Country Code is :": phoneNumberObject
-    //     ? phoneNumberObject.countryCallingCode
-    //     : "Not Valid",
-    // });
-    if (phoneNumberObject && phoneNumberObject.isValid()) {
+    console.log(phoneNumberObject);
+    if (phoneNumberObject && phoneNumberObject.isValid) {
       return phoneNumberObject.isValid();
     }
 
@@ -107,14 +97,15 @@ const LeadGen = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(phno.current.value);
-    console.log(
-      "Entered field is PHNO status " + validatePhoneNumber(phno.current.value),
-    );
+    console.log(phno);
+    console.log(fname);
     try {
       //   console.log(email.current.value.includes("@"));
       if (!email.current.value.includes("@")) {
         alert("Enter a valid Email");
+        return;
+      } else if (!fname.current.value) {
+        alert("Please Enter your name");
         return;
       } else if (!valid) {
         alert("Enter valid Ph no");
@@ -130,8 +121,12 @@ const LeadGen = () => {
         console.log(flag);
         console.log(tempMail);
         if (flag) {
-          // console.log(flag);
+          console.log(flag);
           alert("You have already enrolled for Master CLASS!");
+          setFlag(true);
+          setTimeout(() => {
+            window.location.href = "https://calendly.com/cisspsuccess";
+          }, 5000);
           email.current.value = "";
           setPhoneNumber("");
           return;
@@ -157,6 +152,10 @@ const LeadGen = () => {
           //   registerLeadDoc()
         }
         alert("Response Submitted");
+        setFlag(true);
+        setTimeout(() => {
+          window.location.href = "https://calendly.com/cisspsuccess";
+        }, 5000);
         email.current.value = "";
         setPhoneNumber("");
       }
@@ -173,8 +172,21 @@ const LeadGen = () => {
     <div className="ml-2 flex w-full justify-center md:ml-0 md:gap-x-6">
       <form
         action=""
-        className="flex flex-col md:flex-row md:gap-x-6 [&>div>input]:text-black"
+        className="flex flex-col gap-y-4 text-left [&>div>input]:text-black"
       >
+        <div className="input-box flex flex-col md:gap-y-0">
+          <label htmlFor="contact-name" className="font-semibold text-white">
+            Full Name
+          </label>
+          <input
+            id="contact-name"
+            type="text"
+            className="my-[5px] h-[35px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
+            placeholder="Enter your name"
+            ref={fname}
+            required
+          />
+        </div>
         <div className="input-box flex flex-col md:gap-y-0">
           <label htmlFor="contact-email" className="font-semibold text-white">
             Email Address
@@ -213,8 +225,15 @@ const LeadGen = () => {
           type="submit"
           onClick={handleSubmit}
         >
-          Subscribe
+          Book a FREE Consultation
         </Button>
+        {flag ? (
+          <span className="pb-4 font-bold text-grn md:text-[1.2rem]">
+            Congratulations! You will receive a call from us soon!
+          </span>
+        ) : (
+          <></>
+        )}
       </form>
     </div>
   );
