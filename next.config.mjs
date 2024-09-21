@@ -8,6 +8,12 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: "/courses",
+        destination:
+          "https://courses.cybernous.com/courses/cissp-success-toolkit/buy",
+        permanent: false,
+      },
+      {
         source: "/terms",
         destination: "/terms-conditions",
         permanent: false,
