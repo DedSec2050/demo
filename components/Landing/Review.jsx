@@ -11,17 +11,20 @@ const Review = () => {
         <Image
           src={review1}
           className="xl:h-[80px] xl:w-[30%]"
+          alt="review for CISSP google"
           responsive
         ></Image>
         <Image
           src={review2}
           className="xl:h-[80px] xl:w-[30%]"
           responsive
+          alt="review for CISSP TrustPilot"
         ></Image>
         <Image
           src={review3}
           className="xl:h-[80px] xl:w-[30%]"
           responsive
+          alt="review for CISSP Udemy"
         ></Image>
       </div>
     </section>
