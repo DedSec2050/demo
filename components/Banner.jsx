@@ -42,7 +42,7 @@ const Banner = () => {
           </Link>
           <div className="flex items-center gap-[0]">
             <IoCall className="z-[40] ml-[1vw] h-[2vw] w-[2vw] rotate-[25deg] text-blue-600" />
-            <span className="text-white">+91 9927026801</span>
+            <span className="text-white">+91 8595338705</span>
           </div>
           <Link href="https://www.youtube.com/@cybernous">
             <FaYoutube className="z-[40] ml-[2vw] h-[3vw] w-[3vw] text-red-600" />
