@@ -167,11 +167,11 @@ export default async function Post({ params: { slug } }) {
                   alt={post.title + " CISSP-training-in-bangalore"}
                   className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
                 ></Image>
-                <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col">
+                <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col leading-tight">
                   <PortableText
                     components={components}
                     value={post.content}
-                    className="flex w-full flex-col items-center justify-center text-justify text-white"
+                    className="flex w-full flex-col items-center justify-center text-white"
                   />
                 </div>
               </div>
