@@ -164,7 +164,7 @@ export default async function Post({ params: { slug } }) {
                   src={urlForImage(post.titleImage)}
                   height={500}
                   width={500}
-                  alt={post.title}
+                  alt={post.title + " CISSP-training-in-bangalore"}
                   className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
                 ></Image>
                 <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col">
