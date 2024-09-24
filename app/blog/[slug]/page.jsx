@@ -165,9 +165,9 @@ export default async function Post({ params: { slug } }) {
                   height={500}
                   width={500}
                   alt={post.title + " CISSP-training-in-bangalore"}
-                  className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
+                  className="h-100 w-100 smm:max-w-[310px] mb-[30px] mt-[30px] object-contain md:max-w-full"
                 ></Image>
-                <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col leading-tight">
+                <div className="prose-md prose prose-invert flex w-full max-w-full flex-col text-left leading-tight">
                   <PortableText
                     components={components}
                     value={post.content}
