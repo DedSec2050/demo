@@ -1,7 +1,7 @@
 import { JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Head from "next/head";
+// import Head from "next/head";
 
 export const metadata = {
   metadataBase: new URL("https://www.cybernous.com/"),
@@ -12,14 +12,14 @@ export const metadata = {
   description:
     "Cybernous is the best platform for CISSP Certification Online Training. Explore expert-led CISSP preparation to advance your skills. Enroll now!",
   openGraph: {
-    url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
+    url: "https://cybernous.com/assets/og-image/image.png",
     type: "website",
     title: "Cybernous CISSP Online Training",
     description:
       "Cybernous is the best platform to provide CISSP Certification Online Training. Explore expert-led CISSP preparation and training to advance your skills. Enroll now!",
     images: [
       {
-        url: "https://demo-gamma-ebon.vercel.app/assets/og-image/image.png",
+        url: "https://cybernous.com/assets/og-image/image.png",
         width: 1200,
         height: 630,
         alt: "Cybernous",
