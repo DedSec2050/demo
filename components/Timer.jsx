@@ -37,7 +37,7 @@ const CountdownTimer = () => {
       // Render the countdown timer
       return (
         <span className="px-2 py-2 text-white">
-          {hours} Hr: {minutes < 10 ? `0${minutes}` : minutes} m :{" "}
+          {hours} Hr : {minutes < 10 ? `0${minutes}` : minutes} m :{" "}
           {seconds < 10 ? ` 0${seconds}` : seconds} s
         </span>
       );
