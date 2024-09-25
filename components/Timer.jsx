@@ -11,7 +11,7 @@ const CountdownTimer = () => {
   const curr = new Date();
   const initialTargetDate =
     Date.now() + curr.getSeconds() * 1000 * curr.getMinutes() * curr.getHours();
-  console.log("initial data :" + initialTargetDate);
+  // console.log("initial data :" + initialTargetDate);
   const [targetDate, setTargetDate] = useState(initialTargetDate);
   const [isCompleted, setIsCompleted] = useState(false);
 

@@ -46,6 +46,7 @@ const getPost = async (slug) => {
   const query = groq`*[_type== 'blog' && slug.current == $slug]
       {
       _id,
+        seo,
         title,
         smallDescription,
         content,

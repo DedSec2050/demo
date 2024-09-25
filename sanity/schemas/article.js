@@ -10,6 +10,11 @@ export default {
       validation: (rule) => rule.required(),
     },
     {
+      title: "Seo",
+      name: "seo",
+      type: "seoMetaFields",
+    },
+    {
       name: "slug",
       type: "slug",
       title: "Slug of the Article",
