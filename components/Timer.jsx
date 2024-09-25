@@ -10,8 +10,8 @@ const CountdownTimer = () => {
   // Initialize the state to 5 seconds in the future
   const curr = new Date();
   const initialTargetDate =
-    Date.now() +
-    curr.getSeconds() * 1000 * curr.getMinutes() * 60 * curr.getHours(); // Set initial countdown to 5 seconds
+    Date.now() + curr.getSeconds() * 1000 * curr.getMinutes() * curr.getHours();
+  console.log("initial data :" + initialTargetDate);
   const [targetDate, setTargetDate] = useState(initialTargetDate);
   const [isCompleted, setIsCompleted] = useState(false);
 
