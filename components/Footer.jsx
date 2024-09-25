@@ -7,6 +7,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { AiFillYoutube } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa6";
 import { SocialIcon } from "react-social-icons";
+import Gmap from "./Gmap";
 
 const Footer = () => {
   return (
@@ -46,6 +47,9 @@ const Footer = () => {
                 Karnataka 560063
                 <br />
                 Timing: 9AM-10PM IST
+              </div>
+              <div className="">
+                <Gmap />
               </div>
             </div>
             <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%] xxl:justify-around">
