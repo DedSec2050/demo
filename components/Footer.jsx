@@ -38,6 +38,15 @@ const Footer = () => {
               <div className="text-clamptextsm xl:text-[1.2rem] xxl:text-[1vw]">
                 CISSP Success Toolkit
               </div>
+              <div className="text-left text-clamptextsm font-semibold leading-normal xl:text-[1.2rem] xxl:text-[1vw]">
+                Cybernous | CISSP Certification, CISSP Courses, CISSP Online
+                Training
+                <br />
+                Address: 167, 6th Main Rd, Vinayak Nagar, Yelahanka, Bengaluru,
+                Karnataka 560063
+                <br />
+                Timing: 9AM-10PM IST
+              </div>
             </div>
             <div className="mt-4 flex w-[100%] items-start justify-between md:w-[50%] xxl:justify-around">
               <div className="Company flex flex-col text-white xxl:text-[1vw] [&>a:hover]:text-accent">
