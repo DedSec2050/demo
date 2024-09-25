@@ -3,10 +3,9 @@ import React from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { FaWhatsappSquare } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
-import { BsLinkedin } from "react-icons/bs";
 import { IoCall } from "react-icons/io5";
-
+import Timer from "./Timer";
+const countdownDate = new Date("2024-05-19T23:18:07");
 const Banner = () => {
   return (
     <section className="flex-grow-1 hidden w-full flex-col items-center justify-center bg-matteblue text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
@@ -44,12 +43,9 @@ const Banner = () => {
             <IoCall className="z-[40] ml-[1vw] h-[2vw] w-[2vw] rotate-[25deg] text-blue-600" />
             <span className="text-white">+91 8595338705</span>
           </div>
-          <Link href="https://www.youtube.com/@cybernous">
-            <FaYoutube className="z-[40] ml-[2vw] h-[3vw] w-[3vw] text-red-600" />
-          </Link>
-          <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
-            <BsLinkedin className="z-[40] ml-[3vw] h-[2.3vw] w-[2.3vw] overflow-hidden rounded-[3px] bg-white text-blue-500" />
-          </Link>
+          <div className="flex">
+            <Timer deadline={countdownDate} title={"discount ends"} />
+          </div>
         </div>
       </div>
     </section>
