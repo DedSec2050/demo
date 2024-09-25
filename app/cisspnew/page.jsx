@@ -18,6 +18,8 @@ import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
 import Tags from "@/components/Pages/Tags";
 import SuccessStories from "@/components/Pages/SuccessStories";
+import Slider from "@/components/CISSPLanding/Slider";
+import TagsBanner from "@/components/CISSPLanding/TagsBanner";
 
 export default function Home() {
   return (
@@ -27,12 +29,13 @@ export default function Home() {
       {/* <div className="">text</div> */}
       <Banner />
       <main className="">
-        <div className="">
+        <div className="bg-white [&>header]:text-black">
           <Header />
-          <Hero />
+          <Slider />
         </div>
+        <TagsBanner />
         <div className="lg:mt-[7vw] xl:mt-0">
-          <Tags />
+          {/* <Tags /> */}
           <SuccessStories />
         </div>
         <Guidelines />

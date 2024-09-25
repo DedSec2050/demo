@@ -1,8 +1,5 @@
 "use client";
-import React from "react";
-// Importing Swiper core and required modules
-// import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Swiper } from "swiper";
-import "./styles.css";
+
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Button } from "../ui/button";
@@ -11,9 +8,9 @@ import { Pagination, Autoplay } from "swiper/modules";
 // Import css for Navigation and Pagination modules
 import "swiper/css/pagination";
 
-const LandingSwiper = () => {
+const Slider = () => {
   return (
-    <section className="hidden md:flex [&>div]:h-[80dvh]">
+    <section className="hidden bg-white md:flex [&>div]:h-[55dvh]">
       <Swiper
         loop={true}
         pagination={{
@@ -24,7 +21,7 @@ const LandingSwiper = () => {
         className="mySwiper"
       >
         <SwiperSlide className="">
-          <div className="flex h-[80dvh] w-[100dvw] flex-col justify-center bg-slidebgOne bg-cover [&>div]:px-10 [&>div]:py-10">
+          <div className="flex h-[55dvh] w-[100dvw] flex-col justify-center bg-slidebgOne bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 px-10 py-10 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[2.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Scale New Heights
@@ -38,7 +35,7 @@ const LandingSwiper = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="">
-          <div className="flex h-[80dvh] w-[100dvw] flex-col justify-center bg-slidebgTwo bg-cover [&>div]:px-10 [&>div]:py-10">
+          <div className="flex h-[55dvh] w-[100dvw] flex-col justify-center bg-slidebgTwo bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 px-10 py-10 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[2.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Our Courses <br />
@@ -53,7 +50,7 @@ const LandingSwiper = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="">
-          <div className="flex h-[80dvh] w-[100dvw] flex-col justify-center bg-slidebgFour bg-cover [&>div]:px-10 [&>div]:py-10">
+          <div className="flex h-[55dvh] w-[100dvw] flex-col justify-center bg-slidebgFour bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 px-10 py-10 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[2.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Corporate Trainings
@@ -69,7 +66,7 @@ const LandingSwiper = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="">
-          <div className="flex h-[80dvh] w-[100dvw] flex-col justify-center bg-slidebgThree bg-cover [&>div]:px-10 [&>div]:py-10">
+          <div className="flex h-[55dvh] w-[100dvw] flex-col justify-center bg-slidebgThree bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[2.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Cybersecurity Consulting
@@ -89,4 +86,4 @@ const LandingSwiper = () => {
   );
 };
 
-export default LandingSwiper;
+export default Slider;

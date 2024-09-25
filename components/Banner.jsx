@@ -8,17 +8,17 @@ import Timer from "./Timer";
 const countdownDate = new Date("2024-05-19T23:18:07");
 const Banner = () => {
   return (
-    <section className="flex-grow-1 hidden w-full flex-col items-center justify-center bg-matteblue text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
+    <section className="flex-grow-1 w-full flex-col items-center justify-center bg-matteblue text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem]">
       <div className="py-1 text-center font-bold text-white">
         Enrolments open for Batch-37
         <Button
           variant=""
-          className="mx-2 mt-2 rounded-[30px] bg-accent px-4 py-4 text-black transition-all duration-500 hover:text-white sm:mt-0"
+          className="mx-2 h-[20px] bg-accent px-2 py-0 text-black transition-all duration-500 hover:text-white sm:mt-0 sm:px-4 sm:py-4 md:h-[44px]"
         >
           {" "}
           <Link
             href="https://courses.cybernous.com/courses/cissp-success-toolkit/buy"
-            className="text-[1.2rem] font-bold"
+            className="font-bold sm:text-[1.2rem]"
           >
             Enroll Now!
           </Link>
