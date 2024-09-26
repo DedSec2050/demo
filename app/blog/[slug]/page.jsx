@@ -15,7 +15,65 @@ export async function generateMetadata({ params: { slug } }) {
   // console.log(slug);
   const [post] = await getPost(slug);
   // console.log(post.smallDescription);
+
   try {
+    if (
+      post.seo |
+      post.seo.twitter |
+      post.seo.openGraph |
+      post.seo.seoKeywords
+    ) {
+      // var metakwords = "";
+      // for (let i = 0; i < post.seo.seoKeywords.length; i++) {
+      //   metakwords += post.seo.seoKeywords[i] + ", ";
+      // }
+      return {
+        title: post.seo.metaTitle,
+        description: post.seo.metaDescription,
+        keywords: post.seo.seoKeywords,
+        openGraph: {
+          title: post.seo.openGraph.title,
+          description: post.seo.openGraph.description,
+          url: "https://www.cybernous.com/blog/" + post.currentSlug,
+          siteName: post.seo.openGraph.siteName,
+          images: [
+            {
+              url: urlForImage(post.titleImage),
+              width: 800,
+              height: 600,
+              alt: post.title,
+            },
+          ],
+        },
+        twitter: {
+          card: post.seo.twitter.cardType,
+          title: post.title,
+          description: post.seo.metaDescription,
+          siteId: post.seo.twitter.site,
+          creator: post.seo.twitter.creator,
+          images: ["https://www.cybernous.com/assets/cyberlgb.webp"],
+        },
+      };
+    } else {
+      return {
+        title: post.seo.metaTitle,
+        description: post.smallDescription,
+        openGraph: {
+          title: post.title,
+          description: post.smallDescription,
+          images: [
+            {
+              url: urlForImage(post.titleImage),
+              width: 800,
+              height: 600,
+              alt: post.title,
+            },
+          ],
+        },
+      };
+    }
+  } catch (error) {
+    console.log(error);
     return {
       title: post.title,
       description: post.smallDescription,
@@ -31,12 +89,6 @@ export async function generateMetadata({ params: { slug } }) {
           },
         ],
       },
-    };
-  } catch (error) {
-    console.log(error);
-    return {
-      title: "Not Found",
-      description: "The page you are looking for does not exits",
     };
   }
 }
@@ -60,6 +112,26 @@ const getPost = async (slug) => {
 
 export default async function Post({ params: { slug } }) {
   const [post] = await getPost(slug);
+  if (post.seo) {
+    // console.log(post.seo);
+    // console.log("Meta title : " + post.seo.metaTitle);
+    // console.log("Meta desc : " + post.seo.metaDescription);
+    // var metakwords = "";
+    // for (let i = 0; i < post.seo.seoKeywords.length; i++) {
+    //   metakwords += post.seo.seoKeywords[i] + ", ";
+    // }
+    // console.log("Meta Keywords : " + post.seo.seoKeywords);
+    // OG section
+    // console.log("OG title : " + post.seo.openGraph.title);
+    // console.log("OG desc : " + post.seo.openGraph.description);
+    // console.log("OG siteName : " + post.seo.openGraph.siteName);
+    // Twitter section
+    // console.log("Twitter handle : " + post.seo.twitter.handle);
+    // console.log("Twitter site : " + post.seo.twitter.site);
+    // console.log("Twitter creator : " + post.seo.twitter.creator);
+    // console.log("Twitter cardType : " + post.seo.twitter.cardType);
+    // console.log("length : " + post.seo);
+  }
   // console.log(post.author);
 
   const components = {
