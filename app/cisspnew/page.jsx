@@ -22,6 +22,8 @@ import Slider from "@/components/CISSPLanding/Slider";
 import TagsBanner from "@/components/CISSPLanding/TagsBanner";
 import CISSPcontact from "@/components/CISSPLanding/CISSPcontact";
 import CISSPheader from "@/components/CISSPLanding/CISSPheader";
+import MovSlider from "@/components/CISSPLanding/MovSlider";
+
 export default function Home() {
   return (
     <div className="">
@@ -32,6 +34,7 @@ export default function Home() {
       <main className="">
         <div className="bg-white">
           <CISSPheader />
+          <MovSlider />
           <Slider />
           <TagsBanner />
           <CISSPcontact />
