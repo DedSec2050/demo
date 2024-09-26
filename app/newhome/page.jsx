@@ -48,7 +48,7 @@ export default function Home() {
           <Offers />
           <PartnerEco />
           <MoU />
-          <ProgramFeatures />
+          {/* <ProgramFeatures /> */}
         </div>
         <div className="lg:mt-[7vw] xl:mt-0">
           <SuccessStories />
