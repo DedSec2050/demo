@@ -22,7 +22,7 @@ const getArticles = async () => {
 const BlogsList = async () => {
   const posts = await getPosts();
   const articleposts = await getArticles();
-  console.log(posts);
+  // console.log(posts);
   return (
     <section className="mx-2 hidden flex-col md:flex">
       <strong className="text-accent">Other Domain Summaries</strong>

@@ -17,7 +17,65 @@ export async function generateMetadata({ params: { slug } }) {
   // console.log(slug);
   const [post] = await getPost(slug);
   // console.log(post.smallDescription);
+
   try {
+    if (
+      post.seo |
+      post.seo.twitter |
+      post.seo.openGraph |
+      post.seo.seoKeywords
+    ) {
+      // var metakwords = "";
+      // for (let i = 0; i < post.seo.seoKeywords.length; i++) {
+      //   metakwords += post.seo.seoKeywords[i] + ", ";
+      // }
+      return {
+        title: post.seo.metaTitle,
+        description: post.seo.metaDescription,
+        keywords: post.seo.seoKeywords,
+        openGraph: {
+          title: post.seo.openGraph.title,
+          description: post.seo.openGraph.description,
+          url: "https://www.cybernous.com/blog/" + post.currentSlug,
+          siteName: post.seo.openGraph.siteName,
+          images: [
+            {
+              url: urlForImage(post.titleImage),
+              width: 800,
+              height: 600,
+              alt: post.title,
+            },
+          ],
+        },
+        twitter: {
+          card: post.seo.twitter.cardType,
+          title: post.title,
+          description: post.seo.metaDescription,
+          siteId: post.seo.twitter.site,
+          creator: post.seo.twitter.creator,
+          images: ["https://www.cybernous.com/assets/cyberlgb.webp"],
+        },
+      };
+    } else {
+      return {
+        title: post.seo.metaTitle,
+        description: post.smallDescription,
+        openGraph: {
+          title: post.title,
+          description: post.smallDescription,
+          images: [
+            {
+              url: urlForImage(post.titleImage),
+              width: 800,
+              height: 600,
+              alt: post.title,
+            },
+          ],
+        },
+      };
+    }
+  } catch (error) {
+    console.log(error);
     return {
       title: post.title,
       description: post.smallDescription,
@@ -34,12 +92,6 @@ export async function generateMetadata({ params: { slug } }) {
         ],
       },
     };
-  } catch (error) {
-    console.log(error);
-    return {
-      title: "Not Found",
-      description: "The page you are looking for does not exits",
-    };
   }
 }
 
@@ -48,6 +100,7 @@ const getPost = async (slug) => {
   const query = groq`*[_type== 'article' && slug.current == $slug]
       {
       _id,
+        seo,
         title,
         smallDescription,
         content,
