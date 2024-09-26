@@ -20,7 +20,10 @@ const CountdownTimer = () => {
     if (isCompleted) {
       // Wait for a short period before reinitializing
       const timer = setTimeout(() => {
-        setTargetDate(Date.now() + 5000); // Reset to 5 seconds from now
+        setTargetDate(
+          Date.now() +
+            curr.getSeconds() * 1000 * curr.getMinutes() * curr.getHours(),
+        ); // Reset to 5 seconds from now
         setIsCompleted(false); // Reset completion state
       }, 1000); // Delay of 1 second after completion
       return () => clearTimeout(timer); // Clean up the timer

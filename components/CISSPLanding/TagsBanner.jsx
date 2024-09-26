@@ -5,12 +5,14 @@ import el from "@/public/assets/Icons/elearning.webp";
 import wl from "@/public/assets/Icons/whatsapp.webp";
 import Image from "next/image";
 import c1 from "@/public/assets/cissp/client/client1.webp";
+import c2 from "@/public/assets/cissp/client/client2.webp";
+import c3 from "@/public/assets/cissp/client/client3.webp";
 const TagsBanner = () => {
   return (
-    <section className="flex min-h-[70px] w-full items-center justify-center bg-black xl:[&>div]:px-10">
+    <section className="flex min-h-[70px] w-full flex-col items-center justify-center gap-y-4 bg-black md:flex-row md:gap-y-0 xl:[&>div]:px-10">
       <div className="flex items-center font-semibold text-white">
-        Ratings :{" "}
-        <div className="flex items-center gap-x-4 bg-green-500 px-2 [&>img]:h-[26px] [&>img]:w-[26px]">
+        <span className="hidden xs:flex">Ratings : </span>
+        <div className="flex items-center gap-x-4 px-2 [&>img]:h-[26px] [&>img]:w-[26px]">
           <Image
             src={gl}
             height={26}
@@ -37,16 +39,16 @@ const TagsBanner = () => {
         </div>
       </div>
       {/* Learnings Section  */}
-      <div className="flex items-center justify-center">
+      <div className="hidden items-center justify-center xs:flex">
         <div className="flex items-center px-2 [&>div]:h-[26px] [&>div]:w-[26px] [&>div]:overflow-hidden [&>div]:rounded-[50%] [&>div]:bg-red-500">
           <div>
             <Image src={c1} alt="client 1"></Image>
           </div>
           <div className="translate-x-[-10px]">
-            <Image src={c1} alt="client 2"></Image>
+            <Image src={c2} alt="client 2"></Image>
           </div>
           <div className="translate-x-[-20px]">
-            <Image src={c1} alt="client 2"></Image>
+            <Image src={c3} alt="client 2"></Image>
           </div>
         </div>
         <div className="flex h-[28px] translate-x-[-35px] items-center gap-x-2 rounded-xl bg-white px-4 text-black">
@@ -86,7 +88,7 @@ const TagsBanner = () => {
           <span className="px-2 font-semibold">250+ Courses</span>
         </div>
       </div>
-      <div className="px-4">
+      <div className="hidden px-4 xs:flex">
         <Image
           src={wl}
           height={26}
