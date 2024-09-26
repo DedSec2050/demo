@@ -51,7 +51,7 @@ const CountdownTimer = () => {
   return (
     <div className="px-2 text-accent">
       {/* Pass the targetDate state into the Countdown component */}
-      Claim Offer
+
       {!isCompleted && <Countdown date={targetDate} renderer={renderer} />}
     </div>
   );
