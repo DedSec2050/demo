@@ -1,0 +1,54 @@
+import Link from "next/link";
+
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+import { FaWhatsappSquare } from "react-icons/fa";
+import Image from "next/image";
+// components
+import Nav from "@/components/Nav";
+import MobileNav from "@/components/MobileNav";
+import { Button } from "../ui/button";
+const Header = () => {
+  return (
+    <header className="w-[100%] py-3 text-black sm:px-[50px] xl:px-[8vw]">
+      <div className="mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
+        <div className="flex max-h-[180px] w-[20vw] max-w-[230px]">
+          <Link href="/">
+            <Image
+              src="/assets/cyberlgb.webp"
+              alt="cybernous logo"
+              width={150}
+              height={130}
+            />
+          </Link>
+        </div>
+
+        {/* Desktop Nav  */}
+        <div className="hidden items-center gap-8 xl:flex">
+          <Nav />
+          {/* <Link href="https://wa.me/+918595338705">
+            <FaWhatsappSquare className="z-[40] ml-[3vw] h-[2vw] w-[2vw] text-green-500" />
+          </Link>
+          <Link href="https://www.youtube.com/@cybernous">
+            <FaYoutube className="z-[40] ml-[3vw] h-[2vw] w-[2vw] text-red-500" />
+          </Link>
+          <Link href="https://www.linkedin.com/company/cybenrousinfosecconsulting">
+            <BsLinkedin className="z-[40] ml-[3vw] h-[2vw] w-[2vw] overflow-hidden rounded-[3px] bg-white text-blue-500" />
+          </Link> */}
+        </div>
+        <Link href="https://courses.cybernous.com/login" prefetch={false}>
+          <Button className="z-40 hidden w-[7rem] justify-around rounded-[1.3rem] hover:border-2 hover:border-accent hover:bg-transparent hover:text-black xl:flex xl:text-[17px] xxl:h-[4vh] xxl:w-[11vw] xxl:py-4 xxl:text-[1vw]">
+            Sign-In
+          </Button>
+        </Link>
+        {/* mobile navigation  */}
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

@@ -19,6 +19,7 @@ const CountdownTimer = () => {
   useEffect(() => {
     if (isCompleted) {
       // Wait for a short period before reinitializing
+      var curr = new Date();
       const timer = setTimeout(() => {
         setTargetDate(
           Date.now() +
