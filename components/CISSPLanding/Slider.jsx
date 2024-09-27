@@ -16,7 +16,7 @@ const Slider = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 9000, disableOnInteraction: false }}
         modules={[Pagination, Autoplay]}
         className="mySwiper"
       >

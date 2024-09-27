@@ -166,6 +166,12 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify(jsonLdBlogs),
           }}
         />
+        <Script
+          id="aisensy-wa-widget"
+          src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
+          defer
+          widget-id="mQweNJ"
+        />
 
         {children}
 

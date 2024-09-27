@@ -16,13 +16,13 @@ const MovSlider = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 9000, disableOnInteraction: false }}
         modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide className="text-center">
-          <div className="bg-companyGold flex h-[35dvh] w-[100dvw] flex-col justify-center bg-cover [&>div]:px-10 [&>div]:py-10">
-            <div className="[&>.accent]:text-companyBlue top-0 font-bold leading-normal [&>h2]:text-[1.6rem] [&>h2]:text-black">
+          <div className="flex h-[35dvh] w-[100dvw] flex-col justify-center bg-companyGold bg-cover [&>div]:px-10 [&>div]:py-10">
+            <div className="top-0 font-bold leading-normal [&>.accent]:text-companyBlue [&>h2]:text-[1.6rem] [&>h2]:text-black">
               <h2>Give me 100 Days,</h2>
               <h2 className="accent">I will Get You</h2>
               {/* <h2 className="accent"></h2> */}
@@ -31,7 +31,7 @@ const MovSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="text-center">
-          <div className="bg-companyBlue flex h-[35dvh] w-[100dvw] flex-col justify-center bg-cover [&>div]:px-10 [&>div]:py-10">
+          <div className="flex h-[35dvh] w-[100dvw] flex-col justify-center bg-companyBlue bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[1.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Our Courses <br />
