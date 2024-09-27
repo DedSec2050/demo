@@ -9,7 +9,7 @@ import c2 from "@/public/assets/cissp/client/client2.webp";
 import c3 from "@/public/assets/cissp/client/client3.webp";
 const TagsBanner = () => {
   return (
-    <section className="flex min-h-[70px] w-full flex-col items-center justify-center gap-y-4 bg-black md:flex-row md:gap-y-0 xl:[&>div]:px-10">
+    <section className="flex min-h-[100px] w-full flex-col items-center justify-center gap-y-4 bg-black md:flex-row md:gap-y-0 xl:text-[1.2rem] xl:[&>div]:px-10">
       <div className="flex items-center font-semibold text-white">
         <span className="hidden xs:flex">Ratings : </span>
         <div className="flex items-center gap-x-4 px-2 [&>img]:h-[26px] [&>img]:w-[26px]">
@@ -40,7 +40,7 @@ const TagsBanner = () => {
       </div>
       {/* Learnings Section  */}
       <div className="hidden items-center justify-center xs:flex">
-        <div className="flex items-center px-2 [&>div]:h-[26px] [&>div]:w-[26px] [&>div]:overflow-hidden [&>div]:rounded-[50%] [&>div]:bg-red-500">
+        <div className="flex items-center px-2 [&>div]:h-[26px] [&>div]:w-[26px] [&>div]:overflow-hidden [&>div]:rounded-[50%] [&>div]:bg-red-500 xl:[&>div]:h-[35px] xl:[&>div]:w-[35px]">
           <div>
             <Image src={c1} alt="client 1"></Image>
           </div>
@@ -51,9 +51,10 @@ const TagsBanner = () => {
             <Image src={c3} alt="client 2"></Image>
           </div>
         </div>
-        <div className="flex h-[28px] translate-x-[-35px] cursor-pointer items-center gap-x-2 rounded-xl bg-white px-4 font-semibold text-black">
+        <div className="flex h-[28px] translate-x-[-35px] cursor-pointer items-center gap-x-2 rounded-xl bg-white px-4 font-semibold text-black xl:h-[35px] xl:rounded-[1rem]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
+            className="xl:h-[25px] xl:w-[25px]"
             width="17"
             height="17"
             viewBox="0 0 17 17"
@@ -78,7 +79,7 @@ const TagsBanner = () => {
           </svg>{" "}
           <span>100+ Success Stories</span>
         </div>
-        <div className="hidden items-center xl:flex xl:flex-row [&>img]:h-[26px]">
+        <div className="hidden items-center xl:flex xl:flex-row [&>img]:h-[26px] xl:[&>img]:h-[35px] xl:[&>img]:w-[35px]">
           <Image
             src={el}
             height={26}

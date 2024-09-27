@@ -69,6 +69,7 @@ module.exports = {
         slidebgFour: "url(/assets/LandingSwiper/SwiperSlide4.webp)",
         swiperOne: "url(/assets/LandingSwiper/SwiperSlide1.webp)",
         mou: "url(/assets/MoU/MoU.webp)",
+        usp: "url(/assets/usp-bg.webp)",
       },
       fontSize: {
         clampheader: "clamp(24px, 4vw, 60px)",

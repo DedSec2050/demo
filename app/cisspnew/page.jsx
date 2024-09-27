@@ -23,6 +23,7 @@ import TagsBanner from "@/components/CISSPLanding/TagsBanner";
 import CISSPcontact from "@/components/CISSPLanding/CISSPcontact";
 import CISSPheader from "@/components/CISSPLanding/CISSPheader";
 import MovSlider from "@/components/CISSPLanding/MovSlider";
+import USP from "@/components/USP";
 
 export default function Home() {
   return (
@@ -37,10 +38,10 @@ export default function Home() {
           <MovSlider />
           <Slider />
           <TagsBanner />
-          <CISSPcontact />
         </div>
         <div className="lg:mt-[7vw] xl:mt-0">
           {/* <Tags /> */}
+          <USP />
           <SuccessStories />
         </div>
         <Guidelines />
