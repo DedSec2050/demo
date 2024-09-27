@@ -7,6 +7,7 @@ import Link from "next/link";
 import { TiTickOutline } from "react-icons/ti";
 
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 // const courseData = {
 //   selfPaced: {
@@ -165,9 +166,14 @@ export default function courselist() {
               </div>
             ))}
           </div>
+          <div className="self-center py-4">
+            <Button className="bg-gradient-to-r from-[#9259fc] via-[#9259fc] to-[#8f59fc6e] font-semibold text-white">
+              Enroll Now
+            </Button>
+          </div>
         </div>
         <div className="overflow-hidden">
-          <div className="flex h-[70px] w-full items-center justify-center bg-gradient-to-r from-[#FD875B] to-[#FD875B6e] text-center text-[1.4rem] font-bold xl:text-[1.9rem]">
+          <div className="flex h-[70px] w-full items-center justify-center bg-gradient-to-r from-[#FD875B] to-[#FD875B6e] text-center text-[1.4rem] font-bold xl:text-[1.9rem] xlg:min-w-[450px]">
             <span className="px-4">
               Self Study +{" "}
               <span className="xl:text-[2.1rem]">Live Classes</span>
@@ -181,6 +187,11 @@ export default function courselist() {
               </div>
             ))}
           </div>
+          <div className="self-center py-4">
+            <Button className="bg-gradient-to-r from-[#FD875B] via-[#FD875B] to-[#FD875B6e] font-semibold text-white">
+              Enroll Now
+            </Button>
+          </div>
         </div>
         <div className="overflow-hidden">
           <div className="flex min-h-[70px] w-full items-center justify-center bg-gradient-to-r from-[#F04FB2] to-[#F04FB26e] text-center text-[1.4rem] font-bold leading-normal xl:text-[1.9rem]">
@@ -193,6 +204,11 @@ export default function courselist() {
                 <p>{item.index}</p>
               </div>
             ))}
+          </div>
+          <div className="self-center py-4">
+            <Button className="bg-gradient-to-r from-[#F04FB2] via-[#F04FB2] to-[#F04FB26e] font-semibold text-white">
+              Enroll Now
+            </Button>
           </div>
         </div>
       </div>

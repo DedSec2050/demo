@@ -51,11 +51,11 @@ const More = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
-            <span className="xl:text-[1.3rem]">More</span>
+          <NavigationMenuTrigger className="text-black">
+            <span className="text-black xl:text-[1.3rem]">More</span>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
               {components.map((component) => (
                 <Link
                   key={component.title}
