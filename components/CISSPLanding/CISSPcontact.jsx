@@ -76,10 +76,13 @@ const ContactUs = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-x-[5vw] xl:flex-row xl:gap-x-[20vw]">
-      <div className="flex-grow-1 flex flex-row items-center justify-center sm:p-10">
+      <h2 className="text-companyBlue py-4 text-[1.3rem] font-bold">
+        Join FREE Masterclass Today
+      </h2>
+      <div className="flex-grow-1 flex flex-row items-center justify-center py-2 sm:p-10">
         <form
           action=""
-          className="flex flex-col items-center justify-center gap-x-2 rounded-[25px] bg-transparent bg-gradient-to-l from-[#739eed6e] to-[#A8AEE000] px-2 text-black md:gap-x-2 md:px-8 xl:flex-row xl:gap-x-[5vw]"
+          className="border-companyGrn flex flex-col items-center justify-center gap-x-2 rounded-[25px] border-[0.5px] bg-transparent bg-gradient-to-l from-[#23c4afec] to-[#A8AEE000] px-2 py-2 text-black md:gap-x-2 md:px-8 xl:flex-row xl:gap-x-[5vw]"
         >
           <div className="input-box my-4 flex flex-col gap-y-2">
             <label htmlFor="contact-name" className="font-semibold text-black">

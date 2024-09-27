@@ -7,22 +7,22 @@ const nextConfig = {
         destination: "https://cybernous.newzenler.com/login",
         permanent: false,
       },
-      {
-        source: "/courses",
-        destination:
-          "https://courses.cybernous.com/courses/cissp-success-toolkit/buy",
-        permanent: false,
-      },
+      // {
+      //   source: "/courses",
+      //   destination:
+      //     "https://courses.cybernous.com/courses/cissp-success-toolkit/buy",
+      //   permanent: false,
+      // },
       {
         source: "/terms",
         destination: "/terms-conditions",
         permanent: false,
       },
-       {
-         source: "/",
-         destination: "/CISSP",
-         permanent: false,
-       },
+      {
+        source: "/",
+        destination: "/CISSP",
+        permanent: false,
+      },
     ];
   },
   images: {

@@ -80,6 +80,15 @@ module.exports = {
       },
       colors: {
         primary: "#060F38",
+        companyBlue: {
+          DEFAULT: "#060f38",
+        },
+        companyGold: {
+          DEFAULT: "#f3ad2a",
+        },
+        companyGrn: {
+          DEFAULT: "#23c4ae",
+        },
         accent: {
           DEFAULT: "#f3ad2a",
           hover: "#11D1C8",

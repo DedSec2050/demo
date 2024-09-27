@@ -51,7 +51,7 @@ const TagsBanner = () => {
             <Image src={c3} alt="client 2"></Image>
           </div>
         </div>
-        <div className="flex h-[28px] translate-x-[-35px] items-center gap-x-2 rounded-xl bg-white px-4 text-black">
+        <div className="flex h-[28px] translate-x-[-35px] cursor-pointer items-center gap-x-2 rounded-xl bg-white px-4 font-semibold text-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="17"
@@ -76,16 +76,18 @@ const TagsBanner = () => {
               </clipPath>
             </defs>
           </svg>{" "}
-          <span>70,000+ Learners</span>
+          <span>100+ Success Stories</span>
         </div>
-        <div className="flex items-center [&>img]:h-[26px]">
+        <div className="hidden items-center xl:flex xl:flex-row [&>img]:h-[26px]">
           <Image
             src={el}
             height={26}
             width={26}
             alt="number of courses offered"
           ></Image>
-          <span className="px-2 font-semibold">250+ Courses</span>
+          <span className="px-2 font-semibold leading-tight">
+            60+ Hours of Live Exam Pracice
+          </span>
         </div>
       </div>
       <div className="hidden px-4 xs:flex">

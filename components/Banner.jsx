@@ -8,14 +8,14 @@ import Timer from "./Timer";
 const countdownDate = new Date("2024-05-19T23:18:07");
 const Banner = () => {
   return (
-    <section className="flex-grow-1 min-h-[60px] w-full flex-col items-center justify-center bg-matteblue text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem] xl:min-h-[70px]">
+    <section className="flex-grow-1 min-h-[60px] w-full flex-col items-center justify-center bg-black text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem] xl:min-h-[70px] xl:text-[1.4rem]">
       <div className="py-1 text-center font-bold text-white">
         Enrolments open for Batch-37 With Festive Discount
       </div>
       <div className="flex items-center justify-center self-center">
         <Button
           variant=""
-          className="mx-2 h-[20px] self-center bg-accent px-2 py-0 text-black transition-all duration-500 hover:text-white sm:mt-0 sm:px-4 sm:py-4 md:h-[44px]"
+          className="mx-2 h-[20px] self-center bg-gradient-to-r from-[#FD875B] px-2 py-0 text-black transition-all duration-500 hover:text-white sm:mt-0 sm:px-4 sm:py-4 md:h-[44px]"
         >
           {" "}
           <Link

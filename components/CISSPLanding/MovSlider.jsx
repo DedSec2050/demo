@@ -21,21 +21,17 @@ const MovSlider = () => {
         className="mySwiper"
       >
         <SwiperSlide className="text-center">
-          <div className="flex h-[35dvh] w-[100dvw] flex-col justify-center bg-cover [&>div]:px-10 [&>div]:py-10">
-            <div className="top-0 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[1.6rem] [&>h2]:text-black">
-              <h2>
-                Scale New Heights
-                <br />
-                With
-              </h2>
-              <h2 className="accent">Cybernous</h2>
-              <h2 className="accent">Certification and</h2>
-              <h2 className="accent">Training</h2>
+          <div className="bg-companyGold flex h-[35dvh] w-[100dvw] flex-col justify-center bg-cover [&>div]:px-10 [&>div]:py-10">
+            <div className="[&>.accent]:text-companyBlue top-0 font-bold leading-normal [&>h2]:text-[1.6rem] [&>h2]:text-black">
+              <h2>Give me 100 Days,</h2>
+              <h2 className="accent">I will Get You</h2>
+              {/* <h2 className="accent"></h2> */}
+              <h2 className="accent">CISSP Certified</h2>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="text-center">
-          <div className="flex h-[35dvh] w-[100dvw] flex-col justify-center bg-blue-900 bg-cover [&>div]:px-10 [&>div]:py-10">
+          <div className="bg-companyBlue flex h-[35dvh] w-[100dvw] flex-col justify-center bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[1.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Our Courses <br />
@@ -51,16 +47,16 @@ const MovSlider = () => {
         </SwiperSlide>
         <SwiperSlide className="text-center">
           <div className="flex h-[35dvh] w-[100dvw] flex-col justify-center bg-cover [&>div]:px-10 [&>div]:py-10">
-            <div className="top-0 font-bold leading-normal text-black [&>.accent]:text-accent [&>h2]:text-[1.6rem] xl:[&>h2]:text-[3.4rem]">
+            <div className="top-0 font-bold leading-normal text-black [&>.accent]:text-black [&>h2]:text-[1.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
                 Corporate Trainings
                 <br />
               </h2>
-              <h2 className="accent">"Skill up your workforce</h2>
+              <h2 className="accent">"Skill up your workforce"</h2>
               {/* <h2 className="accent">personalized cybersecurity training"</h2> */}
             </div>
             <div className="relative flex w-full justify-center gap-x-2">
-              <Button>Learn More</Button>
+              <Button className="bg-companyGrn">Learn More</Button>
               <Button>Contact Us</Button>
             </div>
           </div>
