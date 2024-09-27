@@ -11,39 +11,27 @@ import {
 import Link from "next/link";
 const components = [
   {
-    title: "Articles",
-    href: "/docs/primitives/alert-dialog",
+    title: "Learn CISSP Mindset",
+    href: "coming-soon",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Courses",
-    href: "/course-list",
+    title: "Cryptography Masterclass",
+    href: "/coming-soon",
     description:
       "For sighted users to preview content available behind a link.",
   },
   {
-    title: "Mobile App",
-    href: "/",
+    title: "CISSP Domain Summaries",
+    href: "/coming-soon",
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
   {
-    title: "Contact Us",
-    href: "/contact-us",
+    title: "CISSP Twisters",
+    href: "/coming-soon",
     description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Privacy Policy",
-    href: "/privacypolicy",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Cookie Policy",
-    href: "/cookiepolicy",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
 ];
 const More = () => {
@@ -52,18 +40,19 @@ const More = () => {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-black">
-            <span className="text-black xl:text-[1.3rem]">More</span>
+            <span className="text-black xl:text-[1.3rem]">Resources</span>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
               {components.map((component) => (
-                <Link
+                <a
+                  target="_blank"
                   key={component.title}
-                  className="flex rounded-[10px] px-2 hover:bg-accent"
+                  className="flex rounded-[10px] px-2 font-semibold leading-tight hover:bg-accent"
                   href={component.href}
                 >
                   {component.title}
-                </Link>
+                </a>
               ))}
             </ul>
           </NavigationMenuContent>

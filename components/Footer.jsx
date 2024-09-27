@@ -8,7 +8,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa6";
 import { SocialIcon } from "react-social-icons";
 import Gmap from "./Gmap";
-
+import down from "@/public/GoogleDld/dld_ps.webp";
 const Footer = () => {
   return (
     <footer className="bg-elevated sm:px-[5vw]">
@@ -47,6 +47,15 @@ const Footer = () => {
                 Karnataka 560063
                 <br />
                 Timing: 9AM-10PM IST
+                <div className="max-w-[130px] py-2">
+                  <Link href="/" className="max-w-[130px] py-2">
+                    <Image
+                      src={down}
+                      alt="Download App on PlayStore"
+                      className="max-w-[130px] py-2"
+                    ></Image>
+                  </Link>
+                </div>
               </div>
               <div className="">
                 <Gmap />
