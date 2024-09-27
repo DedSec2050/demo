@@ -29,7 +29,7 @@ const Nav = () => {
             prefetch={false}
             href={link.path}
             key={index}
-            className={`${link.path === pathname && "border-b-2 border-accent text-accent"} text-clamptextsm font-bold uppercase transition-all hover:text-accent xl:px-4 xl:text-[1.3rem] xxl:text-clamptextnav`}
+            className={`${link.path === pathname && "border-b-2 border-accent text-accent"} text-clamptextsm font-bold capitalize transition-all hover:text-accent xl:px-4 xl:text-[1.3rem] xxl:text-clamptextnav`}
           >
             {link.name}
           </Link>
