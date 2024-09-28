@@ -36,7 +36,11 @@ export default function Home() {
         <div className="bg-white">
           <CISSPheader />
           <MovSlider />
+
           <Slider />
+          <div className="xl:[&>div]:hidden">
+            <CISSPcontact />
+          </div>
           <TagsBanner />
         </div>
         <div className="lg:mt-[7vw] xl:mt-0">

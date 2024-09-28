@@ -18,7 +18,7 @@ const USP = () => {
         </h3>
       </div>
       {/* Content Wrapper  */}
-      <div className="flex flex-col items-baseline px-10 md:flex-row [&>div>h3]:text-center [&>div>h3]:text-[1.3rem] [&>div>h3]:font-bold [&>div>h3]:text-companyGrn xl:[&>div>h3]:text-[2.1rem] [&>div>p]:text-center [&>div>p]:italic xl:[&>div>p]:text-[1.6rem] [&>div]:px-4">
+      <div className="flex flex-col items-baseline self-center px-10 md:flex-row [&>div>h3]:text-center [&>div>h3]:text-[1.3rem] [&>div>h3]:font-bold [&>div>h3]:text-companyGrn xl:[&>div>h3]:text-[2.1rem] [&>div>p]:text-center [&>div>p]:italic xl:[&>div>p]:text-[1.6rem] [&>div]:px-4">
         {/* Titles  1 */}
         <div className="flex flex-col justify-center leading-normal [&>div>div>h3]:text-[1.3rem] [&>div>div>h3]:font-bold xl:[&>div>div>h3]:text-[2.1rem] [&>div>div]:flex [&>div>div]:items-center [&>div>div]:pb-4 [&>div>p]:text-[1rem] xl:[&>div>p]:text-[1.4rem] [&>div]:my-4 [&>div]:self-center [&>div]:rounded-[15px] [&>div]:border-2 [&>div]:bg-black [&>div]:px-8 [&>div]:py-4 xl:[&>div]:max-w-[550px]">
           <h3>Our Passion</h3>
@@ -101,8 +101,12 @@ const USP = () => {
             <p>• Entire CISSP Broken down in 950+ Concepts</p>
             <p>• Avail all our Udemy Concept course for FREE </p>
             <p>
-              <Link href="https://www.udemy.com/user/manoj-kumar-sharma-2013/">
-                • Explore us on Udemy{" "}
+              •{" "}
+              <Link
+                href="https://www.udemy.com/user/manoj-kumar-sharma-2013/"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Explore us on Udemy{" "}
               </Link>
             </p>
           </div>

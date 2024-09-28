@@ -7,10 +7,17 @@ import { Button } from "../ui/button";
 import { Pagination, Autoplay } from "swiper/modules";
 // Import css for Navigation and Pagination modules
 import "swiper/css/pagination";
+import CISSPcontact from "./CISSPcontact";
 
 const Slider = () => {
   return (
     <section className="hidden bg-white md:flex [&>div]:h-[70dvh]">
+      <div
+        style={{ right: 0 }}
+        className="t-0 r-0 absolute z-[10] hidden h-[500px] w-[500px] items-center xl:flex [&>div]:max-h-[600px] [&>div]:rounded-[30px] [&>div]:bg-[#8889947a]"
+      >
+        <CISSPcontact />
+      </div>
       <Swiper
         loop={true}
         pagination={{
