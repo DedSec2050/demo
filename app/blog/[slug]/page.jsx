@@ -201,7 +201,14 @@ export default async function Post({ params: { slug } }) {
         <Floater />
         <div className="min-h-screen">
           <div className="flex items-center justify-center rounded-md px-[30px] py-8 text-center shadow-md sm:px-[50px] xl:px-[10vw]">
-            <div className="md:w-2xl mx-auto flex items-center justify-center text-justify xl:w-full">
+            <div className="md:w-2xl mx-auto flex flex-col items-center justify-center text-justify xl:w-full">
+              <Image
+                src={urlForImage(post.titleImage)}
+                height={500}
+                width={500}
+                alt={post.title + " CISSP-training-in-bangalore"}
+                className="h-100 w-100 mb-[30px] mt-[30px] object-contain smm:max-w-[310px] md:max-w-full xl:w-[1000px]"
+              ></Image>
               <div className="flex w-full flex-col items-center justify-center py-8 text-accent">
                 <div className="flex w-full flex-col rounded-[30px] border-2 border-accent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
                   <time
@@ -233,13 +240,7 @@ export default async function Post({ params: { slug } }) {
                     </div>
                   </div>
                 </div>
-                <Image
-                  src={urlForImage(post.titleImage)}
-                  height={500}
-                  width={500}
-                  alt={post.title + " CISSP-training-in-bangalore"}
-                  className="h-100 w-100 mb-[30px] mt-[30px] object-contain smm:max-w-[310px] md:max-w-full"
-                ></Image>
+
                 <div className="prose prose-lg prose-invert flex w-full max-w-full flex-col text-left leading-tight md:prose-xl md:leading-snug">
                   <PortableText
                     components={components}

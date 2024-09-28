@@ -183,7 +183,14 @@ export default async function Post({ params: { slug } }) {
         <Header />
         <div className="flex min-h-screen flex-col md:flex-row">
           <div className="flex items-start justify-center rounded-md px-[30px] pt-10 text-center shadow-md sm:px-[50px] xl:px-[4vw]">
-            <div className="md:w-2xl mx-auto flex items-center justify-center text-justify xl:w-full">
+            <div className="md:w-2xl mx-auto flex flex-col items-center justify-center text-justify xl:w-full">
+              <Image
+                src={urlForImage(post.titleImage)}
+                height={500}
+                width={500}
+                alt={post.title}
+                className="h-100 w-100 mb-[30px] mt-[30px] object-contain xl:w-[900px]"
+              ></Image>
               <div className="flex w-full flex-col items-center justify-center text-accent">
                 <div className="flex w-full flex-col rounded-[30px] border-2 border-accent bg-gradient-to-t from-[#739DED66] to-[#A8AEE000] p-6">
                   <time
@@ -220,13 +227,7 @@ export default async function Post({ params: { slug } }) {
                     </div>
                   </div>
                 </div>
-                <Image
-                  src={urlForImage(post.titleImage)}
-                  height={500}
-                  width={500}
-                  alt={post.title}
-                  className="h-100 w-100 mb-[30px] mt-[30px] object-contain"
-                ></Image>
+
                 <div className="prose prose-2xl prose-invert flex w-full max-w-full flex-col">
                   <PortableText
                     components={components}
