@@ -20,7 +20,7 @@ import Tags from "@/components/Pages/Tags";
 import SuccessStories from "@/components/Pages/SuccessStories";
 import Slider from "@/components/CISSPLanding/Slider";
 import TagsBanner from "@/components/CISSPLanding/TagsBanner";
-import CISSPcontact from "@/components/CISSPLanding/CISSPcontact";
+import CISSPcontact2 from "@/components/CISSPLanding/CISSPcontact";
 import CISSPheader from "@/components/CISSPLanding/CISSPheader";
 import MovSlider from "@/components/CISSPLanding/MovSlider";
 import USP from "@/components/USP";
@@ -39,7 +39,7 @@ export default function Home() {
 
           <Slider />
           <div className="xl:[&>div]:hidden">
-            <CISSPcontact />
+            <CISSPcontact2 />
           </div>
           <TagsBanner />
         </div>

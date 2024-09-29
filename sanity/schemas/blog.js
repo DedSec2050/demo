@@ -1,3 +1,5 @@
+import { validation } from "sanity";
+
 export default {
   name: "blog",
   type: "document",
@@ -58,6 +60,16 @@ export default {
         },
         {
           type: "image",
+          fields: [
+            {
+              name: "alt",
+              type: "string",
+              title: "Alt text",
+              options: {
+                isHighlighted: true,
+              },
+            },
+          ],
         },
       ],
     },

@@ -52,7 +52,22 @@ export default {
       type: "array",
       title: "Content",
       validation: (rule) => rule.required(),
-      of: [{ type: "block" }, { type: "image" }],
+      of: [
+        { type: "block" },
+        {
+          type: "image",
+          fields: [
+            {
+              name: "alt",
+              type: "string",
+              title: "Alt text",
+              options: {
+                isHighlighted: true,
+              },
+            },
+          ],
+        },
+      ],
     },
     {
       name: "publishedAt",

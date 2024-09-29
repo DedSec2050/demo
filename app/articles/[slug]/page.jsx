@@ -124,7 +124,7 @@ export default async function Post({ params: { slug } }) {
           {/* {console.log(slug)} */}
           <Image
             src={urlForImage(value.asset)}
-            alt={slug || "blog image"}
+            alt={value.alt ? value.alt : "article image"}
             width={800}
             height={500}
             className="object-contain"

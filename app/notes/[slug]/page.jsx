@@ -138,10 +138,10 @@ export default async function Post({ params: { slug } }) {
     types: {
       image: ({ value }) => (
         <div className="my-8 flex justify-center">
-          {/* {console.log(slug)} */}
+          {/* {console.log(value.alt)} */}
           <Image
             src={urlForImage(value.asset)}
-            alt={slug || "blog image"}
+            alt={value.alt ? value.alt : "cybernous"}
             width={800}
             height={500}
             className="object-contain"
