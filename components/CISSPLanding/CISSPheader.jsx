@@ -8,7 +8,10 @@ import More from "../More";
 const Header = () => {
   return (
     <header className="w-[100%] py-3 text-black sm:px-[50px] xl:px-[8vw]">
-      <div className="mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
+      <div
+        style={{ zIndex: 100 }}
+        className="z-100 relative mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]"
+      >
         <div className="flex h-[40px] w-[150px] max-w-[250px] xl:h-[60px] xl:w-[240px]">
           <Link href="/">
             <Image

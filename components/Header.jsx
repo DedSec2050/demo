@@ -12,7 +12,7 @@ import More from "./More";
 const Header = () => {
   return (
     <header className="w-[100%] py-3 text-white sm:px-[50px] xl:px-[8vw]">
-      <div className="mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
+      <div className="relative z-[100] mx-auto flex items-center justify-between px-[1.5em] xxl:h-[10vh]">
         <div className="flex h-[40px] w-[150px] max-w-[250px] xl:h-[60px] xl:w-[240px]">
           <Link href="/">
             <Image

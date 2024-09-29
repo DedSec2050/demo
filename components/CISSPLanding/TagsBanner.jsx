@@ -7,34 +7,45 @@ import Image from "next/image";
 import c1 from "@/public/assets/cissp/client/client1.webp";
 import c2 from "@/public/assets/cissp/client/client2.webp";
 import c3 from "@/public/assets/cissp/client/client3.webp";
+import Link from "next/link";
 const TagsBanner = () => {
   return (
     <section className="flex min-h-[100px] w-full flex-col items-center justify-center gap-y-4 bg-black md:flex-row md:gap-y-0 xl:text-[1.2rem] xl:[&>div]:px-10">
       <div className="flex items-center font-semibold text-white">
         <span className="hidden xs:flex">Ratings : </span>
-        <div className="flex items-center gap-x-4 px-2 [&>img]:h-[26px] [&>img]:w-[26px]">
-          <Image
-            src={gl}
-            height={26}
-            width={26}
-            alt="google rating for cybernous"
-          ></Image>
+        <div className="flex items-center gap-x-4 px-2 [&>a>img]:h-[26px] [&>a>img]:w-[26px]">
+          <Link
+            href="https://www.cybernous.com/cisspnew"
+            rel="nofollow"
+            target="_blank"
+          >
+            <Image
+              src={gl}
+              height={26}
+              width={26}
+              alt="google rating for cybernous"
+            ></Image>
+          </Link>
           <span>4.1/5</span>
 
-          <Image
-            src={tl}
-            height={26}
-            width={26}
-            alt="trustpilot rating for cybernous"
-          ></Image>
+          <Link href="#">
+            <Image
+              src={tl}
+              height={26}
+              width={26}
+              alt="trustpilot rating for cybernous"
+            ></Image>
+          </Link>
           <span>4.9/5</span>
 
-          <Image
-            src={ul}
-            height={26}
-            width={26}
-            alt="udemy rating for cybernous"
-          ></Image>
+          <Link href="#">
+            <Image
+              src={ul}
+              height={26}
+              width={26}
+              alt="udemy rating for cybernous"
+            ></Image>
+          </Link>
           <span>4.5/5</span>
         </div>
       </div>
