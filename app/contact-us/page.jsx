@@ -1,32 +1,88 @@
 "use client";
-import Banner from "@/components/Banner";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import React, { useRef, useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import React, { useRef, useState } from "react";
-import "./contact.css";
-import BackWrapper from "@/components/BackWrapper";
-import Floater from "@/components/Floater";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 import { parsePhoneNumberFromString } from "libphonenumber-js";
-import {
-  isPossiblePhoneNumber,
-  isValidPhoneNumber,
-  validatePhoneNumberLength,
-} from "libphonenumber-js";
-import { Phone } from "lucide-react";
+// Imports FOR decoding the abbreviation of COUNTRIES
+import countries from "i18n-iso-countries";
+import en from "i18n-iso-countries/langs/en.json";
+
+// REGISTER THE LOCALE DATA
+countries.registerLocale(en);
+
+// FireStore CODE
+import { db } from "@/app/firebaseConfig";
+import { collection, getDocs, addDoc } from "firebase/firestore";
+import Banner from "@/components/Banner";
+import Floater from "@/components/Floater";
+import BackWrapper from "@/components/BackWrapper";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+// Fetch Data from firestore
+async function fetchDataFromFirestore() {
+  try {
+    const querySnapshot = await getDocs(collection(db, "queries_Contact"));
+    const docsData = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    console.log(docsData);
+    return docsData;
+  } catch (e) {
+    console.log(e);
+  }
+}
 
 const ContactUs = () => {
+  const [leadData, setLeadData] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchDataFromFirestore();
+      setLeadData(data);
+    }
+    fetchData();
+  }, []);
+
+  console.log(leadData);
+
+  // Duplicacy Validation On Basis Of a email as Primary Key
+  const isDuplicate = (getMail) => {
+    return leadData.some((data) => data.email === getMail);
+  };
+
+  // Register if not Duplicate
+  const registerLeadDoc = async (
+    gotEmail,
+    gotCountryCode,
+    gotPhone,
+    gotCname,
+  ) => {
+    console.log(gotEmail);
+    console.log(gotPhone);
+    console.log(gotCountryCode);
+    console.log(gotCname);
+    const docRef = await addDoc(collection(db, "queries_Contact"), {
+      email: gotEmail,
+      phone: gotPhone,
+      countryName: gotCname,
+      countryCode: gotCountryCode,
+      query: message.current.value,
+    });
+    console.log("Document written with ID", docRef.id);
+    window.location.reload();
+  };
+  const [flag, setFlag] = useState(false);
+
+  // Phone - Email validation
   const [phoneNumber, setPhoneNumber] = useState("");
-  // const [fname, setFname] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [query, setQuery] = useState("");
+  const [tempMail, setTempMail] = useState("");
   const email = useRef(null);
-  const query = useRef(null);
-  const fname = useRef(null);
   const phno = useRef(null);
+  const fname = useRef(null);
+  const message = useRef(null);
 
   const [valid, setValid] = useState(false);
   const handleChange = (value) => {
@@ -45,20 +101,76 @@ const ContactUs = () => {
     return false;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(phno);
+    console.log(fname);
+    console.log(message.current.value);
     try {
-      if (!valid) {
+      //   console.log(email.current.value.includes("@"));
+      if (!email.current.value.includes("@")) {
+        alert("Enter a valid Email");
+        return;
+      } else if (!fname.current.value) {
+        alert("Please Enter your name");
+        return;
+      } else if (!valid) {
         alert("Enter valid Ph no");
         return;
+        // } else if (message.current.value) {
+        //   console.log(message.current.value);
+        //   alert(message.current.value);
+      } else {
+        console.log(email.current.value);
+        //   console.log(fname.current.value);
+        console.log(
+          parsePhoneNumberFromString("+" + phoneNumber).nationalNumber,
+        );
+        setTempMail(email.current.value);
+        let flag = isDuplicate(email.current.value);
+        console.log(flag);
+        console.log(tempMail);
+        if (flag) {
+          console.log(flag);
+          alert(
+            "You have an existing ticket of query with us! Please wait for our response",
+          );
+          setFlag(true);
+          // setTimeout(() => {
+          //   window.location.href = "https://calendly.com/cisspsuccess";
+          // }, 2000);
+          email.current.value = "";
+          setPhoneNumber("");
+          return;
+        } else {
+          console.log(email.current.value);
+          console.log(phno);
+          console.log(parsePhoneNumberFromString("+" + phoneNumber));
+          console.log(
+            parsePhoneNumberFromString("+" + phoneNumber).countryCallingCode,
+          );
+          console.log(
+            parsePhoneNumberFromString("+" + phoneNumber).nationalNumber,
+          );
+          await registerLeadDoc(
+            email.current.value,
+            parsePhoneNumberFromString("+" + phoneNumber).countryCallingCode,
+            parsePhoneNumberFromString("+" + phoneNumber).nationalNumber,
+            countries.getName(
+              parsePhoneNumberFromString("+" + phoneNumber).country,
+              "en",
+            ),
+          );
+          //   registerLeadDoc()
+        }
+        alert("Response Submitted");
+        setFlag(true);
+        setTimeout(() => {
+          window.location.href = "https://www.cybernous.com/thank-you";
+        }, 2000);
+        email.current.value = "";
+        setPhoneNumber("");
       }
-      console.log(email.current.value);
-      console.log(fname.current.value);
-      console.log(parsePhoneNumberFromString("+" + phoneNumber).nationalNumber);
-
-      console.log(query.current.value);
-      alert("Response Submitted");
     } catch (e) {
       console.log(e);
       alert("Enter all the fields");
@@ -67,9 +179,6 @@ const ContactUs = () => {
     // if (validatePhoneNumber(document.getElementById("contact-phone").value))
     // console.log(value);
   };
-
-  // Collecting values
-  // const handleFname()
 
   return (
     <section>
@@ -80,59 +189,48 @@ const ContactUs = () => {
       <h2 className="text-center text-clamptitle font-bold text-accent">
         Contact Form
       </h2>
-      <div className="flex flex-col items-center justify-center gap-x-[5vw] md:flex-row xl:gap-x-[20vw]">
-        <div className="flex-grow-1 flex flex-row items-center justify-center p-10 lg:max-w-[50%]">
+      {/* wrapper div  */}
+      <div className="flex flex-col items-center justify-center md:flex-row">
+        <div className="ml-2 flex w-[50%] translate-y-8 items-center justify-center pb-8 md:ml-0 md:gap-x-6">
           <form
             action=""
-            className="items-center justify-center rounded-lg text-black sm:border-2 sm:bg-elevated sm:px-4 md:ml-[20%] md:px-8"
+            className="flex flex-col gap-x-4 gap-y-4 rounded-[25px] border-[0.5px] border-companyGrn bg-transparent bg-gradient-to-tl from-[#23c4afec] to-[#A8AEE000] px-4 pt-4 text-left text-black [&>div>label]:text-white [&>div]:px-4"
           >
-            <div className="input-box my-4 flex flex-col gap-y-2">
-              <label
-                for="contact-name"
-                htmlFor=""
-                className="font-semibold text-white"
-              >
+            <div className="input-box flex flex-col md:gap-y-0">
+              <label htmlFor="contact-name" className="font-semibold">
                 Full Name
               </label>
               <input
                 id="contact-name"
                 type="text"
-                className="field w-[280px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
+                className="my-[5px] h-[35px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
                 placeholder="Enter your name"
                 ref={fname}
                 required
               />
             </div>
-            <div className="input-box my-4 flex flex-col gap-y-2">
-              <label
-                for="contact-email"
-                htmlFor=""
-                className="font-semibold text-white"
-              >
+            <div className="input-box flex flex-col md:gap-y-0">
+              <label htmlFor="contact-email" className="font-semibold">
                 Email Address
               </label>
               <input
                 id="contact-email"
                 type="email"
-                className="w-[280px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
+                className="my-[5px] h-[35px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
                 placeholder="Enter your email"
                 ref={email}
                 required
               />
             </div>
-            <div className="input-box my-4 flex flex-col gap-y-2">
-              <label
-                for="contact-phone"
-                htmlFor=""
-                className="font-semibold text-white"
-              >
+            <div className="input-box flex flex-col">
+              <label htmlFor="contact-phone" className="font-semibold">
                 Phone number
               </label>
               <PhoneInput
                 id="contact-phone"
                 country="in"
                 type="text"
-                className="w-[280px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
+                className="rounded-md p-1 text-black active:bg-accent md:w-[280px] md:max-w-[350px] [&>input]:max-w-[278px]"
                 inputProps={{
                   required: true,
                 }}
@@ -141,69 +239,69 @@ const ContactUs = () => {
                 ref={phno}
                 placeholder="Enter your Phone number"
               />
-              {!valid && (
-                <p className="text-red-300">Enter a valid Phone number</p>
-              )}
+              {/* {!valid && <p className="text-red-300">Enter a valid Phone number</p>} */}
             </div>
-            <div className="input-box my-4 flex flex-col gap-y-2">
-              <label
-                for="contact-queries"
-                htmlFor=""
-                className="font-semibold text-white"
-              >
-                Your Queries
+            <div className="input-box flex flex-col md:gap-y-0">
+              <label htmlFor="contact-email" className="font-semibold">
+                Query
               </label>
-              <textarea
-                id="contact-queries"
-                cols="40"
-                className="field max-w-[400px] rounded-md p-1 pb-10 text-black active:bg-accent"
-                placeholder="Enter your Queries"
-                ref={query}
+              <input
+                id="query-message"
+                type="text"
+                className="my-[5px] h-[35px] rounded-md p-1 pb-[100px] pt-4 active:bg-accent md:w-[280px] md:max-w-[350px]"
+                placeholder="Enter your query"
+                ref={message}
                 required
               />
             </div>
+
             <Button
-              variant="outline"
-              className="my-6"
+              className="my-[35px] h-[35px] w-[250px] max-w-[280px] self-center"
               type="submit"
               onClick={handleSubmit}
             >
               Submit
             </Button>
+            {flag ? (
+              <span className="pb-4 pl-2 font-bold text-[#FFF] md:text-[1.2rem]">
+                Congratulations! You will receive a call from us soon!
+              </span>
+            ) : (
+              <></>
+            )}
           </form>
         </div>
-        <div className="flex-grow-1 flex h-full flex-col items-center justify-start text-center font-semibold lg:max-w-[50%] xl:text-[1.5rem]">
-          <h1 className="mb-4 text-clamptextsmm text-accent">
-            Contact Information
-          </h1>
-          <div>Our HeadQuarter</div>
-          <div className="text-textclampsm flex flex-col">
-            <p>Cybernous Infosec Consulting LLP,</p>
-            <p>GSTN- 29AASFC9800E1Z6</p>
-            <p>Yelahanka, Bangalore - 560063, Karnataka, India</p>
-          </div>
-
-          <div className="text-textclampsm mt-4 flex flex-col text-justify">
-            <p>
-              <span className="font-semibold text-accent">Contact No.</span> -
-              +91-8595338705 | +91-8130126306
-            </p>
-            <p>
-              <span className="font-semibold text-accent">Contact Email</span> -
-              contact@cybernous.com
-            </p>
-            <p>
-              <span className="font-semibold text-accent">
-                Director Sales and Marketing:
-              </span>{" "}
-              Pratima@cybernous
-            </p>
-            <p>
-              <span className="font-semibold text-accent">
-                Director Trainings:
-              </span>{" "}
-              manoj@cybernous.com
-            </p>
+        <div className="w-[50%] pt-10 md:pt-0">
+          <h2 className="text-center text-clamptitle font-bold text-accent">
+            Contact Details
+          </h2>
+          <div className="flex flex-col items-center justify-center gap-y-4">
+            <div className="flex flex-col items-center justify-center gap-y-2 text-center [&>p]:text-clamptextsm [&>span]:text-clamptextsmm">
+              <span className="font-semibold">Our HeadQuarter</span>
+              <span className="font-medium">
+                Cybernous Infosec Consulting LLP,
+              </span>
+              <span>GSTN- 29AASFC9800E1Z6</span>
+              <span>Yelahanka, Bangalore - 560063, Karnataka, India</span>
+              <p>
+                <span className="text-accent">Contact No.</span> -
+                +91-8595338705 | +91-8130126306
+              </p>
+              <p>
+                <span className="text-accent">Contact Email</span> -
+                contact@cybernous.com
+              </p>
+              <p>
+                <span className="text-accent">
+                  Director Sales and Marketing:
+                </span>{" "}
+                Pratima@cybernous
+              </p>
+              <p>
+                <span className="text-accent">Director Trainings:</span>{" "}
+                manoj@cybernous.com
+              </p>
+            </div>
           </div>
         </div>
       </div>
