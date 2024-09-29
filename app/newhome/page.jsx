@@ -39,6 +39,7 @@ export default function Home() {
       <main className="">
         <div className="">
           <Header />
+          <Floater />
           <MobileLanding />
           <LandingSwiper />
           <Review />

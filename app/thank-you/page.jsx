@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Floater from "@/components/Floater";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
@@ -7,6 +8,7 @@ const page = () => {
   return (
     <section>
       <Banner />
+      <Floater />
       <Header />
       <div className="flex w-full flex-col items-center justify-center px-4 text-center [&>h1]:text-[2.9rem] [&>h1]:font-bold [&>h2]:text-[2.3rem] [&>h2]:font-semibold [&>h3]:pb-4 [&>h3]:text-[2.1rem] [&>h3]:font-semibold">
         <h1 className="text-accent">Thank You</h1>

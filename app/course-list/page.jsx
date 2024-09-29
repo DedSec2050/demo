@@ -150,6 +150,7 @@ export default function courselist() {
   return (
     <section>
       <Header />
+      <Floater />
       <div className="sm: w-full text-center text-[1.3rem] font-bold sm:text-[2.3rem] md:text-[3.3rem]">
         Our CISSP MasterClasses
       </div>

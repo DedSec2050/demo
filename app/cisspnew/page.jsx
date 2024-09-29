@@ -24,6 +24,7 @@ import CISSPcontact from "@/components/CISSPLanding/CISSPcontact";
 import CISSPheader from "@/components/CISSPLanding/CISSPheader";
 import MovSlider from "@/components/CISSPLanding/MovSlider";
 import USP from "@/components/USP";
+import Floater from "@/components/Floater";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       {/* <Popup /> */}
       {/* <div className="">text</div> */}
       <Banner />
+      <Floater />
       <main className="">
         <div className="bg-white">
           <CISSPheader />
