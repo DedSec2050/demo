@@ -88,7 +88,7 @@ const ContactUs2 = () => {
               Full Name
             </label>
             <input
-              id="contact-name2"
+              id="contact-name"
               type="text"
               className="field w-[250px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
               placeholder="Enter your name"
@@ -101,7 +101,7 @@ const ContactUs2 = () => {
               Email Address
             </label>
             <input
-              id="contact-email2"
+              id="contact-email"
               type="email"
               className="w-[250px] rounded-md p-1 active:bg-accent md:max-w-[350px]"
               placeholder="Enter your email"
@@ -114,7 +114,7 @@ const ContactUs2 = () => {
               Phone number
             </label>
             <PhoneInput
-              id="contact-phone2"
+              id="contact-phone"
               country="in"
               type="text"
               className="rounded-md p-1 active:bg-accent md:max-w-[350px] [&>.form-control]:max-w-[250px]"

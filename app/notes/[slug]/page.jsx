@@ -152,6 +152,19 @@ export default async function Post({ params: { slug } }) {
         </div>
       ),
     },
+    marks: {
+      link: ({ value, children }) => {
+        const { href, target, rel } = value;
+
+        // const relAttr =
+        //   target === "_blank" ? "noopener noreferrer" : rel || ";";
+        return (
+          <a href={href} target={target} rel={rel} className="text-blue-500">
+            {children}
+          </a>
+        );
+      },
+    },
   };
   // console.log(post);
   // console.log(post.currentSlug);
