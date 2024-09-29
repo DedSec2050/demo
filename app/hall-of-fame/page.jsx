@@ -133,29 +133,31 @@ const page = () => {
           Hall of Fame
         </h1>
         {/* Content Container  */}
-        <div className="flex min-w-[300px] flex-col gap-y-4 xl:grid xl:grid-cols-2 xl:gap-x-4 xlg:grid-cols-3">
+        <div className="flex min-w-[300px] flex-col gap-y-4 xl:gap-x-4">
           {listData.map((item, index) => {
             return (
               <div
                 className="overflow-hidden rounded-[15px] border-[0.25px] border-accent"
                 key={index}
               >
-                <div className="flex bg-companyGrn">
+                <div className="flex items-center bg-companyGrn">
                   {/* Image here  */}
-                  <div className="hidden h-[250px] min-w-[250px] bg-green-500 md:flex">
+                  <div className="hidden h-[350px] min-w-[350px] bg-green-500 md:flex">
                     <Image
-                      height={250}
-                      width={250}
+                      height={350}
+                      width={350}
                       src={item.picPath + (index + 1) + ".webp"}
                       alt={item.altText}
                     ></Image>
                   </div>
                   {/* Content Here  */}
-                  <div className="flex min-w-[280px] flex-col bg-gradient-to-tr from-[#060f38] via-[#060f38c4] to-[#060f38] px-4 py-4">
+                  <div className="flex h-full min-w-[280px] max-w-[700px] flex-col bg-gradient-to-tr from-[#060f38] via-[#060f38c4] to-[#060f38] px-4 py-4">
                     {/* Pass date  */}
-                    <div className="self-end font-semibold">17 Nov 2024</div>
+                    <div className="self-end font-semibold xlg:text-[1.7rem]">
+                      17 Nov 2024
+                    </div>
                     {/* Testimonials data here  */}
-                    <div className="py-4 text-[0.8rem] leading-normal">
+                    <div className="py-4 text-[1.5rem] leading-normal xlg:text-[1.6rem]">
                       {item.testimonials}
                     </div>
                     {/* Socials here  */}
