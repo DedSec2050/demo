@@ -10,7 +10,7 @@ import { Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 import Image from "next/image";
 const Sliding = () => {
   const demos = [];
-  for (let i = 1; i <= 26; i++) {
+  for (let i = 1; i <= 32; i++) {
     demos.push(`${i}.webp`);
   }
   const imageStyle = {

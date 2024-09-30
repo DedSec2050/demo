@@ -125,8 +125,8 @@ const LeadGen = () => {
           alert("You have already enrolled for Master CLASS!");
           setFlag(true);
           setTimeout(() => {
-            window.location.href = "https://calendly.com/cisspsuccess";
-          }, 5000);
+            window.location.href = "https://www.cybernous.com/thank-you";
+          }, 2000);
           email.current.value = "";
           setPhoneNumber("");
           return;
@@ -154,8 +154,8 @@ const LeadGen = () => {
         alert("Response Submitted");
         setFlag(true);
         setTimeout(() => {
-          window.location.href = "https://calendly.com/cisspsuccess";
-        }, 5000);
+          window.location.href = "https://www.cybernous.com/thank-you";
+        }, 2000);
         email.current.value = "";
         setPhoneNumber("");
       }
