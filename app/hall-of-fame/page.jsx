@@ -438,7 +438,7 @@ const page = () => {
           {listData.map((item, index) => {
             return (
               <div
-                className="overflow-hidden rounded-[15px] border-[0.25px] border-accent bg-gradient-to-tr from-[#7BD9F6] via-[#74C69D] to-[#7BD9F6]"
+                className="overflow-hidden rounded-[15px] border-[0.25px] border-accent bg-gradient-to-tr from-[#7bd9f6dc] via-[#74C69D] to-[#7BD9F6]"
                 key={index}
               >
                 <div className="flex flex-col items-center md:flex-row">
