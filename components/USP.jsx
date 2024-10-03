@@ -28,7 +28,7 @@ const USP = () => {
           </p>
           <div>
             <div>
-              <div className="mr-2 overflow-hidden rounded-[50%] bg-accent p-2">
+              <div className="mr-2 min-h-[46px] min-w-[46px] overflow-hidden rounded-[50%] bg-accent p-2">
                 <PiFlagBannerFoldFill className="h-[30px] w-[30px]" />
               </div>
               <h3>100 Days Success Plan</h3>

@@ -102,7 +102,7 @@ const listData = [
     altText: "BHAVIN",
     date: "27th July 2024",
     testimonials: (
-      <p>
+      <p className="xl:text-[1.1rem]">
         "How to prepare online for the CISSP exam, training, and its training
         cost? These were the questions that I had before joining Cybernous for
         my CISSP Preparation but all my questions were cleared under the
@@ -438,7 +438,7 @@ const page = () => {
           {listData.map((item, index) => {
             return (
               <div
-                className="overflow-hidden rounded-[15px] border-[0.25px] border-accent bg-gradient-to-tr from-[#7bd9f6dc] via-[#74C69D] to-[#7BD9F6]"
+                className="overflow-hidden rounded-[15px] border-[0.25px] border-accent bg-white font-semibold text-black"
                 key={index}
               >
                 <div className="flex flex-col items-center md:flex-row">
