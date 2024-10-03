@@ -20,7 +20,7 @@ const nextConfig = {
       },
       {
         source: "/",
-        destination: "/CISSP",
+        destination: "/cisspnew",
         permanent: false,
       },
     ];

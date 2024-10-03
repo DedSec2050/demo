@@ -169,7 +169,7 @@ const LeadGen = () => {
   };
 
   return (
-    <div className="ml-2 mr-[3vw] flex w-full translate-y-8 items-center justify-center pb-8 md:ml-0 md:gap-x-6">
+    <div className="flex w-full translate-y-8 items-center justify-center pb-8 sm:ml-2 sm:mr-[3vw] md:ml-0 md:gap-x-6">
       <form
         action=""
         className="flex flex-col gap-x-4 gap-y-4 rounded-[25px] border-[0.5px] border-companyGrn bg-transparent bg-gradient-to-l from-[#23c4afec] to-[#A8AEE000] px-4 pt-4 text-left text-black xl:flex-row [&>div>label]:text-white [&>div]:px-4"
@@ -181,7 +181,7 @@ const LeadGen = () => {
           <input
             id="contact-name"
             type="text"
-            className="my-[5px] h-[35px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
+            className="my-[5px] h-[35px] w-[280px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
             placeholder="Enter your name"
             ref={fname}
             required
@@ -194,7 +194,7 @@ const LeadGen = () => {
           <input
             id="contact-email"
             type="email"
-            className="my-[5px] h-[35px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
+            className="my-[5px] h-[35px] w-[280px] rounded-md p-1 active:bg-accent md:w-[280px] md:max-w-[350px]"
             placeholder="Enter your email"
             ref={email}
             required
