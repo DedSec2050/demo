@@ -18,6 +18,13 @@ import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
 import Tags from "@/components/Pages/Tags";
 import SuccessStories from "@/components/Pages/SuccessStories";
+import Slider from "@/components/CISSPLanding/Slider";
+import TagsBanner from "@/components/CISSPLanding/TagsBanner";
+import CISSPcontact from "@/components/CISSPLanding/CISSPcontact";
+import CISSPheader from "@/components/CISSPLanding/CISSPheader";
+import MovSlider from "@/components/CISSPLanding/MovSlider";
+import USP from "@/components/USP";
+import Floater from "@/components/Floater";
 
 export default function Home() {
   return (
@@ -26,13 +33,21 @@ export default function Home() {
       {/* <Popup /> */}
       {/* <div className="">text</div> */}
       <Banner />
+      <Floater />
       <main className="">
-        <div className="">
-          <Header />
-          <Hero />
+        <div className="bg-white">
+          <CISSPheader />
+          <MovSlider />
+
+          <Slider />
+          <div className="pb-4 xl:[&>div]:hidden">
+            <CISSPcontact />
+          </div>
+          <TagsBanner />
         </div>
         <div className="lg:mt-[7vw] xl:mt-0">
-          <Tags />
+          {/* <Tags /> */}
+          <USP />
           <SuccessStories />
         </div>
         <Guidelines />

@@ -175,7 +175,7 @@ const LeadGen = () => {
       </h2>
       <form
         action=""
-        className="flex max-w-[320px] flex-col gap-y-4 rounded-[25px] border-[0.5px] border-companyGrn bg-transparent bg-gradient-to-l from-[#23c4afec] to-[#A8AEE000] px-4 pt-4 text-left [&>div>label]:text-companyBlue"
+        className="flex max-w-[320px] flex-col gap-y-4 rounded-[25px] border-[0.5px] border-companyGrn bg-transparent bg-gradient-to-l from-[#23c4afec] to-[#A8AEE000] px-4 pt-4 text-left [&>div>input]:text-black [&>div>label]:text-companyBlue"
       >
         <div className="input-box flex flex-col md:gap-y-0">
           <label htmlFor="contact-name" className="font-semibold">
