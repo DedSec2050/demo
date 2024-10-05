@@ -22,7 +22,7 @@ const TagsBanner = () => {
               alt="google rating for cybernous"
             ></Image>
           </Link>
-          <span>4.1/5</span>
+          <span>4.9/5</span>
 
           <Link
             rel="nofollow"
@@ -50,7 +50,7 @@ const TagsBanner = () => {
               alt="udemy rating for cybernous"
             ></Image>
           </Link>
-          <span>4.5/5</span>
+          <span>4.9/5</span>
         </div>
       </div>
       {/* Learnings Section  */}
