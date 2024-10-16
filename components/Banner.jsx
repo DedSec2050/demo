@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <section className="flex-grow-1 min-h-[60px] w-full flex-col items-center justify-center bg-black text-[0.7rem] font-semibold text-black sm:flex md:flex-row md:px-0 md:text-[1.2rem] xl:min-h-[70px] xl:text-[1.4rem]">
       <div className="py-1 text-center font-bold text-white">
-        Enrolments open for Batch-37 With Festive Discount
+        15% Discount on 499 USD as Diwali Offer!
       </div>
       <div className="flex items-center justify-center self-center">
         <Button
