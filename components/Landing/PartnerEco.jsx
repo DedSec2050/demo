@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 const PartnerEco = () => {
   return (
-    <section className="[&>section>div>div]:bg-gradient-to-r [&>section>div>div]:from-[#ffeb89e7] [&>section>div>div]:via-[#ffeb89e7] [&>section>div>div]:to-[#ffeb89f3]">
+    <section className="[&>section>div>.pos]:bg-gradient-to-r [&>section>div>.pos]:from-[#ffeb89e7] [&>section>div>.pos]:via-[#ffeb89e7] [&>section>div>.pos]:to-[#ffeb89f3]">
       <div className="mt-6 px-[30px] sm:px-[50px] xl:mb-4 xl:px-[10vw]">
         <h2 className="bg-gradient-to-r from-grn via-accent to-grn bg-clip-text text-center text-clampheader font-[700] text-transparent xxl:text-[2.5vw]">
           Our Partner Ecosystem

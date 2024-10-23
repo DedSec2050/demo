@@ -15,7 +15,7 @@ const Positions = () => {
             </strong>
           </h1>
         </div>
-        <div className="rounded-[30px] border-4 bg-gradient-to-r from-[#FFFFFF66] via-[#F9F9F9] to-[#F9F9F9]">
+        <div className="pos rounded-[30px] border-4 bg-gradient-to-r from-[#FFFFFF66] via-[#F9F9F9] to-[#F9F9F9]">
           <div className="xxl:border-tb-[10px] flex h-[150px] w-[100%] flex-row md:h-[250px]">
             <Marquee>
               {urls.map((url, index) => {

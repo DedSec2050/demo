@@ -207,9 +207,11 @@ export default function courselist() {
             ))}
           </div>
           <div className="self-center py-4">
-            <Button className="bg-gradient-to-r from-[#F04FB2] via-[#F04FB2] to-[#F04FB26e] font-semibold text-white">
-              Enroll Now
-            </Button>
+            <Link href={`/course-list/courses-1`}>
+              <Button className="bg-gradient-to-r from-[#F04FB2] via-[#F04FB2] to-[#F04FB26e] font-semibold text-white">
+                Enroll Now
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
