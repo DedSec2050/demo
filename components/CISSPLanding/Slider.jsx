@@ -31,9 +31,9 @@ const Slider = () => {
           <div className="flex h-[70dvh] w-[100dvw] flex-col justify-center bg-slidebgOne bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 px-10 py-10 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[2.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
-                Give us 100 Days </h2>
+                Give me 100 Days </h2>
                 <br /> 
-              <h2 className="accent">We will get you CISSP Certified</h2>
+              <h2 className="accent">I will get you CISSP Certified</h2>
               </div>
           </div>
         </SwiperSlide>
@@ -43,12 +43,12 @@ const Slider = () => {
               <h2>
                 Our Courses <br />
               </h2>
-              <h2 className="accent">"Scale New Heights With</h2>
-              <h2 className="accent">CyberSecurity Certifications"</h2>
+              <h2 className="accent">"Scale New Heights With Our</h2>
+              <h2 className="accent">CISSP | CISM | PCI-DSS and ISO Certifications"</h2>
             </div>
             <div className="relative flex max-w-[290px] flex-col gap-y-6 py-4">
               <Button>Explore More</Button>
-              <Button>Buy 1 Get 1 Free. Hurry!</Button>
+              <Button> Diwali Discount of 15% on CISSP Success Toolkit. Avail Now!</Button>
             </div>
           </div>
         </SwiperSlide>
@@ -59,8 +59,8 @@ const Slider = () => {
                 Corporate Trainings
                 <br />
               </h2>
-              <h2 className="accent">"Skill up your workforce with our</h2>
-              <h2 className="accent">personalized cybersecurity training"</h2>
+              <h2 className="accent">"Build your Cybersecurity Career</h2>
+              <h2 className="accent">with our College to Corporate Program"</h2>
             </div>
             <div className="relative flex max-w-[200px] flex-col gap-y-6 py-4">
               <Button>Learn More</Button>
@@ -75,11 +75,10 @@ const Slider = () => {
                 Cybersecurity Consulting
                 <br />
               </h2>
-              <h2 className="accent">"Control Cybersecurity risks with our</h2>
-              <h2 className="accent">personalized cybersecurity training"</h2>
+              <h2 className="accent">"Skill up your Workforce </h2>
+              <h2 className="accent">with exciting offers for Corporates"</h2>
             </div>
             <div className="relative flex max-w-[200px] flex-col gap-y-6 py-4">
-              <Button>Learn More</Button>
               <Button>Contact Us</Button>
             </div>
           </div>
