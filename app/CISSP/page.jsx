@@ -32,6 +32,7 @@ export default function Home() {
       {/* <BackWrapper /> */}
       {/* <Popup /> */}
       {/* <div className="">text</div> */}
+      <BackWrapper />
       <Banner />
       <Floater />
       <main className="">
