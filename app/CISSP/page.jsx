@@ -25,6 +25,7 @@ import CISSPheader from "@/components/CISSPLanding/CISSPheader";
 import MovSlider from "@/components/CISSPLanding/MovSlider";
 import USP from "@/components/USP";
 import Floater from "@/components/Floater";
+import BackWrapper from "@/components/BackWrapper";
 
 export default function Home() {
   return (
