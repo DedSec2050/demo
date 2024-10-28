@@ -19,7 +19,7 @@ const Banner = () => {
         >
           {" "}
           <Link
-            href="https://courses.cybernous.com/courses/cissp-success-toolkit/buy"
+            href="https://courses.cybernous.com/courses/cst-premium-package/buy"
             className="font-bold sm:text-[1.2rem]"
           >
             Claim Now!
