@@ -31,13 +31,10 @@ const Slider = () => {
           <div className="flex h-[70dvh] w-[100dvw] flex-col justify-center bg-slidebgOne bg-cover [&>div]:px-10 [&>div]:py-10">
             <div className="top-0 px-10 py-10 font-bold leading-normal [&>.accent]:text-accent [&>h2]:text-[2.6rem] xl:[&>h2]:text-[3.4rem]">
               <h2>
-                Give me 100 Days
-                <br />
-                With
-              </h2>
-              <h2 className="accent">We will get you</h2>
-              <h2 className="accent">CISSP Certified</h2>
-             </div>
+                Give us 100 Days </h2>
+                <br /> 
+              <h2 className="accent">We will get you CISSP Certified</h2>
+              </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="">
