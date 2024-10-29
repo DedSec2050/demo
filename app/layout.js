@@ -6,7 +6,7 @@ import Script from "next/script";
 export const metadata = {
   metadataBase: new URL("https://www.cybernous.com/"),
   title: {
-    default: "CISSP Course in Bangalore",
+    default: "CISSP Course in Karnataka",
     template: `%s | Cybernous`,
   },
   description:

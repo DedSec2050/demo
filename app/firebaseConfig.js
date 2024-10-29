@@ -4,7 +4,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwUvWJr4mIvNVqSgys0SmBgtDkcBWPRxw",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "cyb-lms.firebaseapp.com",
   projectId: "cyb-lms",
   storageBucket: "cyb-lms.appspot.com",
